@@ -25,12 +25,12 @@ viewCategory category =
             [ a [ href "#" ] [ text category.title ] ]
         , ol
             [ class "thread-list" ]
-            (List.map viewThread (Dict.toList category.threads))
+            (List.map viewThread category.threads)
         ]
 
 
-viewThread : ( Int, Thread.Model ) -> Html msg
-viewThread ( index, thread ) =
+viewThread : Thread.Model -> Html msg
+viewThread thread =
     li
         [ class "thread-list-item" ]
         [ div

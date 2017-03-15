@@ -40,7 +40,7 @@ sitemap =
 match : String -> Sitemap
 match path =
     Route.match sitemap path
-        |> Maybe.withDefault NotFoundR
+        |> Maybe.withDefault HomeR
 
 
 toString : Sitemap -> String

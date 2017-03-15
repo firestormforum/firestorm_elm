@@ -1,8 +1,6 @@
 module Decoders
     exposing
-        ( dataDecoder
-        , etagDecoder
-        , categoryDecoder
+        ( categoryDecoder
         , categoriesDecoder
         )
 
@@ -32,17 +30,10 @@ import Json.Decode.Pipeline
         , custom
         )
 import Types.Category as Category
+import Types.Thread as Thread
+import Types.Post as Post
+import Types.User as User
 import Dict exposing (Dict)
-
-
-dataDecoder : Decoder a -> Decoder a
-dataDecoder decoder =
-    field "data" decoder
-
-
-etagDecoder : Decoder String
-etagDecoder =
-    field "ETag" string
 
 
 categoryDecoder : Decoder Category.Model
@@ -52,9 +43,35 @@ categoryDecoder =
         |> required "title" string
         |> required "inserted_at" string
         |> required "updated_at" string
-        |> hardcoded Dict.empty
+        |> required "threads" (list threadDecoder)
 
 
 categoriesDecoder : Decoder (List Category.Model)
 categoriesDecoder =
-    list categoryDecoder
+    field "categories" <|
+        list categoryDecoder
+
+
+threadDecoder : Decoder Thread.Model
+threadDecoder =
+    decode Thread.Model
+        |> required "id" int
+        |> required "title" string
+        |> required "user" userDecoder
+        |> required "posts" (list postDecoder)
+
+
+postDecoder : Decoder Post.Model
+postDecoder =
+    decode Post.Model
+        |> required "id" int
+        |> required "body" string
+
+
+userDecoder : Decoder User.Model
+userDecoder =
+    decode User.Model
+        |> required "id" int
+        |> required "username" string
+        |> required "email" string
+        |> required "name" string

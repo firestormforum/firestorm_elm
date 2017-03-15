@@ -7,7 +7,7 @@ import Api.Helpers
 import HttpBuilder exposing (withJsonBody, send, withExpect)
 import Http
 import Json.Decode as Decode
-import Decoders exposing (dataDecoder, categoriesDecoder)
+import Decoders exposing (categoriesDecoder)
 import Types.Category as Category
 
 
@@ -15,7 +15,7 @@ index : String -> (List Category.Model -> msg) -> (Http.Error -> msg) -> Cmd msg
 index apiBaseUrl tagger errorTagger =
     "home"
         |> get apiBaseUrl
-        |> withExpect (Http.expectJson (dataDecoder categoriesDecoder))
+        |> withExpect (Http.expectJson categoriesDecoder)
         |> send (handleGetHomeComplete tagger errorTagger)
 
 
@@ -25,7 +25,7 @@ handleGetHomeComplete :
     -> Result Http.Error (List Category.Model)
     -> msg
 handleGetHomeComplete tagger errorTagger result =
-    case result of
+    case Debug.log "handleGetHomeComplete" result of
         Ok categories ->
             tagger categories
 

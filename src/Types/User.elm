@@ -2,7 +2,8 @@ module Types.User exposing (Model)
 
 
 type alias Model =
-    { username : String
+    { id : Int
+    , username : String
     , email : String
     , name : String
     }
