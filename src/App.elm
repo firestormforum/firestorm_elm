@@ -3,7 +3,9 @@ module App exposing (..)
 import Navigation
 import Model exposing (Model)
 import Msg exposing (Msg)
-import Dict
+import Types.Category as Category
+import Types.Thread as Thread
+import Types.User as User
 
 
 type alias Flags =
@@ -12,7 +14,11 @@ type alias Flags =
 
 init : Flags -> Navigation.Location -> ( Model, Cmd Msg )
 init flags path =
-    ( { categories = Dict.empty }, Cmd.none )
+    ( { categories = []
+      , apiBaseUrl = flags.apiBaseUrl
+      }
+    , Cmd.none
+    )
 
 
 subscriptions : Model -> Sub Msg
