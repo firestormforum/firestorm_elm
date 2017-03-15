@@ -6,7 +6,7 @@ import Msg exposing (Msg)
 import Types.Category as Category
 import Types.Thread as Thread
 import Types.User as User
-import Routes exposing (parseHash)
+import Routes exposing (parseHash, Sitemap)
 import Update
 
 
@@ -20,15 +20,16 @@ init flags location =
         ( model, cmd ) =
             Update.handleRoute
                 (parseHash location)
-                (initialModel flags)
+                (initialModel flags (parseHash location))
     in
         ( model, cmd )
 
 
-initialModel : Flags -> Model
-initialModel flags =
+initialModel : Flags -> Sitemap -> Model
+initialModel flags route =
     { categories = []
     , apiBaseUrl = flags.apiBaseUrl
+    , route = route
     }
 
 

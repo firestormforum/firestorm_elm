@@ -6,7 +6,6 @@ import Api.Helpers
         )
 import HttpBuilder exposing (withJsonBody, send, withExpect)
 import Http
-import Json.Decode as Decode
 import Decoders exposing (categoriesDecoder)
 import Types.Category as Category
 
@@ -25,7 +24,7 @@ handleGetHomeComplete :
     -> Result Http.Error (List Category.Model)
     -> msg
 handleGetHomeComplete tagger errorTagger result =
-    case Debug.log "handleGetHomeComplete" result of
+    case result of
         Ok categories ->
             tagger categories
 

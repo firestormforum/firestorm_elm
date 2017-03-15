@@ -13,7 +13,7 @@ update msg model =
             ( model, Cmd.none )
 
         RouteChanged route ->
-            ( model, Cmd.none )
+            ( { model | route = route }, Cmd.none )
 
         GotCategories categories ->
             ( { model | categories = categories }
@@ -23,7 +23,7 @@ update msg model =
 
 handleRoute : Sitemap -> Model -> ( Model, Cmd Msg )
 handleRoute route model =
-    case Debug.log "handleRoute" route of
+    case route of
         HomeR ->
             ( model
             , Api.Home.index

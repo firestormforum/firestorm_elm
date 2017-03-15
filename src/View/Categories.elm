@@ -5,6 +5,7 @@ import Html.Attributes exposing (..)
 import Types.Category as Category
 import Types.Thread as Thread
 import Dict exposing (Dict)
+import Routes exposing (Sitemap(..))
 
 
 view : List Category.Model -> Html msg
@@ -22,7 +23,10 @@ viewCategory category =
         []
         [ h2
             [ class "title" ]
-            [ a [ href "#" ] [ text category.title ] ]
+            [ a
+                [ Routes.href <| CategoryR category.id ]
+                [ text category.title ]
+            ]
         , ol
             [ class "thread-list" ]
             (List.map viewThread category.threads)
