@@ -8,6 +8,7 @@ import View.Layouts.App exposing (view)
 import View.Categories
 import View.Categories.Show
 import Routes exposing (Sitemap(..))
+import Dict
 
 
 view : Model -> Html Msg
@@ -22,15 +23,27 @@ page model =
         HomeR ->
             View.Categories.view model.users model.categories model.threads
 
-        CategoryR categoryId ->
-            -- find the category
-            -- show the category
-            case Model.findCategory model categoryId of
-                Just category ->
-                    View.Categories.Show.view category
+        CategoryR categoryIdOrSlug ->
+            let
+                categoryId =
+                    case String.toInt categoryIdOrSlug of
+                        Ok categoryId ->
+                            categoryId
 
-                Nothing ->
-                    text "404"
+                        Err _ ->
+                            model.categories
+                                |> Dict.filter (\k v -> v.slug == categoryIdOrSlug)
+                                |> Dict.toList
+                                |> List.map (\( k, v ) -> k)
+                                |> List.head
+                                |> Maybe.withDefault -1
+            in
+                case Model.findCategory model categoryId of
+                    Just category ->
+                        View.Categories.Show.view category
+
+                    Nothing ->
+                        text "404"
 
         NotFoundR ->
             text "404"

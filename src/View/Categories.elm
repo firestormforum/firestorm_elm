@@ -54,7 +54,7 @@ viewCategory users threads categories ( categoryId, category ) =
             [ h2
                 [ class "title" ]
                 [ a
-                    [ Routes.href <| CategoryR category.id ]
+                    [ Routes.href <| CategoryR (Category.finder category) ]
                     [ text category.title ]
                 ]
             , ol

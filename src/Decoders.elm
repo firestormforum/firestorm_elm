@@ -43,6 +43,7 @@ categoryDecoder =
     decode Category.Model
         |> required "id" int
         |> required "title" string
+        |> required "slug" string
         |> required "inserted_at" string
         |> required "updated_at" string
         |> required "parent_id" (maybe int)

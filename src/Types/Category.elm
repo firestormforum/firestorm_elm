@@ -1,4 +1,4 @@
-module Types.Category exposing (Model, isRoot, roots, new)
+module Types.Category exposing (Model, isRoot, roots, new, finder)
 
 import Types.Thread as Thread
 import Dict exposing (Dict)
@@ -7,6 +7,7 @@ import Dict exposing (Dict)
 type alias Model =
     { id : Int
     , title : String
+    , slug : String
     , insertedAt : String
     , updatedAt : String
     , parentId : Maybe Int
@@ -30,9 +31,20 @@ new : Model
 new =
     { id = -1
     , title = ""
+    , slug = ""
     , insertedAt = ""
     , updatedAt = ""
     , parentId = Nothing
     , childrenIds = []
     , threadIds = []
     }
+
+
+finder : Model -> String
+finder category =
+    case category.slug of
+        "" ->
+            toString category.id
+
+        s ->
+            s

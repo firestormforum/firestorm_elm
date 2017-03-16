@@ -11,7 +11,7 @@ import Dict exposing (Dict)
 
 
 get :
-    Int
+    String
     -> String
     -> (( Dict Int Category.Model, Dict Int Thread.Model, Dict Int User.Model )
         -> msg
@@ -19,7 +19,7 @@ get :
     -> (Http.Error -> msg)
     -> Cmd msg
 get categoryId apiBaseUrl tagger errorTagger =
-    ("categories/" ++ (toString categoryId))
+    ("categories/" ++ categoryId)
         |> AH.get apiBaseUrl
         |> withExpect (Http.expectJson categoriesAndThreadsAndUsersDecoder)
         |> send (handleGetComplete tagger errorTagger)

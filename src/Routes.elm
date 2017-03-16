@@ -16,7 +16,7 @@ import Html.Attributes
 
 type Sitemap
     = HomeR
-    | CategoryR Int
+    | CategoryR String
     | NotFoundR
 
 
@@ -27,7 +27,7 @@ homeR =
 
 categoryR : Route Sitemap
 categoryR =
-    CategoryR := static "categories" </> int
+    CategoryR := static "categories" </> string
 
 
 notFoundR : Route Sitemap
@@ -63,7 +63,7 @@ toString r =
             reverse homeR []
 
         CategoryR id ->
-            reverse categoryR [ Basics.toString id ]
+            reverse categoryR [ id ]
 
         NotFoundR ->
             reverse notFoundR []
