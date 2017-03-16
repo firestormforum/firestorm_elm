@@ -39,11 +39,7 @@ view children =
             [ class "pure-pusher-container" ]
             [ div
                 [ class "pure-pusher" ]
-                [ Navigation.view
-                , div
-                    [ class "layout-content" ]
-                    children
-                ]
+                ([ Navigation.view ] ++ children)
             ]
         , label
             [ class "pure-overlay"

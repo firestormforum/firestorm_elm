@@ -40,7 +40,7 @@ page model =
             in
                 case Model.findCategory model categoryId of
                     Just category ->
-                        View.Categories.Show.view category
+                        View.Categories.Show.view model.users model.threads category
 
                     Nothing ->
                         text "404"

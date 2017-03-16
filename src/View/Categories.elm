@@ -12,13 +12,16 @@ import Routes exposing (Sitemap(..))
 view : Dict Int User.Model -> Dict Int Category.Model -> Dict Int Thread.Model -> Html msg
 view users categories threads =
     div
-        [ class "page-content" ]
-        [ ol [ class "category-list" ]
-            (List.map (viewCategory users threads categories)
-                (Dict.toList
-                    (Category.roots categories)
+        [ class "layout-content" ]
+        [ div
+            [ class "page-content" ]
+            [ ol [ class "category-list" ]
+                (List.map (viewCategory users threads categories)
+                    (Dict.toList
+                        (Category.roots categories)
+                    )
                 )
-            )
+            ]
         ]
 
 
