@@ -1,4 +1,4 @@
-module Types.User exposing (Model)
+module Types.User exposing (Model, new)
 
 
 type alias Model =
@@ -6,4 +6,13 @@ type alias Model =
     , username : String
     , email : String
     , name : String
+    }
+
+
+new : Model
+new =
+    { id = -1
+    , username = ""
+    , email = ""
+    , name = ""
     }

@@ -8,6 +8,7 @@ import Types.Thread as Thread
 import Types.User as User
 import Routes exposing (parseHash, Sitemap)
 import Update
+import Dict
 
 
 type alias Flags =
@@ -27,7 +28,10 @@ init flags location =
 
 initialModel : Flags -> Sitemap -> Model
 initialModel flags route =
-    { categories = []
+    { categories = Dict.empty
+    , threads = Dict.empty
+    , users = Dict.empty
+    , posts = Dict.empty
     , apiBaseUrl = flags.apiBaseUrl
     , route = route
     }

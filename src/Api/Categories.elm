@@ -1,9 +1,6 @@
-module Api.Home exposing (index)
+module Api.Categories exposing (get)
 
-import Api.Helpers
-    exposing
-        ( get
-        )
+import Api.Helpers as AH
 import HttpBuilder exposing (withJsonBody, send, withExpect)
 import Http
 import Decoders exposing (categoriesAndThreadsAndUsersDecoder)
@@ -13,27 +10,28 @@ import Types.User as User
 import Dict exposing (Dict)
 
 
-index :
-    String
+get :
+    Int
+    -> String
     -> (( Dict Int Category.Model, Dict Int Thread.Model, Dict Int User.Model )
         -> msg
        )
     -> (Http.Error -> msg)
     -> Cmd msg
-index apiBaseUrl tagger errorTagger =
-    "home"
-        |> get apiBaseUrl
+get categoryId apiBaseUrl tagger errorTagger =
+    ("categories/" ++ (toString categoryId))
+        |> AH.get apiBaseUrl
         |> withExpect (Http.expectJson categoriesAndThreadsAndUsersDecoder)
-        |> send (handleGetHomeComplete tagger errorTagger)
+        |> send (handleGetComplete tagger errorTagger)
 
 
-handleGetHomeComplete :
+handleGetComplete :
     (( Dict Int Category.Model, Dict Int Thread.Model, Dict Int User.Model ) -> msg)
     -> (Http.Error -> msg)
     -> Result Http.Error ( Dict Int Category.Model, Dict Int Thread.Model, Dict Int User.Model )
     -> msg
-handleGetHomeComplete tagger errorTagger result =
-    case Debug.log "handleGetHomeComplete" result of
+handleGetComplete tagger errorTagger result =
+    case Debug.log "handleGetComplete" result of
         Ok categoriesAndThreadsAndUsers ->
             tagger categoriesAndThreadsAndUsers
 

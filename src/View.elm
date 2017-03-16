@@ -20,7 +20,7 @@ page : Model -> Html Msg
 page model =
     case model.route of
         HomeR ->
-            View.Categories.view model.categories
+            View.Categories.view model.users model.categories model.threads
 
         CategoryR categoryId ->
             -- find the category
