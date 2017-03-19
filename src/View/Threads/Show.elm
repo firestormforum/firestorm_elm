@@ -7,6 +7,7 @@ import Types.Post as Post
 import Types.Thread as Thread
 import Types.Store as Store
 import Dict exposing (Dict)
+import Markdown
 
 
 view : Store.Model -> Thread.Model -> Html msg
@@ -53,7 +54,7 @@ postListItem store post =
                     ]
                 , div
                     [ class "body" ]
-                    [ text post.body ]
+                    [ Markdown.toHtml [] post.body ]
                 , div
                     [ class "post-item-actions" ]
                     [ div [ class "spacer" ] []
