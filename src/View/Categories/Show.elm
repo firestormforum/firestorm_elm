@@ -5,16 +5,24 @@ import Html.Attributes exposing (..)
 import Types.Category as Category
 import Types.User as User
 import Types.Thread as Thread
+import Types.Store as Store
 import Dict exposing (Dict)
+import Routes exposing (Sitemap(..))
 
 
-view : Dict Int User.Model -> Dict Int Thread.Model -> Category.Model -> Html msg
-view users threads category =
+view : Store.Model -> Category.Model -> Html msg
+view store category =
     div
         [ class "layout-content" ]
         [ div
             [ class "category-header" ]
-            [ h2 [] [ text category.title ]
+            [ h2
+                []
+                [ a
+                    [ Routes.href <| CategoryR (Category.finder category)
+                    ]
+                    [ text category.title ]
+                ]
             , div [ class "spacer" ] []
             , ul [ class "actions" ]
                 [ li []
@@ -33,7 +41,7 @@ view users threads category =
             ]
         , h3 [] [ text "Threads" ]
         , ol [ class "thread-list" ]
-            (List.map (threadListItem users) (threadsFor threads category))
+            (List.map (threadListItem category store.users) (threadsFor store.threads category))
         ]
 
 
@@ -45,8 +53,8 @@ threadsFor threads category =
         |> List.map (\( k, v ) -> v)
 
 
-threadListItem : Dict Int User.Model -> Thread.Model -> Html msg
-threadListItem users thread =
+threadListItem : Category.Model -> Dict Int User.Model -> Thread.Model -> Html msg
+threadListItem category users thread =
     let
         user =
             users
@@ -57,7 +65,11 @@ threadListItem users thread =
             [ class "thread-list-item" ]
             [ div [ class "details" ]
                 [ div [ class "summary" ]
-                    [ a [ href "#", class "title" ] [ text thread.title ]
+                    [ a
+                        [ Routes.href <| ThreadR (Category.finder category) (Thread.finder thread)
+                        , class "title"
+                        ]
+                        [ text thread.title ]
                     , a [ href "#", class "user-name" ] [ text user.username ]
                     ]
                 ]

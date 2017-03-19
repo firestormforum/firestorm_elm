@@ -3,9 +3,7 @@ module App exposing (..)
 import Navigation
 import Model exposing (Model)
 import Msg exposing (Msg)
-import Types.Category as Category
-import Types.Thread as Thread
-import Types.User as User
+import Types.Store as Store
 import Routes exposing (parseHash, Sitemap)
 import Update
 import Dict
@@ -28,10 +26,7 @@ init flags location =
 
 initialModel : Flags -> Sitemap -> Model
 initialModel flags route =
-    { categories = Dict.empty
-    , threads = Dict.empty
-    , users = Dict.empty
-    , posts = Dict.empty
+    { store = Store.new
     , apiBaseUrl = flags.apiBaseUrl
     , route = route
     }

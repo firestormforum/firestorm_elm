@@ -17,6 +17,7 @@ import Html.Attributes
 type Sitemap
     = HomeR
     | CategoryR String
+    | ThreadR String String
     | NotFoundR
 
 
@@ -30,6 +31,11 @@ categoryR =
     CategoryR := static "categories" </> string
 
 
+threadR : Route Sitemap
+threadR =
+    ThreadR := static "categories" </> string </> static "threads" </> string
+
+
 notFoundR : Route Sitemap
 notFoundR =
     NotFoundR := static "404"
@@ -40,6 +46,7 @@ sitemap =
     router
         [ homeR
         , categoryR
+        , threadR
         , notFoundR
         ]
 
@@ -52,7 +59,6 @@ match path =
 
         _ ->
             Route.match sitemap path
-                |> Debug.log "match"
                 |> Maybe.withDefault NotFoundR
 
 
@@ -62,8 +68,11 @@ toString r =
         HomeR ->
             reverse homeR []
 
-        CategoryR id ->
-            reverse categoryR [ id ]
+        CategoryR idOrSlug ->
+            reverse categoryR [ idOrSlug ]
+
+        ThreadR categoryIdOrSlug idOrSlug ->
+            reverse threadR [ categoryIdOrSlug, idOrSlug ]
 
         NotFoundR ->
             reverse notFoundR []

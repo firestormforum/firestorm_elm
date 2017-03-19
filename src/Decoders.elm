@@ -2,7 +2,7 @@ module Decoders
     exposing
         ( categoryDecoder
         , categoriesDecoder
-        , categoriesAndThreadsAndUsersDecoder
+        , storeUpdateDecoder
         )
 
 import Json.Decode as Decode
@@ -35,6 +35,7 @@ import Types.Category as Category
 import Types.Thread as Thread
 import Types.Post as Post
 import Types.User as User
+import Types.Store as Store exposing (StoreUpdate)
 import Dict exposing (Dict)
 
 
@@ -51,51 +52,49 @@ categoryDecoder =
         |> required "thread_ids" (list int)
 
 
-categoriesAndThreadsAndUsersDecoder : Decoder ( Dict Int Category.Model, Dict Int Thread.Model, Dict Int User.Model )
-categoriesAndThreadsAndUsersDecoder =
-    Decode.map3 (,,)
+storeUpdateDecoder : Decoder StoreUpdate
+storeUpdateDecoder =
+    Decode.map4 StoreUpdate
         categoriesDecoder
         threadsDecoder
         usersDecoder
+        postsDecoder
+
+
+toIdDict : List { a | id : Int } -> Dict Int { a | id : Int }
+toIdDict things =
+    (List.map (\u -> ( u.id, u ))
+        things
+    )
+        |> Dict.fromList
+
+
+postsDecoder : Decoder (Dict Int Post.Model)
+postsDecoder =
+    field "posts"
+        (list postDecoder)
+        |> map toIdDict
 
 
 usersDecoder : Decoder (Dict Int User.Model)
 usersDecoder =
     field "users"
         (list userDecoder)
-        |> map
-            (\users ->
-                (List.map (\u -> ( u.id, u ))
-                    users
-                )
-                    |> Dict.fromList
-            )
+        |> map toIdDict
 
 
 threadsDecoder : Decoder (Dict Int Thread.Model)
 threadsDecoder =
     field "threads"
         (list threadDecoder)
-        |> map
-            (\categories ->
-                (List.map (\c -> ( c.id, c ))
-                    categories
-                )
-                    |> Dict.fromList
-            )
+        |> map toIdDict
 
 
 categoriesDecoder : Decoder (Dict Int Category.Model)
 categoriesDecoder =
     field "categories"
         (list categoryDecoder)
-        |> map
-            (\categories ->
-                (List.map (\c -> ( c.id, c ))
-                    categories
-                )
-                    |> Dict.fromList
-            )
+        |> map toIdDict
 
 
 idDecoder : Decoder Int
@@ -108,8 +107,10 @@ threadDecoder =
     decode Thread.Model
         |> required "id" int
         |> required "title" string
+        |> optional "slug" string ""
         |> required "user_id" int
         |> required "post_ids" (list int)
+        |> required "category_id" int
 
 
 postDecoder : Decoder Post.Model
@@ -117,6 +118,9 @@ postDecoder =
     decode Post.Model
         |> required "id" int
         |> required "body" string
+        |> required "thread_id" int
+        |> required "user_id" int
+        |> required "inserted_at" string
 
 
 userDecoder : Decoder User.Model

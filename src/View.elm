@@ -7,6 +7,8 @@ import Html.Attributes exposing (..)
 import View.Layouts.App exposing (view)
 import View.Categories
 import View.Categories.Show
+import View.Threads.Show
+import Types.Store as Store
 import Routes exposing (Sitemap(..))
 import Dict
 
@@ -19,31 +21,79 @@ view model =
 
 page : Model -> Html Msg
 page model =
-    case model.route of
-        HomeR ->
-            View.Categories.view model.users model.categories model.threads
+    let
+        findCategory =
+            Store.findCategory model.store
 
-        CategoryR categoryIdOrSlug ->
-            let
-                categoryId =
-                    case String.toInt categoryIdOrSlug of
-                        Ok categoryId ->
-                            categoryId
+        findThread =
+            Store.findThread model.store
+    in
+        case model.route of
+            HomeR ->
+                View.Categories.view model.store
 
-                        Err _ ->
-                            model.categories
-                                |> Dict.filter (\k v -> v.slug == categoryIdOrSlug)
-                                |> Dict.toList
-                                |> List.map (\( k, v ) -> k)
-                                |> List.head
-                                |> Maybe.withDefault -1
-            in
-                case Model.findCategory model categoryId of
-                    Just category ->
-                        View.Categories.Show.view model.users model.threads category
+            CategoryR categoryIdOrSlug ->
+                let
+                    categoryId =
+                        getCategoryId categoryIdOrSlug model
+                in
+                    case findCategory categoryId of
+                        Just category ->
+                            View.Categories.Show.view model.store category
 
-                    Nothing ->
-                        text "404"
+                        Nothing ->
+                            text "404"
 
-        NotFoundR ->
-            text "404"
+            ThreadR categoryIdOrSlug threadIdOrSlug ->
+                let
+                    categoryId =
+                        getCategoryId categoryIdOrSlug model
+
+                    threadId =
+                        getThreadId threadIdOrSlug model
+
+                    maybeCategory =
+                        findCategory categoryId
+
+                    maybeThread =
+                        findThread threadId
+                in
+                    case ( maybeCategory, maybeThread ) of
+                        ( Just category, Just thread ) ->
+                            View.Threads.Show.view model.store thread
+
+                        _ ->
+                            text "404"
+
+            NotFoundR ->
+                text "404"
+
+
+getCategoryId : String -> Model -> Int
+getCategoryId categoryIdOrSlug model =
+    case String.toInt categoryIdOrSlug of
+        Ok categoryId ->
+            categoryId
+
+        Err _ ->
+            model.store.categories
+                |> Dict.filter (\k v -> v.slug == categoryIdOrSlug)
+                |> Dict.toList
+                |> List.map (\( k, v ) -> k)
+                |> List.head
+                |> Maybe.withDefault -1
+
+
+getThreadId : String -> Model -> Int
+getThreadId threadIdOrSlug model =
+    case String.toInt threadIdOrSlug of
+        Ok threadId ->
+            threadId
+
+        Err _ ->
+            model.store.threads
+                |> Dict.filter (\k v -> v.slug == threadIdOrSlug)
+                |> Dict.toList
+                |> List.map (\( k, v ) -> k)
+                |> List.head
+                |> Maybe.withDefault -1

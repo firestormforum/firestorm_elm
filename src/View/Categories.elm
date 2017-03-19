@@ -5,32 +5,33 @@ import Html.Attributes exposing (..)
 import Types.Category as Category
 import Types.Thread as Thread
 import Types.User as User
+import Types.Store as Store
 import Dict exposing (Dict)
 import Routes exposing (Sitemap(..))
 
 
-view : Dict Int User.Model -> Dict Int Category.Model -> Dict Int Thread.Model -> Html msg
-view users categories threads =
+view : Store.Model -> Html msg
+view store =
     div
         [ class "layout-content" ]
         [ div
             [ class "page-content" ]
             [ ol [ class "category-list" ]
-                (List.map (viewCategory users threads categories)
+                (List.map (viewCategory store)
                     (Dict.toList
-                        (Category.roots categories)
+                        (Category.roots store.categories)
                     )
                 )
             ]
         ]
 
 
-viewCategory : Dict Int User.Model -> Dict Int Thread.Model -> Dict Int Category.Model -> ( Int, Category.Model ) -> Html msg
-viewCategory users threads categories ( categoryId, category ) =
+viewCategory : Store.Model -> ( Int, Category.Model ) -> Html msg
+viewCategory store ( categoryId, category ) =
     let
         getThread : Int -> Thread.Model
         getThread threadId =
-            threads
+            store.threads
                 |> Dict.get threadId
                 |> Maybe.withDefault Thread.new
 
@@ -41,7 +42,7 @@ viewCategory users threads categories ( categoryId, category ) =
 
         getCategory : Int -> Category.Model
         getCategory categoryId =
-            categories
+            store.categories
                 |> Dict.get categoryId
                 |> Maybe.withDefault Category.new
 
@@ -62,22 +63,22 @@ viewCategory users threads categories ( categoryId, category ) =
                 ]
             , ol
                 [ class "category-list" ]
-                (List.map (viewCategory users threads categories)
+                (List.map (viewCategory store)
                     (Dict.toList
                         catChildren
                     )
                 )
             , ol
                 [ class "thread-list" ]
-                (List.map (viewThread users) catThreads)
+                (List.map (viewThread store category) catThreads)
             ]
 
 
-viewThread : Dict Int User.Model -> Thread.Model -> Html msg
-viewThread users thread =
+viewThread : Store.Model -> Category.Model -> Thread.Model -> Html msg
+viewThread store category thread =
     let
         user =
-            users
+            store.users
                 |> Dict.get thread.userId
                 |> Maybe.withDefault User.new
     in
@@ -88,7 +89,7 @@ viewThread users thread =
                 [ div
                     [ class "summary" ]
                     [ a
-                        [ href "#"
+                        [ Routes.href <| ThreadR (Category.finder category) (Thread.finder thread)
                         , class "title"
                         ]
                         [ text thread.title ]
