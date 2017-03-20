@@ -1,3 +1,6 @@
+// This is used to determine what config to load for apiBaseUrl and other things
+process.env.NODE_ENV = 'prod';
+
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const paths = require('../config/paths');
@@ -18,8 +21,8 @@ module.exports = {
     // The build folder.
     path: paths.dist,
 
-    // Append leading slash when production assets are referenced in the html.
-    publicPath: '/',
+    // we're deploying to gh-pages
+    publicPath: '/firestorm_elm/',
 
     // Generated JS files.
     filename: 'js/[name].[chunkhash:8].js'
@@ -32,7 +35,10 @@ module.exports = {
   },
   resolve: {
     modulesDirectories: [ 'node_modules' ],
-    extensions: [ '', '.js', '.elm' ]
+    extensions: [ '', '.js', '.elm' ],
+    alias: {
+      config: paths.config
+    },
   },
   module: {
     noParse: /\.elm$/,
@@ -48,14 +54,15 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?-autoprefixer!postcss')
+        test: /\.scss$/,
+        loader: 'style!css!sass!import-glob'
       },
       {
         exclude: [
           /\.html$/,
           /\.js$/,
           /\.css$/,
+          /\.scss$/,
           /\.json$/,
           /\.svg$/
         ],
@@ -97,16 +104,6 @@ module.exports = {
       dry: false
     }),
 
-    // Minify the compiled JavaScript.
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      output: {
-        comments: false
-      }
-    }),
-
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.template,
@@ -119,7 +116,6 @@ module.exports = {
         removeEmptyAttributes: true,
         removeStyleLinkTypeAttributes: true,
         keepClosingSlash: true,
-        minifyJS: true,
         minifyCSS: true,
         minifyURLs: true
       }

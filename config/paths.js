@@ -7,5 +7,6 @@ module.exports = {
   favicon: path.resolve('./src/favicon.ico'),
   ownModules: path.resolve(__dirname, '../node_modules'),
   scripts: path.resolve(__dirname, '../scripts'),
-  elmMake: path.resolve(__dirname, '../node_modules/.bin/elm-make')
+  elmMake: path.resolve(__dirname, '../node_modules/.bin/elm-make'),
+  config: path.join(__dirname, './env', process.env.NODE_ENV)
 };

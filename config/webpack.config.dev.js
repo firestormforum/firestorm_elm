@@ -1,3 +1,6 @@
+// This is used to determine what config to load for apiBaseUrl and other things
+process.env.NODE_ENV = 'dev';
+
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -36,7 +39,10 @@ module.exports = {
   },
   resolve: {
     modulesDirectories: [ 'node_modules' ],
-    extensions: [ '', '.js', '.elm' ]
+    extensions: [ '', '.js', '.elm' ],
+    alias: {
+      config: paths.config
+    },
   },
   module: {
     noParse: /\.elm$/,

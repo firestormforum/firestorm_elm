@@ -13,6 +13,8 @@ const openBrowser = require('react-dev-utils/openBrowser');
 const historyApiFallback = require('connect-history-api-fallback');
 const httpProxyMiddleware = require('http-proxy-middleware');
 
+process.env.NODE_ENV = 'development';
+
 if (fs.existsSync('elm-package.json') === false) {
   console.log('Please, run the build script from project root directory');
   process.exit(0);
