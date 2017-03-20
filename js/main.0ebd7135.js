@@ -12296,14 +12296,16 @@
 		return {ctor: 'NewData', _0: a};
 	};
 
-	var _user$project$Decoders$userDecoder = A3(
-		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+	var _user$project$Decoders$userDecoder = A4(
+		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$optional,
 		'name',
 		_elm_lang$core$Json_Decode$string,
-		A3(
-			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+		'',
+		A4(
+			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$optional,
 			'email',
 			_elm_lang$core$Json_Decode$string,
+			'',
 			A3(
 				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
 				'username',
