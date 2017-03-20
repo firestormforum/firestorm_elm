@@ -128,5 +128,5 @@ userDecoder =
     decode User.Model
         |> required "id" int
         |> required "username" string
-        |> required "email" string
-        |> required "name" string
+        |> optional "email" string ""
+        |> optional "name" string ""
