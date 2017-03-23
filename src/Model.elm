@@ -13,6 +13,7 @@ import Dict exposing (Dict)
 type alias Model =
     { store : Store.Model
     , apiBaseUrl : String
+    , wsBaseUrl : String
     , route : Sitemap
     , connectionStatus : ConnectionStatus
     , socket : Socket Msg
@@ -21,7 +22,9 @@ type alias Model =
 
 
 type alias Flags =
-    { apiBaseUrl : String }
+    { apiBaseUrl : String
+    , wsBaseUrl : String
+    }
 
 
 type ConnectionStatus
@@ -33,6 +36,7 @@ init : Flags -> Sitemap -> Model
 init flags route =
     { store = Store.new
     , apiBaseUrl = flags.apiBaseUrl
+    , wsBaseUrl = flags.wsBaseUrl
     , route = route
     , connectionStatus = Disconnected
     , socket = initialSocket
