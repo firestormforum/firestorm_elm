@@ -1,7 +1,7 @@
 module Main exposing (main)
 
 import App
-import Model exposing (Model)
+import Model exposing (Model, Flags)
 import Msg exposing (Msg(RouteChanged))
 import Navigation exposing (Location)
 import View
@@ -14,7 +14,7 @@ parseRoute =
     Routes.parseHash >> RouteChanged
 
 
-main : Program App.Flags Model Msg
+main : Program Flags Model Msg
 main =
     Navigation.programWithFlags parseRoute
         { view = View.view

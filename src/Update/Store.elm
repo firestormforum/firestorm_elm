@@ -8,6 +8,7 @@ import Types.Store as Store
         , unknownThreadIds
         , unknownPostIds
         , unknownUserIds
+        , newReplenishRequest
         )
 import Dict
 import Api.Fetch
@@ -36,6 +37,7 @@ update apiBaseUrl msg model =
                             Dict.union
                                 storeUpdate.posts
                                 model.posts
+                        , wants = newReplenishRequest
                     }
             in
                 ( nextModel
@@ -50,11 +52,13 @@ cmdFor : String -> Model -> Cmd Msg
 cmdFor apiBaseUrl model =
     let
         -- find any entities that are referenced that we don't know about
+        -- NOTE: Should make a ReplenishRequest.union function, then union this
+        -- with the wants
         replenishRequest =
-            { categories = unknownCategoryIds model
-            , threads = unknownThreadIds model
-            , posts = unknownPostIds model
-            , users = unknownUserIds model
+            { categories = (unknownCategoryIds model) ++ model.wants.categories
+            , threads = (unknownThreadIds model) ++ model.wants.threads
+            , posts = (unknownPostIds model) ++ model.wants.posts
+            , users = (unknownUserIds model) ++ model.wants.users
             }
 
         missingCounts =

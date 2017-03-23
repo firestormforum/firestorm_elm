@@ -3,9 +3,13 @@ module Api.Fetch exposing (getCategory, post)
 import Api.Helpers as AH
 import HttpBuilder exposing (withJsonBody, send, withExpect)
 import Http
-import Decoders exposing (storeUpdateDecoder)
 import Encoders exposing (encodeReplenishRequest)
-import Types.Store as Store exposing (StoreUpdate, ReplenishRequest)
+import Types.Store as Store
+    exposing
+        ( StoreUpdate
+        , ReplenishRequest
+        , storeUpdateDecoder
+        )
 import Json.Encode as Encode
 
 

@@ -9,3 +9,5 @@ type Msg
     = NoOp
     | RouteChanged Sitemap
     | StoreMsg Store.Msg
+    | RequestHomeData
+    | RequestFetch Store.ReplenishRequest

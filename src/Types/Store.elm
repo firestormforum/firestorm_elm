@@ -3,6 +3,7 @@ module Types.Store
         ( Model
         , Msg(..)
         , StoreUpdate
+        , newStoreUpdate
         , ReplenishRequest
         , findThread
         , findCategory
@@ -12,6 +13,11 @@ module Types.Store
         , unknownThreadIds
         , unknownPostIds
         , unknownUserIds
+        , fetchWants
+        , storeUpdateDecoder
+        , newReplenishRequest
+        , wants
+        , channels
         )
 
 import Types.Category as Category
@@ -19,6 +25,13 @@ import Types.Thread as Thread
 import Types.User as User
 import Types.Post as Post
 import Dict exposing (Dict)
+import Json.Encode as Encode exposing (..)
+import Json.Decode as Decode exposing (Decoder)
+import Phoenix
+import Phoenix.Push as Push exposing (Push)
+import Phoenix.Socket as Socket exposing (Socket)
+import Phoenix.Channel as Channel exposing (Channel)
+import Decoders
 
 
 type alias Model =
@@ -26,6 +39,7 @@ type alias Model =
     , threads : Dict Int Thread.Model
     , users : Dict Int User.Model
     , posts : Dict Int Post.Model
+    , wants : ReplenishRequest
     }
 
 
@@ -56,6 +70,16 @@ new =
     , threads = Dict.empty
     , users = Dict.empty
     , posts = Dict.empty
+    , wants = newReplenishRequest
+    }
+
+
+newReplenishRequest : ReplenishRequest
+newReplenishRequest =
+    { categories = []
+    , threads = []
+    , posts = []
+    , users = []
     }
 
 
@@ -165,3 +189,143 @@ unknownUserIds model =
         postUserIds
             |> List.filter (not << known)
             |> List.filter ((<) 0)
+
+
+newStoreUpdate : StoreUpdate
+newStoreUpdate =
+    { categories = Dict.empty
+    , threads = Dict.empty
+    , users = Dict.empty
+    , posts = Dict.empty
+    }
+
+
+wantsSomething : Model -> Bool
+wantsSomething model =
+    ((List.length model.wants.categories) > 1)
+        || ((List.length model.wants.threads) > 1)
+        || ((List.length model.wants.users) > 1)
+        || ((List.length model.wants.posts) > 1)
+
+
+wantsNothing : Model -> Bool
+wantsNothing =
+    not << wantsSomething
+
+
+wants : ReplenishRequest -> Model -> Model
+wants replenishRequest model =
+    -- NOTE: We want to probably merge this in and then make sure we remove it
+    -- when we get the corresponding data
+    { model
+        | wants = replenishRequest
+    }
+
+
+fetchWants : Model -> Cmd Msg
+fetchWants model =
+    if wantsNothing model then
+        Cmd.none
+    else
+        Phoenix.push "ws://localhost:4000/socket/websocket/"
+            (fetchData
+                NewData
+                model.wants
+            )
+
+
+fetchData : (StoreUpdate -> msg) -> ReplenishRequest -> Push msg
+fetchData tagger replenishRequest =
+    let
+        payload =
+            encodeReplenishRequest replenishRequest
+
+        decodingTagger : Value -> msg
+        decodingTagger v =
+            Decode.decodeValue storeUpdateDecoder v
+                |> Result.withDefault newStoreUpdate
+                |> tagger
+    in
+        Push.init "store:home" "fetch"
+            |> Push.withPayload payload
+            |> Push.onOk decodingTagger
+
+
+encodeReplenishRequest : ReplenishRequest -> Encode.Value
+encodeReplenishRequest replenishRequest =
+    object
+        [ ( "categories", intList replenishRequest.categories )
+        , ( "threads", intList replenishRequest.threads )
+        , ( "posts", intList replenishRequest.posts )
+        , ( "users", intList replenishRequest.users )
+        ]
+
+
+storeUpdateDecoder : Decoder StoreUpdate
+storeUpdateDecoder =
+    Decode.map4 StoreUpdate
+        Decoders.categoriesDecoder
+        Decoders.threadsDecoder
+        Decoders.usersDecoder
+        Decoders.postsDecoder
+
+
+intList : List Int -> Encode.Value
+intList listInts =
+    list <|
+        List.map
+            int
+            listInts
+
+
+{-| returns a list of channels for every entity in the store
+-}
+channels : (Msg -> msg) -> Model -> List (Channel msg)
+channels mapper model =
+    let
+        valToStoreUpdate val =
+            val
+                |> Decode.decodeValue storeUpdateDecoder
+                |> Result.withDefault newStoreUpdate
+                |> NewData
+
+        entityChannel entityType id =
+            Channel.init (entityType ++ ":" ++ (toString id))
+                |> Channel.on "update"
+                    valToStoreUpdate
+                |> Channel.map mapper
+                |> Channel.withDebug
+
+        categoryChannel id =
+            entityChannel "categories" id
+
+        threadChannel id =
+            entityChannel "threads" id
+
+        postChannel id =
+            entityChannel "posts" id
+
+        userChannel id =
+            entityChannel "users" id
+
+        categoryChannels =
+            model.categories
+                |> Dict.keys
+                |> List.map categoryChannel
+
+        threadChannels =
+            model.threads
+                |> Dict.keys
+                |> List.map threadChannel
+
+        postChannels =
+            model.posts
+                |> Dict.keys
+                |> List.map postChannel
+
+        userChannels =
+            model.users
+                |> Dict.keys
+                |> List.map userChannel
+    in
+        categoryChannels ++ threadChannels ++ postChannels ++ userChannels

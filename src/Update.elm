@@ -5,8 +5,19 @@ import Msg exposing (Msg(..))
 import Api.Home
 import Api.Fetch
 import Types.Store as Store
+    exposing
+        ( StoreUpdate
+        , storeUpdateDecoder
+        )
 import Update.Store
 import Routes exposing (Sitemap(..))
+import Phoenix
+import Phoenix.Socket as Socket exposing (Socket)
+import Phoenix.Channel as Channel exposing (Channel)
+import Phoenix.Push as Push
+import Dict exposing (Dict)
+import Encoders exposing (encodeReplenishRequest)
+import Json.Decode as Decode
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -27,17 +38,46 @@ update msg model =
                 , Cmd.map StoreMsg storeCmd
                 )
 
+        RequestHomeData ->
+            case homeChannelResult model of
+                Just homeChannel ->
+                    model ! [ Cmd.map StoreMsg <| Phoenix.push Model.phxSocket fetchHomeData ]
+
+                Nothing ->
+                    model ! []
+
+        RequestFetch replenishRequest ->
+            case homeChannelResult model of
+                Just homeChannel ->
+                    model ! [ Cmd.map StoreMsg <| Store.fetchWants model.store ]
+
+                Nothing ->
+                    model ! []
+
+
+decodeStore value =
+    value
+        |> Decode.decodeValue storeUpdateDecoder
+        |> Result.withDefault Store.newStoreUpdate
+
+
+fetchHomeData =
+    Push.init "store:home" "fetch_home_data"
+        |> Push.onOk (decodeStore >> Store.NewData)
+
+
+homeChannelResult : Model -> Maybe (Channel Msg)
+homeChannelResult model =
+    model.channels
+        |> Dict.get "store:home"
+
 
 handleRoute : Sitemap -> Model -> ( Model, Cmd Msg )
 handleRoute route model =
     case route of
         HomeR ->
             ( model
-            , Cmd.map StoreMsg <|
-                Api.Home.index
-                    model.apiBaseUrl
-                    Store.NewData
-                    (always Store.NoOp)
+            , Cmd.none
             )
 
         CategoryR categoryId ->
@@ -51,28 +91,37 @@ handleRoute route model =
 
         ThreadR categoryId threadId ->
             let
-                idResult =
+                id =
                     threadId
                         |> String.toInt
-            in
-                case idResult of
-                    Ok id ->
-                        ( model
-                        , Cmd.map StoreMsg <|
-                            Api.Fetch.post
-                                { categories = []
-                                , threads = [ id ]
-                                , posts = []
-                                , users = []
-                                }
-                                model.apiBaseUrl
-                                Store.NewData
-                                (always Store.NoOp)
-                        )
+                        |> Result.withDefault -1
 
-                    Err e ->
+                store =
+                    model.store
+
+                replenishRequest =
+                    { categories = []
+                    , threads = [ id ]
+                    , posts = []
+                    , users = []
+                    }
+
+                nextStore =
+                    store
+                        |> Store.wants replenishRequest
+            in
+                case id of
+                    (-1) ->
                         ( model
                         , Cmd.none
+                        )
+
+                    _ ->
+                        ( { model
+                            | store = nextStore
+                          }
+                        , Cmd.map StoreMsg <|
+                            Store.fetchWants nextStore
                         )
 
         _ ->

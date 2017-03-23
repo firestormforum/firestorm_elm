@@ -6,7 +6,7 @@ echo "============================" && \
 echo "" && \
 
 echo "1. Elm" && \
-  elm install && \
+  elm-github-install && \
 
 echo "2. yarn" && \
   yarn && \

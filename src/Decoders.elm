@@ -2,7 +2,9 @@ module Decoders
     exposing
         ( categoryDecoder
         , categoriesDecoder
-        , storeUpdateDecoder
+        , postsDecoder
+        , usersDecoder
+        , threadsDecoder
         )
 
 import Json.Decode as Decode
@@ -35,7 +37,6 @@ import Types.Category as Category
 import Types.Thread as Thread
 import Types.Post as Post
 import Types.User as User
-import Types.Store as Store exposing (StoreUpdate)
 import Dict exposing (Dict)
 
 
@@ -50,15 +51,6 @@ categoryDecoder =
         |> required "parent_id" (maybe int)
         |> required "children_ids" (list int)
         |> required "thread_ids" (list int)
-
-
-storeUpdateDecoder : Decoder StoreUpdate
-storeUpdateDecoder =
-    Decode.map4 StoreUpdate
-        categoriesDecoder
-        threadsDecoder
-        usersDecoder
-        postsDecoder
 
 
 toIdDict : List { a | id : Int } -> Dict Int { a | id : Int }

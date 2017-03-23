@@ -6,8 +6,7 @@ import Api.Helpers
         )
 import HttpBuilder exposing (withJsonBody, send, withExpect)
 import Http
-import Decoders exposing (storeUpdateDecoder)
-import Types.Store as Store exposing (StoreUpdate)
+import Types.Store as Store exposing (StoreUpdate, storeUpdateDecoder)
 
 
 index :
