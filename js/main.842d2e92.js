@@ -58,7 +58,8 @@
 	let root = document.getElementById('root')
 
 	let flags = {
-	  apiBaseUrl: config.apiBaseUrl
+	  apiBaseUrl: config.apiBaseUrl,
+	  wsBaseUrl: config.wsBaseUrl
 	}
 
 	Elm.Main.embed(root, flags)
@@ -483,7 +484,8 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-	  apiBaseUrl: "https://firestorm-dogfood.herokuapp.com/api/v1/"
+	  apiBaseUrl: "https://firestorm-dogfood.herokuapp.com/api/v1/",
+	  wsBaseUrl: "ws://firestorm-dogfood.herokuapp.com/socket/websocket"
 	}
 
 
@@ -14860,19 +14862,26 @@
 	};
 	var _user$project$Msg$NoOp = {ctor: 'NoOp'};
 
-	var _user$project$Model$phxSocket = 'ws://localhost:4000/socket/websocket';
-	var _user$project$Model$initialSocket = _saschatimme$elm_phoenix$Phoenix_Socket$init(_user$project$Model$phxSocket);
-	var _user$project$Model$Model = F6(
-		function (a, b, c, d, e, f) {
-			return {store: a, apiBaseUrl: b, route: c, connectionStatus: d, socket: e, channels: f};
+	var _user$project$Model$Model = F7(
+		function (a, b, c, d, e, f, g) {
+			return {store: a, apiBaseUrl: b, wsBaseUrl: c, route: d, connectionStatus: e, socket: f, channels: g};
 		});
-	var _user$project$Model$Flags = function (a) {
-		return {apiBaseUrl: a};
-	};
+	var _user$project$Model$Flags = F2(
+		function (a, b) {
+			return {apiBaseUrl: a, wsBaseUrl: b};
+		});
 	var _user$project$Model$Disconnected = {ctor: 'Disconnected'};
 	var _user$project$Model$init = F2(
 		function (flags, route) {
-			return {store: _user$project$Types_Store$new, apiBaseUrl: flags.apiBaseUrl, route: route, connectionStatus: _user$project$Model$Disconnected, socket: _user$project$Model$initialSocket, channels: _elm_lang$core$Dict$empty};
+			return {
+				store: _user$project$Types_Store$new,
+				apiBaseUrl: flags.apiBaseUrl,
+				wsBaseUrl: flags.wsBaseUrl,
+				route: route,
+				connectionStatus: _user$project$Model$Disconnected,
+				socket: _saschatimme$elm_phoenix$Phoenix_Socket$init(flags.wsBaseUrl),
+				channels: _elm_lang$core$Dict$empty
+			};
 		});
 	var _user$project$Model$Connected = {ctor: 'Connected'};
 
@@ -15050,7 +15059,7 @@
 								_0: A2(
 									_elm_lang$core$Platform_Cmd$map,
 									_user$project$Msg$StoreMsg,
-									A2(_saschatimme$elm_phoenix$Phoenix$push, _user$project$Model$phxSocket, _user$project$Update$fetchHomeData)),
+									A2(_saschatimme$elm_phoenix$Phoenix$push, model.wsBaseUrl, _user$project$Update$fetchHomeData)),
 								_1: {ctor: '[]'}
 							});
 					} else {
@@ -16303,8 +16312,13 @@
 		A2(
 			_elm_lang$core$Json_Decode$andThen,
 			function (apiBaseUrl) {
-				return _elm_lang$core$Json_Decode$succeed(
-					{apiBaseUrl: apiBaseUrl});
+				return A2(
+					_elm_lang$core$Json_Decode$andThen,
+					function (wsBaseUrl) {
+						return _elm_lang$core$Json_Decode$succeed(
+							{apiBaseUrl: apiBaseUrl, wsBaseUrl: wsBaseUrl});
+					},
+					A2(_elm_lang$core$Json_Decode$field, 'wsBaseUrl', _elm_lang$core$Json_Decode$string));
 			},
 			A2(_elm_lang$core$Json_Decode$field, 'apiBaseUrl', _elm_lang$core$Json_Decode$string)));
 
