@@ -99,7 +99,7 @@
 
 
 	// module
-	exports.push([module.id, "/* fira-sans-300 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"), url(" + __webpack_require__(5) + ") format(\"woff2\"), url(" + __webpack_require__(6) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-regular - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"), url(" + __webpack_require__(7) + ") format(\"woff2\"), url(" + __webpack_require__(8) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-500 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 500;\n  src: local(\"Fira Sans Medium\"), local(\"FiraSans-Medium\"), url(" + __webpack_require__(9) + ") format(\"woff2\"), url(" + __webpack_require__(10) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-600 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Fira Sans SemiBold\"), local(\"FiraSans-SemiBold\"), url(" + __webpack_require__(11) + ") format(\"woff2\"), url(" + __webpack_require__(12) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-700 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 700;\n  src: local(\"Fira Sans Bold\"), local(\"FiraSans-Bold\"), url(" + __webpack_require__(13) + ") format(\"woff2\"), url(" + __webpack_require__(14) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/*!\nPure v0.6.2\nCopyright 2013 Yahoo!\nLicensed under the BSD License.\nhttps://github.com/yahoo/pure/blob/master/LICENSE.md\n*/\n/*!\nnormalize.css v^3.0 | MIT License | git.io/normalize\nCopyright (c) Nicolas Gallagher and Jonathan Neal\n*/\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n.pure-button:focus, a:active, a:hover {\n  outline: 0; }\n\n.pure-table, table {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nhtml {\n  font-family: sans-serif;\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%; }\n\nbody {\n  margin: 0; }\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {\n  display: block; }\n\naudio, canvas, progress, video {\n  display: inline-block;\n  vertical-align: baseline; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n[hidden], template {\n  display: none; }\n\na {\n  background-color: transparent; }\n\nabbr[title] {\n  border-bottom: 1px dotted; }\n\nb, optgroup, strong {\n  font-weight: 700; }\n\ndfn {\n  font-style: italic; }\n\nh1 {\n  font-size: 2em;\n  margin: .67em 0; }\n\nmark {\n  background: #ff0;\n  color: #000; }\n\nsmall {\n  font-size: 80%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -.5em; }\n\nsub {\n  bottom: -.25em; }\n\nimg {\n  border: 0; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nfigure {\n  margin: 1em 40px; }\n\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\npre, textarea {\n  overflow: auto; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,monospace;\n  font-size: 1em; }\n\nbutton, input, optgroup, select, textarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\n.pure-button, input {\n  line-height: normal; }\n\nbutton {\n  overflow: visible; }\n\nbutton, select {\n  text-transform: none; }\n\nbutton, html input[type=button], input[type=reset], input[type=submit] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled], html input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\ninput[type=checkbox], input[type=radio] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=search] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\n.pure-button, .pure-form input:not([type]), .pure-menu {\n  box-sizing: border-box; }\n\ninput[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\nfieldset {\n  border: 1px solid silver;\n  margin: 0 2px;\n  padding: .35em .625em .75em; }\n\nlegend, td, th {\n  padding: 0; }\n\nlegend {\n  border: 0; }\n\n.hidden, [hidden] {\n  display: none !important; }\n\n.pure-img {\n  max-width: 100%;\n  height: auto;\n  display: block; }\n\n.pure-g {\n  letter-spacing: -.31em;\n  text-rendering: optimizespeed;\n  font-family: FreeSans,Arimo,\"Droid Sans\",Helvetica,Arial,sans-serif;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: row wrap;\n  -ms-flex-flow: row wrap;\n  flex-flow: row wrap;\n  -webkit-align-content: flex-start;\n  -ms-flex-line-pack: start;\n  align-content: flex-start; }\n\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  table .pure-g {\n    display: block; } }\n\n.opera-only :-o-prefocus, .pure-g {\n  word-spacing: -.43em; }\n\n.pure-u, .pure-u-1, .pure-u-1-1, .pure-u-1-12, .pure-u-1-2, .pure-u-1-24, .pure-u-1-3, .pure-u-1-4, .pure-u-1-5, .pure-u-1-6, .pure-u-1-8, .pure-u-10-24, .pure-u-11-12, .pure-u-11-24, .pure-u-12-24, .pure-u-13-24, .pure-u-14-24, .pure-u-15-24, .pure-u-16-24, .pure-u-17-24, .pure-u-18-24, .pure-u-19-24, .pure-u-2-24, .pure-u-2-3, .pure-u-2-5, .pure-u-20-24, .pure-u-21-24, .pure-u-22-24, .pure-u-23-24, .pure-u-24-24, .pure-u-3-24, .pure-u-3-4, .pure-u-3-5, .pure-u-3-8, .pure-u-4-24, .pure-u-4-5, .pure-u-5-12, .pure-u-5-24, .pure-u-5-5, .pure-u-5-6, .pure-u-5-8, .pure-u-6-24, .pure-u-7-12, .pure-u-7-24, .pure-u-7-8, .pure-u-8-24, .pure-u-9-24 {\n  letter-spacing: normal;\n  word-spacing: normal;\n  vertical-align: top;\n  text-rendering: auto;\n  display: inline-block;\n  zoom: 1; }\n\n.pure-g [class*=pure-u] {\n  font-family: sans-serif; }\n\n.pure-u-1-24 {\n  width: 4.1667%; }\n\n.pure-u-1-12, .pure-u-2-24 {\n  width: 8.3333%; }\n\n.pure-u-1-8, .pure-u-3-24 {\n  width: 12.5%; }\n\n.pure-u-1-6, .pure-u-4-24 {\n  width: 16.6667%; }\n\n.pure-u-1-5 {\n  width: 20%; }\n\n.pure-u-5-24 {\n  width: 20.8333%; }\n\n.pure-u-1-4, .pure-u-6-24 {\n  width: 25%; }\n\n.pure-u-7-24 {\n  width: 29.1667%; }\n\n.pure-u-1-3, .pure-u-8-24 {\n  width: 33.3333%; }\n\n.pure-u-3-8, .pure-u-9-24 {\n  width: 37.5%; }\n\n.pure-u-2-5 {\n  width: 40%; }\n\n.pure-u-10-24, .pure-u-5-12 {\n  width: 41.6667%; }\n\n.pure-u-11-24 {\n  width: 45.8333%; }\n\n.pure-u-1-2, .pure-u-12-24 {\n  width: 50%; }\n\n.pure-u-13-24 {\n  width: 54.1667%; }\n\n.pure-u-14-24, .pure-u-7-12 {\n  width: 58.3333%; }\n\n.pure-u-3-5 {\n  width: 60%; }\n\n.pure-u-15-24, .pure-u-5-8 {\n  width: 62.5%; }\n\n.pure-u-16-24, .pure-u-2-3 {\n  width: 66.6667%; }\n\n.pure-u-17-24 {\n  width: 70.8333%; }\n\n.pure-u-18-24, .pure-u-3-4 {\n  width: 75%; }\n\n.pure-u-19-24 {\n  width: 79.1667%; }\n\n.pure-u-4-5 {\n  width: 80%; }\n\n.pure-u-20-24, .pure-u-5-6 {\n  width: 83.3333%; }\n\n.pure-u-21-24, .pure-u-7-8 {\n  width: 87.5%; }\n\n.pure-u-11-12, .pure-u-22-24 {\n  width: 91.6667%; }\n\n.pure-u-23-24 {\n  width: 95.8333%; }\n\n.pure-u-1, .pure-u-1-1, .pure-u-24-24, .pure-u-5-5 {\n  width: 100%; }\n\n.pure-button {\n  display: inline-block;\n  zoom: 1;\n  white-space: nowrap;\n  vertical-align: middle;\n  text-align: center;\n  cursor: pointer;\n  -webkit-user-drag: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none; }\n\n.pure-button::-moz-focus-inner {\n  padding: 0;\n  border: 0; }\n\n.pure-button-group {\n  letter-spacing: -.31em;\n  text-rendering: optimizespeed; }\n\n.opera-only :-o-prefocus, .pure-button-group {\n  word-spacing: -.43em; }\n\n.pure-button {\n  font-family: inherit;\n  font-size: 100%;\n  padding: .5em 1em;\n  color: #444;\n  color: rgba(0, 0, 0, 0.8);\n  border: 1px solid #999;\n  border: transparent;\n  background-color: #E6E6E6;\n  text-decoration: none;\n  border-radius: 2px; }\n\n.pure-button-hover, .pure-button:focus, .pure-button:hover {\n  filter: alpha(opacity=90);\n  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));\n  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }\n\n.pure-button-active, .pure-button:active {\n  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;\n  border-color: #000\\9; }\n\n.pure-button-disabled, .pure-button-disabled:active, .pure-button-disabled:focus, .pure-button-disabled:hover, .pure-button[disabled] {\n  border: none;\n  background-image: none;\n  filter: alpha(opacity=40);\n  opacity: .4;\n  cursor: not-allowed;\n  box-shadow: none;\n  pointer-events: none; }\n\n.pure-button-hidden {\n  display: none; }\n\n.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {\n  background-color: #0078e7;\n  color: #fff; }\n\n.pure-button-group .pure-button {\n  letter-spacing: normal;\n  word-spacing: normal;\n  vertical-align: top;\n  text-rendering: auto;\n  margin: 0;\n  border-radius: 0;\n  border-right: 1px solid #111;\n  border-right: 1px solid rgba(0, 0, 0, 0.2); }\n\n.pure-button-group .pure-button:first-child {\n  border-top-left-radius: 2px;\n  border-bottom-left-radius: 2px; }\n\n.pure-button-group .pure-button:last-child {\n  border-top-right-radius: 2px;\n  border-bottom-right-radius: 2px;\n  border-right: none; }\n\n.pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=tel], .pure-form input[type=color], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=text], .pure-form select, .pure-form textarea {\n  padding: .5em .6em;\n  display: inline-block;\n  border: 1px solid #ccc;\n  box-shadow: inset 0 1px 3px #ddd;\n  border-radius: 4px;\n  vertical-align: middle;\n  box-sizing: border-box; }\n\n.pure-form input:not([type]) {\n  padding: .5em .6em;\n  display: inline-block;\n  border: 1px solid #ccc;\n  box-shadow: inset 0 1px 3px #ddd;\n  border-radius: 4px; }\n\n.pure-form input[type=color] {\n  padding: .2em .5em; }\n\n.pure-form input:not([type]):focus, .pure-form input[type=password]:focus, .pure-form input[type=email]:focus, .pure-form input[type=url]:focus, .pure-form input[type=date]:focus, .pure-form input[type=month]:focus, .pure-form input[type=time]:focus, .pure-form input[type=datetime]:focus, .pure-form input[type=datetime-local]:focus, .pure-form input[type=week]:focus, .pure-form input[type=tel]:focus, .pure-form input[type=color]:focus, .pure-form input[type=number]:focus, .pure-form input[type=search]:focus, .pure-form input[type=text]:focus, .pure-form select:focus, .pure-form textarea:focus {\n  outline: 0;\n  border-color: #129FEA; }\n\n.pure-form input[type=file]:focus, .pure-form input[type=checkbox]:focus, .pure-form input[type=radio]:focus {\n  outline: #129FEA auto 1px; }\n\n.pure-form .pure-checkbox, .pure-form .pure-radio {\n  margin: .5em 0;\n  display: block; }\n\n.pure-form input:not([type])[disabled], .pure-form input[type=password][disabled], .pure-form input[type=email][disabled], .pure-form input[type=url][disabled], .pure-form input[type=date][disabled], .pure-form input[type=month][disabled], .pure-form input[type=time][disabled], .pure-form input[type=datetime][disabled], .pure-form input[type=datetime-local][disabled], .pure-form input[type=week][disabled], .pure-form input[type=tel][disabled], .pure-form input[type=color][disabled], .pure-form input[type=number][disabled], .pure-form input[type=search][disabled], .pure-form input[type=text][disabled], .pure-form select[disabled], .pure-form textarea[disabled] {\n  cursor: not-allowed;\n  background-color: #eaeded;\n  color: #cad2d3; }\n\n.pure-form input[readonly], .pure-form select[readonly], .pure-form textarea[readonly] {\n  background-color: #eee;\n  color: #777;\n  border-color: #ccc; }\n\n.pure-form input:focus:invalid, .pure-form select:focus:invalid, .pure-form textarea:focus:invalid {\n  color: #b94a48;\n  border-color: #e9322d; }\n\n.pure-form input[type=file]:focus:invalid:focus, .pure-form input[type=checkbox]:focus:invalid:focus, .pure-form input[type=radio]:focus:invalid:focus {\n  outline-color: #e9322d; }\n\n.pure-form select {\n  height: 2.25em;\n  border: 1px solid #ccc;\n  background-color: #fff; }\n\n.pure-form select[multiple] {\n  height: auto; }\n\n.pure-form label {\n  margin: .5em 0 .2em; }\n\n.pure-form fieldset {\n  margin: 0;\n  padding: .35em 0 .75em;\n  border: 0; }\n\n.pure-form legend {\n  display: block;\n  width: 100%;\n  padding: .3em 0;\n  margin-bottom: .3em;\n  color: #333;\n  border-bottom: 1px solid #e5e5e5; }\n\n.pure-form-stacked input:not([type]), .pure-form-stacked input[type=password], .pure-form-stacked input[type=email], .pure-form-stacked input[type=url], .pure-form-stacked input[type=date], .pure-form-stacked input[type=month], .pure-form-stacked input[type=time], .pure-form-stacked input[type=datetime], .pure-form-stacked input[type=datetime-local], .pure-form-stacked input[type=week], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=color], .pure-form-stacked input[type=file], .pure-form-stacked input[type=number], .pure-form-stacked input[type=search], .pure-form-stacked input[type=text], .pure-form-stacked label, .pure-form-stacked select, .pure-form-stacked textarea {\n  display: block;\n  margin: .25em 0; }\n\n.pure-form-aligned .pure-help-inline, .pure-form-aligned input, .pure-form-aligned select, .pure-form-aligned textarea, .pure-form-message-inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n.pure-form-aligned textarea {\n  vertical-align: top; }\n\n.pure-form-aligned .pure-control-group {\n  margin-bottom: .5em; }\n\n.pure-form-aligned .pure-control-group label {\n  text-align: right;\n  display: inline-block;\n  vertical-align: middle;\n  width: 10em;\n  margin: 0 1em 0 0; }\n\n.pure-form-aligned .pure-controls {\n  margin: 1.5em 0 0 11em; }\n\n.pure-form .pure-input-rounded, .pure-form input.pure-input-rounded {\n  border-radius: 2em;\n  padding: .5em 1em; }\n\n.pure-form .pure-group fieldset {\n  margin-bottom: 10px; }\n\n.pure-form .pure-group input, .pure-form .pure-group textarea {\n  display: block;\n  padding: 10px;\n  margin: 0 0 -1px;\n  border-radius: 0;\n  position: relative;\n  top: -1px; }\n\n.pure-form .pure-group input:focus, .pure-form .pure-group textarea:focus {\n  z-index: 3; }\n\n.pure-form .pure-group input:first-child, .pure-form .pure-group textarea:first-child {\n  top: 1px;\n  border-radius: 4px 4px 0 0;\n  margin: 0; }\n\n.pure-form .pure-group input:first-child:last-child, .pure-form .pure-group textarea:first-child:last-child {\n  top: 1px;\n  border-radius: 4px;\n  margin: 0; }\n\n.pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {\n  top: -2px;\n  border-radius: 0 0 4px 4px;\n  margin: 0; }\n\n.pure-form .pure-group button {\n  margin: .35em 0; }\n\n.pure-form .pure-input-1 {\n  width: 100%; }\n\n.pure-form .pure-input-3-4 {\n  width: 75%; }\n\n.pure-form .pure-input-2-3 {\n  width: 66%; }\n\n.pure-form .pure-input-1-2 {\n  width: 50%; }\n\n.pure-form .pure-input-1-3 {\n  width: 33%; }\n\n.pure-form .pure-input-1-4 {\n  width: 25%; }\n\n.pure-form .pure-help-inline, .pure-form-message-inline {\n  display: inline-block;\n  padding-left: .3em;\n  color: #666;\n  vertical-align: middle;\n  font-size: .875em; }\n\n.pure-form-message {\n  display: block;\n  color: #666;\n  font-size: .875em; }\n\n@media only screen and (max-width: 480px) {\n  .pure-form button[type=submit] {\n    margin: .7em 0 0; }\n  .pure-form input:not([type]), .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=tel], .pure-form input[type=color], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=text], .pure-form label {\n    margin-bottom: .3em;\n    display: block; }\n  .pure-group input:not([type]), .pure-group input[type=password], .pure-group input[type=email], .pure-group input[type=url], .pure-group input[type=date], .pure-group input[type=month], .pure-group input[type=time], .pure-group input[type=datetime], .pure-group input[type=datetime-local], .pure-group input[type=week], .pure-group input[type=tel], .pure-group input[type=color], .pure-group input[type=number], .pure-group input[type=search], .pure-group input[type=text] {\n    margin-bottom: 0; }\n  .pure-form-aligned .pure-control-group label {\n    margin-bottom: .3em;\n    text-align: left;\n    display: block;\n    width: 100%; }\n  .pure-form-aligned .pure-controls {\n    margin: 1.5em 0 0; }\n  .pure-form .pure-help-inline, .pure-form-message, .pure-form-message-inline {\n    display: block;\n    font-size: .75em;\n    padding: .2em 0 .8em; } }\n\n.pure-menu-fixed {\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 3; }\n\n.pure-menu-item, .pure-menu-list {\n  position: relative; }\n\n.pure-menu-list {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.pure-menu-item {\n  padding: 0;\n  margin: 0;\n  height: 100%; }\n\n.pure-menu-heading, .pure-menu-link {\n  display: block;\n  text-decoration: none;\n  white-space: nowrap; }\n\n.pure-menu-horizontal {\n  width: 100%;\n  white-space: nowrap; }\n\n.pure-menu-horizontal .pure-menu-list {\n  display: inline-block; }\n\n.pure-menu-horizontal .pure-menu-heading, .pure-menu-horizontal .pure-menu-item, .pure-menu-horizontal .pure-menu-separator {\n  display: inline-block;\n  zoom: 1;\n  vertical-align: middle; }\n\n.pure-menu-item .pure-menu-item {\n  display: block; }\n\n.pure-menu-children {\n  display: none;\n  position: absolute;\n  left: 100%;\n  top: 0;\n  margin: 0;\n  padding: 0;\n  z-index: 3; }\n\n.pure-menu-horizontal .pure-menu-children {\n  left: 0;\n  top: auto;\n  width: inherit; }\n\n.pure-menu-active > .pure-menu-children, .pure-menu-allow-hover:hover > .pure-menu-children {\n  display: block;\n  position: absolute; }\n\n.pure-menu-has-children > .pure-menu-link:after {\n  padding-left: .5em;\n  content: \"\\25B8\";\n  font-size: small; }\n\n.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {\n  content: \"\\25BE\"; }\n\n.pure-menu-scrollable {\n  overflow-y: scroll;\n  overflow-x: hidden; }\n\n.pure-menu-scrollable .pure-menu-list {\n  display: block; }\n\n.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list {\n  display: inline-block; }\n\n.pure-menu-horizontal.pure-menu-scrollable {\n  white-space: nowrap;\n  overflow-y: hidden;\n  overflow-x: auto;\n  -ms-overflow-style: none;\n  -webkit-overflow-scrolling: touch;\n  padding: .5em 0; }\n\n.pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar {\n  display: none; }\n\n.pure-menu-horizontal .pure-menu-children .pure-menu-separator, .pure-menu-separator {\n  background-color: #ccc;\n  height: 1px;\n  margin: .3em 0; }\n\n.pure-menu-horizontal .pure-menu-separator {\n  width: 1px;\n  height: 1.3em;\n  margin: 0 .3em; }\n\n.pure-menu-horizontal .pure-menu-children .pure-menu-separator {\n  display: block;\n  width: auto; }\n\n.pure-menu-heading {\n  text-transform: uppercase;\n  color: #565d64; }\n\n.pure-menu-link {\n  color: #777; }\n\n.pure-menu-children {\n  background-color: #fff; }\n\n.pure-menu-disabled, .pure-menu-heading, .pure-menu-link {\n  padding: .5em 1em; }\n\n.pure-menu-disabled {\n  opacity: .5; }\n\n.pure-menu-disabled .pure-menu-link:hover {\n  background-color: transparent; }\n\n.pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {\n  background-color: #eee; }\n\n.pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {\n  color: #000; }\n\n.pure-table {\n  empty-cells: show;\n  border: 1px solid #cbcbcb; }\n\n.pure-table caption {\n  color: #000;\n  font: italic 85%/1 arial,sans-serif;\n  padding: 1em 0;\n  text-align: center; }\n\n.pure-table td, .pure-table th {\n  border-left: 1px solid #cbcbcb;\n  border-width: 0 0 0 1px;\n  font-size: inherit;\n  margin: 0;\n  overflow: visible;\n  padding: .5em 1em; }\n\n.pure-table td:first-child, .pure-table th:first-child {\n  border-left-width: 0; }\n\n.pure-table thead {\n  background-color: #e0e0e0;\n  color: #000;\n  text-align: left;\n  vertical-align: bottom; }\n\n.pure-table td {\n  background-color: transparent; }\n\n.pure-table-odd td, .pure-table-striped tr:nth-child(2n-1) td {\n  background-color: #f2f2f2; }\n\n.pure-table-bordered td {\n  border-bottom: 1px solid #cbcbcb; }\n\n.pure-table-bordered tbody > tr:last-child > td {\n  border-bottom-width: 0; }\n\n.pure-table-horizontal td, .pure-table-horizontal th {\n  border-width: 0 0 1px;\n  border-bottom: 1px solid #cbcbcb; }\n\n.pure-table-horizontal tbody > tr:last-child > td {\n  border-bottom-width: 0; }\n\n/**************\n## Animation ##\n**************/\n/************\n## Toggler ##\n************/\n/***********\n## Drawer ##\n***********/\n/***********\n## Pusher ##\n***********/\n/*******************\n## Pusher Overlay ##\n*******************/\n/**************\n## Variables ##\n **************/\n/*************\n## Required ##\n *************/\nhtml, body {\n  height: 100%; }\n\nbody {\n  margin: 0; }\n\n/**************\n## Container ##\n **************/\n.pure-container {\n  position: relative;\n  height: 100%;\n  -webkit-overflow-scrolling: touch; }\n\n/************\n## Toggler ##\n ************/\n.pure-toggle {\n  left: -9999px;\n  position: absolute;\n  top: -9999px; }\n  .pure-toggle:focus ~ .pure-toggle-label {\n    color: #DB3440; }\n\n.pure-toggle-label {\n  display: none;\n  cursor: pointer;\n  display: block;\n  position: fixed;\n  top: 15px;\n  z-index: 99;\n  color: #444444;\n  width: 50px;\n  height: 50px;\n  transition: all 400ms ease-in-out;\n  border-radius: 50%;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  -o-user-select: none;\n  user-select: none;\n  -webkit-tap-highlight-color: transparent; }\n  .pure-toggle-label:hover {\n    color: #DB3440; }\n    .pure-toggle-label:hover .pure-toggle-icon,\n    .pure-toggle-label:hover .pure-toggle-icon:before,\n    .pure-toggle-label:hover .pure-toggle-icon:after {\n      background-color: #DB3440; }\n  .pure-toggle-label:active {\n    -webkit-tap-highlight-color: transparent; }\n  .pure-toggle-label .pure-toggle-icon,\n  .pure-toggle-label .pure-toggle-icon:before,\n  .pure-toggle-label .pure-toggle-icon:after {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    height: 3px;\n    width: 30px;\n    cursor: pointer;\n    background: #444444;\n    display: block;\n    content: '';\n    transition: all 500ms ease-in-out; }\n  .pure-toggle-label .pure-toggle-icon {\n    transform: translate3d(-50%, -4px, 0);\n    -webkit-transform: translate3d(-50%, -4px, 0); }\n  .pure-toggle-label .pure-toggle-icon:before {\n    transform: translate3d(-50%, -12px, 0);\n    -webkit-transform: translate3d(-50%, -12px, 0); }\n  .pure-toggle-label .pure-toggle-icon:after {\n    transform: translate3d(-50%, 8px, 0);\n    -webkit-transform: translate3d(-50%, 8px, 0); }\n\n.pure-toggle-label[data-toggle-label='left'] {\n  left: 15px;\n  right: auto; }\n\n.pure-toggle-label[data-toggle-label='right'] {\n  right: 15px;\n  left: auto; }\n\n.pure-toggle-label[data-toggle-label='top'] {\n  left: 50%;\n  -webkit-transform: translate3d(-50%, 0, 0);\n  transform: translate3d(-50%, 0, 0); }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label:not([data-toggle-label='left']),\n.pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label:not([data-toggle-label='right']),\n.pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label:not([data-toggle-label='top']) {\n  opacity: 0;\n  z-index: -1; }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'],\n.pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'],\n.pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] {\n  color: #DB3440; }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon {\n    background-color: transparent; }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:before, .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:after {\n    top: 0; }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:before {\n    transform: translateX(-50%) rotate(45deg);\n    -webkit-transform: translateX(-50%) rotate(45deg); }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:after {\n    transform: translateX(-50%) translateY(-10px) rotate(-45deg);\n    -webkit-transform: translateX(-50%) translateY(-10px) rotate(-45deg);\n    top: 10px; }\n\n/***********\n## Drawer ##\n ***********/\n.pure-drawer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  height: 100%;\n  visibility: hidden;\n  background-color: #ffffff;\n  transition-property: all;\n  transition-duration: 500ms;\n  transition-timing-function: ease-out;\n  width: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-drawer {\n      width: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-drawer {\n      width: 300px; } }\n\n.pure-drawer[data-position='right'] {\n  left: auto;\n  right: 0; }\n\n.pure-drawer[data-position='top'] {\n  height: 100%;\n  width: 100%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-drawer[data-position='top'] {\n      height: 100%; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-drawer[data-position='top'] {\n      height: 100px; } }\n\n/*********************\n## Pusher Container ##\n *********************/\n.pure-pusher-container {\n  position: relative;\n  height: 100%;\n  overflow: hidden; }\n\n/***********\n## Pusher ##\n ***********/\n.pure-pusher {\n  position: relative;\n  height: 100%;\n  overflow-y: auto;\n  left: 0;\n  z-index: 2;\n  background-color: #fff;\n  transition-property: transform;\n  transition-duration: 500ms;\n  transition-timing-function: ease-out; }\n\n/*******************\n## Pusher Overlay ##\n *******************/\n.pure-overlay {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 0;\n  height: 0;\n  opacity: 0;\n  background-color: rgba(0, 0, 0, 0.4);\n  transition-property: opacity;\n  transition-duration: 500ms;\n  transition-delay: 500ms;\n  transition-timing-function: ease-in-out; }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'] {\n  left: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'] {\n      left: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'] {\n      left: 300px; } }\n\n.pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'] {\n  right: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'] {\n      right: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'] {\n      right: 300px; } }\n\n.pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n  top: 100%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n      top: 100%; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n      top: 100px; } }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'],\n.pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'],\n.pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n  width: 100%;\n  height: 100%;\n  opacity: 1;\n  z-index: 2; }\n\n/********************************\n## Fallback for older browsers ##\n ********************************/\n.no-csstransforms3d .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  left: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      left: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      left: 300px; } }\n\n.no-csstransforms3d .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  left: -80%; }\n  @media only screen and (min-width: 40.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      left: -300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      left: -300px; } }\n\n.no-csstransforms3d .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  top: 100%; }\n  @media only screen and (min-width: 40.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      top: 100%; } }\n  @media only screen and (min-width: 64.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      top: 100px; } }\n\n/*****************************\n## Effect - Slide in on top ##\n*****************************/\n/* DRAWER */\n[data-effect='pure-effect-slide'] .pure-drawer {\n  z-index: 3;\n  transition-duration: 350ms; }\n\n[data-effect='pure-effect-slide'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-slide'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-slide'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* OVERLAY */\n[data-effect='pure-effect-slide'] .pure-overlay {\n  transition-duration: 350ms;\n  transition-delay: 175ms; }\n\n/********************\n## Effect - Reveal ##\n********************/\n/* DRAWER */\n[data-effect='pure-effect-reveal'] .pure-drawer {\n  visibility: visible;\n  transition-duration: 500ms; }\n\n/* PUSHER */\n[data-effect='pure-effect-reveal'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-reveal'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*************************\n## Effect - Slide along ##\n*************************/\n/* DRAWER */\n[data-effect='pure-effect-slideAlong'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-slideAlong'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-50%, 0, 0);\n  transform: translate3d(-50%, 0, 0); }\n\n[data-effect='pure-effect-slideAlong'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(50%, 0, 0);\n  transform: translate3d(50%, 0, 0); }\n\n[data-effect='pure-effect-slideAlong'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -50%, 0);\n  transform: translate3d(0, -50%, 0); }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-slideAlong'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-slideAlong'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*******************************\n## Effect - Reverse slide out ##\n*******************************/\n/* DRAWER */\n[data-effect='pure-effect-reverseSlide'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-reverseSlide'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(50%, 0, 0);\n  transform: translate3d(50%, 0, 0); }\n\n[data-effect='pure-effect-reverseSlide'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(-50%, 0, 0);\n  transform: translate3d(-50%, 0, 0); }\n\n[data-effect='pure-effect-reverseSlide'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, 50%, 0);\n  transform: translate3d(0, 50%, 0); }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-reverseSlide'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-reverseSlide'] .pure-overlay {\n  transition-duration: 500ms; }\n\n/*********************************\n## Effect 5 - Scale Down Pusher ##\n*********************************/\n/* DRAWER */\n[data-effect='pure-effect-scaleDown'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleDown'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-scaleDown'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-scaleDown'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-scaleDown'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-scaleDown'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-scaleDown'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER CONTAINER */\n[data-effect='pure-effect-scaleDown'] .pure-pusher-container {\n  -webkit-perspective: 1500px;\n  perspective: 1500px; }\n\n/* PUSHER */\n/* Needed for Firefox */\n[data-effect='pure-effect-scaleDown'] .pure-pusher-container .pure-pusher {\n  z-index: 1;\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleDown'] .pure-toggle:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 0, -300px);\n  transform: translate3d(0, 0, -300px); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleDown'] .pure-toggle:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleDown'] .pure-toggle:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-scaleDown'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*************************\n## Effect - Scale Up ##\n*************************/\n/* CONTAINER */\n[data-effect='pure-effect-scaleUp'] {\n  -webkit-perspective: 1500px;\n  perspective: 1500px; }\n\n[data-effect='pure-effect-scaleUp'][data-position='left'] {\n  -webkit-perspective-origin: 0% 50%;\n  perspective-origin: 0% 50%; }\n\n[data-effect='pure-effect-scaleUp'][data-position='right'] {\n  -webkit-perspective-origin: 50% 50%;\n  perspective-origin: 50% 50%; }\n\n[data-effect='pure-effect-scaleUp'][data-position='top'] {\n  -webkit-perspective-origin: 50% 0;\n  perspective-origin: 50% 0; }\n\n/* DRAWER */\n[data-effect='pure-effect-scaleUp'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(0, 0, -80%);\n  transform: translate3d(0, 0, -80%); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='left'] {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='left'] {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(80%, 0, -80%);\n  transform: translate3d(80%, 0, -80%); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='right'] {\n      -webkit-transform: translate3d(300px, 0, -300px);\n      transform: translate3d(300px, 0, -300px); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='right'] {\n      -webkit-transform: translate3d(300px, 0, -300px);\n      transform: translate3d(300px, 0, -300px); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, 0, -100%);\n  transform: translate3d(0, 0, -100%); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='top'] {\n      -webkit-transform: translate3d(0, 0, -100%);\n      transform: translate3d(0, 0, -100%); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='top'] {\n      -webkit-transform: translate3d(0, 0, -100px);\n      transform: translate3d(0, 0, -100px); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-scaleUp'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-scaleUp'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/****************************************\n## Effect - Scale and Rotate Pusher ##\n****************************************/\n/* DRAWER */\n[data-effect='pure-effect-scaleRotate'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleRotate'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER CONTAINER */\n[data-effect='pure-effect-scaleRotate'] .pure-pusher-container {\n  -webkit-perspective: 1500px;\n  perspective: 1500px; }\n\n/* PUSHER */\n[data-effect='pure-effect-scaleRotate'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(100px, 0, -600px) rotateY(-20deg);\n  transform: translate3d(100px, 0, -600px) rotateY(-20deg); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(100px, 0, -600px) rotateY(20deg);\n  transform: translate3d(100px, 0, -600px) rotateY(20deg); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 0, -100px) rotateX(20deg);\n  transform: translate3d(0, 0, -100px) rotateX(20deg); }\n\n/* OVERLAY */\n[data-effect='pure-effect-scaleRotate'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/**************************\n## Effect - Fall in ##\n**************************/\n/* DRAWER */\n[data-effect='pure-effect-fall'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-fall'] .pure-drawer[data-position='left'],\n[data-effect='pure-effect-fall'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-fall'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transition-timing-function: ease-in-out;\n  transition-timing-function: ease-in-out;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: transform;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-fall'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-fall'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*********************\n## Effect - Push ##\n*********************/\n/* DRAWER */\n[data-effect='pure-effect-push'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-push'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-push'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-push'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-push'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-push'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/********************\n## Effect - Bounce ##\n********************/\n/* DRAWER */\n[data-effect=\"pure-effect-bounce\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-bounce\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/******************\n## Effect - Fade ##\n******************/\n/* DRAWER */\n[data-effect=\"pure-effect-fade\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-fade\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/*******************\n## Effect - FlipX ##\n*******************/\n/* DRAWER */\n[data-effect=\"pure-effect-flipX\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-flipX\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/*******************\n## Effect - FlipY ##\n*******************/\n/* DRAWER */\n[data-effect=\"pure-effect-flipY\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-flipY\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/******************\n## Effect - Zoom ##\n******************/\n/* DRAWER */\n[data-effect=\"pure-effect-zoom\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-zoom\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/*!\nAnimate.css - http://daneden.me/animate\nLicensed under the MIT license - http://opensource.org/licenses/MIT\n\nCopyright (c) 2014 Daniel Eden\n*/\n.animated {\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n.animated.infinite {\n  -webkit-animation-iteration-count: infinite;\n  animation-iteration-count: infinite; }\n\n.animated.hinge {\n  -webkit-animation-duration: 2s;\n  animation-duration: 2s; }\n\n@-webkit-keyframes bounce {\n  0%, 20%, 53%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  40%, 43% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -30px, 0);\n    transform: translate3d(0, -30px, 0); }\n  70% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -15px, 0);\n    transform: translate3d(0, -15px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -4px, 0);\n    transform: translate3d(0, -4px, 0); } }\n\n@keyframes bounce {\n  0%, 20%, 53%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  40%, 43% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -30px, 0);\n    transform: translate3d(0, -30px, 0); }\n  70% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -15px, 0);\n    transform: translate3d(0, -15px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -4px, 0);\n    transform: translate3d(0, -4px, 0); } }\n\n.bounce {\n  -webkit-animation-name: bounce;\n  animation-name: bounce;\n  -webkit-transform-origin: center bottom;\n  -ms-transform-origin: center bottom;\n  transform-origin: center bottom; }\n\n@-webkit-keyframes flash {\n  0%, 50%, 100% {\n    opacity: 1; }\n  25%, 75% {\n    opacity: 0; } }\n\n@keyframes flash {\n  0%, 50%, 100% {\n    opacity: 1; }\n  25%, 75% {\n    opacity: 0; } }\n\n.flash {\n  -webkit-animation-name: flash;\n  animation-name: flash; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes pulse {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.pulse {\n  -webkit-animation-name: pulse;\n  animation-name: pulse; }\n\n@-webkit-keyframes rubberBand {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  30% {\n    -webkit-transform: scale3d(1.25, 0.75, 1);\n    transform: scale3d(1.25, 0.75, 1); }\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1); }\n  50% {\n    -webkit-transform: scale3d(1.15, 0.85, 1);\n    transform: scale3d(1.15, 0.85, 1); }\n  65% {\n    -webkit-transform: scale3d(0.95, 1.05, 1);\n    transform: scale3d(0.95, 1.05, 1); }\n  75% {\n    -webkit-transform: scale3d(1.05, 0.95, 1);\n    transform: scale3d(1.05, 0.95, 1); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes rubberBand {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  30% {\n    -webkit-transform: scale3d(1.25, 0.75, 1);\n    transform: scale3d(1.25, 0.75, 1); }\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1); }\n  50% {\n    -webkit-transform: scale3d(1.15, 0.85, 1);\n    transform: scale3d(1.15, 0.85, 1); }\n  65% {\n    -webkit-transform: scale3d(0.95, 1.05, 1);\n    transform: scale3d(0.95, 1.05, 1); }\n  75% {\n    -webkit-transform: scale3d(1.05, 0.95, 1);\n    transform: scale3d(1.05, 0.95, 1); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.rubberBand {\n  -webkit-animation-name: rubberBand;\n  animation-name: rubberBand; }\n\n@-webkit-keyframes shake {\n  0%, 100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  10%, 30%, 50%, 70%, 90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  20%, 40%, 60%, 80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); } }\n\n@keyframes shake {\n  0%, 100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  10%, 30%, 50%, 70%, 90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  20%, 40%, 60%, 80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); } }\n\n.shake {\n  -webkit-animation-name: shake;\n  animation-name: shake; }\n\n@-webkit-keyframes swing {\n  20% {\n    -webkit-transform: rotate3d(0, 0, 1, 15deg);\n    transform: rotate3d(0, 0, 1, 15deg); }\n  40% {\n    -webkit-transform: rotate3d(0, 0, 1, -10deg);\n    transform: rotate3d(0, 0, 1, -10deg); }\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 5deg);\n    transform: rotate3d(0, 0, 1, 5deg); }\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, -5deg);\n    transform: rotate3d(0, 0, 1, -5deg); }\n  100% {\n    -webkit-transform: rotate3d(0, 0, 1, 0deg);\n    transform: rotate3d(0, 0, 1, 0deg); } }\n\n@keyframes swing {\n  20% {\n    -webkit-transform: rotate3d(0, 0, 1, 15deg);\n    transform: rotate3d(0, 0, 1, 15deg); }\n  40% {\n    -webkit-transform: rotate3d(0, 0, 1, -10deg);\n    transform: rotate3d(0, 0, 1, -10deg); }\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 5deg);\n    transform: rotate3d(0, 0, 1, 5deg); }\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, -5deg);\n    transform: rotate3d(0, 0, 1, -5deg); }\n  100% {\n    -webkit-transform: rotate3d(0, 0, 1, 0deg);\n    transform: rotate3d(0, 0, 1, 0deg); } }\n\n.swing {\n  -webkit-transform-origin: top center;\n  -ms-transform-origin: top center;\n  transform-origin: top center;\n  -webkit-animation-name: swing;\n  animation-name: swing; }\n\n@-webkit-keyframes tada {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  10%, 20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }\n  30%, 50%, 70%, 90% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }\n  40%, 60%, 80% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes tada {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  10%, 20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }\n  30%, 50%, 70%, 90% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }\n  40%, 60%, 80% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.tada {\n  -webkit-animation-name: tada;\n  animation-name: tada; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes wobble {\n  0% {\n    -webkit-transform: none;\n    transform: none; }\n  15% {\n    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }\n  30% {\n    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }\n  45% {\n    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }\n  60% {\n    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }\n  75% {\n    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes wobble {\n  0% {\n    -webkit-transform: none;\n    transform: none; }\n  15% {\n    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }\n  30% {\n    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }\n  45% {\n    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }\n  60% {\n    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }\n  75% {\n    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.wobble {\n  -webkit-animation-name: wobble;\n  animation-name: wobble; }\n\n@-webkit-keyframes bounceIn {\n  0%, 20%, 40%, 60%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  20% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  40% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.03, 1.03, 1.03);\n    transform: scale3d(1.03, 1.03, 1.03); }\n  80% {\n    -webkit-transform: scale3d(0.97, 0.97, 0.97);\n    transform: scale3d(0.97, 0.97, 0.97); }\n  100% {\n    opacity: 1;\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes bounceIn {\n  0%, 20%, 40%, 60%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  20% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  40% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.03, 1.03, 1.03);\n    transform: scale3d(1.03, 1.03, 1.03); }\n  80% {\n    -webkit-transform: scale3d(0.97, 0.97, 0.97);\n    transform: scale3d(0.97, 0.97, 0.97); }\n  100% {\n    opacity: 1;\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.bounceIn {\n  -webkit-animation-name: bounceIn;\n  animation-name: bounceIn;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s; }\n\n@-webkit-keyframes bounceInDown {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes bounceInDown {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.bounceInDown, [data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-animation-name: bounceInDown;\n  animation-name: bounceInDown; }\n\n@-webkit-keyframes bounceInLeft {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n    transform: translate3d(-3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n    transform: translate3d(25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n    transform: translate3d(5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes bounceInLeft {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n    transform: translate3d(-3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n    transform: translate3d(25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n    transform: translate3d(5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.bounceInLeft, [data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'] {\n  -webkit-animation-name: bounceInLeft;\n  animation-name: bounceInLeft; }\n\n@-webkit-keyframes bounceInRight {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes bounceInRight {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.bounceInRight, [data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'] {\n  -webkit-animation-name: bounceInRight;\n  animation-name: bounceInRight; }\n\n@-webkit-keyframes bounceInUp {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n    transform: translate3d(0, 3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n    transform: translate3d(0, -5px, 0); }\n  100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes bounceInUp {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n    transform: translate3d(0, 3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n    transform: translate3d(0, -5px, 0); }\n  100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); } }\n\n.bounceInUp {\n  -webkit-animation-name: bounceInUp;\n  animation-name: bounceInUp; }\n\n@-webkit-keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  50%, 55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); } }\n\n@keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  50%, 55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); } }\n\n.bounceOut {\n  -webkit-animation-name: bounceOut;\n  animation-name: bounceOut;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s; }\n\n@-webkit-keyframes bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n@keyframes bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n.bounceOutDown {\n  -webkit-animation-name: bounceOutDown;\n  animation-name: bounceOutDown; }\n\n@-webkit-keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n    transform: translate3d(20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n@keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n    transform: translate3d(20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n.bounceOutLeft, [data-effect=\"pure-effect-bounce\"] .pure-drawer[data-position='left'] {\n  -webkit-animation-name: bounceOutLeft;\n  animation-name: bounceOutLeft; }\n\n@-webkit-keyframes bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n    transform: translate3d(-20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n@keyframes bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n    transform: translate3d(-20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n.bounceOutRight, [data-effect=\"pure-effect-bounce\"] .pure-drawer[data-position='right'] {\n  -webkit-animation-name: bounceOutRight;\n  animation-name: bounceOutRight; }\n\n@-webkit-keyframes bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n    transform: translate3d(0, 20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n@keyframes bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n    transform: translate3d(0, 20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n.bounceOutUp, [data-effect=\"pure-effect-bounce\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: bounceOutUp;\n  animation-name: bounceOutUp; }\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.fadeIn {\n  -webkit-animation-name: fadeIn;\n  animation-name: fadeIn; }\n\n@-webkit-keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInDown, [data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-animation-name: fadeInDown;\n  animation-name: fadeInDown; }\n\n@-webkit-keyframes fadeInDownBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInDownBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInDownBig {\n  -webkit-animation-name: fadeInDownBig;\n  animation-name: fadeInDownBig; }\n\n@-webkit-keyframes fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInLeft, [data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'] {\n  -webkit-animation-name: fadeInLeft;\n  animation-name: fadeInLeft; }\n\n@-webkit-keyframes fadeInLeftBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInLeftBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInLeftBig {\n  -webkit-animation-name: fadeInLeftBig;\n  animation-name: fadeInLeftBig; }\n\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInRight, [data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'] {\n  -webkit-animation-name: fadeInRight;\n  animation-name: fadeInRight; }\n\n@-webkit-keyframes fadeInRightBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInRightBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInRightBig {\n  -webkit-animation-name: fadeInRightBig;\n  animation-name: fadeInRightBig; }\n\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInUp {\n  -webkit-animation-name: fadeInUp;\n  animation-name: fadeInUp; }\n\n@-webkit-keyframes fadeInUpBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInUpBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInUpBig {\n  -webkit-animation-name: fadeInUpBig;\n  animation-name: fadeInUpBig; }\n\n@-webkit-keyframes fadeOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.fadeOut {\n  -webkit-animation-name: fadeOut;\n  animation-name: fadeOut; }\n\n@-webkit-keyframes fadeOutDown {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); } }\n\n@keyframes fadeOutDown {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); } }\n\n.fadeOutDown {\n  -webkit-animation-name: fadeOutDown;\n  animation-name: fadeOutDown; }\n\n@-webkit-keyframes fadeOutDownBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n@keyframes fadeOutDownBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n.fadeOutDownBig {\n  -webkit-animation-name: fadeOutDownBig;\n  animation-name: fadeOutDownBig; }\n\n@-webkit-keyframes fadeOutLeft {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); } }\n\n@keyframes fadeOutLeft {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); } }\n\n.fadeOutLeft, [data-effect=\"pure-effect-fade\"] .pure-drawer[data-position='left'] {\n  -webkit-animation-name: fadeOutLeft;\n  animation-name: fadeOutLeft; }\n\n@-webkit-keyframes fadeOutLeftBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n@keyframes fadeOutLeftBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n.fadeOutLeftBig {\n  -webkit-animation-name: fadeOutLeftBig;\n  animation-name: fadeOutLeftBig; }\n\n@-webkit-keyframes fadeOutRight {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); } }\n\n@keyframes fadeOutRight {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); } }\n\n.fadeOutRight, [data-effect=\"pure-effect-fade\"] .pure-drawer[data-position='right'] {\n  -webkit-animation-name: fadeOutRight;\n  animation-name: fadeOutRight; }\n\n@-webkit-keyframes fadeOutRightBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n@keyframes fadeOutRightBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n.fadeOutRightBig {\n  -webkit-animation-name: fadeOutRightBig;\n  animation-name: fadeOutRightBig; }\n\n@-webkit-keyframes fadeOutUp {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); } }\n\n@keyframes fadeOutUp {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); } }\n\n.fadeOutUp, [data-effect=\"pure-effect-fade\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: fadeOutUp;\n  animation-name: fadeOutUp; }\n\n@-webkit-keyframes fadeOutUpBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n@keyframes fadeOutUpBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n.fadeOutUpBig {\n  -webkit-animation-name: fadeOutUpBig;\n  animation-name: fadeOutUpBig; }\n\n@-webkit-keyframes flip {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  40% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  50% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  80% {\n    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; } }\n\n@keyframes flip {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  40% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  50% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  80% {\n    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; } }\n\n.animated.flip {\n  -webkit-backface-visibility: visible;\n  backface-visibility: visible;\n  -webkit-animation-name: flip;\n  animation-name: flip; }\n\n@-webkit-keyframes flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n@keyframes flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n.flipInX, [data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipInX;\n  animation-name: flipInX; }\n\n@-webkit-keyframes flipInY {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n@keyframes flipInY {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n.flipInY, [data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipInY;\n  animation-name: flipInY; }\n\n@-webkit-keyframes flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0; } }\n\n@keyframes flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0; } }\n\n.flipOutX, [data-effect=\"pure-effect-flipX\"] .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipX\"] .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipX\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: flipOutX;\n  animation-name: flipOutX;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s;\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important; }\n\n@-webkit-keyframes flipOutY {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0; } }\n\n@keyframes flipOutY {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0; } }\n\n.flipOutY, [data-effect=\"pure-effect-flipY\"] .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipY\"] .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipY\"] .pure-drawer[data-position='top'] {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipOutY;\n  animation-name: flipOutY;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s; }\n\n@-webkit-keyframes lightSpeedIn {\n  0% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);\n    transform: translate3d(100%, 0, 0) skewX(-30deg);\n    opacity: 0; }\n  60% {\n    -webkit-transform: skewX(20deg);\n    transform: skewX(20deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: skewX(-5deg);\n    transform: skewX(-5deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes lightSpeedIn {\n  0% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);\n    transform: translate3d(100%, 0, 0) skewX(-30deg);\n    opacity: 0; }\n  60% {\n    -webkit-transform: skewX(20deg);\n    transform: skewX(20deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: skewX(-5deg);\n    transform: skewX(-5deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.lightSpeedIn {\n  -webkit-animation-name: lightSpeedIn;\n  animation-name: lightSpeedIn;\n  -webkit-animation-timing-function: ease-out;\n  animation-timing-function: ease-out; }\n\n@-webkit-keyframes lightSpeedOut {\n  0% {\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);\n    transform: translate3d(100%, 0, 0) skewX(30deg);\n    opacity: 0; } }\n\n@keyframes lightSpeedOut {\n  0% {\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);\n    transform: translate3d(100%, 0, 0) skewX(30deg);\n    opacity: 0; } }\n\n.lightSpeedOut {\n  -webkit-animation-name: lightSpeedOut;\n  animation-name: lightSpeedOut;\n  -webkit-animation-timing-function: ease-in;\n  animation-timing-function: ease-in; }\n\n@-webkit-keyframes rotateIn {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateIn {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateIn {\n  -webkit-animation-name: rotateIn;\n  animation-name: rotateIn; }\n\n@-webkit-keyframes rotateInDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInDownLeft {\n  -webkit-animation-name: rotateInDownLeft;\n  animation-name: rotateInDownLeft; }\n\n@-webkit-keyframes rotateInDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInDownRight {\n  -webkit-animation-name: rotateInDownRight;\n  animation-name: rotateInDownRight; }\n\n@-webkit-keyframes rotateInUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInUpLeft {\n  -webkit-animation-name: rotateInUpLeft;\n  animation-name: rotateInUpLeft; }\n\n@-webkit-keyframes rotateInUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -90deg);\n    transform: rotate3d(0, 0, 1, -90deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -90deg);\n    transform: rotate3d(0, 0, 1, -90deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInUpRight {\n  -webkit-animation-name: rotateInUpRight;\n  animation-name: rotateInUpRight; }\n\n@-webkit-keyframes rotateOut {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, 200deg);\n    transform: rotate3d(0, 0, 1, 200deg);\n    opacity: 0; } }\n\n@keyframes rotateOut {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, 200deg);\n    transform: rotate3d(0, 0, 1, 200deg);\n    opacity: 0; } }\n\n.rotateOut {\n  -webkit-animation-name: rotateOut;\n  animation-name: rotateOut; }\n\n@-webkit-keyframes rotateOutDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; } }\n\n@keyframes rotateOutDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; } }\n\n.rotateOutDownLeft {\n  -webkit-animation-name: rotateOutDownLeft;\n  animation-name: rotateOutDownLeft; }\n\n@-webkit-keyframes rotateOutDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n@keyframes rotateOutDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n.rotateOutDownRight {\n  -webkit-animation-name: rotateOutDownRight;\n  animation-name: rotateOutDownRight; }\n\n@-webkit-keyframes rotateOutUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n@keyframes rotateOutUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n.rotateOutUpLeft {\n  -webkit-animation-name: rotateOutUpLeft;\n  animation-name: rotateOutUpLeft; }\n\n@-webkit-keyframes rotateOutUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 90deg);\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0; } }\n\n@keyframes rotateOutUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 90deg);\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0; } }\n\n.rotateOutUpRight {\n  -webkit-animation-name: rotateOutUpRight;\n  animation-name: rotateOutUpRight; }\n\n@-webkit-keyframes hinge {\n  0% {\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  20%, 60% {\n    -webkit-transform: rotate3d(0, 0, 1, 80deg);\n    transform: rotate3d(0, 0, 1, 80deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  40%, 80% {\n    -webkit-transform: rotate3d(0, 0, 1, 60deg);\n    transform: rotate3d(0, 0, 1, 60deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(0, 700px, 0);\n    transform: translate3d(0, 700px, 0);\n    opacity: 0; } }\n\n@keyframes hinge {\n  0% {\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  20%, 60% {\n    -webkit-transform: rotate3d(0, 0, 1, 80deg);\n    transform: rotate3d(0, 0, 1, 80deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  40%, 80% {\n    -webkit-transform: rotate3d(0, 0, 1, 60deg);\n    transform: rotate3d(0, 0, 1, 60deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(0, 700px, 0);\n    transform: translate3d(0, 700px, 0);\n    opacity: 0; } }\n\n.hinge {\n  -webkit-animation-name: hinge;\n  animation-name: hinge; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes rollIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes rollIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.rollIn {\n  -webkit-animation-name: rollIn;\n  animation-name: rollIn; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes rollOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }\n\n@keyframes rollOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }\n\n.rollOut {\n  -webkit-animation-name: rollOut;\n  animation-name: rollOut; }\n\n@-webkit-keyframes zoomIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  50% {\n    opacity: 1; } }\n\n@keyframes zoomIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  50% {\n    opacity: 1; } }\n\n.zoomIn {\n  -webkit-animation-name: zoomIn;\n  animation-name: zoomIn; }\n\n@-webkit-keyframes zoomInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInDown, [data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-animation-name: zoomInDown;\n  animation-name: zoomInDown; }\n\n@-webkit-keyframes zoomInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInLeft, [data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'] {\n  -webkit-animation-name: zoomInLeft;\n  animation-name: zoomInLeft; }\n\n@-webkit-keyframes zoomInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInRight, [data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'] {\n  -webkit-animation-name: zoomInRight;\n  animation-name: zoomInRight; }\n\n@-webkit-keyframes zoomInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInUp {\n  -webkit-animation-name: zoomInUp;\n  animation-name: zoomInUp; }\n\n@-webkit-keyframes zoomOut {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    opacity: 0; } }\n\n@keyframes zoomOut {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    opacity: 0; } }\n\n.zoomOut {\n  -webkit-animation-name: zoomOut;\n  animation-name: zoomOut; }\n\n@-webkit-keyframes zoomOutDown {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomOutDown {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomOutDown {\n  -webkit-animation-name: zoomOutDown;\n  animation-name: zoomOutDown; }\n\n@-webkit-keyframes zoomOutLeft {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);\n    transform: scale(0.1) translate3d(-2000px, 0, 0);\n    -webkit-transform-origin: left center;\n    transform-origin: left center; } }\n\n@keyframes zoomOutLeft {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);\n    transform: scale(0.1) translate3d(-2000px, 0, 0);\n    -webkit-transform-origin: left center;\n    transform-origin: left center; } }\n\n.zoomOutLeft, [data-effect=\"pure-effect-zoom\"] .pure-drawer[data-position='left'] {\n  -webkit-animation-name: zoomOutLeft;\n  animation-name: zoomOutLeft; }\n\n@-webkit-keyframes zoomOutRight {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);\n    transform: scale(0.1) translate3d(2000px, 0, 0);\n    -webkit-transform-origin: right center;\n    transform-origin: right center; } }\n\n@keyframes zoomOutRight {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);\n    transform: scale(0.1) translate3d(2000px, 0, 0);\n    -webkit-transform-origin: right center;\n    transform-origin: right center; } }\n\n.zoomOutRight, [data-effect=\"pure-effect-zoom\"] .pure-drawer[data-position='right'] {\n  -webkit-animation-name: zoomOutRight;\n  animation-name: zoomOutRight; }\n\n@-webkit-keyframes zoomOutUp {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomOutUp {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomOutUp, [data-effect=\"pure-effect-zoom\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: zoomOutUp;\n  animation-name: zoomOutUp; }\n\n@-webkit-keyframes slideInDown {\n  0% {\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n@keyframes slideInDown {\n  0% {\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n.slideInDown {\n  -webkit-animation-name: slideInDown;\n  animation-name: slideInDown; }\n\n@-webkit-keyframes slideInLeft {\n  0% {\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n@keyframes slideInLeft {\n  0% {\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n.slideInLeft {\n  -webkit-animation-name: slideInLeft;\n  animation-name: slideInLeft; }\n\n@-webkit-keyframes slideInRight {\n  0% {\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n@keyframes slideInRight {\n  0% {\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n.slideInRight {\n  -webkit-animation-name: slideInRight;\n  animation-name: slideInRight; }\n\n@-webkit-keyframes slideInUp {\n  0% {\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n@keyframes slideInUp {\n  0% {\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n.slideInUp {\n  -webkit-animation-name: slideInUp;\n  animation-name: slideInUp; }\n\n@-webkit-keyframes slideOutDown {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%); } }\n\n@keyframes slideOutDown {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%); } }\n\n.slideOutDown {\n  -webkit-animation-name: slideOutDown;\n  animation-name: slideOutDown; }\n\n@-webkit-keyframes slideOutLeft {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%); } }\n\n@keyframes slideOutLeft {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%); } }\n\n.slideOutLeft {\n  -webkit-animation-name: slideOutLeft;\n  animation-name: slideOutLeft; }\n\n@-webkit-keyframes slideOutRight {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%); } }\n\n@keyframes slideOutRight {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%); } }\n\n.slideOutRight {\n  -webkit-animation-name: slideOutRight;\n  animation-name: slideOutRight; }\n\n@-webkit-keyframes slideOutUp {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%); } }\n\n@keyframes slideOutUp {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%); } }\n\n.slideOutUp {\n  -webkit-animation-name: slideOutUp;\n  animation-name: slideOutUp; }\n\nbody {\n  font-family: 'Fira Sans', sans; }\n\na {\n  color: #DB3440; }\n\n.action-bar {\n  margin-top: 1rem;\n  display: flex;\n  flex-direction: row; }\n  .action-bar > .begin {\n    display: flex;\n    flex-direction: row; }\n  .action-bar > .end {\n    justify-content: flex-end;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: row;\n    align-self: flex-end; }\n\n.alert-box {\n  margin: 1rem;\n  padding: 1rem;\n  color: white; }\n  .alert-box.-success {\n    background-color: #259B24; }\n  .alert-box.-info {\n    background-color: #FAAF3F; }\n  .alert-box.-error {\n    background-color: #DB3440; }\n\n.back-arrow {\n  text-decoration: none;\n  font-size: 1.3rem;\n  padding: .5rem;\n  color: #444444;\n  display: inline-block; }\n  .back-arrow:hover {\n    color: #DB3440; }\n  .back-arrow + .pure-menu-heading {\n    padding-left: 0; }\n\n.badge-block {\n  border-radius: 0.25rem;\n  padding: 0.25rem 0.5rem;\n  background-color: #dbe8f1;\n  color: #444444; }\n  .badge-block.-highlight {\n    background-color: #DB3440;\n    color: #ffffff; }\n\n.button-primary {\n  background: #DB3440;\n  color: #ffffff; }\n  .button-primary.-inverted {\n    background: transparent;\n    color: #DB3440; }\n  .button-primary.-muted {\n    background: transparent;\n    color: #444444; }\n\n.category-header {\n  display: flex;\n  flex-direction: row; }\n  .category-header > h2 {\n    margin-bottom: 0;\n    margin-top: 0; }\n  .category-header .spacer {\n    flex-grow: 1; }\n  .category-header .actions {\n    list-style-type: none;\n    margin: 0;\n    padding: 0; }\n    .category-header .actions > li {\n      display: inline-block; }\n\n.category-list {\n  padding: 0;\n  margin-top: 0; }\n  .category-list .category-list {\n    margin-left: 1rem; }\n  .category-list > li {\n    list-style-type: none; }\n  .category-list > li > h2 > a {\n    text-decoration: none; }\n    .category-list > li > h2 > a:hover {\n      text-decoration: underline; }\n  .category-list > li > h2 {\n    font-size: 1.5rem;\n    font-weight: 700;\n    margin: 0; }\n  .category-list > li > .category-list > li > h2 {\n    font-size: 1.25rem;\n    font-weight: 400; }\n\n.category-pill {\n  display: flex;\n  flex-direction: row;\n  margin: 0;\n  padding: 0;\n  font-size: .75rem; }\n  .category-pill > .category {\n    list-style-type: none; }\n    .category-pill > .category > a {\n      color: #ffffff;\n      text-decoration: none;\n      display: inline-block;\n      padding: 0.25rem 0.5rem;\n      border-right: 1px solid white; }\n      .category-pill > .category > a:hover {\n        background: #8259cb; }\n    .category-pill > .category.-color-0 a {\n      background-color: red; }\n    .category-pill > .category.-color-1 a {\n      background-color: #ff0400; }\n    .category-pill > .category.-color-2 a {\n      background-color: #ff0900; }\n    .category-pill > .category.-color-3 a {\n      background-color: #ff0d00; }\n    .category-pill > .category.-color-4 a {\n      background-color: #ff1100; }\n    .category-pill > .category.-color-5 a {\n      background-color: #ff1500; }\n    .category-pill > .category.-color-6 a {\n      background-color: #ff1a00; }\n    .category-pill > .category.-color-7 a {\n      background-color: #ff1e00; }\n    .category-pill > .category.-color-8 a {\n      background-color: #ff2200; }\n    .category-pill > .category.-color-9 a {\n      background-color: #ff2600; }\n    .category-pill > .category.-color-10 a {\n      background-color: #ff2b00; }\n    .category-pill > .category.-color-11 a {\n      background-color: #ff2f00; }\n    .category-pill > .category.-color-12 a {\n      background-color: #ff3300; }\n    .category-pill > .category.-color-13 a {\n      background-color: #ff3700; }\n    .category-pill > .category.-color-14 a {\n      background-color: #ff3c00; }\n    .category-pill > .category.-color-15 a {\n      background-color: #ff4000; }\n    .category-pill > .category.-color-16 a {\n      background-color: #ff4400; }\n    .category-pill > .category.-color-17 a {\n      background-color: #ff4800; }\n    .category-pill > .category.-color-18 a {\n      background-color: #ff4d00; }\n    .category-pill > .category.-color-19 a {\n      background-color: #ff5100; }\n    .category-pill > .category.-color-20 a {\n      background-color: #ff5500; }\n    .category-pill > .category.-color-21 a {\n      background-color: #ff5900; }\n    .category-pill > .category.-color-22 a {\n      background-color: #ff5e00; }\n    .category-pill > .category.-color-23 a {\n      background-color: #ff6200; }\n    .category-pill > .category.-color-24 a {\n      background-color: #ff6600; }\n    .category-pill > .category.-color-25 a {\n      background-color: #ff6a00; }\n    .category-pill > .category.-color-26 a {\n      background-color: #ff6f00; }\n    .category-pill > .category.-color-27 a {\n      background-color: #ff7300; }\n    .category-pill > .category.-color-28 a {\n      background-color: #ff7700; }\n    .category-pill > .category.-color-29 a {\n      background-color: #ff7b00; }\n    .category-pill > .category.-color-30 a {\n      background-color: #ff8000; }\n    .category-pill > .category.-color-31 a {\n      background-color: #ff8400; }\n    .category-pill > .category.-color-32 a {\n      background-color: #ff8800; }\n    .category-pill > .category.-color-33 a {\n      background-color: darkorange; }\n    .category-pill > .category.-color-34 a {\n      background-color: #ff9100; }\n    .category-pill > .category.-color-35 a {\n      background-color: #ff9500; }\n    .category-pill > .category.-color-36 a {\n      background-color: #ff9900; }\n    .category-pill > .category.-color-37 a {\n      background-color: #ff9d00; }\n    .category-pill > .category.-color-38 a {\n      background-color: #ffa200; }\n    .category-pill > .category.-color-39 a {\n      background-color: #ffa600; }\n    .category-pill > .category.-color-40 a {\n      background-color: #ffaa00; }\n    .category-pill > .category.-color-41 a {\n      background-color: #ffae00; }\n    .category-pill > .category.-color-42 a {\n      background-color: #ffb300; }\n    .category-pill > .category.-color-43 a {\n      background-color: #ffb700; }\n    .category-pill > .category.-color-44 a {\n      background-color: #ffbb00; }\n    .category-pill > .category.-color-45 a {\n      background-color: #ffbf00; }\n    .category-pill > .category.-color-46 a {\n      background-color: #ffc400; }\n    .category-pill > .category.-color-47 a {\n      background-color: #ffc800; }\n    .category-pill > .category.-color-48 a {\n      background-color: #ffcc00; }\n    .category-pill > .category.-color-49 a {\n      background-color: #ffd000; }\n    .category-pill > .category.-color-50 a {\n      background-color: #ffd500; }\n    .category-pill > .category.-color-51 a {\n      background-color: #ffd900; }\n    .category-pill > .category.-color-52 a {\n      background-color: #ffdd00; }\n    .category-pill > .category.-color-53 a {\n      background-color: #ffe100; }\n    .category-pill > .category.-color-54 a {\n      background-color: #ffe600; }\n    .category-pill > .category.-color-55 a {\n      background-color: #ffea00; }\n    .category-pill > .category.-color-56 a {\n      background-color: #ffee00; }\n    .category-pill > .category.-color-57 a {\n      background-color: #fff200; }\n    .category-pill > .category.-color-58 a {\n      background-color: #fff700; }\n    .category-pill > .category.-color-59 a {\n      background-color: #fffb00; }\n    .category-pill > .category.-color-60 a {\n      background-color: yellow; }\n    .category-pill > .category.-color-61 a {\n      background-color: #fbff00; }\n    .category-pill > .category.-color-62 a {\n      background-color: #f7ff00; }\n    .category-pill > .category.-color-63 a {\n      background-color: #f2ff00; }\n    .category-pill > .category.-color-64 a {\n      background-color: #eeff00; }\n    .category-pill > .category.-color-65 a {\n      background-color: #eaff00; }\n    .category-pill > .category.-color-66 a {\n      background-color: #e6ff00; }\n    .category-pill > .category.-color-67 a {\n      background-color: #e1ff00; }\n    .category-pill > .category.-color-68 a {\n      background-color: #ddff00; }\n    .category-pill > .category.-color-69 a {\n      background-color: #d9ff00; }\n    .category-pill > .category.-color-70 a {\n      background-color: #d5ff00; }\n    .category-pill > .category.-color-71 a {\n      background-color: #d0ff00; }\n    .category-pill > .category.-color-72 a {\n      background-color: #ccff00; }\n    .category-pill > .category.-color-73 a {\n      background-color: #c8ff00; }\n    .category-pill > .category.-color-74 a {\n      background-color: #c4ff00; }\n    .category-pill > .category.-color-75 a {\n      background-color: #bfff00; }\n    .category-pill > .category.-color-76 a {\n      background-color: #bbff00; }\n    .category-pill > .category.-color-77 a {\n      background-color: #b7ff00; }\n    .category-pill > .category.-color-78 a {\n      background-color: #b3ff00; }\n    .category-pill > .category.-color-79 a {\n      background-color: #aeff00; }\n    .category-pill > .category.-color-80 a {\n      background-color: #aaff00; }\n    .category-pill > .category.-color-81 a {\n      background-color: #a6ff00; }\n    .category-pill > .category.-color-82 a {\n      background-color: #a2ff00; }\n    .category-pill > .category.-color-83 a {\n      background-color: #9dff00; }\n    .category-pill > .category.-color-84 a {\n      background-color: #99ff00; }\n    .category-pill > .category.-color-85 a {\n      background-color: #95ff00; }\n    .category-pill > .category.-color-86 a {\n      background-color: #91ff00; }\n    .category-pill > .category.-color-87 a {\n      background-color: #8cff00; }\n    .category-pill > .category.-color-88 a {\n      background-color: #88ff00; }\n    .category-pill > .category.-color-89 a {\n      background-color: #84ff00; }\n    .category-pill > .category.-color-90 a {\n      background-color: #80ff00; }\n    .category-pill > .category.-color-91 a {\n      background-color: #7bff00; }\n    .category-pill > .category.-color-92 a {\n      background-color: #77ff00; }\n    .category-pill > .category.-color-93 a {\n      background-color: #73ff00; }\n    .category-pill > .category.-color-94 a {\n      background-color: #6fff00; }\n    .category-pill > .category.-color-95 a {\n      background-color: #6aff00; }\n    .category-pill > .category.-color-96 a {\n      background-color: #66ff00; }\n    .category-pill > .category.-color-97 a {\n      background-color: #62ff00; }\n    .category-pill > .category.-color-98 a {\n      background-color: #5eff00; }\n    .category-pill > .category.-color-99 a {\n      background-color: #59ff00; }\n    .category-pill > .category.-color-100 a {\n      background-color: #55ff00; }\n    .category-pill > .category.-color-101 a {\n      background-color: #51ff00; }\n    .category-pill > .category.-color-102 a {\n      background-color: #4dff00; }\n    .category-pill > .category.-color-103 a {\n      background-color: #48ff00; }\n    .category-pill > .category.-color-104 a {\n      background-color: #44ff00; }\n    .category-pill > .category.-color-105 a {\n      background-color: #40ff00; }\n    .category-pill > .category.-color-106 a {\n      background-color: #3cff00; }\n    .category-pill > .category.-color-107 a {\n      background-color: #37ff00; }\n    .category-pill > .category.-color-108 a {\n      background-color: #33ff00; }\n    .category-pill > .category.-color-109 a {\n      background-color: #2fff00; }\n    .category-pill > .category.-color-110 a {\n      background-color: #2bff00; }\n    .category-pill > .category.-color-111 a {\n      background-color: #26ff00; }\n    .category-pill > .category.-color-112 a {\n      background-color: #22ff00; }\n    .category-pill > .category.-color-113 a {\n      background-color: #1eff00; }\n    .category-pill > .category.-color-114 a {\n      background-color: #1aff00; }\n    .category-pill > .category.-color-115 a {\n      background-color: #15ff00; }\n    .category-pill > .category.-color-116 a {\n      background-color: #11ff00; }\n    .category-pill > .category.-color-117 a {\n      background-color: #0dff00; }\n    .category-pill > .category.-color-118 a {\n      background-color: #09ff00; }\n    .category-pill > .category.-color-119 a {\n      background-color: #04ff00; }\n    .category-pill > .category.-color-120 a {\n      background-color: lime; }\n    .category-pill > .category.-color-121 a {\n      background-color: #00ff04; }\n    .category-pill > .category.-color-122 a {\n      background-color: #00ff09; }\n    .category-pill > .category.-color-123 a {\n      background-color: #00ff0d; }\n    .category-pill > .category.-color-124 a {\n      background-color: #00ff11; }\n    .category-pill > .category.-color-125 a {\n      background-color: #00ff15; }\n    .category-pill > .category.-color-126 a {\n      background-color: #00ff1a; }\n    .category-pill > .category.-color-127 a {\n      background-color: #00ff1e; }\n    .category-pill > .category.-color-128 a {\n      background-color: #00ff22; }\n    .category-pill > .category.-color-129 a {\n      background-color: #00ff26; }\n    .category-pill > .category.-color-130 a {\n      background-color: #00ff2b; }\n    .category-pill > .category.-color-131 a {\n      background-color: #00ff2f; }\n    .category-pill > .category.-color-132 a {\n      background-color: #00ff33; }\n    .category-pill > .category.-color-133 a {\n      background-color: #00ff37; }\n    .category-pill > .category.-color-134 a {\n      background-color: #00ff3c; }\n    .category-pill > .category.-color-135 a {\n      background-color: #00ff40; }\n    .category-pill > .category.-color-136 a {\n      background-color: #00ff44; }\n    .category-pill > .category.-color-137 a {\n      background-color: #00ff48; }\n    .category-pill > .category.-color-138 a {\n      background-color: #00ff4d; }\n    .category-pill > .category.-color-139 a {\n      background-color: #00ff51; }\n    .category-pill > .category.-color-140 a {\n      background-color: #00ff55; }\n    .category-pill > .category.-color-141 a {\n      background-color: #00ff59; }\n    .category-pill > .category.-color-142 a {\n      background-color: #00ff5e; }\n    .category-pill > .category.-color-143 a {\n      background-color: #00ff62; }\n    .category-pill > .category.-color-144 a {\n      background-color: #00ff66; }\n    .category-pill > .category.-color-145 a {\n      background-color: #00ff6a; }\n    .category-pill > .category.-color-146 a {\n      background-color: #00ff6f; }\n    .category-pill > .category.-color-147 a {\n      background-color: #00ff73; }\n    .category-pill > .category.-color-148 a {\n      background-color: #00ff77; }\n    .category-pill > .category.-color-149 a {\n      background-color: #00ff7b; }\n    .category-pill > .category.-color-150 a {\n      background-color: #00ff80; }\n    .category-pill > .category.-color-151 a {\n      background-color: #00ff84; }\n    .category-pill > .category.-color-152 a {\n      background-color: #00ff88; }\n    .category-pill > .category.-color-153 a {\n      background-color: #00ff8c; }\n    .category-pill > .category.-color-154 a {\n      background-color: #00ff91; }\n    .category-pill > .category.-color-155 a {\n      background-color: #00ff95; }\n    .category-pill > .category.-color-156 a {\n      background-color: #00ff99; }\n    .category-pill > .category.-color-157 a {\n      background-color: #00ff9d; }\n    .category-pill > .category.-color-158 a {\n      background-color: #00ffa2; }\n    .category-pill > .category.-color-159 a {\n      background-color: #00ffa6; }\n    .category-pill > .category.-color-160 a {\n      background-color: #00ffaa; }\n    .category-pill > .category.-color-161 a {\n      background-color: #00ffae; }\n    .category-pill > .category.-color-162 a {\n      background-color: #00ffb3; }\n    .category-pill > .category.-color-163 a {\n      background-color: #00ffb7; }\n    .category-pill > .category.-color-164 a {\n      background-color: #00ffbb; }\n    .category-pill > .category.-color-165 a {\n      background-color: #00ffbf; }\n    .category-pill > .category.-color-166 a {\n      background-color: #00ffc4; }\n    .category-pill > .category.-color-167 a {\n      background-color: #00ffc8; }\n    .category-pill > .category.-color-168 a {\n      background-color: #00ffcc; }\n    .category-pill > .category.-color-169 a {\n      background-color: #00ffd0; }\n    .category-pill > .category.-color-170 a {\n      background-color: #00ffd5; }\n    .category-pill > .category.-color-171 a {\n      background-color: #00ffd9; }\n    .category-pill > .category.-color-172 a {\n      background-color: #00ffdd; }\n    .category-pill > .category.-color-173 a {\n      background-color: #00ffe1; }\n    .category-pill > .category.-color-174 a {\n      background-color: #00ffe6; }\n    .category-pill > .category.-color-175 a {\n      background-color: #00ffea; }\n    .category-pill > .category.-color-176 a {\n      background-color: #00ffee; }\n    .category-pill > .category.-color-177 a {\n      background-color: #00fff2; }\n    .category-pill > .category.-color-178 a {\n      background-color: #00fff7; }\n    .category-pill > .category.-color-179 a {\n      background-color: #00fffb; }\n    .category-pill > .category.-color-180 a {\n      background-color: cyan; }\n    .category-pill > .category.-color-181 a {\n      background-color: #00fbff; }\n    .category-pill > .category.-color-182 a {\n      background-color: #00f7ff; }\n    .category-pill > .category.-color-183 a {\n      background-color: #00f2ff; }\n    .category-pill > .category.-color-184 a {\n      background-color: #00eeff; }\n    .category-pill > .category.-color-185 a {\n      background-color: #00eaff; }\n    .category-pill > .category.-color-186 a {\n      background-color: #00e6ff; }\n    .category-pill > .category.-color-187 a {\n      background-color: #00e1ff; }\n    .category-pill > .category.-color-188 a {\n      background-color: #00ddff; }\n    .category-pill > .category.-color-189 a {\n      background-color: #00d9ff; }\n    .category-pill > .category.-color-190 a {\n      background-color: #00d5ff; }\n    .category-pill > .category.-color-191 a {\n      background-color: #00d0ff; }\n    .category-pill > .category.-color-192 a {\n      background-color: #00ccff; }\n    .category-pill > .category.-color-193 a {\n      background-color: #00c8ff; }\n    .category-pill > .category.-color-194 a {\n      background-color: #00c4ff; }\n    .category-pill > .category.-color-195 a {\n      background-color: deepskyblue; }\n    .category-pill > .category.-color-196 a {\n      background-color: #00bbff; }\n    .category-pill > .category.-color-197 a {\n      background-color: #00b7ff; }\n    .category-pill > .category.-color-198 a {\n      background-color: #00b3ff; }\n    .category-pill > .category.-color-199 a {\n      background-color: #00aeff; }\n    .category-pill > .category.-color-200 a {\n      background-color: #00aaff; }\n    .category-pill > .category.-color-201 a {\n      background-color: #00a6ff; }\n    .category-pill > .category.-color-202 a {\n      background-color: #00a2ff; }\n    .category-pill > .category.-color-203 a {\n      background-color: #009dff; }\n    .category-pill > .category.-color-204 a {\n      background-color: #0099ff; }\n    .category-pill > .category.-color-205 a {\n      background-color: #0095ff; }\n    .category-pill > .category.-color-206 a {\n      background-color: #0091ff; }\n    .category-pill > .category.-color-207 a {\n      background-color: #008cff; }\n    .category-pill > .category.-color-208 a {\n      background-color: #0088ff; }\n    .category-pill > .category.-color-209 a {\n      background-color: #0084ff; }\n    .category-pill > .category.-color-210 a {\n      background-color: #0080ff; }\n    .category-pill > .category.-color-211 a {\n      background-color: #007bff; }\n    .category-pill > .category.-color-212 a {\n      background-color: #0077ff; }\n    .category-pill > .category.-color-213 a {\n      background-color: #0073ff; }\n    .category-pill > .category.-color-214 a {\n      background-color: #006fff; }\n    .category-pill > .category.-color-215 a {\n      background-color: #006aff; }\n    .category-pill > .category.-color-216 a {\n      background-color: #0066ff; }\n    .category-pill > .category.-color-217 a {\n      background-color: #0062ff; }\n    .category-pill > .category.-color-218 a {\n      background-color: #005eff; }\n    .category-pill > .category.-color-219 a {\n      background-color: #0059ff; }\n    .category-pill > .category.-color-220 a {\n      background-color: #0055ff; }\n    .category-pill > .category.-color-221 a {\n      background-color: #0051ff; }\n    .category-pill > .category.-color-222 a {\n      background-color: #004dff; }\n    .category-pill > .category.-color-223 a {\n      background-color: #0048ff; }\n    .category-pill > .category.-color-224 a {\n      background-color: #0044ff; }\n    .category-pill > .category.-color-225 a {\n      background-color: #0040ff; }\n    .category-pill > .category.-color-226 a {\n      background-color: #003cff; }\n    .category-pill > .category.-color-227 a {\n      background-color: #0037ff; }\n    .category-pill > .category.-color-228 a {\n      background-color: #0033ff; }\n    .category-pill > .category.-color-229 a {\n      background-color: #002fff; }\n    .category-pill > .category.-color-230 a {\n      background-color: #002bff; }\n    .category-pill > .category.-color-231 a {\n      background-color: #0026ff; }\n    .category-pill > .category.-color-232 a {\n      background-color: #0022ff; }\n    .category-pill > .category.-color-233 a {\n      background-color: #001eff; }\n    .category-pill > .category.-color-234 a {\n      background-color: #001aff; }\n    .category-pill > .category.-color-235 a {\n      background-color: #0015ff; }\n    .category-pill > .category.-color-236 a {\n      background-color: #0011ff; }\n    .category-pill > .category.-color-237 a {\n      background-color: #000dff; }\n    .category-pill > .category.-color-238 a {\n      background-color: #0009ff; }\n    .category-pill > .category.-color-239 a {\n      background-color: #0004ff; }\n    .category-pill > .category.-color-240 a {\n      background-color: blue; }\n    .category-pill > .category.-color-241 a {\n      background-color: #0400ff; }\n    .category-pill > .category.-color-242 a {\n      background-color: #0900ff; }\n    .category-pill > .category.-color-243 a {\n      background-color: #0d00ff; }\n    .category-pill > .category.-color-244 a {\n      background-color: #1100ff; }\n    .category-pill > .category.-color-245 a {\n      background-color: #1500ff; }\n    .category-pill > .category.-color-246 a {\n      background-color: #1a00ff; }\n    .category-pill > .category.-color-247 a {\n      background-color: #1e00ff; }\n    .category-pill > .category.-color-248 a {\n      background-color: #2200ff; }\n    .category-pill > .category.-color-249 a {\n      background-color: #2600ff; }\n    .category-pill > .category.-color-250 a {\n      background-color: #2b00ff; }\n    .category-pill > .category.-color-251 a {\n      background-color: #2f00ff; }\n    .category-pill > .category.-color-252 a {\n      background-color: #3300ff; }\n    .category-pill > .category.-color-253 a {\n      background-color: #3700ff; }\n    .category-pill > .category.-color-254 a {\n      background-color: #3c00ff; }\n    .category-pill > .category.-color-255 a {\n      background-color: #4000ff; }\n    .category-pill > .category.-color-256 a {\n      background-color: #4400ff; }\n    .category-pill > .category.-color-257 a {\n      background-color: #4800ff; }\n    .category-pill > .category.-color-258 a {\n      background-color: #4d00ff; }\n    .category-pill > .category.-color-259 a {\n      background-color: #5100ff; }\n    .category-pill > .category.-color-260 a {\n      background-color: #5500ff; }\n    .category-pill > .category.-color-261 a {\n      background-color: #5900ff; }\n    .category-pill > .category.-color-262 a {\n      background-color: #5e00ff; }\n    .category-pill > .category.-color-263 a {\n      background-color: #6200ff; }\n    .category-pill > .category.-color-264 a {\n      background-color: #6600ff; }\n    .category-pill > .category.-color-265 a {\n      background-color: #6a00ff; }\n    .category-pill > .category.-color-266 a {\n      background-color: #6f00ff; }\n    .category-pill > .category.-color-267 a {\n      background-color: #7300ff; }\n    .category-pill > .category.-color-268 a {\n      background-color: #7700ff; }\n    .category-pill > .category.-color-269 a {\n      background-color: #7b00ff; }\n    .category-pill > .category.-color-270 a {\n      background-color: #8000ff; }\n    .category-pill > .category.-color-271 a {\n      background-color: #8400ff; }\n    .category-pill > .category.-color-272 a {\n      background-color: #8800ff; }\n    .category-pill > .category.-color-273 a {\n      background-color: #8c00ff; }\n    .category-pill > .category.-color-274 a {\n      background-color: #9100ff; }\n    .category-pill > .category.-color-275 a {\n      background-color: #9500ff; }\n    .category-pill > .category.-color-276 a {\n      background-color: #9900ff; }\n    .category-pill > .category.-color-277 a {\n      background-color: #9d00ff; }\n    .category-pill > .category.-color-278 a {\n      background-color: #a200ff; }\n    .category-pill > .category.-color-279 a {\n      background-color: #a600ff; }\n    .category-pill > .category.-color-280 a {\n      background-color: #aa00ff; }\n    .category-pill > .category.-color-281 a {\n      background-color: #ae00ff; }\n    .category-pill > .category.-color-282 a {\n      background-color: #b300ff; }\n    .category-pill > .category.-color-283 a {\n      background-color: #b700ff; }\n    .category-pill > .category.-color-284 a {\n      background-color: #bb00ff; }\n    .category-pill > .category.-color-285 a {\n      background-color: #bf00ff; }\n    .category-pill > .category.-color-286 a {\n      background-color: #c400ff; }\n    .category-pill > .category.-color-287 a {\n      background-color: #c800ff; }\n    .category-pill > .category.-color-288 a {\n      background-color: #cc00ff; }\n    .category-pill > .category.-color-289 a {\n      background-color: #d000ff; }\n    .category-pill > .category.-color-290 a {\n      background-color: #d500ff; }\n    .category-pill > .category.-color-291 a {\n      background-color: #d900ff; }\n    .category-pill > .category.-color-292 a {\n      background-color: #dd00ff; }\n    .category-pill > .category.-color-293 a {\n      background-color: #e100ff; }\n    .category-pill > .category.-color-294 a {\n      background-color: #e600ff; }\n    .category-pill > .category.-color-295 a {\n      background-color: #ea00ff; }\n    .category-pill > .category.-color-296 a {\n      background-color: #ee00ff; }\n    .category-pill > .category.-color-297 a {\n      background-color: #f200ff; }\n    .category-pill > .category.-color-298 a {\n      background-color: #f700ff; }\n    .category-pill > .category.-color-299 a {\n      background-color: #fb00ff; }\n    .category-pill > .category.-color-300 a {\n      background-color: magenta; }\n    .category-pill > .category.-color-301 a {\n      background-color: #ff00fb; }\n    .category-pill > .category.-color-302 a {\n      background-color: #ff00f7; }\n    .category-pill > .category.-color-303 a {\n      background-color: #ff00f2; }\n    .category-pill > .category.-color-304 a {\n      background-color: #ff00ee; }\n    .category-pill > .category.-color-305 a {\n      background-color: #ff00ea; }\n    .category-pill > .category.-color-306 a {\n      background-color: #ff00e6; }\n    .category-pill > .category.-color-307 a {\n      background-color: #ff00e1; }\n    .category-pill > .category.-color-308 a {\n      background-color: #ff00dd; }\n    .category-pill > .category.-color-309 a {\n      background-color: #ff00d9; }\n    .category-pill > .category.-color-310 a {\n      background-color: #ff00d5; }\n    .category-pill > .category.-color-311 a {\n      background-color: #ff00d0; }\n    .category-pill > .category.-color-312 a {\n      background-color: #ff00cc; }\n    .category-pill > .category.-color-313 a {\n      background-color: #ff00c8; }\n    .category-pill > .category.-color-314 a {\n      background-color: #ff00c4; }\n    .category-pill > .category.-color-315 a {\n      background-color: #ff00bf; }\n    .category-pill > .category.-color-316 a {\n      background-color: #ff00bb; }\n    .category-pill > .category.-color-317 a {\n      background-color: #ff00b7; }\n    .category-pill > .category.-color-318 a {\n      background-color: #ff00b3; }\n    .category-pill > .category.-color-319 a {\n      background-color: #ff00ae; }\n    .category-pill > .category.-color-320 a {\n      background-color: #ff00aa; }\n    .category-pill > .category.-color-321 a {\n      background-color: #ff00a6; }\n    .category-pill > .category.-color-322 a {\n      background-color: #ff00a2; }\n    .category-pill > .category.-color-323 a {\n      background-color: #ff009d; }\n    .category-pill > .category.-color-324 a {\n      background-color: #ff0099; }\n    .category-pill > .category.-color-325 a {\n      background-color: #ff0095; }\n    .category-pill > .category.-color-326 a {\n      background-color: #ff0091; }\n    .category-pill > .category.-color-327 a {\n      background-color: #ff008c; }\n    .category-pill > .category.-color-328 a {\n      background-color: #ff0088; }\n    .category-pill > .category.-color-329 a {\n      background-color: #ff0084; }\n    .category-pill > .category.-color-330 a {\n      background-color: #ff0080; }\n    .category-pill > .category.-color-331 a {\n      background-color: #ff007b; }\n    .category-pill > .category.-color-332 a {\n      background-color: #ff0077; }\n    .category-pill > .category.-color-333 a {\n      background-color: #ff0073; }\n    .category-pill > .category.-color-334 a {\n      background-color: #ff006f; }\n    .category-pill > .category.-color-335 a {\n      background-color: #ff006a; }\n    .category-pill > .category.-color-336 a {\n      background-color: #ff0066; }\n    .category-pill > .category.-color-337 a {\n      background-color: #ff0062; }\n    .category-pill > .category.-color-338 a {\n      background-color: #ff005e; }\n    .category-pill > .category.-color-339 a {\n      background-color: #ff0059; }\n    .category-pill > .category.-color-340 a {\n      background-color: #ff0055; }\n    .category-pill > .category.-color-341 a {\n      background-color: #ff0051; }\n    .category-pill > .category.-color-342 a {\n      background-color: #ff004d; }\n    .category-pill > .category.-color-343 a {\n      background-color: #ff0048; }\n    .category-pill > .category.-color-344 a {\n      background-color: #ff0044; }\n    .category-pill > .category.-color-345 a {\n      background-color: #ff0040; }\n    .category-pill > .category.-color-346 a {\n      background-color: #ff003c; }\n    .category-pill > .category.-color-347 a {\n      background-color: #ff0037; }\n    .category-pill > .category.-color-348 a {\n      background-color: #ff0033; }\n    .category-pill > .category.-color-349 a {\n      background-color: #ff002f; }\n    .category-pill > .category.-color-350 a {\n      background-color: #ff002b; }\n    .category-pill > .category.-color-351 a {\n      background-color: #ff0026; }\n    .category-pill > .category.-color-352 a {\n      background-color: #ff0022; }\n    .category-pill > .category.-color-353 a {\n      background-color: #ff001e; }\n    .category-pill > .category.-color-354 a {\n      background-color: #ff001a; }\n    .category-pill > .category.-color-355 a {\n      background-color: #ff0015; }\n    .category-pill > .category.-color-356 a {\n      background-color: #ff0011; }\n    .category-pill > .category.-color-357 a {\n      background-color: #ff000d; }\n    .category-pill > .category.-color-358 a {\n      background-color: #ff0009; }\n    .category-pill > .category.-color-359 a {\n      background-color: #ff0004; }\n    .category-pill > .category:first-child a {\n      border-top-left-radius: 0.25rem;\n      border-bottom-left-radius: 0.25rem; }\n    .category-pill > .category:last-child a {\n      border-top-right-radius: 0.25rem;\n      border-bottom-right-radius: 0.25rem;\n      border-right: 0; }\n\n.emoticon-faces {\n  background: url(" + __webpack_require__(15) + ");\n  width: 36px;\n  height: 19px;\n  display: inline-block; }\n\n.fa.-highlight {\n  color: red; }\n\n.hero-logo > img {\n  max-width: 845px;\n  width: 100%; }\n\n.hero-logo > span {\n  display: none; }\n\n.item-metadata {\n  display: flex;\n  flex-direction: row;\n  color: #acb7bf; }\n  .item-metadata > * {\n    margin-right: 0.5rem; }\n  .item-metadata > .username {\n    text-decoration: none; }\n    .item-metadata > .username:hover {\n      text-decoration: underline; }\n  .item-metadata > abbr {\n    border-bottom: none; }\n\n.navigation-logo > img {\n  height: 40px; }\n\n.navigation-logo > span {\n  display: none; }\n\n.navigation-menu {\n  padding: 0.5rem;\n  background: #ffffff;\n  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24); }\n  .navigation-menu a {\n    vertical-align: middle; }\n  .navigation-menu > ul {\n    float: right;\n    padding: 0.5rem; }\n\n.new-thread {\n  display: flex;\n  flex-direction: column; }\n  .new-thread > input, .new-thread > textarea {\n    border-width: 0 0 1px 0;\n    border-color: #acb7bf;\n    resize: vertical;\n    margin-top: .1rem;\n    margin-bottom: .1rem; }\n    .new-thread > input:focus, .new-thread > textarea:focus {\n      border-color: #64caec;\n      outline: none;\n      box-shadow: none; }\n\n.post-editor {\n  display: flex;\n  flex-direction: column; }\n  .post-editor > textarea {\n    border-width: 0 0 1px 0;\n    border-color: #acb7bf;\n    resize: vertical;\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    overflow: auto; }\n    .post-editor > textarea:focus {\n      border-color: #64caec;\n      outline: none;\n      box-shadow: none; }\n\n.post-item-actions {\n  display: flex;\n  flex-direction: row; }\n  .post-item-actions > .spacer {\n    flex-grow: 1; }\n  .post-item-actions > .actions {\n    align-self: flex-end;\n    list-style-type: none;\n    margin: 0;\n    padding: 0; }\n    .post-item-actions > .actions > li {\n      display: inline-block; }\n      .post-item-actions > .actions > li > a {\n        padding: 0.5rem;\n        color: #acb7bf;\n        transition-property: color;\n        transition-duration: 0.5s;\n        transition-timing-function: easeInOutSine; }\n        .post-item-actions > .actions > li > a:active {\n          color: #DB3440; }\n        .post-item-actions > .actions > li > a > i.fa {\n          font-size: 22px; }\n          .post-item-actions > .actions > li > a > i.fa.fa-eye:before {\n            top: -2px;\n            position: relative; }\n\n.post-item {\n  border-bottom: 1px solid #dbe8f1;\n  padding: 0.5rem; }\n  .post-item:target {\n    background-color: rgba(219, 52, 64, 0.03); }\n\n.post-list {\n  padding: 0; }\n  .post-list > li {\n    list-style-type: none; }\n\n.reply-count {\n  color: #acb7bf;\n  font-style: oblique; }\n\n.tag-editor > .add-tag {\n  display: block; }\n\n.tag-editor > .tag-form {\n  display: none; }\n  .tag-editor > .tag-form > button {\n    font-size: 75%; }\n\n.tag-editor.editing > .add-tag {\n  display: none; }\n\n.tag-editor.editing > .tag-form {\n  display: block; }\n\n.tag-list {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  display: flex; }\n\n.thread-header > h2 {\n  margin-bottom: 0;\n  margin-top: 0; }\n\n.thread-list-item {\n  padding: 1rem;\n  display: flex;\n  flex-direction: row;\n  border-bottom: 1px solid #dbe8f1; }\n  .thread-list-item > .details {\n    flex-grow: 1; }\n    .thread-list-item > .details > .summary > .title {\n      color: #444444;\n      text-decoration: none; }\n      .thread-list-item > .details > .summary > .title:hover {\n        text-decoration: underline; }\n    .thread-list-item > .details > .summary > .user-name {\n      text-decoration: none; }\n      .thread-list-item > .details > .summary > .user-name:hover {\n        text-decoration: underline; }\n    .thread-list-item > .details > .metadata {\n      color: #acb7bf; }\n\n.thread-list {\n  padding: 0;\n  margin-left: 1rem; }\n  .thread-list > li {\n    list-style-type: none; }\n\n.login-page {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  padding: 2rem; }\n  .login-page .logo {\n    margin-bottom: 4rem;\n    margin-top: 4rem; }\n  .login-page > button, .login-page > .github-link, .login-page > .pure-button {\n    margin-bottom: 1rem;\n    width: 100%;\n    font-size: 1.5rem;\n    position: relative; }\n    .login-page > button > i, .login-page > .github-link > i, .login-page > .pure-button > i {\n      position: absolute;\n      left: 2rem;\n      font-size: 2rem; }\n  .login-page a.sign-in-link {\n    text-transform: uppercase;\n    padding: 1rem 0 1rem 1rem;\n    align-self: flex-end;\n    text-decoration: none; }\n  .login-page .legal-disclaimer {\n    color: #acb7bf; }\n\n.layout-app .layout-content {\n  padding: 1rem; }\n", ""]);
+	exports.push([module.id, "/* fira-sans-300 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"), url(" + __webpack_require__(5) + ") format(\"woff2\"), url(" + __webpack_require__(6) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-regular - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"), url(" + __webpack_require__(7) + ") format(\"woff2\"), url(" + __webpack_require__(8) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-500 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 500;\n  src: local(\"Fira Sans Medium\"), local(\"FiraSans-Medium\"), url(" + __webpack_require__(9) + ") format(\"woff2\"), url(" + __webpack_require__(10) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-600 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Fira Sans SemiBold\"), local(\"FiraSans-SemiBold\"), url(" + __webpack_require__(11) + ") format(\"woff2\"), url(" + __webpack_require__(12) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/* fira-sans-700 - latin */\n@font-face {\n  font-family: 'Fira Sans';\n  font-style: normal;\n  font-weight: 700;\n  src: local(\"Fira Sans Bold\"), local(\"FiraSans-Bold\"), url(" + __webpack_require__(13) + ") format(\"woff2\"), url(" + __webpack_require__(14) + ") format(\"woff\");\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }\n\n/*!\nPure v0.6.2\nCopyright 2013 Yahoo!\nLicensed under the BSD License.\nhttps://github.com/yahoo/pure/blob/master/LICENSE.md\n*/\n/*!\nnormalize.css v^3.0 | MIT License | git.io/normalize\nCopyright (c) Nicolas Gallagher and Jonathan Neal\n*/\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n.pure-button:focus, a:active, a:hover {\n  outline: 0; }\n\n.pure-table, table {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nhtml {\n  font-family: sans-serif;\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%; }\n\nbody {\n  margin: 0; }\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {\n  display: block; }\n\naudio, canvas, progress, video {\n  display: inline-block;\n  vertical-align: baseline; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n[hidden], template {\n  display: none; }\n\na {\n  background-color: transparent; }\n\nabbr[title] {\n  border-bottom: 1px dotted; }\n\nb, optgroup, strong {\n  font-weight: 700; }\n\ndfn {\n  font-style: italic; }\n\nh1 {\n  font-size: 2em;\n  margin: .67em 0; }\n\nmark {\n  background: #ff0;\n  color: #000; }\n\nsmall {\n  font-size: 80%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -.5em; }\n\nsub {\n  bottom: -.25em; }\n\nimg {\n  border: 0; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nfigure {\n  margin: 1em 40px; }\n\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\npre, textarea {\n  overflow: auto; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,monospace;\n  font-size: 1em; }\n\nbutton, input, optgroup, select, textarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\n.pure-button, input {\n  line-height: normal; }\n\nbutton {\n  overflow: visible; }\n\nbutton, select {\n  text-transform: none; }\n\nbutton, html input[type=button], input[type=reset], input[type=submit] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled], html input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\ninput[type=checkbox], input[type=radio] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=search] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\n.pure-button, .pure-form input:not([type]), .pure-menu {\n  box-sizing: border-box; }\n\ninput[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\nfieldset {\n  border: 1px solid silver;\n  margin: 0 2px;\n  padding: .35em .625em .75em; }\n\nlegend, td, th {\n  padding: 0; }\n\nlegend {\n  border: 0; }\n\n.hidden, [hidden] {\n  display: none !important; }\n\n.pure-img {\n  max-width: 100%;\n  height: auto;\n  display: block; }\n\n.pure-g {\n  letter-spacing: -.31em;\n  text-rendering: optimizespeed;\n  font-family: FreeSans,Arimo,\"Droid Sans\",Helvetica,Arial,sans-serif;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: row wrap;\n  -ms-flex-flow: row wrap;\n  flex-flow: row wrap;\n  -webkit-align-content: flex-start;\n  -ms-flex-line-pack: start;\n  align-content: flex-start; }\n\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  table .pure-g {\n    display: block; } }\n\n.opera-only :-o-prefocus, .pure-g {\n  word-spacing: -.43em; }\n\n.pure-u, .pure-u-1, .pure-u-1-1, .pure-u-1-12, .pure-u-1-2, .pure-u-1-24, .pure-u-1-3, .pure-u-1-4, .pure-u-1-5, .pure-u-1-6, .pure-u-1-8, .pure-u-10-24, .pure-u-11-12, .pure-u-11-24, .pure-u-12-24, .pure-u-13-24, .pure-u-14-24, .pure-u-15-24, .pure-u-16-24, .pure-u-17-24, .pure-u-18-24, .pure-u-19-24, .pure-u-2-24, .pure-u-2-3, .pure-u-2-5, .pure-u-20-24, .pure-u-21-24, .pure-u-22-24, .pure-u-23-24, .pure-u-24-24, .pure-u-3-24, .pure-u-3-4, .pure-u-3-5, .pure-u-3-8, .pure-u-4-24, .pure-u-4-5, .pure-u-5-12, .pure-u-5-24, .pure-u-5-5, .pure-u-5-6, .pure-u-5-8, .pure-u-6-24, .pure-u-7-12, .pure-u-7-24, .pure-u-7-8, .pure-u-8-24, .pure-u-9-24 {\n  letter-spacing: normal;\n  word-spacing: normal;\n  vertical-align: top;\n  text-rendering: auto;\n  display: inline-block;\n  zoom: 1; }\n\n.pure-g [class*=pure-u] {\n  font-family: sans-serif; }\n\n.pure-u-1-24 {\n  width: 4.1667%; }\n\n.pure-u-1-12, .pure-u-2-24 {\n  width: 8.3333%; }\n\n.pure-u-1-8, .pure-u-3-24 {\n  width: 12.5%; }\n\n.pure-u-1-6, .pure-u-4-24 {\n  width: 16.6667%; }\n\n.pure-u-1-5 {\n  width: 20%; }\n\n.pure-u-5-24 {\n  width: 20.8333%; }\n\n.pure-u-1-4, .pure-u-6-24 {\n  width: 25%; }\n\n.pure-u-7-24 {\n  width: 29.1667%; }\n\n.pure-u-1-3, .pure-u-8-24 {\n  width: 33.3333%; }\n\n.pure-u-3-8, .pure-u-9-24 {\n  width: 37.5%; }\n\n.pure-u-2-5 {\n  width: 40%; }\n\n.pure-u-10-24, .pure-u-5-12 {\n  width: 41.6667%; }\n\n.pure-u-11-24 {\n  width: 45.8333%; }\n\n.pure-u-1-2, .pure-u-12-24 {\n  width: 50%; }\n\n.pure-u-13-24 {\n  width: 54.1667%; }\n\n.pure-u-14-24, .pure-u-7-12 {\n  width: 58.3333%; }\n\n.pure-u-3-5 {\n  width: 60%; }\n\n.pure-u-15-24, .pure-u-5-8 {\n  width: 62.5%; }\n\n.pure-u-16-24, .pure-u-2-3 {\n  width: 66.6667%; }\n\n.pure-u-17-24 {\n  width: 70.8333%; }\n\n.pure-u-18-24, .pure-u-3-4 {\n  width: 75%; }\n\n.pure-u-19-24 {\n  width: 79.1667%; }\n\n.pure-u-4-5 {\n  width: 80%; }\n\n.pure-u-20-24, .pure-u-5-6 {\n  width: 83.3333%; }\n\n.pure-u-21-24, .pure-u-7-8 {\n  width: 87.5%; }\n\n.pure-u-11-12, .pure-u-22-24 {\n  width: 91.6667%; }\n\n.pure-u-23-24 {\n  width: 95.8333%; }\n\n.pure-u-1, .pure-u-1-1, .pure-u-24-24, .pure-u-5-5 {\n  width: 100%; }\n\n.pure-button {\n  display: inline-block;\n  zoom: 1;\n  white-space: nowrap;\n  vertical-align: middle;\n  text-align: center;\n  cursor: pointer;\n  -webkit-user-drag: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none; }\n\n.pure-button::-moz-focus-inner {\n  padding: 0;\n  border: 0; }\n\n.pure-button-group {\n  letter-spacing: -.31em;\n  text-rendering: optimizespeed; }\n\n.opera-only :-o-prefocus, .pure-button-group {\n  word-spacing: -.43em; }\n\n.pure-button {\n  font-family: inherit;\n  font-size: 100%;\n  padding: .5em 1em;\n  color: #444;\n  color: rgba(0, 0, 0, 0.8);\n  border: 1px solid #999;\n  border: transparent;\n  background-color: #E6E6E6;\n  text-decoration: none;\n  border-radius: 2px; }\n\n.pure-button-hover, .pure-button:focus, .pure-button:hover {\n  filter: alpha(opacity=90);\n  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));\n  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }\n\n.pure-button-active, .pure-button:active {\n  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;\n  border-color: #000\\9; }\n\n.pure-button-disabled, .pure-button-disabled:active, .pure-button-disabled:focus, .pure-button-disabled:hover, .pure-button[disabled] {\n  border: none;\n  background-image: none;\n  filter: alpha(opacity=40);\n  opacity: .4;\n  cursor: not-allowed;\n  box-shadow: none;\n  pointer-events: none; }\n\n.pure-button-hidden {\n  display: none; }\n\n.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {\n  background-color: #0078e7;\n  color: #fff; }\n\n.pure-button-group .pure-button {\n  letter-spacing: normal;\n  word-spacing: normal;\n  vertical-align: top;\n  text-rendering: auto;\n  margin: 0;\n  border-radius: 0;\n  border-right: 1px solid #111;\n  border-right: 1px solid rgba(0, 0, 0, 0.2); }\n\n.pure-button-group .pure-button:first-child {\n  border-top-left-radius: 2px;\n  border-bottom-left-radius: 2px; }\n\n.pure-button-group .pure-button:last-child {\n  border-top-right-radius: 2px;\n  border-bottom-right-radius: 2px;\n  border-right: none; }\n\n.pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=tel], .pure-form input[type=color], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=text], .pure-form select, .pure-form textarea {\n  padding: .5em .6em;\n  display: inline-block;\n  border: 1px solid #ccc;\n  box-shadow: inset 0 1px 3px #ddd;\n  border-radius: 4px;\n  vertical-align: middle;\n  box-sizing: border-box; }\n\n.pure-form input:not([type]) {\n  padding: .5em .6em;\n  display: inline-block;\n  border: 1px solid #ccc;\n  box-shadow: inset 0 1px 3px #ddd;\n  border-radius: 4px; }\n\n.pure-form input[type=color] {\n  padding: .2em .5em; }\n\n.pure-form input:not([type]):focus, .pure-form input[type=password]:focus, .pure-form input[type=email]:focus, .pure-form input[type=url]:focus, .pure-form input[type=date]:focus, .pure-form input[type=month]:focus, .pure-form input[type=time]:focus, .pure-form input[type=datetime]:focus, .pure-form input[type=datetime-local]:focus, .pure-form input[type=week]:focus, .pure-form input[type=tel]:focus, .pure-form input[type=color]:focus, .pure-form input[type=number]:focus, .pure-form input[type=search]:focus, .pure-form input[type=text]:focus, .pure-form select:focus, .pure-form textarea:focus {\n  outline: 0;\n  border-color: #129FEA; }\n\n.pure-form input[type=file]:focus, .pure-form input[type=checkbox]:focus, .pure-form input[type=radio]:focus {\n  outline: #129FEA auto 1px; }\n\n.pure-form .pure-checkbox, .pure-form .pure-radio {\n  margin: .5em 0;\n  display: block; }\n\n.pure-form input:not([type])[disabled], .pure-form input[type=password][disabled], .pure-form input[type=email][disabled], .pure-form input[type=url][disabled], .pure-form input[type=date][disabled], .pure-form input[type=month][disabled], .pure-form input[type=time][disabled], .pure-form input[type=datetime][disabled], .pure-form input[type=datetime-local][disabled], .pure-form input[type=week][disabled], .pure-form input[type=tel][disabled], .pure-form input[type=color][disabled], .pure-form input[type=number][disabled], .pure-form input[type=search][disabled], .pure-form input[type=text][disabled], .pure-form select[disabled], .pure-form textarea[disabled] {\n  cursor: not-allowed;\n  background-color: #eaeded;\n  color: #cad2d3; }\n\n.pure-form input[readonly], .pure-form select[readonly], .pure-form textarea[readonly] {\n  background-color: #eee;\n  color: #777;\n  border-color: #ccc; }\n\n.pure-form input:focus:invalid, .pure-form select:focus:invalid, .pure-form textarea:focus:invalid {\n  color: #b94a48;\n  border-color: #e9322d; }\n\n.pure-form input[type=file]:focus:invalid:focus, .pure-form input[type=checkbox]:focus:invalid:focus, .pure-form input[type=radio]:focus:invalid:focus {\n  outline-color: #e9322d; }\n\n.pure-form select {\n  height: 2.25em;\n  border: 1px solid #ccc;\n  background-color: #fff; }\n\n.pure-form select[multiple] {\n  height: auto; }\n\n.pure-form label {\n  margin: .5em 0 .2em; }\n\n.pure-form fieldset {\n  margin: 0;\n  padding: .35em 0 .75em;\n  border: 0; }\n\n.pure-form legend {\n  display: block;\n  width: 100%;\n  padding: .3em 0;\n  margin-bottom: .3em;\n  color: #333;\n  border-bottom: 1px solid #e5e5e5; }\n\n.pure-form-stacked input:not([type]), .pure-form-stacked input[type=password], .pure-form-stacked input[type=email], .pure-form-stacked input[type=url], .pure-form-stacked input[type=date], .pure-form-stacked input[type=month], .pure-form-stacked input[type=time], .pure-form-stacked input[type=datetime], .pure-form-stacked input[type=datetime-local], .pure-form-stacked input[type=week], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=color], .pure-form-stacked input[type=file], .pure-form-stacked input[type=number], .pure-form-stacked input[type=search], .pure-form-stacked input[type=text], .pure-form-stacked label, .pure-form-stacked select, .pure-form-stacked textarea {\n  display: block;\n  margin: .25em 0; }\n\n.pure-form-aligned .pure-help-inline, .pure-form-aligned input, .pure-form-aligned select, .pure-form-aligned textarea, .pure-form-message-inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n.pure-form-aligned textarea {\n  vertical-align: top; }\n\n.pure-form-aligned .pure-control-group {\n  margin-bottom: .5em; }\n\n.pure-form-aligned .pure-control-group label {\n  text-align: right;\n  display: inline-block;\n  vertical-align: middle;\n  width: 10em;\n  margin: 0 1em 0 0; }\n\n.pure-form-aligned .pure-controls {\n  margin: 1.5em 0 0 11em; }\n\n.pure-form .pure-input-rounded, .pure-form input.pure-input-rounded {\n  border-radius: 2em;\n  padding: .5em 1em; }\n\n.pure-form .pure-group fieldset {\n  margin-bottom: 10px; }\n\n.pure-form .pure-group input, .pure-form .pure-group textarea {\n  display: block;\n  padding: 10px;\n  margin: 0 0 -1px;\n  border-radius: 0;\n  position: relative;\n  top: -1px; }\n\n.pure-form .pure-group input:focus, .pure-form .pure-group textarea:focus {\n  z-index: 3; }\n\n.pure-form .pure-group input:first-child, .pure-form .pure-group textarea:first-child {\n  top: 1px;\n  border-radius: 4px 4px 0 0;\n  margin: 0; }\n\n.pure-form .pure-group input:first-child:last-child, .pure-form .pure-group textarea:first-child:last-child {\n  top: 1px;\n  border-radius: 4px;\n  margin: 0; }\n\n.pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {\n  top: -2px;\n  border-radius: 0 0 4px 4px;\n  margin: 0; }\n\n.pure-form .pure-group button {\n  margin: .35em 0; }\n\n.pure-form .pure-input-1 {\n  width: 100%; }\n\n.pure-form .pure-input-3-4 {\n  width: 75%; }\n\n.pure-form .pure-input-2-3 {\n  width: 66%; }\n\n.pure-form .pure-input-1-2 {\n  width: 50%; }\n\n.pure-form .pure-input-1-3 {\n  width: 33%; }\n\n.pure-form .pure-input-1-4 {\n  width: 25%; }\n\n.pure-form .pure-help-inline, .pure-form-message-inline {\n  display: inline-block;\n  padding-left: .3em;\n  color: #666;\n  vertical-align: middle;\n  font-size: .875em; }\n\n.pure-form-message {\n  display: block;\n  color: #666;\n  font-size: .875em; }\n\n@media only screen and (max-width: 480px) {\n  .pure-form button[type=submit] {\n    margin: .7em 0 0; }\n  .pure-form input:not([type]), .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=tel], .pure-form input[type=color], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=text], .pure-form label {\n    margin-bottom: .3em;\n    display: block; }\n  .pure-group input:not([type]), .pure-group input[type=password], .pure-group input[type=email], .pure-group input[type=url], .pure-group input[type=date], .pure-group input[type=month], .pure-group input[type=time], .pure-group input[type=datetime], .pure-group input[type=datetime-local], .pure-group input[type=week], .pure-group input[type=tel], .pure-group input[type=color], .pure-group input[type=number], .pure-group input[type=search], .pure-group input[type=text] {\n    margin-bottom: 0; }\n  .pure-form-aligned .pure-control-group label {\n    margin-bottom: .3em;\n    text-align: left;\n    display: block;\n    width: 100%; }\n  .pure-form-aligned .pure-controls {\n    margin: 1.5em 0 0; }\n  .pure-form .pure-help-inline, .pure-form-message, .pure-form-message-inline {\n    display: block;\n    font-size: .75em;\n    padding: .2em 0 .8em; } }\n\n.pure-menu-fixed {\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 3; }\n\n.pure-menu-item, .pure-menu-list {\n  position: relative; }\n\n.pure-menu-list {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.pure-menu-item {\n  padding: 0;\n  margin: 0;\n  height: 100%; }\n\n.pure-menu-heading, .pure-menu-link {\n  display: block;\n  text-decoration: none;\n  white-space: nowrap; }\n\n.pure-menu-horizontal {\n  width: 100%;\n  white-space: nowrap; }\n\n.pure-menu-horizontal .pure-menu-list {\n  display: inline-block; }\n\n.pure-menu-horizontal .pure-menu-heading, .pure-menu-horizontal .pure-menu-item, .pure-menu-horizontal .pure-menu-separator {\n  display: inline-block;\n  zoom: 1;\n  vertical-align: middle; }\n\n.pure-menu-item .pure-menu-item {\n  display: block; }\n\n.pure-menu-children {\n  display: none;\n  position: absolute;\n  left: 100%;\n  top: 0;\n  margin: 0;\n  padding: 0;\n  z-index: 3; }\n\n.pure-menu-horizontal .pure-menu-children {\n  left: 0;\n  top: auto;\n  width: inherit; }\n\n.pure-menu-active > .pure-menu-children, .pure-menu-allow-hover:hover > .pure-menu-children {\n  display: block;\n  position: absolute; }\n\n.pure-menu-has-children > .pure-menu-link:after {\n  padding-left: .5em;\n  content: \"\\25B8\";\n  font-size: small; }\n\n.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {\n  content: \"\\25BE\"; }\n\n.pure-menu-scrollable {\n  overflow-y: scroll;\n  overflow-x: hidden; }\n\n.pure-menu-scrollable .pure-menu-list {\n  display: block; }\n\n.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list {\n  display: inline-block; }\n\n.pure-menu-horizontal.pure-menu-scrollable {\n  white-space: nowrap;\n  overflow-y: hidden;\n  overflow-x: auto;\n  -ms-overflow-style: none;\n  -webkit-overflow-scrolling: touch;\n  padding: .5em 0; }\n\n.pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar {\n  display: none; }\n\n.pure-menu-horizontal .pure-menu-children .pure-menu-separator, .pure-menu-separator {\n  background-color: #ccc;\n  height: 1px;\n  margin: .3em 0; }\n\n.pure-menu-horizontal .pure-menu-separator {\n  width: 1px;\n  height: 1.3em;\n  margin: 0 .3em; }\n\n.pure-menu-horizontal .pure-menu-children .pure-menu-separator {\n  display: block;\n  width: auto; }\n\n.pure-menu-heading {\n  text-transform: uppercase;\n  color: #565d64; }\n\n.pure-menu-link {\n  color: #777; }\n\n.pure-menu-children {\n  background-color: #fff; }\n\n.pure-menu-disabled, .pure-menu-heading, .pure-menu-link {\n  padding: .5em 1em; }\n\n.pure-menu-disabled {\n  opacity: .5; }\n\n.pure-menu-disabled .pure-menu-link:hover {\n  background-color: transparent; }\n\n.pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {\n  background-color: #eee; }\n\n.pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {\n  color: #000; }\n\n.pure-table {\n  empty-cells: show;\n  border: 1px solid #cbcbcb; }\n\n.pure-table caption {\n  color: #000;\n  font: italic 85%/1 arial,sans-serif;\n  padding: 1em 0;\n  text-align: center; }\n\n.pure-table td, .pure-table th {\n  border-left: 1px solid #cbcbcb;\n  border-width: 0 0 0 1px;\n  font-size: inherit;\n  margin: 0;\n  overflow: visible;\n  padding: .5em 1em; }\n\n.pure-table td:first-child, .pure-table th:first-child {\n  border-left-width: 0; }\n\n.pure-table thead {\n  background-color: #e0e0e0;\n  color: #000;\n  text-align: left;\n  vertical-align: bottom; }\n\n.pure-table td {\n  background-color: transparent; }\n\n.pure-table-odd td, .pure-table-striped tr:nth-child(2n-1) td {\n  background-color: #f2f2f2; }\n\n.pure-table-bordered td {\n  border-bottom: 1px solid #cbcbcb; }\n\n.pure-table-bordered tbody > tr:last-child > td {\n  border-bottom-width: 0; }\n\n.pure-table-horizontal td, .pure-table-horizontal th {\n  border-width: 0 0 1px;\n  border-bottom: 1px solid #cbcbcb; }\n\n.pure-table-horizontal tbody > tr:last-child > td {\n  border-bottom-width: 0; }\n\n/**************\n## Animation ##\n**************/\n/************\n## Toggler ##\n************/\n/***********\n## Drawer ##\n***********/\n/***********\n## Pusher ##\n***********/\n/*******************\n## Pusher Overlay ##\n*******************/\n/**************\n## Variables ##\n **************/\n/*************\n## Required ##\n *************/\nhtml, body {\n  height: 100%; }\n\nbody {\n  margin: 0; }\n\n/**************\n## Container ##\n **************/\n.pure-container {\n  position: relative;\n  height: 100%;\n  -webkit-overflow-scrolling: touch; }\n\n/************\n## Toggler ##\n ************/\n.pure-toggle {\n  left: -9999px;\n  position: absolute;\n  top: -9999px; }\n  .pure-toggle:focus ~ .pure-toggle-label {\n    color: #DB3440; }\n\n.pure-toggle-label {\n  display: none;\n  cursor: pointer;\n  display: block;\n  position: fixed;\n  top: 15px;\n  z-index: 99;\n  color: #444444;\n  width: 50px;\n  height: 50px;\n  transition: all 400ms ease-in-out;\n  border-radius: 50%;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  -o-user-select: none;\n  user-select: none;\n  -webkit-tap-highlight-color: transparent; }\n  .pure-toggle-label:hover {\n    color: #DB3440; }\n    .pure-toggle-label:hover .pure-toggle-icon,\n    .pure-toggle-label:hover .pure-toggle-icon:before,\n    .pure-toggle-label:hover .pure-toggle-icon:after {\n      background-color: #DB3440; }\n  .pure-toggle-label:active {\n    -webkit-tap-highlight-color: transparent; }\n  .pure-toggle-label .pure-toggle-icon,\n  .pure-toggle-label .pure-toggle-icon:before,\n  .pure-toggle-label .pure-toggle-icon:after {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    height: 3px;\n    width: 30px;\n    cursor: pointer;\n    background: #444444;\n    display: block;\n    content: '';\n    transition: all 500ms ease-in-out; }\n  .pure-toggle-label .pure-toggle-icon {\n    transform: translate3d(-50%, -4px, 0);\n    -webkit-transform: translate3d(-50%, -4px, 0); }\n  .pure-toggle-label .pure-toggle-icon:before {\n    transform: translate3d(-50%, -12px, 0);\n    -webkit-transform: translate3d(-50%, -12px, 0); }\n  .pure-toggle-label .pure-toggle-icon:after {\n    transform: translate3d(-50%, 8px, 0);\n    -webkit-transform: translate3d(-50%, 8px, 0); }\n\n.pure-toggle-label[data-toggle-label='left'] {\n  left: 15px;\n  right: auto; }\n\n.pure-toggle-label[data-toggle-label='right'] {\n  right: 15px;\n  left: auto; }\n\n.pure-toggle-label[data-toggle-label='top'] {\n  left: 50%;\n  -webkit-transform: translate3d(-50%, 0, 0);\n  transform: translate3d(-50%, 0, 0); }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label:not([data-toggle-label='left']),\n.pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label:not([data-toggle-label='right']),\n.pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label:not([data-toggle-label='top']) {\n  opacity: 0;\n  z-index: -1; }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'],\n.pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'],\n.pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] {\n  color: #DB3440; }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon {\n    background-color: transparent; }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:before, .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:after {\n    top: 0; }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:before,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:before {\n    transform: translateX(-50%) rotate(45deg);\n    -webkit-transform: translateX(-50%) rotate(45deg); }\n  .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'] .pure-toggle-icon:after,\n  .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] .pure-toggle-icon:after {\n    transform: translateX(-50%) translateY(-10px) rotate(-45deg);\n    -webkit-transform: translateX(-50%) translateY(-10px) rotate(-45deg);\n    top: 10px; }\n\n/***********\n## Drawer ##\n ***********/\n.pure-drawer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  height: 100%;\n  visibility: hidden;\n  background-color: #ffffff;\n  transition-property: all;\n  transition-duration: 500ms;\n  transition-timing-function: ease-out;\n  width: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-drawer {\n      width: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-drawer {\n      width: 300px; } }\n\n.pure-drawer[data-position='right'] {\n  left: auto;\n  right: 0; }\n\n.pure-drawer[data-position='top'] {\n  height: 100%;\n  width: 100%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-drawer[data-position='top'] {\n      height: 100%; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-drawer[data-position='top'] {\n      height: 100px; } }\n\n/*********************\n## Pusher Container ##\n *********************/\n.pure-pusher-container {\n  position: relative;\n  height: 100%;\n  overflow: hidden; }\n\n/***********\n## Pusher ##\n ***********/\n.pure-pusher {\n  position: relative;\n  height: 100%;\n  overflow-y: auto;\n  left: 0;\n  z-index: 2;\n  background-color: #fff;\n  transition-property: transform;\n  transition-duration: 500ms;\n  transition-timing-function: ease-out; }\n\n/*******************\n## Pusher Overlay ##\n *******************/\n.pure-overlay {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 0;\n  height: 0;\n  opacity: 0;\n  background-color: rgba(0, 0, 0, 0.4);\n  transition-property: opacity;\n  transition-duration: 500ms;\n  transition-delay: 500ms;\n  transition-timing-function: ease-in-out; }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'] {\n  left: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'] {\n      left: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'] {\n      left: 300px; } }\n\n.pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'] {\n  right: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'] {\n      right: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'] {\n      right: 300px; } }\n\n.pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n  top: 100%; }\n  @media only screen and (min-width: 40.063em) {\n    .pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n      top: 100%; } }\n  @media only screen and (min-width: 64.063em) {\n    .pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n      top: 100px; } }\n\n.pure-toggle[data-toggle='left']:checked ~ .pure-overlay[data-overlay='left'],\n.pure-toggle[data-toggle='right']:checked ~ .pure-overlay[data-overlay='right'],\n.pure-toggle[data-toggle='top']:checked ~ .pure-overlay[data-overlay='top'] {\n  width: 100%;\n  height: 100%;\n  opacity: 1;\n  z-index: 2; }\n\n/********************************\n## Fallback for older browsers ##\n ********************************/\n.no-csstransforms3d .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  left: 80%; }\n  @media only screen and (min-width: 40.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      left: 300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      left: 300px; } }\n\n.no-csstransforms3d .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  left: -80%; }\n  @media only screen and (min-width: 40.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      left: -300px; } }\n  @media only screen and (min-width: 64.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      left: -300px; } }\n\n.no-csstransforms3d .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  top: 100%; }\n  @media only screen and (min-width: 40.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      top: 100%; } }\n  @media only screen and (min-width: 64.063em) {\n    .no-csstransforms3d .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      top: 100px; } }\n\n/*****************************\n## Effect - Slide in on top ##\n*****************************/\n/* DRAWER */\n[data-effect='pure-effect-slide'] .pure-drawer {\n  z-index: 3;\n  transition-duration: 350ms; }\n\n[data-effect='pure-effect-slide'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-slide'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-slide'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* OVERLAY */\n[data-effect='pure-effect-slide'] .pure-overlay {\n  transition-duration: 350ms;\n  transition-delay: 175ms; }\n\n/********************\n## Effect - Reveal ##\n********************/\n/* DRAWER */\n[data-effect='pure-effect-reveal'] .pure-drawer {\n  visibility: visible;\n  transition-duration: 500ms; }\n\n/* PUSHER */\n[data-effect='pure-effect-reveal'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reveal'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-reveal'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*************************\n## Effect - Slide along ##\n*************************/\n/* DRAWER */\n[data-effect='pure-effect-slideAlong'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-slideAlong'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-50%, 0, 0);\n  transform: translate3d(-50%, 0, 0); }\n\n[data-effect='pure-effect-slideAlong'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(50%, 0, 0);\n  transform: translate3d(50%, 0, 0); }\n\n[data-effect='pure-effect-slideAlong'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -50%, 0);\n  transform: translate3d(0, -50%, 0); }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-slideAlong'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-slideAlong'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-slideAlong'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*******************************\n## Effect - Reverse slide out ##\n*******************************/\n/* DRAWER */\n[data-effect='pure-effect-reverseSlide'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-reverseSlide'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(50%, 0, 0);\n  transform: translate3d(50%, 0, 0); }\n\n[data-effect='pure-effect-reverseSlide'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(-50%, 0, 0);\n  transform: translate3d(-50%, 0, 0); }\n\n[data-effect='pure-effect-reverseSlide'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, 50%, 0);\n  transform: translate3d(0, 50%, 0); }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-reverseSlide'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-reverseSlide'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-reverseSlide'] .pure-overlay {\n  transition-duration: 500ms; }\n\n/*********************************\n## Effect 5 - Scale Down Pusher ##\n*********************************/\n/* DRAWER */\n[data-effect='pure-effect-scaleDown'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleDown'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-scaleDown'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-scaleDown'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-scaleDown'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-scaleDown'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-scaleDown'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER CONTAINER */\n[data-effect='pure-effect-scaleDown'] .pure-pusher-container {\n  -webkit-perspective: 1500px;\n  perspective: 1500px; }\n\n/* PUSHER */\n/* Needed for Firefox */\n[data-effect='pure-effect-scaleDown'] .pure-pusher-container .pure-pusher {\n  z-index: 1;\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleDown'] .pure-toggle:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 0, -300px);\n  transform: translate3d(0, 0, -300px); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleDown'] .pure-toggle:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleDown'] .pure-toggle:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-scaleDown'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*************************\n## Effect - Scale Up ##\n*************************/\n/* CONTAINER */\n[data-effect='pure-effect-scaleUp'] {\n  -webkit-perspective: 1500px;\n  perspective: 1500px; }\n\n[data-effect='pure-effect-scaleUp'][data-position='left'] {\n  -webkit-perspective-origin: 0% 50%;\n  perspective-origin: 0% 50%; }\n\n[data-effect='pure-effect-scaleUp'][data-position='right'] {\n  -webkit-perspective-origin: 50% 50%;\n  perspective-origin: 50% 50%; }\n\n[data-effect='pure-effect-scaleUp'][data-position='top'] {\n  -webkit-perspective-origin: 50% 0;\n  perspective-origin: 50% 0; }\n\n/* DRAWER */\n[data-effect='pure-effect-scaleUp'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(0, 0, -80%);\n  transform: translate3d(0, 0, -80%); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='left'] {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='left'] {\n      -webkit-transform: translate3d(0, 0, -300px);\n      transform: translate3d(0, 0, -300px); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(80%, 0, -80%);\n  transform: translate3d(80%, 0, -80%); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='right'] {\n      -webkit-transform: translate3d(300px, 0, -300px);\n      transform: translate3d(300px, 0, -300px); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='right'] {\n      -webkit-transform: translate3d(300px, 0, -300px);\n      transform: translate3d(300px, 0, -300px); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, 0, -100%);\n  transform: translate3d(0, 0, -100%); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='top'] {\n      -webkit-transform: translate3d(0, 0, -100%);\n      transform: translate3d(0, 0, -100%); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-drawer[data-position='top'] {\n      -webkit-transform: translate3d(0, 0, -100px);\n      transform: translate3d(0, 0, -100px); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-scaleUp'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-scaleUp'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-scaleUp'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/****************************************\n## Effect - Scale and Rotate Pusher ##\n****************************************/\n/* DRAWER */\n[data-effect='pure-effect-scaleRotate'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleRotate'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER CONTAINER */\n[data-effect='pure-effect-scaleRotate'] .pure-pusher-container {\n  -webkit-perspective: 1500px;\n  perspective: 1500px; }\n\n/* PUSHER */\n[data-effect='pure-effect-scaleRotate'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(100px, 0, -600px) rotateY(-20deg);\n  transform: translate3d(100px, 0, -600px) rotateY(-20deg); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(100px, 0, -600px) rotateY(20deg);\n  transform: translate3d(100px, 0, -600px) rotateY(20deg); }\n\n[data-effect='pure-effect-scaleRotate'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 0, -100px) rotateX(20deg);\n  transform: translate3d(0, 0, -100px) rotateX(20deg); }\n\n/* OVERLAY */\n[data-effect='pure-effect-scaleRotate'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/**************************\n## Effect - Fall in ##\n**************************/\n/* DRAWER */\n[data-effect='pure-effect-fall'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-fall'] .pure-drawer[data-position='left'],\n[data-effect='pure-effect-fall'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-fall'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transition-timing-function: ease-in-out;\n  transition-timing-function: ease-in-out;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: transform;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-fall'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-fall'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-fall'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/*********************\n## Effect - Push ##\n*********************/\n/* DRAWER */\n[data-effect='pure-effect-push'] .pure-drawer {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-push'] .pure-drawer[data-position='left'] {\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0); }\n\n[data-effect='pure-effect-push'] .pure-drawer[data-position='right'] {\n  -webkit-transform: translate3d(100%, 0, 0);\n  transform: translate3d(100%, 0, 0); }\n\n[data-effect='pure-effect-push'] .pure-drawer[data-position='top'] {\n  -webkit-transform: translate3d(0, -100%, 0);\n  transform: translate3d(0, -100%, 0); }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible;\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n/* PUSHER */\n[data-effect='pure-effect-push'] .pure-pusher-container .pure-pusher {\n  transition-duration: 500ms; }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(80%, 0, 0);\n  transform: translate3d(80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='left']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(300px, 0, 0);\n      transform: translate3d(300px, 0, 0); } }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(-80%, 0, 0);\n  transform: translate3d(-80%, 0, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='right']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(-300px, 0, 0);\n      transform: translate3d(-300px, 0, 0); } }\n\n[data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n  -webkit-transform: translate3d(0, 100%, 0);\n  transform: translate3d(0, 100%, 0); }\n  @media only screen and (min-width: 40.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100%, 0);\n      transform: translate3d(0, 100%, 0); } }\n  @media only screen and (min-width: 64.063em) {\n    [data-effect='pure-effect-push'] .pure-toggle[data-toggle='top']:checked ~ .pure-pusher-container .pure-pusher {\n      -webkit-transform: translate3d(0, 100px, 0);\n      transform: translate3d(0, 100px, 0); } }\n\n/* OVERLAY */\n[data-effect='pure-effect-push'] .pure-overlay {\n  transition-duration: 500ms;\n  transition-delay: 250ms; }\n\n/********************\n## Effect - Bounce ##\n********************/\n/* DRAWER */\n[data-effect=\"pure-effect-bounce\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-bounce\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/******************\n## Effect - Fade ##\n******************/\n/* DRAWER */\n[data-effect=\"pure-effect-fade\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-fade\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/*******************\n## Effect - FlipX ##\n*******************/\n/* DRAWER */\n[data-effect=\"pure-effect-flipX\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-flipX\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/*******************\n## Effect - FlipY ##\n*******************/\n/* DRAWER */\n[data-effect=\"pure-effect-flipY\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-flipY\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/******************\n## Effect - Zoom ##\n******************/\n/* DRAWER */\n[data-effect=\"pure-effect-zoom\"] .pure-drawer {\n  z-index: 3;\n  -webkit-animation-duration: 1000ms;\n  animation-duration: 1000ms;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n[data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'],\n[data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'],\n[data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  visibility: visible; }\n\n/* OVERLAY */\n[data-effect=\"pure-effect-zoom\"] .pure-overlay {\n  transition-duration: 1000ms;\n  transition-delay: 500ms; }\n\n/*!\nAnimate.css - http://daneden.me/animate\nLicensed under the MIT license - http://opensource.org/licenses/MIT\n\nCopyright (c) 2014 Daniel Eden\n*/\n.animated {\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both; }\n\n.animated.infinite {\n  -webkit-animation-iteration-count: infinite;\n  animation-iteration-count: infinite; }\n\n.animated.hinge {\n  -webkit-animation-duration: 2s;\n  animation-duration: 2s; }\n\n@-webkit-keyframes bounce {\n  0%, 20%, 53%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  40%, 43% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -30px, 0);\n    transform: translate3d(0, -30px, 0); }\n  70% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -15px, 0);\n    transform: translate3d(0, -15px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -4px, 0);\n    transform: translate3d(0, -4px, 0); } }\n\n@keyframes bounce {\n  0%, 20%, 53%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  40%, 43% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -30px, 0);\n    transform: translate3d(0, -30px, 0); }\n  70% {\n    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);\n    -webkit-transform: translate3d(0, -15px, 0);\n    transform: translate3d(0, -15px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -4px, 0);\n    transform: translate3d(0, -4px, 0); } }\n\n.bounce {\n  -webkit-animation-name: bounce;\n  animation-name: bounce;\n  -webkit-transform-origin: center bottom;\n  -ms-transform-origin: center bottom;\n  transform-origin: center bottom; }\n\n@-webkit-keyframes flash {\n  0%, 50%, 100% {\n    opacity: 1; }\n  25%, 75% {\n    opacity: 0; } }\n\n@keyframes flash {\n  0%, 50%, 100% {\n    opacity: 1; }\n  25%, 75% {\n    opacity: 0; } }\n\n.flash {\n  -webkit-animation-name: flash;\n  animation-name: flash; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes pulse {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.pulse {\n  -webkit-animation-name: pulse;\n  animation-name: pulse; }\n\n@-webkit-keyframes rubberBand {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  30% {\n    -webkit-transform: scale3d(1.25, 0.75, 1);\n    transform: scale3d(1.25, 0.75, 1); }\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1); }\n  50% {\n    -webkit-transform: scale3d(1.15, 0.85, 1);\n    transform: scale3d(1.15, 0.85, 1); }\n  65% {\n    -webkit-transform: scale3d(0.95, 1.05, 1);\n    transform: scale3d(0.95, 1.05, 1); }\n  75% {\n    -webkit-transform: scale3d(1.05, 0.95, 1);\n    transform: scale3d(1.05, 0.95, 1); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes rubberBand {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  30% {\n    -webkit-transform: scale3d(1.25, 0.75, 1);\n    transform: scale3d(1.25, 0.75, 1); }\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1); }\n  50% {\n    -webkit-transform: scale3d(1.15, 0.85, 1);\n    transform: scale3d(1.15, 0.85, 1); }\n  65% {\n    -webkit-transform: scale3d(0.95, 1.05, 1);\n    transform: scale3d(0.95, 1.05, 1); }\n  75% {\n    -webkit-transform: scale3d(1.05, 0.95, 1);\n    transform: scale3d(1.05, 0.95, 1); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.rubberBand {\n  -webkit-animation-name: rubberBand;\n  animation-name: rubberBand; }\n\n@-webkit-keyframes shake {\n  0%, 100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  10%, 30%, 50%, 70%, 90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  20%, 40%, 60%, 80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); } }\n\n@keyframes shake {\n  0%, 100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); }\n  10%, 30%, 50%, 70%, 90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  20%, 40%, 60%, 80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); } }\n\n.shake {\n  -webkit-animation-name: shake;\n  animation-name: shake; }\n\n@-webkit-keyframes swing {\n  20% {\n    -webkit-transform: rotate3d(0, 0, 1, 15deg);\n    transform: rotate3d(0, 0, 1, 15deg); }\n  40% {\n    -webkit-transform: rotate3d(0, 0, 1, -10deg);\n    transform: rotate3d(0, 0, 1, -10deg); }\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 5deg);\n    transform: rotate3d(0, 0, 1, 5deg); }\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, -5deg);\n    transform: rotate3d(0, 0, 1, -5deg); }\n  100% {\n    -webkit-transform: rotate3d(0, 0, 1, 0deg);\n    transform: rotate3d(0, 0, 1, 0deg); } }\n\n@keyframes swing {\n  20% {\n    -webkit-transform: rotate3d(0, 0, 1, 15deg);\n    transform: rotate3d(0, 0, 1, 15deg); }\n  40% {\n    -webkit-transform: rotate3d(0, 0, 1, -10deg);\n    transform: rotate3d(0, 0, 1, -10deg); }\n  60% {\n    -webkit-transform: rotate3d(0, 0, 1, 5deg);\n    transform: rotate3d(0, 0, 1, 5deg); }\n  80% {\n    -webkit-transform: rotate3d(0, 0, 1, -5deg);\n    transform: rotate3d(0, 0, 1, -5deg); }\n  100% {\n    -webkit-transform: rotate3d(0, 0, 1, 0deg);\n    transform: rotate3d(0, 0, 1, 0deg); } }\n\n.swing {\n  -webkit-transform-origin: top center;\n  -ms-transform-origin: top center;\n  transform-origin: top center;\n  -webkit-animation-name: swing;\n  animation-name: swing; }\n\n@-webkit-keyframes tada {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  10%, 20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }\n  30%, 50%, 70%, 90% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }\n  40%, 60%, 80% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes tada {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); }\n  10%, 20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }\n  30%, 50%, 70%, 90% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }\n  40%, 60%, 80% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.tada {\n  -webkit-animation-name: tada;\n  animation-name: tada; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes wobble {\n  0% {\n    -webkit-transform: none;\n    transform: none; }\n  15% {\n    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }\n  30% {\n    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }\n  45% {\n    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }\n  60% {\n    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }\n  75% {\n    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes wobble {\n  0% {\n    -webkit-transform: none;\n    transform: none; }\n  15% {\n    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }\n  30% {\n    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }\n  45% {\n    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }\n  60% {\n    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }\n  75% {\n    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.wobble {\n  -webkit-animation-name: wobble;\n  animation-name: wobble; }\n\n@-webkit-keyframes bounceIn {\n  0%, 20%, 40%, 60%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  20% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  40% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.03, 1.03, 1.03);\n    transform: scale3d(1.03, 1.03, 1.03); }\n  80% {\n    -webkit-transform: scale3d(0.97, 0.97, 0.97);\n    transform: scale3d(0.97, 0.97, 0.97); }\n  100% {\n    opacity: 1;\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n@keyframes bounceIn {\n  0%, 20%, 40%, 60%, 80%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  20% {\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  40% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.03, 1.03, 1.03);\n    transform: scale3d(1.03, 1.03, 1.03); }\n  80% {\n    -webkit-transform: scale3d(0.97, 0.97, 0.97);\n    transform: scale3d(0.97, 0.97, 0.97); }\n  100% {\n    opacity: 1;\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); } }\n\n.bounceIn {\n  -webkit-animation-name: bounceIn;\n  animation-name: bounceIn;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s; }\n\n@-webkit-keyframes bounceInDown {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes bounceInDown {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n    transform: translate3d(0, 5px, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.bounceInDown, [data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-animation-name: bounceInDown;\n  animation-name: bounceInDown; }\n\n@-webkit-keyframes bounceInLeft {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n    transform: translate3d(-3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n    transform: translate3d(25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n    transform: translate3d(5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes bounceInLeft {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n    transform: translate3d(-3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n    transform: translate3d(25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n    transform: translate3d(5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.bounceInLeft, [data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'] {\n  -webkit-animation-name: bounceInLeft;\n  animation-name: bounceInLeft; }\n\n@-webkit-keyframes bounceInRight {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes bounceInRight {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0); }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0); }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0); }\n  100% {\n    -webkit-transform: none;\n    transform: none; } }\n\n.bounceInRight, [data-effect=\"pure-effect-bounce\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'] {\n  -webkit-animation-name: bounceInRight;\n  animation-name: bounceInRight; }\n\n@-webkit-keyframes bounceInUp {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n    transform: translate3d(0, 3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n    transform: translate3d(0, -5px, 0); }\n  100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes bounceInUp {\n  0%, 60%, 75%, 90%, 100% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n    transform: translate3d(0, 3000px, 0); }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n    transform: translate3d(0, -5px, 0); }\n  100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0); } }\n\n.bounceInUp {\n  -webkit-animation-name: bounceInUp;\n  animation-name: bounceInUp; }\n\n@-webkit-keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  50%, 55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); } }\n\n@keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(0.9, 0.9, 0.9);\n    transform: scale3d(0.9, 0.9, 0.9); }\n  50%, 55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); } }\n\n.bounceOut {\n  -webkit-animation-name: bounceOut;\n  animation-name: bounceOut;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s; }\n\n@-webkit-keyframes bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n@keyframes bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n    transform: translate3d(0, 10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n    transform: translate3d(0, -20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n.bounceOutDown {\n  -webkit-animation-name: bounceOutDown;\n  animation-name: bounceOutDown; }\n\n@-webkit-keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n    transform: translate3d(20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n@keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n    transform: translate3d(20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n.bounceOutLeft, [data-effect=\"pure-effect-bounce\"] .pure-drawer[data-position='left'] {\n  -webkit-animation-name: bounceOutLeft;\n  animation-name: bounceOutLeft; }\n\n@-webkit-keyframes bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n    transform: translate3d(-20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n@keyframes bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n    transform: translate3d(-20px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n.bounceOutRight, [data-effect=\"pure-effect-bounce\"] .pure-drawer[data-position='right'] {\n  -webkit-animation-name: bounceOutRight;\n  animation-name: bounceOutRight; }\n\n@-webkit-keyframes bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n    transform: translate3d(0, 20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n@keyframes bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n    transform: translate3d(0, -10px, 0); }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n    transform: translate3d(0, 20px, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n.bounceOutUp, [data-effect=\"pure-effect-bounce\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: bounceOutUp;\n  animation-name: bounceOutUp; }\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.fadeIn {\n  -webkit-animation-name: fadeIn;\n  animation-name: fadeIn; }\n\n@-webkit-keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInDown, [data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-animation-name: fadeInDown;\n  animation-name: fadeInDown; }\n\n@-webkit-keyframes fadeInDownBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInDownBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInDownBig {\n  -webkit-animation-name: fadeInDownBig;\n  animation-name: fadeInDownBig; }\n\n@-webkit-keyframes fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInLeft, [data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'] {\n  -webkit-animation-name: fadeInLeft;\n  animation-name: fadeInLeft; }\n\n@-webkit-keyframes fadeInLeftBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInLeftBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInLeftBig {\n  -webkit-animation-name: fadeInLeftBig;\n  animation-name: fadeInLeftBig; }\n\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInRight, [data-effect=\"pure-effect-fade\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'] {\n  -webkit-animation-name: fadeInRight;\n  animation-name: fadeInRight; }\n\n@-webkit-keyframes fadeInRightBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInRightBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInRightBig {\n  -webkit-animation-name: fadeInRightBig;\n  animation-name: fadeInRightBig; }\n\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInUp {\n  -webkit-animation-name: fadeInUp;\n  animation-name: fadeInUp; }\n\n@-webkit-keyframes fadeInUpBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes fadeInUpBig {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.fadeInUpBig {\n  -webkit-animation-name: fadeInUpBig;\n  animation-name: fadeInUpBig; }\n\n@-webkit-keyframes fadeOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.fadeOut {\n  -webkit-animation-name: fadeOut;\n  animation-name: fadeOut; }\n\n@-webkit-keyframes fadeOutDown {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); } }\n\n@keyframes fadeOutDown {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0); } }\n\n.fadeOutDown {\n  -webkit-animation-name: fadeOutDown;\n  animation-name: fadeOutDown; }\n\n@-webkit-keyframes fadeOutDownBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n@keyframes fadeOutDownBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n    transform: translate3d(0, 2000px, 0); } }\n\n.fadeOutDownBig {\n  -webkit-animation-name: fadeOutDownBig;\n  animation-name: fadeOutDownBig; }\n\n@-webkit-keyframes fadeOutLeft {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); } }\n\n@keyframes fadeOutLeft {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0); } }\n\n.fadeOutLeft, [data-effect=\"pure-effect-fade\"] .pure-drawer[data-position='left'] {\n  -webkit-animation-name: fadeOutLeft;\n  animation-name: fadeOutLeft; }\n\n@-webkit-keyframes fadeOutLeftBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n@keyframes fadeOutLeftBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n    transform: translate3d(-2000px, 0, 0); } }\n\n.fadeOutLeftBig {\n  -webkit-animation-name: fadeOutLeftBig;\n  animation-name: fadeOutLeftBig; }\n\n@-webkit-keyframes fadeOutRight {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); } }\n\n@keyframes fadeOutRight {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0); } }\n\n.fadeOutRight, [data-effect=\"pure-effect-fade\"] .pure-drawer[data-position='right'] {\n  -webkit-animation-name: fadeOutRight;\n  animation-name: fadeOutRight; }\n\n@-webkit-keyframes fadeOutRightBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n@keyframes fadeOutRightBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n    transform: translate3d(2000px, 0, 0); } }\n\n.fadeOutRightBig {\n  -webkit-animation-name: fadeOutRightBig;\n  animation-name: fadeOutRightBig; }\n\n@-webkit-keyframes fadeOutUp {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); } }\n\n@keyframes fadeOutUp {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n    transform: translate3d(0, -100%, 0); } }\n\n.fadeOutUp, [data-effect=\"pure-effect-fade\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: fadeOutUp;\n  animation-name: fadeOutUp; }\n\n@-webkit-keyframes fadeOutUpBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n@keyframes fadeOutUpBig {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0); } }\n\n.fadeOutUpBig {\n  -webkit-animation-name: fadeOutUpBig;\n  animation-name: fadeOutUpBig; }\n\n@-webkit-keyframes flip {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  40% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  50% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  80% {\n    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; } }\n\n@keyframes flip {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  40% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  50% {\n    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  80% {\n    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; } }\n\n.animated.flip {\n  -webkit-backface-visibility: visible;\n  backface-visibility: visible;\n  -webkit-animation-name: flip;\n  animation-name: flip; }\n\n@-webkit-keyframes flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n@keyframes flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n.flipInX, [data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipX\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipInX;\n  animation-name: flipInX; }\n\n@-webkit-keyframes flipInY {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n@keyframes flipInY {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    -webkit-transition-timing-function: ease-in;\n    transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); } }\n\n.flipInY, [data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipY\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipInY;\n  animation-name: flipInY; }\n\n@-webkit-keyframes flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0; } }\n\n@keyframes flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0; } }\n\n.flipOutX, [data-effect=\"pure-effect-flipX\"] .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipX\"] .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipX\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: flipOutX;\n  animation-name: flipOutX;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s;\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important; }\n\n@-webkit-keyframes flipOutY {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0; } }\n\n@keyframes flipOutY {\n  0% {\n    -webkit-transform: perspective(400px);\n    transform: perspective(400px); }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0; } }\n\n.flipOutY, [data-effect=\"pure-effect-flipY\"] .pure-drawer[data-position='left'], [data-effect=\"pure-effect-flipY\"] .pure-drawer[data-position='right'], [data-effect=\"pure-effect-flipY\"] .pure-drawer[data-position='top'] {\n  -webkit-backface-visibility: visible !important;\n  backface-visibility: visible !important;\n  -webkit-animation-name: flipOutY;\n  animation-name: flipOutY;\n  -webkit-animation-duration: .75s;\n  animation-duration: .75s; }\n\n@-webkit-keyframes lightSpeedIn {\n  0% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);\n    transform: translate3d(100%, 0, 0) skewX(-30deg);\n    opacity: 0; }\n  60% {\n    -webkit-transform: skewX(20deg);\n    transform: skewX(20deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: skewX(-5deg);\n    transform: skewX(-5deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes lightSpeedIn {\n  0% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);\n    transform: translate3d(100%, 0, 0) skewX(-30deg);\n    opacity: 0; }\n  60% {\n    -webkit-transform: skewX(20deg);\n    transform: skewX(20deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: skewX(-5deg);\n    transform: skewX(-5deg);\n    opacity: 1; }\n  100% {\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.lightSpeedIn {\n  -webkit-animation-name: lightSpeedIn;\n  animation-name: lightSpeedIn;\n  -webkit-animation-timing-function: ease-out;\n  animation-timing-function: ease-out; }\n\n@-webkit-keyframes lightSpeedOut {\n  0% {\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);\n    transform: translate3d(100%, 0, 0) skewX(30deg);\n    opacity: 0; } }\n\n@keyframes lightSpeedOut {\n  0% {\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);\n    transform: translate3d(100%, 0, 0) skewX(30deg);\n    opacity: 0; } }\n\n.lightSpeedOut {\n  -webkit-animation-name: lightSpeedOut;\n  animation-name: lightSpeedOut;\n  -webkit-animation-timing-function: ease-in;\n  animation-timing-function: ease-in; }\n\n@-webkit-keyframes rotateIn {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateIn {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateIn {\n  -webkit-animation-name: rotateIn;\n  animation-name: rotateIn; }\n\n@-webkit-keyframes rotateInDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInDownLeft {\n  -webkit-animation-name: rotateInDownLeft;\n  animation-name: rotateInDownLeft; }\n\n@-webkit-keyframes rotateInDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInDownRight {\n  -webkit-animation-name: rotateInDownRight;\n  animation-name: rotateInDownRight; }\n\n@-webkit-keyframes rotateInUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInUpLeft {\n  -webkit-animation-name: rotateInUpLeft;\n  animation-name: rotateInUpLeft; }\n\n@-webkit-keyframes rotateInUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -90deg);\n    transform: rotate3d(0, 0, 1, -90deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n@keyframes rotateInUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -90deg);\n    transform: rotate3d(0, 0, 1, -90deg);\n    opacity: 0; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: none;\n    transform: none;\n    opacity: 1; } }\n\n.rotateInUpRight {\n  -webkit-animation-name: rotateInUpRight;\n  animation-name: rotateInUpRight; }\n\n@-webkit-keyframes rotateOut {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, 200deg);\n    transform: rotate3d(0, 0, 1, 200deg);\n    opacity: 0; } }\n\n@keyframes rotateOut {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, 200deg);\n    transform: rotate3d(0, 0, 1, 200deg);\n    opacity: 0; } }\n\n.rotateOut {\n  -webkit-animation-name: rotateOut;\n  animation-name: rotateOut; }\n\n@-webkit-keyframes rotateOutDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; } }\n\n@keyframes rotateOutDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0; } }\n\n.rotateOutDownLeft {\n  -webkit-animation-name: rotateOutDownLeft;\n  animation-name: rotateOutDownLeft; }\n\n@-webkit-keyframes rotateOutDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n@keyframes rotateOutDownRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n.rotateOutDownRight {\n  -webkit-animation-name: rotateOutDownRight;\n  animation-name: rotateOutDownRight; }\n\n@-webkit-keyframes rotateOutUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n@keyframes rotateOutUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg);\n    opacity: 0; } }\n\n.rotateOutUpLeft {\n  -webkit-animation-name: rotateOutUpLeft;\n  animation-name: rotateOutUpLeft; }\n\n@-webkit-keyframes rotateOutUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 90deg);\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0; } }\n\n@keyframes rotateOutUpRight {\n  0% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    opacity: 1; }\n  100% {\n    -webkit-transform-origin: right bottom;\n    transform-origin: right bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 90deg);\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0; } }\n\n.rotateOutUpRight {\n  -webkit-animation-name: rotateOutUpRight;\n  animation-name: rotateOutUpRight; }\n\n@-webkit-keyframes hinge {\n  0% {\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  20%, 60% {\n    -webkit-transform: rotate3d(0, 0, 1, 80deg);\n    transform: rotate3d(0, 0, 1, 80deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  40%, 80% {\n    -webkit-transform: rotate3d(0, 0, 1, 60deg);\n    transform: rotate3d(0, 0, 1, 60deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(0, 700px, 0);\n    transform: translate3d(0, 700px, 0);\n    opacity: 0; } }\n\n@keyframes hinge {\n  0% {\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  20%, 60% {\n    -webkit-transform: rotate3d(0, 0, 1, 80deg);\n    transform: rotate3d(0, 0, 1, 80deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  40%, 80% {\n    -webkit-transform: rotate3d(0, 0, 1, 60deg);\n    transform: rotate3d(0, 0, 1, 60deg);\n    -webkit-transform-origin: top left;\n    transform-origin: top left;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    opacity: 1; }\n  100% {\n    -webkit-transform: translate3d(0, 700px, 0);\n    transform: translate3d(0, 700px, 0);\n    opacity: 0; } }\n\n.hinge {\n  -webkit-animation-name: hinge;\n  animation-name: hinge; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes rollIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n@keyframes rollIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);\n    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none; } }\n\n.rollIn {\n  -webkit-animation-name: rollIn;\n  animation-name: rollIn; }\n\n/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */\n@-webkit-keyframes rollOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }\n\n@keyframes rollOut {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);\n    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }\n\n.rollOut {\n  -webkit-animation-name: rollOut;\n  animation-name: rollOut; }\n\n@-webkit-keyframes zoomIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  50% {\n    opacity: 1; } }\n\n@keyframes zoomIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  50% {\n    opacity: 1; } }\n\n.zoomIn {\n  -webkit-animation-name: zoomIn;\n  animation-name: zoomIn; }\n\n@-webkit-keyframes zoomInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInDown, [data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='top']:checked ~ .pure-drawer[data-position='top'] {\n  -webkit-animation-name: zoomInDown;\n  animation-name: zoomInDown; }\n\n@-webkit-keyframes zoomInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInLeft, [data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='left']:checked ~ .pure-drawer[data-position='left'] {\n  -webkit-animation-name: zoomInLeft;\n  animation-name: zoomInLeft; }\n\n@-webkit-keyframes zoomInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInRight, [data-effect=\"pure-effect-zoom\"] .pure-toggle[data-toggle='right']:checked ~ .pure-drawer[data-position='right'] {\n  -webkit-animation-name: zoomInRight;\n  animation-name: zoomInRight; }\n\n@-webkit-keyframes zoomInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  60% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomInUp {\n  -webkit-animation-name: zoomInUp;\n  animation-name: zoomInUp; }\n\n@-webkit-keyframes zoomOut {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    opacity: 0; } }\n\n@keyframes zoomOut {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n    transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    opacity: 0; } }\n\n.zoomOut {\n  -webkit-animation-name: zoomOut;\n  animation-name: zoomOut; }\n\n@-webkit-keyframes zoomOutDown {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomOutDown {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomOutDown {\n  -webkit-animation-name: zoomOutDown;\n  animation-name: zoomOutDown; }\n\n@-webkit-keyframes zoomOutLeft {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);\n    transform: scale(0.1) translate3d(-2000px, 0, 0);\n    -webkit-transform-origin: left center;\n    transform-origin: left center; } }\n\n@keyframes zoomOutLeft {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);\n    transform: scale(0.1) translate3d(-2000px, 0, 0);\n    -webkit-transform-origin: left center;\n    transform-origin: left center; } }\n\n.zoomOutLeft, [data-effect=\"pure-effect-zoom\"] .pure-drawer[data-position='left'] {\n  -webkit-animation-name: zoomOutLeft;\n  animation-name: zoomOutLeft; }\n\n@-webkit-keyframes zoomOutRight {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);\n    transform: scale(0.1) translate3d(2000px, 0, 0);\n    -webkit-transform-origin: right center;\n    transform-origin: right center; } }\n\n@keyframes zoomOutRight {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);\n    transform: scale(0.1) translate3d(2000px, 0, 0);\n    -webkit-transform-origin: right center;\n    transform-origin: right center; } }\n\n.zoomOutRight, [data-effect=\"pure-effect-zoom\"] .pure-drawer[data-position='right'] {\n  -webkit-animation-name: zoomOutRight;\n  animation-name: zoomOutRight; }\n\n@-webkit-keyframes zoomOutUp {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n@keyframes zoomOutUp {\n  40% {\n    opacity: 1;\n    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);\n    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);\n    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);\n    -webkit-transform-origin: center bottom;\n    transform-origin: center bottom;\n    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }\n\n.zoomOutUp, [data-effect=\"pure-effect-zoom\"] .pure-drawer[data-position='top'] {\n  -webkit-animation-name: zoomOutUp;\n  animation-name: zoomOutUp; }\n\n@-webkit-keyframes slideInDown {\n  0% {\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n@keyframes slideInDown {\n  0% {\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n.slideInDown {\n  -webkit-animation-name: slideInDown;\n  animation-name: slideInDown; }\n\n@-webkit-keyframes slideInLeft {\n  0% {\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n@keyframes slideInLeft {\n  0% {\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n.slideInLeft {\n  -webkit-animation-name: slideInLeft;\n  animation-name: slideInLeft; }\n\n@-webkit-keyframes slideInRight {\n  0% {\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n@keyframes slideInRight {\n  0% {\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); } }\n\n.slideInRight {\n  -webkit-animation-name: slideInRight;\n  animation-name: slideInRight; }\n\n@-webkit-keyframes slideInUp {\n  0% {\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n@keyframes slideInUp {\n  0% {\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%);\n    visibility: visible; }\n  100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); } }\n\n.slideInUp {\n  -webkit-animation-name: slideInUp;\n  animation-name: slideInUp; }\n\n@-webkit-keyframes slideOutDown {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%); } }\n\n@keyframes slideOutDown {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(100%);\n    transform: translateY(100%); } }\n\n.slideOutDown {\n  -webkit-animation-name: slideOutDown;\n  animation-name: slideOutDown; }\n\n@-webkit-keyframes slideOutLeft {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%); } }\n\n@keyframes slideOutLeft {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%); } }\n\n.slideOutLeft {\n  -webkit-animation-name: slideOutLeft;\n  animation-name: slideOutLeft; }\n\n@-webkit-keyframes slideOutRight {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%); } }\n\n@keyframes slideOutRight {\n  0% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%); } }\n\n.slideOutRight {\n  -webkit-animation-name: slideOutRight;\n  animation-name: slideOutRight; }\n\n@-webkit-keyframes slideOutUp {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%); } }\n\n@keyframes slideOutUp {\n  0% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translateY(-100%);\n    transform: translateY(-100%); } }\n\n.slideOutUp {\n  -webkit-animation-name: slideOutUp;\n  animation-name: slideOutUp; }\n\nbody {\n  font-family: 'Fira Sans', sans; }\n\na {\n  color: #DB3440; }\n\n.action-bar {\n  margin-top: 1rem;\n  display: flex;\n  flex-direction: row; }\n  .action-bar > .begin {\n    display: flex;\n    flex-direction: row; }\n  .action-bar > .end {\n    justify-content: flex-end;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: row;\n    align-self: flex-end; }\n\n.alert-box {\n  margin: 1rem;\n  padding: 1rem;\n  color: white; }\n  .alert-box.-success {\n    background-color: #259B24; }\n  .alert-box.-info {\n    background-color: #FAAF3F; }\n  .alert-box.-error {\n    background-color: #DB3440; }\n\n.back-arrow {\n  text-decoration: none;\n  font-size: 1.3rem;\n  padding: .5rem;\n  color: #444444;\n  display: inline-block; }\n  .back-arrow:hover {\n    color: #DB3440; }\n  .back-arrow + .pure-menu-heading {\n    padding-left: 0; }\n\n.badge-block {\n  border-radius: 0.25rem;\n  padding: 0.25rem 0.5rem;\n  background-color: #dbe8f1;\n  color: #444444; }\n  .badge-block.-highlight {\n    background-color: #DB3440;\n    color: #ffffff; }\n\n.button-primary {\n  background: #DB3440;\n  color: #ffffff; }\n  .button-primary.-inverted {\n    background: transparent;\n    color: #DB3440; }\n  .button-primary.-muted {\n    background: transparent;\n    color: #444444; }\n\n.category-header {\n  display: flex;\n  flex-direction: row; }\n  .category-header > h2 {\n    margin-bottom: 0;\n    margin-top: 0; }\n  .category-header .spacer {\n    flex-grow: 1; }\n  .category-header .actions {\n    list-style-type: none;\n    margin: 0;\n    padding: 0; }\n    .category-header .actions > li {\n      display: inline-block; }\n\n.category-list {\n  padding: 0;\n  margin-top: 0; }\n  .category-list .category-list {\n    margin-left: 1rem; }\n  .category-list > li {\n    list-style-type: none; }\n  .category-list > li > h2 > a {\n    text-decoration: none; }\n    .category-list > li > h2 > a:hover {\n      text-decoration: underline; }\n  .category-list > li > h2 {\n    font-size: 1.5rem;\n    font-weight: 700;\n    margin: 0; }\n  .category-list > li > .category-list > li > h2 {\n    font-size: 1.25rem;\n    font-weight: 400; }\n\n.category-pill {\n  display: flex;\n  flex-direction: row;\n  margin: 0;\n  padding: 0;\n  font-size: .75rem; }\n  .category-pill > .category {\n    list-style-type: none; }\n    .category-pill > .category > a {\n      color: #ffffff;\n      text-decoration: none;\n      display: inline-block;\n      padding: 0.25rem 0.5rem;\n      border-right: 1px solid white; }\n      .category-pill > .category > a:hover {\n        background: #8259cb; }\n    .category-pill > .category.-color-0 a {\n      background-color: red; }\n    .category-pill > .category.-color-1 a {\n      background-color: #ff0400; }\n    .category-pill > .category.-color-2 a {\n      background-color: #ff0900; }\n    .category-pill > .category.-color-3 a {\n      background-color: #ff0d00; }\n    .category-pill > .category.-color-4 a {\n      background-color: #ff1100; }\n    .category-pill > .category.-color-5 a {\n      background-color: #ff1500; }\n    .category-pill > .category.-color-6 a {\n      background-color: #ff1a00; }\n    .category-pill > .category.-color-7 a {\n      background-color: #ff1e00; }\n    .category-pill > .category.-color-8 a {\n      background-color: #ff2200; }\n    .category-pill > .category.-color-9 a {\n      background-color: #ff2600; }\n    .category-pill > .category.-color-10 a {\n      background-color: #ff2b00; }\n    .category-pill > .category.-color-11 a {\n      background-color: #ff2f00; }\n    .category-pill > .category.-color-12 a {\n      background-color: #ff3300; }\n    .category-pill > .category.-color-13 a {\n      background-color: #ff3700; }\n    .category-pill > .category.-color-14 a {\n      background-color: #ff3c00; }\n    .category-pill > .category.-color-15 a {\n      background-color: #ff4000; }\n    .category-pill > .category.-color-16 a {\n      background-color: #ff4400; }\n    .category-pill > .category.-color-17 a {\n      background-color: #ff4800; }\n    .category-pill > .category.-color-18 a {\n      background-color: #ff4d00; }\n    .category-pill > .category.-color-19 a {\n      background-color: #ff5100; }\n    .category-pill > .category.-color-20 a {\n      background-color: #ff5500; }\n    .category-pill > .category.-color-21 a {\n      background-color: #ff5900; }\n    .category-pill > .category.-color-22 a {\n      background-color: #ff5e00; }\n    .category-pill > .category.-color-23 a {\n      background-color: #ff6200; }\n    .category-pill > .category.-color-24 a {\n      background-color: #ff6600; }\n    .category-pill > .category.-color-25 a {\n      background-color: #ff6a00; }\n    .category-pill > .category.-color-26 a {\n      background-color: #ff6f00; }\n    .category-pill > .category.-color-27 a {\n      background-color: #ff7300; }\n    .category-pill > .category.-color-28 a {\n      background-color: #ff7700; }\n    .category-pill > .category.-color-29 a {\n      background-color: #ff7b00; }\n    .category-pill > .category.-color-30 a {\n      background-color: #ff8000; }\n    .category-pill > .category.-color-31 a {\n      background-color: #ff8400; }\n    .category-pill > .category.-color-32 a {\n      background-color: #ff8800; }\n    .category-pill > .category.-color-33 a {\n      background-color: darkorange; }\n    .category-pill > .category.-color-34 a {\n      background-color: #ff9100; }\n    .category-pill > .category.-color-35 a {\n      background-color: #ff9500; }\n    .category-pill > .category.-color-36 a {\n      background-color: #ff9900; }\n    .category-pill > .category.-color-37 a {\n      background-color: #ff9d00; }\n    .category-pill > .category.-color-38 a {\n      background-color: #ffa200; }\n    .category-pill > .category.-color-39 a {\n      background-color: #ffa600; }\n    .category-pill > .category.-color-40 a {\n      background-color: #ffaa00; }\n    .category-pill > .category.-color-41 a {\n      background-color: #ffae00; }\n    .category-pill > .category.-color-42 a {\n      background-color: #ffb300; }\n    .category-pill > .category.-color-43 a {\n      background-color: #ffb700; }\n    .category-pill > .category.-color-44 a {\n      background-color: #ffbb00; }\n    .category-pill > .category.-color-45 a {\n      background-color: #ffbf00; }\n    .category-pill > .category.-color-46 a {\n      background-color: #ffc400; }\n    .category-pill > .category.-color-47 a {\n      background-color: #ffc800; }\n    .category-pill > .category.-color-48 a {\n      background-color: #ffcc00; }\n    .category-pill > .category.-color-49 a {\n      background-color: #ffd000; }\n    .category-pill > .category.-color-50 a {\n      background-color: #ffd500; }\n    .category-pill > .category.-color-51 a {\n      background-color: #ffd900; }\n    .category-pill > .category.-color-52 a {\n      background-color: #ffdd00; }\n    .category-pill > .category.-color-53 a {\n      background-color: #ffe100; }\n    .category-pill > .category.-color-54 a {\n      background-color: #ffe600; }\n    .category-pill > .category.-color-55 a {\n      background-color: #ffea00; }\n    .category-pill > .category.-color-56 a {\n      background-color: #ffee00; }\n    .category-pill > .category.-color-57 a {\n      background-color: #fff200; }\n    .category-pill > .category.-color-58 a {\n      background-color: #fff700; }\n    .category-pill > .category.-color-59 a {\n      background-color: #fffb00; }\n    .category-pill > .category.-color-60 a {\n      background-color: yellow; }\n    .category-pill > .category.-color-61 a {\n      background-color: #fbff00; }\n    .category-pill > .category.-color-62 a {\n      background-color: #f7ff00; }\n    .category-pill > .category.-color-63 a {\n      background-color: #f2ff00; }\n    .category-pill > .category.-color-64 a {\n      background-color: #eeff00; }\n    .category-pill > .category.-color-65 a {\n      background-color: #eaff00; }\n    .category-pill > .category.-color-66 a {\n      background-color: #e6ff00; }\n    .category-pill > .category.-color-67 a {\n      background-color: #e1ff00; }\n    .category-pill > .category.-color-68 a {\n      background-color: #ddff00; }\n    .category-pill > .category.-color-69 a {\n      background-color: #d9ff00; }\n    .category-pill > .category.-color-70 a {\n      background-color: #d5ff00; }\n    .category-pill > .category.-color-71 a {\n      background-color: #d0ff00; }\n    .category-pill > .category.-color-72 a {\n      background-color: #ccff00; }\n    .category-pill > .category.-color-73 a {\n      background-color: #c8ff00; }\n    .category-pill > .category.-color-74 a {\n      background-color: #c4ff00; }\n    .category-pill > .category.-color-75 a {\n      background-color: #bfff00; }\n    .category-pill > .category.-color-76 a {\n      background-color: #bbff00; }\n    .category-pill > .category.-color-77 a {\n      background-color: #b7ff00; }\n    .category-pill > .category.-color-78 a {\n      background-color: #b3ff00; }\n    .category-pill > .category.-color-79 a {\n      background-color: #aeff00; }\n    .category-pill > .category.-color-80 a {\n      background-color: #aaff00; }\n    .category-pill > .category.-color-81 a {\n      background-color: #a6ff00; }\n    .category-pill > .category.-color-82 a {\n      background-color: #a2ff00; }\n    .category-pill > .category.-color-83 a {\n      background-color: #9dff00; }\n    .category-pill > .category.-color-84 a {\n      background-color: #99ff00; }\n    .category-pill > .category.-color-85 a {\n      background-color: #95ff00; }\n    .category-pill > .category.-color-86 a {\n      background-color: #91ff00; }\n    .category-pill > .category.-color-87 a {\n      background-color: #8cff00; }\n    .category-pill > .category.-color-88 a {\n      background-color: #88ff00; }\n    .category-pill > .category.-color-89 a {\n      background-color: #84ff00; }\n    .category-pill > .category.-color-90 a {\n      background-color: #80ff00; }\n    .category-pill > .category.-color-91 a {\n      background-color: #7bff00; }\n    .category-pill > .category.-color-92 a {\n      background-color: #77ff00; }\n    .category-pill > .category.-color-93 a {\n      background-color: #73ff00; }\n    .category-pill > .category.-color-94 a {\n      background-color: #6fff00; }\n    .category-pill > .category.-color-95 a {\n      background-color: #6aff00; }\n    .category-pill > .category.-color-96 a {\n      background-color: #66ff00; }\n    .category-pill > .category.-color-97 a {\n      background-color: #62ff00; }\n    .category-pill > .category.-color-98 a {\n      background-color: #5eff00; }\n    .category-pill > .category.-color-99 a {\n      background-color: #59ff00; }\n    .category-pill > .category.-color-100 a {\n      background-color: #55ff00; }\n    .category-pill > .category.-color-101 a {\n      background-color: #51ff00; }\n    .category-pill > .category.-color-102 a {\n      background-color: #4dff00; }\n    .category-pill > .category.-color-103 a {\n      background-color: #48ff00; }\n    .category-pill > .category.-color-104 a {\n      background-color: #44ff00; }\n    .category-pill > .category.-color-105 a {\n      background-color: #40ff00; }\n    .category-pill > .category.-color-106 a {\n      background-color: #3cff00; }\n    .category-pill > .category.-color-107 a {\n      background-color: #37ff00; }\n    .category-pill > .category.-color-108 a {\n      background-color: #33ff00; }\n    .category-pill > .category.-color-109 a {\n      background-color: #2fff00; }\n    .category-pill > .category.-color-110 a {\n      background-color: #2bff00; }\n    .category-pill > .category.-color-111 a {\n      background-color: #26ff00; }\n    .category-pill > .category.-color-112 a {\n      background-color: #22ff00; }\n    .category-pill > .category.-color-113 a {\n      background-color: #1eff00; }\n    .category-pill > .category.-color-114 a {\n      background-color: #1aff00; }\n    .category-pill > .category.-color-115 a {\n      background-color: #15ff00; }\n    .category-pill > .category.-color-116 a {\n      background-color: #11ff00; }\n    .category-pill > .category.-color-117 a {\n      background-color: #0dff00; }\n    .category-pill > .category.-color-118 a {\n      background-color: #09ff00; }\n    .category-pill > .category.-color-119 a {\n      background-color: #04ff00; }\n    .category-pill > .category.-color-120 a {\n      background-color: lime; }\n    .category-pill > .category.-color-121 a {\n      background-color: #00ff04; }\n    .category-pill > .category.-color-122 a {\n      background-color: #00ff09; }\n    .category-pill > .category.-color-123 a {\n      background-color: #00ff0d; }\n    .category-pill > .category.-color-124 a {\n      background-color: #00ff11; }\n    .category-pill > .category.-color-125 a {\n      background-color: #00ff15; }\n    .category-pill > .category.-color-126 a {\n      background-color: #00ff1a; }\n    .category-pill > .category.-color-127 a {\n      background-color: #00ff1e; }\n    .category-pill > .category.-color-128 a {\n      background-color: #00ff22; }\n    .category-pill > .category.-color-129 a {\n      background-color: #00ff26; }\n    .category-pill > .category.-color-130 a {\n      background-color: #00ff2b; }\n    .category-pill > .category.-color-131 a {\n      background-color: #00ff2f; }\n    .category-pill > .category.-color-132 a {\n      background-color: #00ff33; }\n    .category-pill > .category.-color-133 a {\n      background-color: #00ff37; }\n    .category-pill > .category.-color-134 a {\n      background-color: #00ff3c; }\n    .category-pill > .category.-color-135 a {\n      background-color: #00ff40; }\n    .category-pill > .category.-color-136 a {\n      background-color: #00ff44; }\n    .category-pill > .category.-color-137 a {\n      background-color: #00ff48; }\n    .category-pill > .category.-color-138 a {\n      background-color: #00ff4d; }\n    .category-pill > .category.-color-139 a {\n      background-color: #00ff51; }\n    .category-pill > .category.-color-140 a {\n      background-color: #00ff55; }\n    .category-pill > .category.-color-141 a {\n      background-color: #00ff59; }\n    .category-pill > .category.-color-142 a {\n      background-color: #00ff5e; }\n    .category-pill > .category.-color-143 a {\n      background-color: #00ff62; }\n    .category-pill > .category.-color-144 a {\n      background-color: #00ff66; }\n    .category-pill > .category.-color-145 a {\n      background-color: #00ff6a; }\n    .category-pill > .category.-color-146 a {\n      background-color: #00ff6f; }\n    .category-pill > .category.-color-147 a {\n      background-color: #00ff73; }\n    .category-pill > .category.-color-148 a {\n      background-color: #00ff77; }\n    .category-pill > .category.-color-149 a {\n      background-color: #00ff7b; }\n    .category-pill > .category.-color-150 a {\n      background-color: #00ff80; }\n    .category-pill > .category.-color-151 a {\n      background-color: #00ff84; }\n    .category-pill > .category.-color-152 a {\n      background-color: #00ff88; }\n    .category-pill > .category.-color-153 a {\n      background-color: #00ff8c; }\n    .category-pill > .category.-color-154 a {\n      background-color: #00ff91; }\n    .category-pill > .category.-color-155 a {\n      background-color: #00ff95; }\n    .category-pill > .category.-color-156 a {\n      background-color: #00ff99; }\n    .category-pill > .category.-color-157 a {\n      background-color: #00ff9d; }\n    .category-pill > .category.-color-158 a {\n      background-color: #00ffa2; }\n    .category-pill > .category.-color-159 a {\n      background-color: #00ffa6; }\n    .category-pill > .category.-color-160 a {\n      background-color: #00ffaa; }\n    .category-pill > .category.-color-161 a {\n      background-color: #00ffae; }\n    .category-pill > .category.-color-162 a {\n      background-color: #00ffb3; }\n    .category-pill > .category.-color-163 a {\n      background-color: #00ffb7; }\n    .category-pill > .category.-color-164 a {\n      background-color: #00ffbb; }\n    .category-pill > .category.-color-165 a {\n      background-color: #00ffbf; }\n    .category-pill > .category.-color-166 a {\n      background-color: #00ffc4; }\n    .category-pill > .category.-color-167 a {\n      background-color: #00ffc8; }\n    .category-pill > .category.-color-168 a {\n      background-color: #00ffcc; }\n    .category-pill > .category.-color-169 a {\n      background-color: #00ffd0; }\n    .category-pill > .category.-color-170 a {\n      background-color: #00ffd5; }\n    .category-pill > .category.-color-171 a {\n      background-color: #00ffd9; }\n    .category-pill > .category.-color-172 a {\n      background-color: #00ffdd; }\n    .category-pill > .category.-color-173 a {\n      background-color: #00ffe1; }\n    .category-pill > .category.-color-174 a {\n      background-color: #00ffe6; }\n    .category-pill > .category.-color-175 a {\n      background-color: #00ffea; }\n    .category-pill > .category.-color-176 a {\n      background-color: #00ffee; }\n    .category-pill > .category.-color-177 a {\n      background-color: #00fff2; }\n    .category-pill > .category.-color-178 a {\n      background-color: #00fff7; }\n    .category-pill > .category.-color-179 a {\n      background-color: #00fffb; }\n    .category-pill > .category.-color-180 a {\n      background-color: cyan; }\n    .category-pill > .category.-color-181 a {\n      background-color: #00fbff; }\n    .category-pill > .category.-color-182 a {\n      background-color: #00f7ff; }\n    .category-pill > .category.-color-183 a {\n      background-color: #00f2ff; }\n    .category-pill > .category.-color-184 a {\n      background-color: #00eeff; }\n    .category-pill > .category.-color-185 a {\n      background-color: #00eaff; }\n    .category-pill > .category.-color-186 a {\n      background-color: #00e6ff; }\n    .category-pill > .category.-color-187 a {\n      background-color: #00e1ff; }\n    .category-pill > .category.-color-188 a {\n      background-color: #00ddff; }\n    .category-pill > .category.-color-189 a {\n      background-color: #00d9ff; }\n    .category-pill > .category.-color-190 a {\n      background-color: #00d5ff; }\n    .category-pill > .category.-color-191 a {\n      background-color: #00d0ff; }\n    .category-pill > .category.-color-192 a {\n      background-color: #00ccff; }\n    .category-pill > .category.-color-193 a {\n      background-color: #00c8ff; }\n    .category-pill > .category.-color-194 a {\n      background-color: #00c4ff; }\n    .category-pill > .category.-color-195 a {\n      background-color: deepskyblue; }\n    .category-pill > .category.-color-196 a {\n      background-color: #00bbff; }\n    .category-pill > .category.-color-197 a {\n      background-color: #00b7ff; }\n    .category-pill > .category.-color-198 a {\n      background-color: #00b3ff; }\n    .category-pill > .category.-color-199 a {\n      background-color: #00aeff; }\n    .category-pill > .category.-color-200 a {\n      background-color: #00aaff; }\n    .category-pill > .category.-color-201 a {\n      background-color: #00a6ff; }\n    .category-pill > .category.-color-202 a {\n      background-color: #00a2ff; }\n    .category-pill > .category.-color-203 a {\n      background-color: #009dff; }\n    .category-pill > .category.-color-204 a {\n      background-color: #0099ff; }\n    .category-pill > .category.-color-205 a {\n      background-color: #0095ff; }\n    .category-pill > .category.-color-206 a {\n      background-color: #0091ff; }\n    .category-pill > .category.-color-207 a {\n      background-color: #008cff; }\n    .category-pill > .category.-color-208 a {\n      background-color: #0088ff; }\n    .category-pill > .category.-color-209 a {\n      background-color: #0084ff; }\n    .category-pill > .category.-color-210 a {\n      background-color: #0080ff; }\n    .category-pill > .category.-color-211 a {\n      background-color: #007bff; }\n    .category-pill > .category.-color-212 a {\n      background-color: #0077ff; }\n    .category-pill > .category.-color-213 a {\n      background-color: #0073ff; }\n    .category-pill > .category.-color-214 a {\n      background-color: #006fff; }\n    .category-pill > .category.-color-215 a {\n      background-color: #006aff; }\n    .category-pill > .category.-color-216 a {\n      background-color: #0066ff; }\n    .category-pill > .category.-color-217 a {\n      background-color: #0062ff; }\n    .category-pill > .category.-color-218 a {\n      background-color: #005eff; }\n    .category-pill > .category.-color-219 a {\n      background-color: #0059ff; }\n    .category-pill > .category.-color-220 a {\n      background-color: #0055ff; }\n    .category-pill > .category.-color-221 a {\n      background-color: #0051ff; }\n    .category-pill > .category.-color-222 a {\n      background-color: #004dff; }\n    .category-pill > .category.-color-223 a {\n      background-color: #0048ff; }\n    .category-pill > .category.-color-224 a {\n      background-color: #0044ff; }\n    .category-pill > .category.-color-225 a {\n      background-color: #0040ff; }\n    .category-pill > .category.-color-226 a {\n      background-color: #003cff; }\n    .category-pill > .category.-color-227 a {\n      background-color: #0037ff; }\n    .category-pill > .category.-color-228 a {\n      background-color: #0033ff; }\n    .category-pill > .category.-color-229 a {\n      background-color: #002fff; }\n    .category-pill > .category.-color-230 a {\n      background-color: #002bff; }\n    .category-pill > .category.-color-231 a {\n      background-color: #0026ff; }\n    .category-pill > .category.-color-232 a {\n      background-color: #0022ff; }\n    .category-pill > .category.-color-233 a {\n      background-color: #001eff; }\n    .category-pill > .category.-color-234 a {\n      background-color: #001aff; }\n    .category-pill > .category.-color-235 a {\n      background-color: #0015ff; }\n    .category-pill > .category.-color-236 a {\n      background-color: #0011ff; }\n    .category-pill > .category.-color-237 a {\n      background-color: #000dff; }\n    .category-pill > .category.-color-238 a {\n      background-color: #0009ff; }\n    .category-pill > .category.-color-239 a {\n      background-color: #0004ff; }\n    .category-pill > .category.-color-240 a {\n      background-color: blue; }\n    .category-pill > .category.-color-241 a {\n      background-color: #0400ff; }\n    .category-pill > .category.-color-242 a {\n      background-color: #0900ff; }\n    .category-pill > .category.-color-243 a {\n      background-color: #0d00ff; }\n    .category-pill > .category.-color-244 a {\n      background-color: #1100ff; }\n    .category-pill > .category.-color-245 a {\n      background-color: #1500ff; }\n    .category-pill > .category.-color-246 a {\n      background-color: #1a00ff; }\n    .category-pill > .category.-color-247 a {\n      background-color: #1e00ff; }\n    .category-pill > .category.-color-248 a {\n      background-color: #2200ff; }\n    .category-pill > .category.-color-249 a {\n      background-color: #2600ff; }\n    .category-pill > .category.-color-250 a {\n      background-color: #2b00ff; }\n    .category-pill > .category.-color-251 a {\n      background-color: #2f00ff; }\n    .category-pill > .category.-color-252 a {\n      background-color: #3300ff; }\n    .category-pill > .category.-color-253 a {\n      background-color: #3700ff; }\n    .category-pill > .category.-color-254 a {\n      background-color: #3c00ff; }\n    .category-pill > .category.-color-255 a {\n      background-color: #4000ff; }\n    .category-pill > .category.-color-256 a {\n      background-color: #4400ff; }\n    .category-pill > .category.-color-257 a {\n      background-color: #4800ff; }\n    .category-pill > .category.-color-258 a {\n      background-color: #4d00ff; }\n    .category-pill > .category.-color-259 a {\n      background-color: #5100ff; }\n    .category-pill > .category.-color-260 a {\n      background-color: #5500ff; }\n    .category-pill > .category.-color-261 a {\n      background-color: #5900ff; }\n    .category-pill > .category.-color-262 a {\n      background-color: #5e00ff; }\n    .category-pill > .category.-color-263 a {\n      background-color: #6200ff; }\n    .category-pill > .category.-color-264 a {\n      background-color: #6600ff; }\n    .category-pill > .category.-color-265 a {\n      background-color: #6a00ff; }\n    .category-pill > .category.-color-266 a {\n      background-color: #6f00ff; }\n    .category-pill > .category.-color-267 a {\n      background-color: #7300ff; }\n    .category-pill > .category.-color-268 a {\n      background-color: #7700ff; }\n    .category-pill > .category.-color-269 a {\n      background-color: #7b00ff; }\n    .category-pill > .category.-color-270 a {\n      background-color: #8000ff; }\n    .category-pill > .category.-color-271 a {\n      background-color: #8400ff; }\n    .category-pill > .category.-color-272 a {\n      background-color: #8800ff; }\n    .category-pill > .category.-color-273 a {\n      background-color: #8c00ff; }\n    .category-pill > .category.-color-274 a {\n      background-color: #9100ff; }\n    .category-pill > .category.-color-275 a {\n      background-color: #9500ff; }\n    .category-pill > .category.-color-276 a {\n      background-color: #9900ff; }\n    .category-pill > .category.-color-277 a {\n      background-color: #9d00ff; }\n    .category-pill > .category.-color-278 a {\n      background-color: #a200ff; }\n    .category-pill > .category.-color-279 a {\n      background-color: #a600ff; }\n    .category-pill > .category.-color-280 a {\n      background-color: #aa00ff; }\n    .category-pill > .category.-color-281 a {\n      background-color: #ae00ff; }\n    .category-pill > .category.-color-282 a {\n      background-color: #b300ff; }\n    .category-pill > .category.-color-283 a {\n      background-color: #b700ff; }\n    .category-pill > .category.-color-284 a {\n      background-color: #bb00ff; }\n    .category-pill > .category.-color-285 a {\n      background-color: #bf00ff; }\n    .category-pill > .category.-color-286 a {\n      background-color: #c400ff; }\n    .category-pill > .category.-color-287 a {\n      background-color: #c800ff; }\n    .category-pill > .category.-color-288 a {\n      background-color: #cc00ff; }\n    .category-pill > .category.-color-289 a {\n      background-color: #d000ff; }\n    .category-pill > .category.-color-290 a {\n      background-color: #d500ff; }\n    .category-pill > .category.-color-291 a {\n      background-color: #d900ff; }\n    .category-pill > .category.-color-292 a {\n      background-color: #dd00ff; }\n    .category-pill > .category.-color-293 a {\n      background-color: #e100ff; }\n    .category-pill > .category.-color-294 a {\n      background-color: #e600ff; }\n    .category-pill > .category.-color-295 a {\n      background-color: #ea00ff; }\n    .category-pill > .category.-color-296 a {\n      background-color: #ee00ff; }\n    .category-pill > .category.-color-297 a {\n      background-color: #f200ff; }\n    .category-pill > .category.-color-298 a {\n      background-color: #f700ff; }\n    .category-pill > .category.-color-299 a {\n      background-color: #fb00ff; }\n    .category-pill > .category.-color-300 a {\n      background-color: magenta; }\n    .category-pill > .category.-color-301 a {\n      background-color: #ff00fb; }\n    .category-pill > .category.-color-302 a {\n      background-color: #ff00f7; }\n    .category-pill > .category.-color-303 a {\n      background-color: #ff00f2; }\n    .category-pill > .category.-color-304 a {\n      background-color: #ff00ee; }\n    .category-pill > .category.-color-305 a {\n      background-color: #ff00ea; }\n    .category-pill > .category.-color-306 a {\n      background-color: #ff00e6; }\n    .category-pill > .category.-color-307 a {\n      background-color: #ff00e1; }\n    .category-pill > .category.-color-308 a {\n      background-color: #ff00dd; }\n    .category-pill > .category.-color-309 a {\n      background-color: #ff00d9; }\n    .category-pill > .category.-color-310 a {\n      background-color: #ff00d5; }\n    .category-pill > .category.-color-311 a {\n      background-color: #ff00d0; }\n    .category-pill > .category.-color-312 a {\n      background-color: #ff00cc; }\n    .category-pill > .category.-color-313 a {\n      background-color: #ff00c8; }\n    .category-pill > .category.-color-314 a {\n      background-color: #ff00c4; }\n    .category-pill > .category.-color-315 a {\n      background-color: #ff00bf; }\n    .category-pill > .category.-color-316 a {\n      background-color: #ff00bb; }\n    .category-pill > .category.-color-317 a {\n      background-color: #ff00b7; }\n    .category-pill > .category.-color-318 a {\n      background-color: #ff00b3; }\n    .category-pill > .category.-color-319 a {\n      background-color: #ff00ae; }\n    .category-pill > .category.-color-320 a {\n      background-color: #ff00aa; }\n    .category-pill > .category.-color-321 a {\n      background-color: #ff00a6; }\n    .category-pill > .category.-color-322 a {\n      background-color: #ff00a2; }\n    .category-pill > .category.-color-323 a {\n      background-color: #ff009d; }\n    .category-pill > .category.-color-324 a {\n      background-color: #ff0099; }\n    .category-pill > .category.-color-325 a {\n      background-color: #ff0095; }\n    .category-pill > .category.-color-326 a {\n      background-color: #ff0091; }\n    .category-pill > .category.-color-327 a {\n      background-color: #ff008c; }\n    .category-pill > .category.-color-328 a {\n      background-color: #ff0088; }\n    .category-pill > .category.-color-329 a {\n      background-color: #ff0084; }\n    .category-pill > .category.-color-330 a {\n      background-color: #ff0080; }\n    .category-pill > .category.-color-331 a {\n      background-color: #ff007b; }\n    .category-pill > .category.-color-332 a {\n      background-color: #ff0077; }\n    .category-pill > .category.-color-333 a {\n      background-color: #ff0073; }\n    .category-pill > .category.-color-334 a {\n      background-color: #ff006f; }\n    .category-pill > .category.-color-335 a {\n      background-color: #ff006a; }\n    .category-pill > .category.-color-336 a {\n      background-color: #ff0066; }\n    .category-pill > .category.-color-337 a {\n      background-color: #ff0062; }\n    .category-pill > .category.-color-338 a {\n      background-color: #ff005e; }\n    .category-pill > .category.-color-339 a {\n      background-color: #ff0059; }\n    .category-pill > .category.-color-340 a {\n      background-color: #ff0055; }\n    .category-pill > .category.-color-341 a {\n      background-color: #ff0051; }\n    .category-pill > .category.-color-342 a {\n      background-color: #ff004d; }\n    .category-pill > .category.-color-343 a {\n      background-color: #ff0048; }\n    .category-pill > .category.-color-344 a {\n      background-color: #ff0044; }\n    .category-pill > .category.-color-345 a {\n      background-color: #ff0040; }\n    .category-pill > .category.-color-346 a {\n      background-color: #ff003c; }\n    .category-pill > .category.-color-347 a {\n      background-color: #ff0037; }\n    .category-pill > .category.-color-348 a {\n      background-color: #ff0033; }\n    .category-pill > .category.-color-349 a {\n      background-color: #ff002f; }\n    .category-pill > .category.-color-350 a {\n      background-color: #ff002b; }\n    .category-pill > .category.-color-351 a {\n      background-color: #ff0026; }\n    .category-pill > .category.-color-352 a {\n      background-color: #ff0022; }\n    .category-pill > .category.-color-353 a {\n      background-color: #ff001e; }\n    .category-pill > .category.-color-354 a {\n      background-color: #ff001a; }\n    .category-pill > .category.-color-355 a {\n      background-color: #ff0015; }\n    .category-pill > .category.-color-356 a {\n      background-color: #ff0011; }\n    .category-pill > .category.-color-357 a {\n      background-color: #ff000d; }\n    .category-pill > .category.-color-358 a {\n      background-color: #ff0009; }\n    .category-pill > .category.-color-359 a {\n      background-color: #ff0004; }\n    .category-pill > .category:first-child a {\n      border-top-left-radius: 0.25rem;\n      border-bottom-left-radius: 0.25rem; }\n    .category-pill > .category:last-child a {\n      border-top-right-radius: 0.25rem;\n      border-bottom-right-radius: 0.25rem;\n      border-right: 0; }\n\n.emoticon-faces {\n  background: url(" + __webpack_require__(15) + ");\n  width: 36px;\n  height: 19px;\n  display: inline-block; }\n\n.fa.-highlight {\n  color: red; }\n\n.hero-logo > img {\n  max-width: 845px;\n  width: 100%; }\n\n.hero-logo > span {\n  display: none; }\n\n.item-metadata {\n  display: flex;\n  flex-direction: row;\n  color: #acb7bf; }\n  .item-metadata > * {\n    margin-right: 0.5rem; }\n  .item-metadata > .username {\n    text-decoration: none; }\n    .item-metadata > .username:hover {\n      text-decoration: underline; }\n  .item-metadata > abbr {\n    border-bottom: none; }\n\n.navigation-logo > img {\n  height: 40px; }\n\n.navigation-logo > span {\n  display: none; }\n\n.navigation-menu {\n  padding: 0.5rem;\n  background: #ffffff;\n  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24); }\n  .navigation-menu a {\n    vertical-align: middle; }\n  .navigation-menu > ul {\n    float: right;\n    padding: 0.5rem; }\n\n.new-thread {\n  display: flex;\n  flex-direction: column; }\n  .new-thread > input, .new-thread > textarea {\n    border-width: 0 0 1px 0;\n    border-color: #acb7bf;\n    resize: vertical;\n    margin-top: .1rem;\n    margin-bottom: .1rem; }\n    .new-thread > input:focus, .new-thread > textarea:focus {\n      border-color: #64caec;\n      outline: none;\n      box-shadow: none; }\n\n.post-editor {\n  display: flex;\n  flex-direction: column; }\n  .post-editor > textarea {\n    border-width: 0 0 1px 0;\n    border-color: #acb7bf;\n    resize: vertical;\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    overflow: auto; }\n    .post-editor > textarea:focus {\n      border-color: #64caec;\n      outline: none;\n      box-shadow: none; }\n\n.post-item-actions {\n  display: flex;\n  flex-direction: row; }\n  .post-item-actions > .spacer {\n    flex-grow: 1; }\n  .post-item-actions > .actions {\n    align-self: flex-end;\n    list-style-type: none;\n    margin: 0;\n    padding: 0; }\n    .post-item-actions > .actions > li {\n      display: inline-block; }\n      .post-item-actions > .actions > li > a {\n        padding: 0.5rem;\n        color: #acb7bf;\n        transition-property: color;\n        transition-duration: 0.5s;\n        transition-timing-function: easeInOutSine; }\n        .post-item-actions > .actions > li > a:active {\n          color: #DB3440; }\n        .post-item-actions > .actions > li > a > i.fa {\n          font-size: 22px; }\n          .post-item-actions > .actions > li > a > i.fa.fa-eye:before {\n            top: -2px;\n            position: relative; }\n\n.post-item {\n  border-bottom: 1px solid #dbe8f1;\n  padding: 0.5rem; }\n  .post-item:target {\n    background-color: rgba(219, 52, 64, 0.03); }\n\n.post-list {\n  padding: 0; }\n  .post-list > li {\n    list-style-type: none; }\n\n.reply-count {\n  color: #acb7bf;\n  font-style: oblique; }\n\n.tag-editor > .add-tag {\n  display: block; }\n\n.tag-editor > .tag-form {\n  display: none; }\n  .tag-editor > .tag-form > button {\n    font-size: 75%; }\n\n.tag-editor.editing > .add-tag {\n  display: none; }\n\n.tag-editor.editing > .tag-form {\n  display: block; }\n\n.tag-list {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  display: flex; }\n\n.thread-header > h2 {\n  margin-bottom: 0;\n  margin-top: 0; }\n\n.thread-list-item {\n  padding: 1rem;\n  display: flex;\n  flex-direction: row;\n  border-bottom: 1px solid #dbe8f1; }\n  .thread-list-item > .details {\n    flex-grow: 1; }\n    .thread-list-item > .details > .summary > .title {\n      color: #444444;\n      text-decoration: none; }\n      .thread-list-item > .details > .summary > .title:hover {\n        text-decoration: underline; }\n    .thread-list-item > .details > .summary > .user-name {\n      text-decoration: none; }\n      .thread-list-item > .details > .summary > .user-name:hover {\n        text-decoration: underline; }\n    .thread-list-item > .details > .metadata {\n      color: #acb7bf; }\n\n.thread-list {\n  padding: 0;\n  margin-left: 1rem; }\n  .thread-list > li {\n    list-style-type: none; }\n\n.login-page {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  padding: 2rem; }\n  .login-page .logo {\n    margin-bottom: 4rem;\n    margin-top: 4rem; }\n  .login-page > button, .login-page > .github-link, .login-page > .pure-button {\n    margin-bottom: 1rem;\n    width: 100%;\n    font-size: 1.5rem;\n    position: relative; }\n    .login-page > button > i, .login-page > .github-link > i, .login-page > .pure-button > i {\n      position: absolute;\n      left: 2rem;\n      font-size: 2rem; }\n  .login-page a.sign-in-link {\n    text-transform: uppercase;\n    padding: 1rem 0 1rem 1rem;\n    align-self: flex-end;\n    text-decoration: none; }\n  .login-page .legal-disclaimer {\n    color: #acb7bf; }\n\n.layout-app .layout-content {\n  padding: 1rem; }\n\n.elm-overlay {\n  z-index: 100; }\n", ""]);
 
 	// exports
 
@@ -11683,6 +11683,129 @@
 		});
 	_elm_lang$core$Native_Platform.effectManagers['Navigation'] = {pkg: 'elm-lang/navigation', init: _elm_lang$navigation$Navigation$init, onEffects: _elm_lang$navigation$Navigation$onEffects, onSelfMsg: _elm_lang$navigation$Navigation$onSelfMsg, tag: 'fx', cmdMap: _elm_lang$navigation$Navigation$cmdMap, subMap: _elm_lang$navigation$Navigation$subMap};
 
+	var _elm_lang$websocket$Native_WebSocket = function() {
+
+	function open(url, settings)
+	{
+		return _elm_lang$core$Native_Scheduler.nativeBinding(function(callback)
+		{
+			try
+			{
+				var socket = new WebSocket(url);
+				socket.elm_web_socket = true;
+			}
+			catch(err)
+			{
+				return callback(_elm_lang$core$Native_Scheduler.fail({
+					ctor: err.name === 'SecurityError' ? 'BadSecurity' : 'BadArgs',
+					_0: err.message
+				}));
+			}
+
+			socket.addEventListener("open", function(event) {
+				callback(_elm_lang$core$Native_Scheduler.succeed(socket));
+			});
+
+			socket.addEventListener("message", function(event) {
+				_elm_lang$core$Native_Scheduler.rawSpawn(A2(settings.onMessage, socket, event.data));
+			});
+
+			socket.addEventListener("close", function(event) {
+				_elm_lang$core$Native_Scheduler.rawSpawn(settings.onClose({
+					code: event.code,
+					reason: event.reason,
+					wasClean: event.wasClean
+				}));
+			});
+
+			return function()
+			{
+				if (socket && socket.close)
+				{
+					socket.close();
+				}
+			};
+		});
+	}
+
+	function send(socket, string)
+	{
+		return _elm_lang$core$Native_Scheduler.nativeBinding(function(callback)
+		{
+			var result =
+				socket.readyState === WebSocket.OPEN
+					? _elm_lang$core$Maybe$Nothing
+					: _elm_lang$core$Maybe$Just({ ctor: 'NotOpen' });
+
+			try
+			{
+				socket.send(string);
+			}
+			catch(err)
+			{
+				result = _elm_lang$core$Maybe$Just({ ctor: 'BadString' });
+			}
+
+			callback(_elm_lang$core$Native_Scheduler.succeed(result));
+		});
+	}
+
+	function close(code, reason, socket)
+	{
+		return _elm_lang$core$Native_Scheduler.nativeBinding(function(callback) {
+			try
+			{
+				socket.close(code, reason);
+			}
+			catch(err)
+			{
+				return callback(_elm_lang$core$Native_Scheduler.fail(_elm_lang$core$Maybe$Just({
+					ctor: err.name === 'SyntaxError' ? 'BadReason' : 'BadCode'
+				})));
+			}
+			callback(_elm_lang$core$Native_Scheduler.succeed(_elm_lang$core$Maybe$Nothing));
+		});
+	}
+
+	function bytesQueued(socket)
+	{
+		return _elm_lang$core$Native_Scheduler.nativeBinding(function(callback) {
+			callback(_elm_lang$core$Native_Scheduler.succeed(socket.bufferedAmount));
+		});
+	}
+
+	return {
+		open: F2(open),
+		send: F2(send),
+		close: F3(close),
+		bytesQueued: bytesQueued
+	};
+
+	}();
+
+	var _elm_lang$websocket$WebSocket_LowLevel$bytesQueued = _elm_lang$websocket$Native_WebSocket.bytesQueued;
+	var _elm_lang$websocket$WebSocket_LowLevel$send = _elm_lang$websocket$Native_WebSocket.send;
+	var _elm_lang$websocket$WebSocket_LowLevel$closeWith = _elm_lang$websocket$Native_WebSocket.close;
+	var _elm_lang$websocket$WebSocket_LowLevel$close = function (socket) {
+		return A2(
+			_elm_lang$core$Task$map,
+			_elm_lang$core$Basics$always(
+				{ctor: '_Tuple0'}),
+			A3(_elm_lang$websocket$WebSocket_LowLevel$closeWith, 1000, '', socket));
+	};
+	var _elm_lang$websocket$WebSocket_LowLevel$open = _elm_lang$websocket$Native_WebSocket.open;
+	var _elm_lang$websocket$WebSocket_LowLevel$Settings = F2(
+		function (a, b) {
+			return {onMessage: a, onClose: b};
+		});
+	var _elm_lang$websocket$WebSocket_LowLevel$WebSocket = {ctor: 'WebSocket'};
+	var _elm_lang$websocket$WebSocket_LowLevel$BadArgs = {ctor: 'BadArgs'};
+	var _elm_lang$websocket$WebSocket_LowLevel$BadSecurity = {ctor: 'BadSecurity'};
+	var _elm_lang$websocket$WebSocket_LowLevel$BadReason = {ctor: 'BadReason'};
+	var _elm_lang$websocket$WebSocket_LowLevel$BadCode = {ctor: 'BadCode'};
+	var _elm_lang$websocket$WebSocket_LowLevel$BadString = {ctor: 'BadString'};
+	var _elm_lang$websocket$WebSocket_LowLevel$NotOpen = {ctor: 'NotOpen'};
+
 	var _evancz$elm_markdown$Native_Markdown = function() {
 
 
@@ -12023,6 +12146,1902 @@
 			return {method: a, headers: b, url: c, body: d, expect: e, timeout: f, withCredentials: g, queryParams: h, cacheBuster: i};
 		});
 
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops = _saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops || {};
+	_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'] = F2(
+		function (x, f) {
+			return A2(_elm_lang$core$Task$andThen, f, x);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops = _saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops || {};
+	_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'] = F2(
+		function (t1, t2) {
+			return A2(
+				_elm_lang$core$Task$andThen,
+				function (_p0) {
+					return t2;
+				},
+				t1);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$statusInfo = function (status) {
+		var _p1 = status;
+		switch (_p1) {
+			case 'ok':
+				return A2(
+					_elm_lang$core$Json_Decode$map,
+					_elm_lang$core$Result$Ok,
+					A2(_elm_lang$core$Json_Decode$field, 'response', _elm_lang$core$Json_Decode$value));
+			case 'error':
+				return A2(
+					_elm_lang$core$Json_Decode$map,
+					_elm_lang$core$Result$Err,
+					A2(_elm_lang$core$Json_Decode$field, 'response', _elm_lang$core$Json_Decode$value));
+			default:
+				return _elm_lang$core$Json_Decode$fail(
+					A2(_elm_lang$core$Basics_ops['++'], status, ' is a not supported status'));
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$decodeReplyPayload = function (value) {
+		var result = A2(
+			_elm_lang$core$Json_Decode$decodeValue,
+			A2(
+				_elm_lang$core$Json_Decode$andThen,
+				_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$statusInfo,
+				A2(_elm_lang$core$Json_Decode$field, 'status', _elm_lang$core$Json_Decode$string)),
+			value);
+		var _p2 = result;
+		if (_p2.ctor === 'Err') {
+			var _p3 = _elm_lang$core$Debug$log(_p2._0);
+			return _elm_lang$core$Maybe$Nothing;
+		} else {
+			return _elm_lang$core$Maybe$Just(_p2._0);
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$add = F2(
+		function (value, maybeList) {
+			var _p4 = maybeList;
+			if (_p4.ctor === 'Nothing') {
+				return _elm_lang$core$Maybe$Just(
+					{
+						ctor: '::',
+						_0: value,
+						_1: {ctor: '[]'}
+					});
+			} else {
+				return _elm_lang$core$Maybe$Just(
+					{ctor: '::', _0: value, _1: _p4._0});
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$removeIn = F3(
+		function (a, b, dict) {
+			var remove = function (maybeDict_) {
+				var _p5 = maybeDict_;
+				if (_p5.ctor === 'Nothing') {
+					return _elm_lang$core$Maybe$Nothing;
+				} else {
+					var newDict = A2(_elm_lang$core$Dict$remove, b, _p5._0);
+					return _elm_lang$core$Dict$isEmpty(newDict) ? _elm_lang$core$Maybe$Nothing : _elm_lang$core$Maybe$Just(newDict);
+				}
+			};
+			return A3(_elm_lang$core$Dict$update, a, remove, dict);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$insertIn = F4(
+		function (a, b, value, dict) {
+			var update_ = function (maybeValue) {
+				var _p6 = maybeValue;
+				if (_p6.ctor === 'Nothing') {
+					return _elm_lang$core$Maybe$Just(
+						A2(_elm_lang$core$Dict$singleton, b, value));
+				} else {
+					return _elm_lang$core$Maybe$Just(
+						A3(_elm_lang$core$Dict$insert, b, value, _p6._0));
+				}
+			};
+			return A3(_elm_lang$core$Dict$update, a, update_, dict);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$updateIn = F4(
+		function (a, b, update, dict) {
+			var update_ = function (maybeDict) {
+				var dict_ = A3(
+					_elm_lang$core$Dict$update,
+					b,
+					update,
+					A2(_elm_lang$core$Maybe$withDefault, _elm_lang$core$Dict$empty, maybeDict));
+				return _elm_lang$core$Dict$isEmpty(dict_) ? _elm_lang$core$Maybe$Nothing : _elm_lang$core$Maybe$Just(dict_);
+			};
+			return A3(_elm_lang$core$Dict$update, a, update_, dict);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$getIn = F3(
+		function (a, b, dict) {
+			return A2(
+				_elm_lang$core$Maybe$andThen,
+				_elm_lang$core$Dict$get(b),
+				A2(_elm_lang$core$Dict$get, a, dict));
+		});
+
+	var _saschatimme$elm_phoenix$Phoenix_Push$map = F2(
+		function (func, push) {
+			var f = _elm_lang$core$Maybe$map(
+				F2(
+					function (x, y) {
+						return function (_p0) {
+							return x(
+								y(_p0));
+						};
+					})(func));
+			return _elm_lang$core$Native_Utils.update(
+				push,
+				{
+					onOk: f(push.onOk),
+					onError: f(push.onError)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Push$onError = F2(
+		function (cb, push) {
+			return _elm_lang$core$Native_Utils.update(
+				push,
+				{
+					onError: _elm_lang$core$Maybe$Just(cb)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Push$onOk = F2(
+		function (cb, push) {
+			return _elm_lang$core$Native_Utils.update(
+				push,
+				{
+					onOk: _elm_lang$core$Maybe$Just(cb)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Push$withPayload = F2(
+		function (payload, push) {
+			return _elm_lang$core$Native_Utils.update(
+				push,
+				{payload: payload});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Push$PhoenixPush = F5(
+		function (a, b, c, d, e) {
+			return {topic: a, event: b, payload: c, onOk: d, onError: e};
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Push$init = F2(
+		function (topic, event) {
+			return A5(
+				_saschatimme$elm_phoenix$Phoenix_Push$PhoenixPush,
+				topic,
+				event,
+				_elm_lang$core$Json_Encode$object(
+					{ctor: '[]'}),
+				_elm_lang$core$Maybe$Nothing,
+				_elm_lang$core$Maybe$Nothing);
+		});
+
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$encode = function (_p0) {
+		var _p1 = _p0;
+		return A2(
+			_elm_lang$core$Json_Encode$encode,
+			0,
+			_elm_lang$core$Json_Encode$object(
+				{
+					ctor: '::',
+					_0: {
+						ctor: '_Tuple2',
+						_0: 'topic',
+						_1: _elm_lang$core$Json_Encode$string(_p1.topic)
+					},
+					_1: {
+						ctor: '::',
+						_0: {
+							ctor: '_Tuple2',
+							_0: 'event',
+							_1: _elm_lang$core$Json_Encode$string(_p1.event)
+						},
+						_1: {
+							ctor: '::',
+							_0: {
+								ctor: '_Tuple2',
+								_0: 'ref',
+								_1: A2(
+									_elm_lang$core$Maybe$withDefault,
+									_elm_lang$core$Json_Encode$null,
+									A2(_elm_lang$core$Maybe$map, _elm_lang$core$Json_Encode$int, _p1.ref))
+							},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'payload', _1: _p1.payload},
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}));
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$ref = F2(
+		function (ref_, message) {
+			return _elm_lang$core$Native_Utils.update(
+				message,
+				{
+					ref: _elm_lang$core$Maybe$Just(ref_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$payload = F2(
+		function (payload_, message) {
+			return _elm_lang$core$Native_Utils.update(
+				message,
+				{payload: payload_});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$Message = F4(
+		function (a, b, c, d) {
+			return {topic: a, event: b, payload: c, ref: d};
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$init = F2(
+		function (topic, event) {
+			return A4(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Message$Message,
+				topic,
+				event,
+				_elm_lang$core$Json_Encode$object(
+					{ctor: '[]'}),
+				_elm_lang$core$Maybe$Nothing);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$fromPush = function (push) {
+		return A2(
+			_saschatimme$elm_phoenix$Phoenix_Internal_Message$payload,
+			push.payload,
+			A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$init, push.topic, push.event));
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Message$decode = function (msg) {
+		var decoder = A5(
+			_elm_lang$core$Json_Decode$map4,
+			_saschatimme$elm_phoenix$Phoenix_Internal_Message$Message,
+			A2(_elm_lang$core$Json_Decode$field, 'topic', _elm_lang$core$Json_Decode$string),
+			A2(_elm_lang$core$Json_Decode$field, 'event', _elm_lang$core$Json_Decode$string),
+			A2(_elm_lang$core$Json_Decode$field, 'payload', _elm_lang$core$Json_Decode$value),
+			A2(
+				_elm_lang$core$Json_Decode$field,
+				'ref',
+				_elm_lang$core$Json_Decode$oneOf(
+					{
+						ctor: '::',
+						_0: A2(_elm_lang$core$Json_Decode$map, _elm_lang$core$Maybe$Just, _elm_lang$core$Json_Decode$int),
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$core$Json_Decode$null(_elm_lang$core$Maybe$Nothing),
+							_1: {ctor: '[]'}
+						}
+					})));
+		return A2(_elm_lang$core$Json_Decode$decodeString, decoder, msg);
+	};
+
+	var _saschatimme$elm_phoenix$Phoenix_Channel$withDebug = function (channel) {
+		return _elm_lang$core$Native_Utils.update(
+			channel,
+			{debug: true});
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Channel$map = F2(
+		function (func, chan) {
+			var f = _elm_lang$core$Maybe$map(
+				F2(
+					function (x, y) {
+						return function (_p0) {
+							return x(
+								y(_p0));
+						};
+					})(func));
+			var channel = _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onJoin: f(chan.onJoin),
+					onJoinError: f(chan.onJoinError),
+					onError: A2(_elm_lang$core$Maybe$map, func, chan.onError),
+					onDisconnect: A2(_elm_lang$core$Maybe$map, func, chan.onDisconnect),
+					onRejoin: f(chan.onRejoin),
+					onLeave: f(chan.onLeave),
+					onLeaveError: f(chan.onLeaveError),
+					on: A2(
+						_elm_lang$core$Dict$map,
+						F2(
+							function (_p1, a) {
+								return function (_p2) {
+									return func(
+										a(_p2));
+								};
+							}),
+						chan.on)
+				});
+			return channel;
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onLeaveError = F2(
+		function (onLeaveError_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onLeaveError: _elm_lang$core$Maybe$Just(onLeaveError_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onLeave = F2(
+		function (onLeave_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onLeave: _elm_lang$core$Maybe$Just(onLeave_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onRejoin = F2(
+		function (onRejoin_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onRejoin: _elm_lang$core$Maybe$Just(onRejoin_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onDisconnect = F2(
+		function (onDisconnect_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onDisconnect: _elm_lang$core$Maybe$Just(onDisconnect_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onError = F2(
+		function (onError_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onError: _elm_lang$core$Maybe$Just(onError_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onJoinError = F2(
+		function (onJoinError_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					onJoinError: _elm_lang$core$Maybe$Just(onJoinError_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$onJoin = F2(
+		function (onJoin_, chan) {
+			var _p3 = chan.onRejoin;
+			if (_p3.ctor === 'Nothing') {
+				return _elm_lang$core$Native_Utils.update(
+					chan,
+					{
+						onJoin: _elm_lang$core$Maybe$Just(onJoin_),
+						onRejoin: _elm_lang$core$Maybe$Just(onJoin_)
+					});
+			} else {
+				return _elm_lang$core$Native_Utils.update(
+					chan,
+					{
+						onJoin: _elm_lang$core$Maybe$Just(onJoin_)
+					});
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$on = F3(
+		function (event, cb, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					on: A3(_elm_lang$core$Dict$insert, event, cb, chan.on)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$withPayload = F2(
+		function (payload_, chan) {
+			return _elm_lang$core$Native_Utils.update(
+				chan,
+				{
+					payload: _elm_lang$core$Maybe$Just(payload_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Channel$init = function (topic) {
+		return {topic: topic, payload: _elm_lang$core$Maybe$Nothing, onJoin: _elm_lang$core$Maybe$Nothing, onJoinError: _elm_lang$core$Maybe$Nothing, onDisconnect: _elm_lang$core$Maybe$Nothing, onError: _elm_lang$core$Maybe$Nothing, onRejoin: _elm_lang$core$Maybe$Nothing, onLeave: _elm_lang$core$Maybe$Nothing, onLeaveError: _elm_lang$core$Maybe$Nothing, on: _elm_lang$core$Dict$empty, debug: false};
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Channel$PhoenixChannel = function (a) {
+		return function (b) {
+			return function (c) {
+				return function (d) {
+					return function (e) {
+						return function (f) {
+							return function (g) {
+								return function (h) {
+									return function (i) {
+										return function (j) {
+											return function (k) {
+												return {topic: a, payload: b, onJoin: c, onJoinError: d, onDisconnect: e, onError: f, onRejoin: g, onLeave: h, onLeaveError: i, on: j, debug: k};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+	};
+
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$get = F3(
+		function (endpoint, topic, channelsDict) {
+			return A3(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$getIn, endpoint, topic, channelsDict);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$getState = F3(
+		function (endpoint, topic, channelsDict) {
+			return A2(
+				_elm_lang$core$Maybe$map,
+				function (_p0) {
+					var _p1 = _p0;
+					return _p1.state;
+				},
+				A3(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$get, endpoint, topic, channelsDict));
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$leaveMessage = function (_p2) {
+		var _p3 = _p2;
+		return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$init, _p3.channel.topic, 'phx_leave');
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$joinMessage = function (_p4) {
+		var _p5 = _p4;
+		var _p7 = _p5.channel;
+		var base = A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$init, _p7.topic, 'phx_join');
+		var _p6 = _p7.payload;
+		if (_p6.ctor === 'Nothing') {
+			return base;
+		} else {
+			return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$payload, _p6._0, base);
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel = F2(
+		function (a, b) {
+			return {state: a, channel: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$map = F2(
+		function (func, _p8) {
+			var _p9 = _p8;
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel,
+				_p9.state,
+				A2(_saschatimme$elm_phoenix$Phoenix_Channel$map, func, _p9.channel));
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateState = F2(
+		function (state, internalChannel) {
+			if (internalChannel.channel.debug) {
+				var _p10 = function () {
+					var _p11 = {ctor: '_Tuple2', _0: state, _1: internalChannel.state};
+					_v5_5:
+					do {
+						if (_p11.ctor === '_Tuple2') {
+							switch (_p11._0.ctor) {
+								case 'Closed':
+									if (_p11._1.ctor === 'Closed') {
+										return state;
+									} else {
+										break _v5_5;
+									}
+								case 'Joining':
+									if (_p11._1.ctor === 'Joining') {
+										return state;
+									} else {
+										break _v5_5;
+									}
+								case 'Joined':
+									if (_p11._1.ctor === 'Joined') {
+										return state;
+									} else {
+										break _v5_5;
+									}
+								case 'Errored':
+									if (_p11._1.ctor === 'Errored') {
+										return state;
+									} else {
+										break _v5_5;
+									}
+								default:
+									if (_p11._1.ctor === 'Disconnected') {
+										return state;
+									} else {
+										break _v5_5;
+									}
+							}
+						} else {
+							break _v5_5;
+						}
+					} while(false);
+					return A2(
+						_elm_lang$core$Debug$log,
+						A2(
+							_elm_lang$core$Basics_ops['++'],
+							'Channel \"',
+							A2(_elm_lang$core$Basics_ops['++'], internalChannel.channel.topic, '\"')),
+						state);
+				}();
+				return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel, state, internalChannel.channel);
+			} else {
+				return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel, state, internalChannel.channel);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$insertState = F4(
+		function (endpoint, topic, state, dict) {
+			var update = _elm_lang$core$Maybe$map(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateState(state));
+			return A4(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$updateIn, endpoint, topic, update, dict);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$updatePayload = F2(
+		function (payload, _p12) {
+			var _p13 = _p12;
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel,
+				_p13.state,
+				_elm_lang$core$Native_Utils.update(
+					_p13.channel,
+					{payload: payload}));
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateOn = F2(
+		function (on, _p14) {
+			var _p15 = _p14;
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel,
+				_p15.state,
+				_elm_lang$core$Native_Utils.update(
+					_p15.channel,
+					{on: on}));
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Disconnected = {ctor: 'Disconnected'};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Errored = {ctor: 'Errored'};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Joined = {ctor: 'Joined'};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Joining = {ctor: 'Joining'};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Closed = {ctor: 'Closed'};
+
+	var _saschatimme$elm_phoenix$Phoenix_Socket$map = F2(
+		function (func, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					onClose: A2(
+						_elm_lang$core$Maybe$map,
+						F2(
+							function (x, y) {
+								return function (_p0) {
+									return x(
+										y(_p0));
+								};
+							})(func),
+						socket.onClose),
+					onNormalClose: A2(_elm_lang$core$Maybe$map, func, socket.onNormalClose),
+					onAbnormalClose: A2(_elm_lang$core$Maybe$map, func, socket.onAbnormalClose)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$defaultReconnectTimer = function (failedAttempts) {
+		return (_elm_lang$core$Native_Utils.cmp(failedAttempts, 1) < 0) ? 0 : _elm_lang$core$Basics$toFloat(
+			10 * Math.pow(2, failedAttempts));
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Socket$onClose = F2(
+		function (onClose_, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					onClose: _elm_lang$core$Maybe$Just(onClose_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$onNormalClose = F2(
+		function (onNormalClose_, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					onNormalClose: _elm_lang$core$Maybe$Just(onNormalClose_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$onAbnormalClose = F2(
+		function (onAbnormalClose_, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					onAbnormalClose: _elm_lang$core$Maybe$Just(onAbnormalClose_)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$withDebug = function (socket) {
+		return _elm_lang$core$Native_Utils.update(
+			socket,
+			{debug: true});
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Socket$reconnectTimer = F2(
+		function (timerFunc, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{reconnectTimer: timerFunc});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$withoutHeartbeat = function (socket) {
+		return _elm_lang$core$Native_Utils.update(
+			socket,
+			{withoutHeartbeat: true});
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Socket$heartbeatIntervallSeconds = F2(
+		function (intervall, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					heartbeatIntervall: _elm_lang$core$Basics$toFloat(intervall) * _elm_lang$core$Time$second
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$withParams = F2(
+		function (params, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{params: params});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Socket$init = function (endpoint) {
+		return {
+			endpoint: endpoint,
+			params: {ctor: '[]'},
+			heartbeatIntervall: 30 * _elm_lang$core$Time$second,
+			withoutHeartbeat: false,
+			reconnectTimer: _saschatimme$elm_phoenix$Phoenix_Socket$defaultReconnectTimer,
+			debug: false,
+			onClose: _elm_lang$core$Maybe$Nothing,
+			onAbnormalClose: _elm_lang$core$Maybe$Nothing,
+			onNormalClose: _elm_lang$core$Maybe$Nothing
+		};
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Socket$PhoenixSocket = F9(
+		function (a, b, c, d, e, f, g, h, i) {
+			return {endpoint: a, params: b, heartbeatIntervall: c, withoutHeartbeat: d, reconnectTimer: e, debug: f, onClose: g, onAbnormalClose: h, onNormalClose: i};
+		});
+
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$debugLogMessage = F2(
+		function (_p0, msg) {
+			var _p1 = _p0;
+			return _p1.socket.debug ? A2(_elm_lang$core$Debug$log, 'Received', msg) : msg;
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$ref = function (_p2) {
+		var _p3 = _p2;
+		var _p4 = _p3.connection;
+		if (_p4.ctor === 'Connected') {
+			return _elm_lang$core$Maybe$Just(_p4._1);
+		} else {
+			return _elm_lang$core$Maybe$Nothing;
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$get = F2(
+		function (endpoint, dict) {
+			return A2(_elm_lang$core$Dict$get, endpoint, dict);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$getRef = F2(
+		function (endpoint, dict) {
+			return A2(
+				_elm_lang$core$Maybe$andThen,
+				_saschatimme$elm_phoenix$Phoenix_Internal_Socket$ref,
+				A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$get, endpoint, dict));
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$close = function (_p5) {
+		var _p6 = _p5;
+		var _p7 = _p6.connection;
+		switch (_p7.ctor) {
+			case 'Opening':
+				return _elm_lang$core$Process$kill(_p7._1);
+			case 'Connected':
+				return _elm_lang$websocket$WebSocket_LowLevel$close(_p7._0);
+			default:
+				return _elm_lang$core$Task$succeed(
+					{ctor: '_Tuple0'});
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$after = function (backoff) {
+		return (_elm_lang$core$Native_Utils.cmp(backoff, 1) < 0) ? _elm_lang$core$Task$succeed(
+			{ctor: '_Tuple0'}) : _elm_lang$core$Process$sleep(backoff);
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$open = F2(
+		function (_p8, settings) {
+			var _p9 = _p8;
+			var _p12 = _p9.socket;
+			var query = A2(
+				_elm_lang$core$String$join,
+				'&',
+				A2(
+					_elm_lang$core$List$map,
+					function (_p10) {
+						var _p11 = _p10;
+						return A2(
+							_elm_lang$core$Basics_ops['++'],
+							_p11._0,
+							A2(_elm_lang$core$Basics_ops['++'], '=', _p11._1));
+					},
+					_p12.params));
+			var url = A2(_elm_lang$core$String$contains, '?', _p12.endpoint) ? A2(
+				_elm_lang$core$Basics_ops['++'],
+				_p12.endpoint,
+				A2(_elm_lang$core$Basics_ops['++'], '&', query)) : A2(
+				_elm_lang$core$Basics_ops['++'],
+				_p12.endpoint,
+				A2(_elm_lang$core$Basics_ops['++'], '?', query));
+			return A2(_elm_lang$websocket$WebSocket_LowLevel$open, url, settings);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$push = F2(
+		function (message, _p13) {
+			var _p14 = _p13;
+			var _p19 = _p14.socket;
+			var _p15 = _p14.connection;
+			if (_p15.ctor === 'Connected') {
+				var _p18 = _p15._1;
+				var message_ = _p19.debug ? A2(
+					_elm_lang$core$Debug$log,
+					'Send',
+					A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$ref, _p18, message)) : A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$ref, _p18, message);
+				return A2(
+					_elm_lang$core$Task$map,
+					function (maybeBadSend) {
+						var _p16 = maybeBadSend;
+						if (_p16.ctor === 'Nothing') {
+							return _elm_lang$core$Maybe$Just(_p18);
+						} else {
+							if (_p19.debug) {
+								var _p17 = A2(_elm_lang$core$Debug$log, 'BadSend', _p16._0);
+								return _elm_lang$core$Maybe$Nothing;
+							} else {
+								return _elm_lang$core$Maybe$Nothing;
+							}
+						}
+					},
+					A2(
+						_elm_lang$websocket$WebSocket_LowLevel$send,
+						_p15._0,
+						_saschatimme$elm_phoenix$Phoenix_Internal_Message$encode(message_)));
+			} else {
+				return _elm_lang$core$Task$succeed(_elm_lang$core$Maybe$Nothing);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$isOpening = function (internalSocket) {
+		var _p20 = internalSocket.connection;
+		if (_p20.ctor === 'Opening') {
+			return true;
+		} else {
+			return false;
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$InternalSocket = F2(
+		function (a, b) {
+			return {connection: a, socket: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$Connected = F2(
+		function (a, b) {
+			return {ctor: 'Connected', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$connected = F2(
+		function (ws, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					connection: A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$Connected, ws, 0)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$increaseRef = function (socket) {
+		var _p21 = socket.connection;
+		if (_p21.ctor === 'Connected') {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					connection: A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$Connected, _p21._0, _p21._1 + 1)
+				});
+		} else {
+			return socket;
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$Opening = F2(
+		function (a, b) {
+			return {ctor: 'Opening', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$opening = F3(
+		function (backoff, pid, socket) {
+			return _elm_lang$core$Native_Utils.update(
+				socket,
+				{
+					connection: A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$Opening, backoff, pid)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$resetBackoff = function (connection) {
+		var _p22 = connection;
+		if (_p22.ctor === 'Opening') {
+			return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$Opening, 0, _p22._1);
+		} else {
+			return connection;
+		}
+	};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$update = F2(
+		function (nextSocket, _p23) {
+			var _p24 = _p23;
+			var _p25 = _p24.connection;
+			var updatedConnection = (!_elm_lang$core$Native_Utils.eq(nextSocket.params, _p24.socket.params)) ? _saschatimme$elm_phoenix$Phoenix_Internal_Socket$resetBackoff(_p25) : _p25;
+			return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$InternalSocket, updatedConnection, nextSocket);
+		});
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$Closed = {ctor: 'Closed'};
+	var _saschatimme$elm_phoenix$Phoenix_Internal_Socket$internalSocket = function (socket) {
+		return {connection: _saschatimme$elm_phoenix$Phoenix_Internal_Socket$Closed, socket: socket};
+	};
+
+	var _saschatimme$elm_phoenix$Phoenix$after = function (backoff) {
+		return (_elm_lang$core$Native_Utils.cmp(backoff, 1) < 0) ? _elm_lang$core$Task$succeed(
+			{ctor: '_Tuple0'}) : _elm_lang$core$Process$sleep(backoff);
+	};
+	var _saschatimme$elm_phoenix$Phoenix$heartbeatMessage = A2(_saschatimme$elm_phoenix$Phoenix_Internal_Message$init, 'phoenix', 'heartbeat');
+	var _saschatimme$elm_phoenix$Phoenix$handleChannelDisconnect = F3(
+		function (router, endpoint, state) {
+			var _p0 = A2(_elm_lang$core$Dict$get, endpoint, state.channels);
+			if (_p0.ctor === 'Nothing') {
+				return _elm_lang$core$Task$succeed(state);
+			} else {
+				var _p8 = _p0._0;
+				var updateChannel = F2(
+					function (_p1, channel) {
+						var _p2 = channel.state;
+						if (_p2.ctor === 'Errored') {
+							return channel;
+						} else {
+							return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateState, _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Disconnected, channel);
+						}
+					});
+				var updatedEndpointChannels = A2(_elm_lang$core$Dict$map, updateChannel, _p8);
+				var notifyApp = function (_p3) {
+					var _p4 = _p3;
+					var _p5 = _p4.state;
+					if (_p5.ctor === 'Joined') {
+						var _p6 = _p4.channel.onDisconnect;
+						if (_p6.ctor === 'Nothing') {
+							return _elm_lang$core$Task$succeed(
+								{ctor: '_Tuple0'});
+						} else {
+							return A2(_elm_lang$core$Platform$sendToApp, router, _p6._0);
+						}
+					} else {
+						return _elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'});
+					}
+				};
+				var notify = A3(
+					_elm_lang$core$Dict$foldl,
+					F3(
+						function (_p7, channel, task) {
+							return A2(
+								_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+								task,
+								notifyApp(channel));
+						}),
+					_elm_lang$core$Task$succeed(
+						{ctor: '_Tuple0'}),
+					_p8);
+				return A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+					notify,
+					_elm_lang$core$Task$succeed(
+						_elm_lang$core$Native_Utils.update(
+							state,
+							{
+								channels: A3(_elm_lang$core$Dict$insert, endpoint, updatedEndpointChannels, state.channels)
+							})));
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$getEventCb = F3(
+		function (endpoint, message, channels) {
+			var _p9 = A3(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$getIn, endpoint, message.topic, channels);
+			if (_p9.ctor === 'Nothing') {
+				return _elm_lang$core$Maybe$Nothing;
+			} else {
+				return A2(_elm_lang$core$Dict$get, message.event, _p9._0.channel.on);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$dispatchMessage = F4(
+		function (router, endpoint, message, channels) {
+			var _p10 = A3(_saschatimme$elm_phoenix$Phoenix$getEventCb, endpoint, message, channels);
+			if (_p10.ctor === 'Nothing') {
+				return _elm_lang$core$Task$succeed(
+					{ctor: '_Tuple0'});
+			} else {
+				return A2(
+					_elm_lang$core$Platform$sendToApp,
+					router,
+					_p10._0(message.payload));
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$handleSelfcallback = F4(
+		function (router, endpoint, message, selfCallbacks) {
+			var _p11 = message.ref;
+			if (_p11.ctor === 'Nothing') {
+				return _elm_lang$core$Task$succeed(selfCallbacks);
+			} else {
+				var _p13 = _p11._0;
+				var _p12 = A2(_elm_lang$core$Dict$get, _p13, selfCallbacks);
+				if (_p12.ctor === 'Nothing') {
+					return _elm_lang$core$Task$succeed(selfCallbacks);
+				} else {
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+						A2(
+							_elm_lang$core$Platform$sendToSelf,
+							router,
+							_p12._0(message)),
+						_elm_lang$core$Task$succeed(
+							A2(_elm_lang$core$Dict$remove, _p13, selfCallbacks)));
+				}
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$insertSelfCallback = F3(
+		function (ref, maybeSelfCb, state) {
+			var _p14 = maybeSelfCb;
+			if (_p14.ctor === 'Nothing') {
+				return state;
+			} else {
+				return _elm_lang$core$Native_Utils.update(
+					state,
+					{
+						selfCallbacks: A3(_elm_lang$core$Dict$insert, ref, _p14._0, state.selfCallbacks)
+					});
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$insertSocket = F3(
+		function (endpoint, socket, state) {
+			return _elm_lang$core$Native_Utils.update(
+				state,
+				{
+					sockets: A3(_elm_lang$core$Dict$insert, endpoint, socket, state.sockets)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$pushSocket_ = F4(
+		function (endpoint, message, maybeSelfCb, state) {
+			var _p15 = A2(_elm_lang$core$Dict$get, endpoint, state.sockets);
+			if (_p15.ctor === 'Nothing') {
+				return _elm_lang$core$Task$succeed(state);
+			} else {
+				var _p17 = _p15._0;
+				return A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+					A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$push, message, _p17),
+					function (maybeRef) {
+						var _p16 = maybeRef;
+						if (_p16.ctor === 'Nothing') {
+							return _elm_lang$core$Task$succeed(state);
+						} else {
+							return _elm_lang$core$Task$succeed(
+								A3(
+									_saschatimme$elm_phoenix$Phoenix$insertSelfCallback,
+									_p16._0,
+									maybeSelfCb,
+									A3(
+										_saschatimme$elm_phoenix$Phoenix$insertSocket,
+										endpoint,
+										_saschatimme$elm_phoenix$Phoenix_Internal_Socket$increaseRef(_p17),
+										state)));
+						}
+					});
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$pushSocket = F4(
+		function (endpoint, message, selfCb, state) {
+			var queuedState = _elm_lang$core$Task$succeed(
+				_elm_lang$core$Native_Utils.update(
+					state,
+					{
+						channelQueues: A4(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$updateIn,
+							endpoint,
+							message.topic,
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$add(
+								{ctor: '_Tuple2', _0: message, _1: selfCb}),
+							state.channelQueues)
+					}));
+			var afterSocketPush = F2(
+				function (socket, maybeRef) {
+					var _p18 = maybeRef;
+					if (_p18.ctor === 'Nothing') {
+						return queuedState;
+					} else {
+						return _elm_lang$core$Task$succeed(
+							A3(
+								_saschatimme$elm_phoenix$Phoenix$insertSelfCallback,
+								_p18._0,
+								selfCb,
+								A3(
+									_saschatimme$elm_phoenix$Phoenix$insertSocket,
+									endpoint,
+									_saschatimme$elm_phoenix$Phoenix_Internal_Socket$increaseRef(socket),
+									state)));
+					}
+				});
+			var _p19 = A2(_elm_lang$core$Dict$get, endpoint, state.sockets);
+			if (_p19.ctor === 'Nothing') {
+				return queuedState;
+			} else {
+				var _p24 = _p19._0;
+				var _p20 = A3(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$get, endpoint, message.topic, state.channels);
+				if (_p20.ctor === 'Nothing') {
+					var _p21 = A2(_elm_lang$core$Debug$log, 'Queued message (no channel exists)', message);
+					return queuedState;
+				} else {
+					var _p22 = _p20._0.state;
+					if (_p22.ctor === 'Joined') {
+						return A2(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+							A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$push, message, _p24),
+							afterSocketPush(_p24));
+					} else {
+						var _p23 = A2(_elm_lang$core$Debug$log, 'Queued message (channel not joined)', message);
+						return queuedState;
+					}
+				}
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$processQueue = F3(
+		function (endpoint, messages, state) {
+			var _p25 = messages;
+			if (_p25.ctor === '[]') {
+				return _elm_lang$core$Task$succeed(state);
+			} else {
+				return A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+					A4(_saschatimme$elm_phoenix$Phoenix$pushSocket, endpoint, _p25._0._0, _p25._0._1, state),
+					A2(_saschatimme$elm_phoenix$Phoenix$processQueue, endpoint, _p25._1));
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$removeChannelQueue = F3(
+		function (endpoint, topic, state) {
+			return _elm_lang$core$Native_Utils.update(
+				state,
+				{
+					channelQueues: A3(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$removeIn, endpoint, topic, state.channelQueues)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$updateSelfCallbacks = F2(
+		function (selfCallbacks, state) {
+			return _elm_lang$core$Native_Utils.update(
+				state,
+				{selfCallbacks: selfCallbacks});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$updateChannels = F2(
+		function (channels, state) {
+			return _elm_lang$core$Native_Utils.update(
+				state,
+				{channels: channels});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$updateSocket = F3(
+		function (endpoint, socket, state) {
+			return _elm_lang$core$Native_Utils.update(
+				state,
+				{
+					sockets: A3(_elm_lang$core$Dict$insert, endpoint, socket, state.sockets)
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$buildChannelsDict = F2(
+		function (subs, dict) {
+			var _p26 = subs;
+			if (_p26.ctor === '[]') {
+				return dict;
+			} else {
+				var internalChan = function (chan) {
+					return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$InternalChannel, _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Closed, chan);
+				};
+				var build = F2(
+					function (chan, dict_) {
+						return A2(
+							_saschatimme$elm_phoenix$Phoenix$buildChannelsDict,
+							_p26._1,
+							A4(
+								_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$insertIn,
+								_p26._0._0.endpoint,
+								chan.topic,
+								internalChan(chan),
+								dict_));
+					});
+				return A3(_elm_lang$core$List$foldl, build, dict, _p26._0._1);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$buildSocketsDict = function (subs) {
+		var insert = F2(
+			function (sub, dict) {
+				var _p27 = sub;
+				var _p28 = _p27._0;
+				return A3(_elm_lang$core$Dict$insert, _p28.endpoint, _p28, dict);
+			});
+		return A3(_elm_lang$core$List$foldl, insert, _elm_lang$core$Dict$empty, subs);
+	};
+	var _saschatimme$elm_phoenix$Phoenix$subscription = _elm_lang$core$Native_Platform.leaf('Phoenix');
+	var _saschatimme$elm_phoenix$Phoenix$command = _elm_lang$core$Native_Platform.leaf('Phoenix');
+	var _saschatimme$elm_phoenix$Phoenix$State = F4(
+		function (a, b, c, d) {
+			return {sockets: a, channels: b, selfCallbacks: c, channelQueues: d};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$init = _elm_lang$core$Task$succeed(
+		A4(_saschatimme$elm_phoenix$Phoenix$State, _elm_lang$core$Dict$empty, _elm_lang$core$Dict$empty, _elm_lang$core$Dict$empty, _elm_lang$core$Dict$empty));
+	var _saschatimme$elm_phoenix$Phoenix$Connect = F2(
+		function (a, b) {
+			return {ctor: 'Connect', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$connect = F2(
+		function (socket, channels) {
+			return _saschatimme$elm_phoenix$Phoenix$subscription(
+				A2(_saschatimme$elm_phoenix$Phoenix$Connect, socket, channels));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$subMap = F2(
+		function (func, sub) {
+			var _p29 = sub;
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix$Connect,
+				A2(_saschatimme$elm_phoenix$Phoenix_Socket$map, func, _p29._0),
+				A2(
+					_elm_lang$core$List$map,
+					_saschatimme$elm_phoenix$Phoenix_Channel$map(func),
+					_p29._1));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$Send = F2(
+		function (a, b) {
+			return {ctor: 'Send', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$push = F2(
+		function (endpoint, push_) {
+			return _saschatimme$elm_phoenix$Phoenix$command(
+				A2(_saschatimme$elm_phoenix$Phoenix$Send, endpoint, push_));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$cmdMap = F2(
+		function (func, cmd) {
+			var _p30 = cmd;
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix$Send,
+				_p30._0,
+				A2(_saschatimme$elm_phoenix$Phoenix_Push$map, func, _p30._1));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$PushResponse = F2(
+		function (a, b) {
+			return {ctor: 'PushResponse', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$sendPushsHelp = F2(
+		function (cmds, state) {
+			var _p31 = cmds;
+			if (_p31.ctor === '[]') {
+				return _elm_lang$core$Task$succeed(state);
+			} else {
+				var _p32 = _p31._0._1;
+				var message = _saschatimme$elm_phoenix$Phoenix_Internal_Message$fromPush(_p32);
+				return A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+					A4(
+						_saschatimme$elm_phoenix$Phoenix$pushSocket,
+						_p31._0._0,
+						message,
+						_elm_lang$core$Maybe$Just(
+							_saschatimme$elm_phoenix$Phoenix$PushResponse(_p32)),
+						state),
+					_saschatimme$elm_phoenix$Phoenix$sendPushsHelp(_p31._1));
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$SendHeartbeat = function (a) {
+		return {ctor: 'SendHeartbeat', _0: a};
+	};
+	var _saschatimme$elm_phoenix$Phoenix$heartbeat = F3(
+		function (router, endpoint, state) {
+			var _p33 = A2(_elm_lang$core$Dict$get, endpoint, state.sockets);
+			if (_p33.ctor === 'Just') {
+				var _p34 = _p33._0.socket;
+				return _p34.withoutHeartbeat ? _elm_lang$core$Task$succeed(state) : A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+					_elm_lang$core$Process$spawn(
+						A2(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+							_elm_lang$core$Process$sleep(_p34.heartbeatIntervall),
+							A2(
+								_elm_lang$core$Platform$sendToSelf,
+								router,
+								_saschatimme$elm_phoenix$Phoenix$SendHeartbeat(endpoint)))),
+					A4(_saschatimme$elm_phoenix$Phoenix$pushSocket_, endpoint, _saschatimme$elm_phoenix$Phoenix$heartbeatMessage, _elm_lang$core$Maybe$Nothing, state));
+			} else {
+				return _elm_lang$core$Task$succeed(state);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$GoodJoin = F2(
+		function (a, b) {
+			return {ctor: 'GoodJoin', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$handleChannelJoinReply = F6(
+		function (router, endpoint, topic, message, prevState, channels) {
+			var newChannels = function (state) {
+				return _elm_lang$core$Task$succeed(
+					A4(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$insertState, endpoint, topic, state, channels));
+			};
+			var handlePayload = F2(
+				function (_p35, payload) {
+					var _p36 = _p35;
+					var _p43 = _p36.channel;
+					var _p37 = payload;
+					if (_p37.ctor === 'Err') {
+						var _p38 = _p43.onJoinError;
+						if (_p38.ctor === 'Nothing') {
+							return newChannels(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$Errored);
+						} else {
+							return A2(
+								_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+								A2(
+									_elm_lang$core$Platform$sendToApp,
+									router,
+									_p38._0(_p37._0)),
+								newChannels(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$Errored));
+						}
+					} else {
+						var _p42 = _p37._0;
+						var join = A2(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+							A2(
+								_elm_lang$core$Platform$sendToSelf,
+								router,
+								A2(_saschatimme$elm_phoenix$Phoenix$GoodJoin, endpoint, topic)),
+							newChannels(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$Joined));
+						var _p39 = prevState;
+						if (_p39.ctor === 'Disconnected') {
+							var _p40 = _p43.onRejoin;
+							if (_p40.ctor === 'Nothing') {
+								return join;
+							} else {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										_p40._0(_p42)),
+									join);
+							}
+						} else {
+							var _p41 = _p43.onJoin;
+							if (_p41.ctor === 'Nothing') {
+								return join;
+							} else {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										_p41._0(_p42)),
+									join);
+							}
+						}
+					}
+				});
+			var maybePayload = _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$decodeReplyPayload(message.payload);
+			var maybeChannel = A3(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$get, endpoint, topic, channels);
+			return A2(
+				_elm_lang$core$Maybe$withDefault,
+				_elm_lang$core$Task$succeed(channels),
+				A3(_elm_lang$core$Maybe$map2, handlePayload, maybeChannel, maybePayload));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$ChannelJoinReply = F4(
+		function (a, b, c, d) {
+			return {ctor: 'ChannelJoinReply', _0: a, _1: b, _2: c, _3: d};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$sendJoinHelper = F3(
+		function (endpoint, channels, state) {
+			var _p44 = channels;
+			if (_p44.ctor === '[]') {
+				return _elm_lang$core$Task$succeed(state);
+			} else {
+				var _p45 = _p44._0;
+				var newChannel = A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateState, _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Joining, _p45);
+				var newChannels = A4(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$insertIn, endpoint, _p45.channel.topic, newChannel, state.channels);
+				var message = _saschatimme$elm_phoenix$Phoenix_Internal_Channel$joinMessage(_p45);
+				var selfCb = A3(_saschatimme$elm_phoenix$Phoenix$ChannelJoinReply, endpoint, _p45.channel.topic, _p45.state);
+				return A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+					A4(
+						_saschatimme$elm_phoenix$Phoenix$pushSocket_,
+						endpoint,
+						message,
+						_elm_lang$core$Maybe$Just(selfCb),
+						A2(_saschatimme$elm_phoenix$Phoenix$updateChannels, newChannels, state)),
+					function (newState) {
+						return A3(_saschatimme$elm_phoenix$Phoenix$sendJoinHelper, endpoint, _p44._1, newState);
+					});
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$handlePhoenixMessage = F4(
+		function (router, endpoint, message, state) {
+			var _p46 = message.event;
+			switch (_p46) {
+				case 'phx_error':
+					var _p47 = A3(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$getIn, endpoint, message.topic, state.channels);
+					if (_p47.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p49 = _p47._0;
+						var sendToApp = function () {
+							var _p48 = _p49.channel.onError;
+							if (_p48.ctor === 'Nothing') {
+								return _elm_lang$core$Task$succeed(
+									{ctor: '_Tuple0'});
+							} else {
+								return A2(_elm_lang$core$Platform$sendToApp, router, _p48._0);
+							}
+						}();
+						var newChannel = A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateState, _saschatimme$elm_phoenix$Phoenix_Internal_Channel$Errored, _p49);
+						return A2(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+							sendToApp,
+							A3(
+								_saschatimme$elm_phoenix$Phoenix$sendJoinHelper,
+								endpoint,
+								{
+									ctor: '::',
+									_0: newChannel,
+									_1: {ctor: '[]'}
+								},
+								state));
+					}
+				case 'phx_close':
+					return _elm_lang$core$Task$succeed(state);
+				default:
+					return _elm_lang$core$Task$succeed(state);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$rejoinAllChannels = F2(
+		function (endpoint, state) {
+			var _p50 = A2(_elm_lang$core$Dict$get, endpoint, state.channels);
+			if (_p50.ctor === 'Nothing') {
+				return _elm_lang$core$Task$succeed(state);
+			} else {
+				return A3(
+					_saschatimme$elm_phoenix$Phoenix$sendJoinHelper,
+					endpoint,
+					_elm_lang$core$Dict$values(_p50._0),
+					state);
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$ChannelLeaveReply = F3(
+		function (a, b, c) {
+			return {ctor: 'ChannelLeaveReply', _0: a, _1: b, _2: c};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$LeaveChannel = F2(
+		function (a, b) {
+			return {ctor: 'LeaveChannel', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$sendLeaveChannel = F3(
+		function (router, endpoint, internalChannel) {
+			var _p51 = internalChannel.state;
+			if (_p51.ctor === 'Joined') {
+				return A2(
+					_elm_lang$core$Platform$sendToSelf,
+					router,
+					A2(_saschatimme$elm_phoenix$Phoenix$LeaveChannel, endpoint, internalChannel));
+			} else {
+				return _elm_lang$core$Task$succeed(
+					{ctor: '_Tuple0'});
+			}
+		});
+	var _saschatimme$elm_phoenix$Phoenix$JoinChannel = F2(
+		function (a, b) {
+			return {ctor: 'JoinChannel', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$sendJoinChannel = F3(
+		function (router, endpoint, internalChannel) {
+			return A2(
+				_elm_lang$core$Platform$sendToSelf,
+				router,
+				A2(_saschatimme$elm_phoenix$Phoenix$JoinChannel, endpoint, internalChannel));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$handleEndpointChannelsUpdate = F4(
+		function (router, endpoint, definedChannels, stateChannels) {
+			var rightStep = F3(
+				function (topic, state, getNewChannels) {
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+						A3(_saschatimme$elm_phoenix$Phoenix$sendLeaveChannel, router, endpoint, state),
+						getNewChannels);
+				});
+			var bothStep = F4(
+				function (topic, defined, state, getNewChannels) {
+					var channel = A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Channel$updateOn,
+						defined.channel.on,
+						A2(_saschatimme$elm_phoenix$Phoenix_Internal_Channel$updatePayload, defined.channel.payload, state));
+					return A2(
+						_elm_lang$core$Task$map,
+						A2(_elm_lang$core$Dict$insert, topic, channel),
+						getNewChannels);
+				});
+			var leftStep = F3(
+				function (topic, defined, getNewChannels) {
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+						A3(_saschatimme$elm_phoenix$Phoenix$sendJoinChannel, router, endpoint, defined),
+						A2(
+							_elm_lang$core$Task$map,
+							A2(_elm_lang$core$Dict$insert, topic, defined),
+							getNewChannels));
+				});
+			return A6(
+				_elm_lang$core$Dict$merge,
+				leftStep,
+				bothStep,
+				rightStep,
+				definedChannels,
+				stateChannels,
+				_elm_lang$core$Task$succeed(_elm_lang$core$Dict$empty));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$handleChannelsUpdate = F3(
+		function (router, definedChannels, internalChannels) {
+			var rightStep = F3(
+				function (endpoint, stateEndpointChannels, getNewChannels) {
+					var sendLeave = A3(
+						_elm_lang$core$List$foldl,
+						F2(
+							function (channel, task) {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									task,
+									A3(_saschatimme$elm_phoenix$Phoenix$sendLeaveChannel, router, endpoint, channel));
+							}),
+						_elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'}),
+						_elm_lang$core$Dict$values(stateEndpointChannels));
+					return A2(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'], sendLeave, getNewChannels);
+				});
+			var bothStep = F4(
+				function (endpoint, definedEndpointChannels, stateEndpointChannels, getNewChannels) {
+					var getEndpointChannels = A4(_saschatimme$elm_phoenix$Phoenix$handleEndpointChannelsUpdate, router, endpoint, definedEndpointChannels, stateEndpointChannels);
+					return A3(
+						_elm_lang$core$Task$map2,
+						F2(
+							function (endpointChannels, newChannels) {
+								return A3(_elm_lang$core$Dict$insert, endpoint, endpointChannels, newChannels);
+							}),
+						getEndpointChannels,
+						getNewChannels);
+				});
+			var leftStep = F3(
+				function (endpoint, definedEndpointChannels, getNewChannels) {
+					var insert = function (newChannels) {
+						return _elm_lang$core$Task$succeed(
+							A3(_elm_lang$core$Dict$insert, endpoint, definedEndpointChannels, newChannels));
+					};
+					var sendJoin = A3(
+						_elm_lang$core$List$foldl,
+						F2(
+							function (channel, task) {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									task,
+									A3(_saschatimme$elm_phoenix$Phoenix$sendJoinChannel, router, endpoint, channel));
+							}),
+						_elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'}),
+						_elm_lang$core$Dict$values(definedEndpointChannels));
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+						A2(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'], sendJoin, getNewChannels),
+						insert);
+				});
+			return A6(
+				_elm_lang$core$Dict$merge,
+				leftStep,
+				bothStep,
+				rightStep,
+				definedChannels,
+				internalChannels,
+				_elm_lang$core$Task$succeed(_elm_lang$core$Dict$empty));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$Register = {ctor: 'Register'};
+	var _saschatimme$elm_phoenix$Phoenix$BadOpen = F2(
+		function (a, b) {
+			return {ctor: 'BadOpen', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$GoodOpen = F2(
+		function (a, b) {
+			return {ctor: 'GoodOpen', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$Die = F2(
+		function (a, b) {
+			return {ctor: 'Die', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$Receive = F2(
+		function (a, b) {
+			return {ctor: 'Receive', _0: a, _1: b};
+		});
+	var _saschatimme$elm_phoenix$Phoenix$open = F2(
+		function (socket, router) {
+			var onMessage = F2(
+				function (_p52, msg) {
+					var _p53 = _saschatimme$elm_phoenix$Phoenix_Internal_Message$decode(msg);
+					if (_p53.ctor === 'Ok') {
+						return A2(
+							_elm_lang$core$Platform$sendToSelf,
+							router,
+							A2(
+								_saschatimme$elm_phoenix$Phoenix$Receive,
+								socket.socket.endpoint,
+								A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$debugLogMessage, socket, _p53._0)));
+					} else {
+						return _elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'});
+					}
+				});
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Socket$open,
+				socket,
+				{
+					onMessage: onMessage,
+					onClose: function (details) {
+						return A2(
+							_elm_lang$core$Platform$sendToSelf,
+							router,
+							A2(_saschatimme$elm_phoenix$Phoenix$Die, socket.socket.endpoint, details));
+					}
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$attemptOpen = F3(
+		function (router, backoff, _p54) {
+			var _p55 = _p54;
+			var _p56 = _p55.socket;
+			var badOpen = function (details) {
+				return A2(
+					_elm_lang$core$Platform$sendToSelf,
+					router,
+					A2(_saschatimme$elm_phoenix$Phoenix$BadOpen, _p56.endpoint, details));
+			};
+			var goodOpen = function (ws) {
+				return A2(
+					_elm_lang$core$Platform$sendToSelf,
+					router,
+					A2(_saschatimme$elm_phoenix$Phoenix$GoodOpen, _p56.endpoint, ws));
+			};
+			var actuallyAttemptOpen = A2(
+				_elm_lang$core$Task$onError,
+				badOpen,
+				A2(
+					_elm_lang$core$Task$andThen,
+					goodOpen,
+					A2(_saschatimme$elm_phoenix$Phoenix$open, _p55, router)));
+			return _elm_lang$core$Process$spawn(
+				A2(
+					_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+					_saschatimme$elm_phoenix$Phoenix$after(backoff),
+					actuallyAttemptOpen));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$handleSocketsUpdate = F3(
+		function (router, definedSockets, stateSockets) {
+			var removedSocketsStep = F3(
+				function (endpoint, stateSocket, taskChain) {
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+						_saschatimme$elm_phoenix$Phoenix_Internal_Socket$close(stateSocket),
+						taskChain);
+				});
+			var retainedSocketsStep = F4(
+				function (endpoint, definedSocket, stateSocket, taskChain) {
+					return A2(
+						_elm_lang$core$Task$map,
+						A2(
+							_elm_lang$core$Dict$insert,
+							endpoint,
+							A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$update, definedSocket, stateSocket)),
+						taskChain);
+				});
+			var addedSocketsStep = F3(
+				function (endpoint, definedSocket, taskChain) {
+					var socket = _saschatimme$elm_phoenix$Phoenix_Internal_Socket$internalSocket(definedSocket);
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+						taskChain,
+						function (addedSockets) {
+							return A2(
+								_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+								A3(_saschatimme$elm_phoenix$Phoenix$attemptOpen, router, 0, socket),
+								function (pid) {
+									return _elm_lang$core$Task$succeed(
+										A3(
+											_elm_lang$core$Dict$insert,
+											endpoint,
+											A3(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$opening, 0, pid, socket),
+											addedSockets));
+								});
+						});
+				});
+			return A6(
+				_elm_lang$core$Dict$merge,
+				addedSocketsStep,
+				retainedSocketsStep,
+				removedSocketsStep,
+				definedSockets,
+				stateSockets,
+				_elm_lang$core$Task$succeed(_elm_lang$core$Dict$empty));
+		});
+	var _saschatimme$elm_phoenix$Phoenix$onEffects = F4(
+		function (router, cmds, subs, state) {
+			var definedChannels = A2(_saschatimme$elm_phoenix$Phoenix$buildChannelsDict, subs, _elm_lang$core$Dict$empty);
+			var definedSockets = _saschatimme$elm_phoenix$Phoenix$buildSocketsDict(subs);
+			var updateState = function (newState) {
+				var getNewSockets = A3(_saschatimme$elm_phoenix$Phoenix$handleSocketsUpdate, router, definedSockets, newState.sockets);
+				var getNewChannels = A3(_saschatimme$elm_phoenix$Phoenix$handleChannelsUpdate, router, definedChannels, newState.channels);
+				return A3(
+					_elm_lang$core$Task$map2,
+					F2(
+						function (newSockets, newChannels) {
+							return _elm_lang$core$Native_Utils.update(
+								newState,
+								{sockets: newSockets, channels: newChannels});
+						}),
+					getNewSockets,
+					getNewChannels);
+			};
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+				A2(_saschatimme$elm_phoenix$Phoenix$sendPushsHelp, cmds, state),
+				function (newState) {
+					return updateState(newState);
+				});
+		});
+	var _saschatimme$elm_phoenix$Phoenix$onSelfMsg = F3(
+		function (router, selfMsg, state) {
+			var _p57 = selfMsg;
+			switch (_p57.ctor) {
+				case 'GoodOpen':
+					var _p61 = _p57._0;
+					var _p58 = A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$get, _p61, state.sockets);
+					if (_p58.ctor === 'Just') {
+						var _p60 = _p58._0;
+						var state_ = A3(
+							_saschatimme$elm_phoenix$Phoenix$insertSocket,
+							_p61,
+							A2(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$connected, _p57._1, _p60),
+							state);
+						var _p59 = _p60.socket.debug ? A2(_elm_lang$core$Debug$log, 'WebSocket connected with ', _p61) : _p61;
+						return A2(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+							A3(_saschatimme$elm_phoenix$Phoenix$heartbeat, router, _p61, state_),
+							function (newState) {
+								return A2(_saschatimme$elm_phoenix$Phoenix$rejoinAllChannels, _p61, newState);
+							});
+					} else {
+						return _elm_lang$core$Task$succeed(state);
+					}
+				case 'BadOpen':
+					var _p67 = _p57._0;
+					var _p66 = _p57._1;
+					var _p62 = A2(_elm_lang$core$Dict$get, _p67, state.sockets);
+					if (_p62.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p65 = _p62._0;
+						var backoffIteration = function () {
+							var _p63 = _p65.connection;
+							if (_p63.ctor === 'Opening') {
+								return _p63._0 + 1;
+							} else {
+								return 0;
+							}
+						}();
+						var backoff = _p65.socket.reconnectTimer(backoffIteration);
+						var newState = function (pid) {
+							return A3(
+								_saschatimme$elm_phoenix$Phoenix$updateSocket,
+								_p67,
+								A3(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$opening, backoffIteration, pid, _p65),
+								state);
+						};
+						var _p64 = _p65.socket.debug ? A2(
+							_elm_lang$core$Debug$log,
+							A2(_elm_lang$core$Basics_ops['++'], 'WebSocket couldn_t connect with ', _p67),
+							_p66) : _p66;
+						return A2(
+							_elm_lang$core$Task$map,
+							newState,
+							A3(_saschatimme$elm_phoenix$Phoenix$attemptOpen, router, backoff, _p65));
+					}
+				case 'Die':
+					var _p73 = _p57._0;
+					var _p72 = _p57._1;
+					var _p68 = A2(_elm_lang$core$Dict$get, _p73, state.sockets);
+					if (_p68.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p71 = _p68._0.socket;
+						var _p70 = _p68._0;
+						var notifyOnAbnormalClose = (_saschatimme$elm_phoenix$Phoenix_Internal_Socket$isOpening(_p70) || (!_elm_lang$core$Native_Utils.eq(_p72.code, 1006))) ? _elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'}) : A2(
+							_elm_lang$core$Maybe$withDefault,
+							_elm_lang$core$Task$succeed(
+								{ctor: '_Tuple0'}),
+							A2(
+								_elm_lang$core$Maybe$map,
+								_elm_lang$core$Platform$sendToApp(router),
+								_p71.onAbnormalClose));
+						var notifyOnNormalClose = (_saschatimme$elm_phoenix$Phoenix_Internal_Socket$isOpening(_p70) || (!_elm_lang$core$Native_Utils.eq(_p72.code, 1000))) ? _elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'}) : A2(
+							_elm_lang$core$Maybe$withDefault,
+							_elm_lang$core$Task$succeed(
+								{ctor: '_Tuple0'}),
+							A2(
+								_elm_lang$core$Maybe$map,
+								_elm_lang$core$Platform$sendToApp(router),
+								_p71.onNormalClose));
+						var notifyOnClose = _saschatimme$elm_phoenix$Phoenix_Internal_Socket$isOpening(_p70) ? _elm_lang$core$Task$succeed(
+							{ctor: '_Tuple0'}) : A2(
+							_elm_lang$core$Maybe$withDefault,
+							_elm_lang$core$Task$succeed(
+								{ctor: '_Tuple0'}),
+							A2(
+								_elm_lang$core$Maybe$map,
+								function (onClose) {
+									return A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										onClose(_p72));
+								},
+								_p71.onClose));
+						var getNewState = A3(_saschatimme$elm_phoenix$Phoenix$handleChannelDisconnect, router, _p73, state);
+						var backoffIteration = function () {
+							var _p69 = _p68._0.connection;
+							if (_p69.ctor === 'Opening') {
+								return _p69._0 + 1;
+							} else {
+								return 0;
+							}
+						}();
+						var backoff = _p71.reconnectTimer(backoffIteration);
+						var finalNewState = function (pid) {
+							return A2(
+								_elm_lang$core$Task$map,
+								A2(
+									_saschatimme$elm_phoenix$Phoenix$updateSocket,
+									_p73,
+									A3(_saschatimme$elm_phoenix$Phoenix_Internal_Socket$opening, backoffIteration, pid, _p70)),
+								getNewState);
+						};
+						return A2(
+							_elm_lang$core$Task$andThen,
+							finalNewState,
+							A2(
+								_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+								A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'], notifyOnClose, notifyOnNormalClose),
+									notifyOnAbnormalClose),
+								A3(_saschatimme$elm_phoenix$Phoenix$attemptOpen, router, backoff, _p70)));
+					}
+				case 'Receive':
+					var _p75 = _p57._1;
+					var _p74 = _p57._0;
+					return A2(
+						_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['<&>'],
+						A2(
+							_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+							A4(_saschatimme$elm_phoenix$Phoenix$dispatchMessage, router, _p74, _p75, state.channels),
+							A2(
+								_elm_lang$core$Task$map,
+								function (selfCbs) {
+									return A2(_saschatimme$elm_phoenix$Phoenix$updateSelfCallbacks, selfCbs, state);
+								},
+								A4(_saschatimme$elm_phoenix$Phoenix$handleSelfcallback, router, _p74, _p75, state.selfCallbacks))),
+						A3(_saschatimme$elm_phoenix$Phoenix$handlePhoenixMessage, router, _p74, _p75));
+				case 'ChannelJoinReply':
+					return A2(
+						_elm_lang$core$Task$map,
+						function (newChannels) {
+							return A2(_saschatimme$elm_phoenix$Phoenix$updateChannels, newChannels, state);
+						},
+						A6(_saschatimme$elm_phoenix$Phoenix$handleChannelJoinReply, router, _p57._0, _p57._1, _p57._3, _p57._2, state.channels));
+				case 'JoinChannel':
+					var _p79 = _p57._1;
+					var _p78 = _p57._0;
+					var _p76 = A2(_elm_lang$core$Dict$get, _p78, state.sockets);
+					if (_p76.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p77 = _p76._0.connection;
+						if (_p77.ctor === 'Connected') {
+							return A4(
+								_saschatimme$elm_phoenix$Phoenix$pushSocket_,
+								_p78,
+								_saschatimme$elm_phoenix$Phoenix_Internal_Channel$joinMessage(_p79),
+								_elm_lang$core$Maybe$Just(
+									A3(_saschatimme$elm_phoenix$Phoenix$ChannelJoinReply, _p78, _p79.channel.topic, _p79.state)),
+								state);
+						} else {
+							return _elm_lang$core$Task$succeed(state);
+						}
+					}
+				case 'LeaveChannel':
+					var _p83 = _p57._1;
+					var _p82 = _p57._0;
+					var _p80 = A2(_elm_lang$core$Dict$get, _p82, state.sockets);
+					if (_p80.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p81 = _p83.state;
+						if (_p81.ctor === 'Joined') {
+							return A4(
+								_saschatimme$elm_phoenix$Phoenix$pushSocket_,
+								_p82,
+								_saschatimme$elm_phoenix$Phoenix_Internal_Channel$leaveMessage(_p83),
+								_elm_lang$core$Maybe$Just(
+									A2(_saschatimme$elm_phoenix$Phoenix$ChannelLeaveReply, _p82, _p83)),
+								state);
+						} else {
+							return _elm_lang$core$Task$succeed(state);
+						}
+					}
+				case 'ChannelLeaveReply':
+					var _p88 = _p57._1.channel;
+					var _p84 = _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$decodeReplyPayload(_p57._2.payload);
+					if (_p84.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p85 = _p84._0;
+						if (_p85.ctor === 'Err') {
+							var _p86 = _p88.onLeaveError;
+							if (_p86.ctor === 'Nothing') {
+								return _elm_lang$core$Task$succeed(state);
+							} else {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										_p86._0(_p85._0)),
+									_elm_lang$core$Task$succeed(state));
+							}
+						} else {
+							var _p87 = _p88.onLeave;
+							if (_p87.ctor === 'Nothing') {
+								return _elm_lang$core$Task$succeed(state);
+							} else {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										_p87._0(_p85._0)),
+									_elm_lang$core$Task$succeed(state));
+							}
+						}
+					}
+				case 'SendHeartbeat':
+					return A3(_saschatimme$elm_phoenix$Phoenix$heartbeat, router, _p57._0, state);
+				case 'GoodJoin':
+					var _p91 = _p57._1;
+					var _p90 = _p57._0;
+					var _p89 = A3(_saschatimme$elm_phoenix$Phoenix_Internal_Helpers$getIn, _p90, _p91, state.channelQueues);
+					if (_p89.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						return A2(
+							_elm_lang$core$Task$map,
+							A2(_saschatimme$elm_phoenix$Phoenix$removeChannelQueue, _p90, _p91),
+							A3(_saschatimme$elm_phoenix$Phoenix$processQueue, _p90, _p89._0, state));
+					}
+				case 'PushResponse':
+					var _p96 = _p57._0;
+					var _p92 = _saschatimme$elm_phoenix$Phoenix_Internal_Helpers$decodeReplyPayload(_p57._1.payload);
+					if (_p92.ctor === 'Nothing') {
+						return _elm_lang$core$Task$succeed(state);
+					} else {
+						var _p93 = _p92._0;
+						if (_p93.ctor === 'Err') {
+							var _p94 = _p96.onError;
+							if (_p94.ctor === 'Nothing') {
+								return _elm_lang$core$Task$succeed(state);
+							} else {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										_p94._0(_p93._0)),
+									_elm_lang$core$Task$succeed(state));
+							}
+						} else {
+							var _p95 = _p96.onOk;
+							if (_p95.ctor === 'Nothing') {
+								return _elm_lang$core$Task$succeed(state);
+							} else {
+								return A2(
+									_saschatimme$elm_phoenix$Phoenix_Internal_Helpers_ops['&>'],
+									A2(
+										_elm_lang$core$Platform$sendToApp,
+										router,
+										_p95._0(_p93._0)),
+									_elm_lang$core$Task$succeed(state));
+							}
+						}
+					}
+				default:
+					return _elm_lang$core$Task$succeed(state);
+			}
+		});
+	_elm_lang$core$Native_Platform.effectManagers['Phoenix'] = {pkg: 'saschatimme/elm-phoenix', init: _saschatimme$elm_phoenix$Phoenix$init, onEffects: _saschatimme$elm_phoenix$Phoenix$onEffects, onSelfMsg: _saschatimme$elm_phoenix$Phoenix$onSelfMsg, tag: 'fx', cmdMap: _saschatimme$elm_phoenix$Phoenix$cmdMap, subMap: _saschatimme$elm_phoenix$Phoenix$subMap};
+
 	var _user$project$Api_Helpers$withAuthorization = function (apiKey) {
 		return A2(
 			_lukewestby$elm_http_builder$HttpBuilder$withHeader,
@@ -12145,156 +14164,6 @@
 		function (a, b, c, d, e, f, g, h) {
 			return {id: a, title: b, slug: c, insertedAt: d, updatedAt: e, parentId: f, childrenIds: g, threadIds: h};
 		});
-
-	var _user$project$Types_Store$unknownUserIds = function (model) {
-		var postUserIds = A2(
-			_elm_lang$core$List$map,
-			function (_) {
-				return _.userId;
-			},
-			A2(
-				_elm_lang$core$List$map,
-				function (_p0) {
-					var _p1 = _p0;
-					return _p1._1;
-				},
-				_elm_lang$core$Dict$toList(model.posts)));
-		var knownUserIds = _elm_lang$core$Dict$keys(model.users);
-		var known = function (userId) {
-			return A2(_elm_lang$core$List$member, userId, knownUserIds);
-		};
-		return A2(
-			_elm_lang$core$List$filter,
-			F2(
-				function (x, y) {
-					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
-				})(0),
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p2) {
-					return !known(_p2);
-				},
-				postUserIds));
-	};
-	var _user$project$Types_Store$unknownPostIds = function (model) {
-		var threadPostIds = A2(
-			_elm_lang$core$List$concatMap,
-			function (_) {
-				return _.postIds;
-			},
-			A2(
-				_elm_lang$core$List$map,
-				function (_p3) {
-					var _p4 = _p3;
-					return _p4._1;
-				},
-				_elm_lang$core$Dict$toList(model.threads)));
-		var knownPostIds = _elm_lang$core$Dict$keys(model.posts);
-		var known = function (postId) {
-			return A2(_elm_lang$core$List$member, postId, knownPostIds);
-		};
-		return A2(
-			_elm_lang$core$List$filter,
-			F2(
-				function (x, y) {
-					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
-				})(0),
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p5) {
-					return !known(_p5);
-				},
-				threadPostIds));
-	};
-	var _user$project$Types_Store$unknownThreadIds = function (model) {
-		var categoryThreadIds = A2(
-			_elm_lang$core$List$concatMap,
-			function (_) {
-				return _.threadIds;
-			},
-			A2(
-				_elm_lang$core$List$map,
-				function (_p6) {
-					var _p7 = _p6;
-					return _p7._1;
-				},
-				_elm_lang$core$Dict$toList(model.categories)));
-		var knownThreadIds = _elm_lang$core$Dict$keys(model.threads);
-		var known = function (threadId) {
-			return A2(_elm_lang$core$List$member, threadId, knownThreadIds);
-		};
-		return A2(
-			_elm_lang$core$List$filter,
-			F2(
-				function (x, y) {
-					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
-				})(0),
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p8) {
-					return !known(_p8);
-				},
-				categoryThreadIds));
-	};
-	var _user$project$Types_Store$unknownCategoryIds = function (model) {
-		var threadCategoryIds = A2(
-			_elm_lang$core$List$map,
-			function (_) {
-				return _.categoryId;
-			},
-			A2(
-				_elm_lang$core$List$map,
-				function (_p9) {
-					var _p10 = _p9;
-					return _p10._1;
-				},
-				_elm_lang$core$Dict$toList(model.threads)));
-		var knownCategoryIds = _elm_lang$core$Dict$keys(model.categories);
-		var known = function (catId) {
-			return A2(_elm_lang$core$List$member, catId, knownCategoryIds);
-		};
-		return A2(
-			_elm_lang$core$List$filter,
-			F2(
-				function (x, y) {
-					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
-				})(0),
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p11) {
-					return !known(_p11);
-				},
-				threadCategoryIds));
-	};
-	var _user$project$Types_Store$findUser = F2(
-		function (model, userId) {
-			return A2(_elm_lang$core$Dict$get, userId, model.users);
-		});
-	var _user$project$Types_Store$findThread = F2(
-		function (model, threadId) {
-			return A2(_elm_lang$core$Dict$get, threadId, model.threads);
-		});
-	var _user$project$Types_Store$findCategory = F2(
-		function (model, categoryId) {
-			return A2(_elm_lang$core$Dict$get, categoryId, model.categories);
-		});
-	var _user$project$Types_Store$new = {categories: _elm_lang$core$Dict$empty, threads: _elm_lang$core$Dict$empty, users: _elm_lang$core$Dict$empty, posts: _elm_lang$core$Dict$empty};
-	var _user$project$Types_Store$Model = F4(
-		function (a, b, c, d) {
-			return {categories: a, threads: b, users: c, posts: d};
-		});
-	var _user$project$Types_Store$StoreUpdate = F4(
-		function (a, b, c, d) {
-			return {categories: a, threads: b, users: c, posts: d};
-		});
-	var _user$project$Types_Store$ReplenishRequest = F4(
-		function (a, b, c, d) {
-			return {categories: a, threads: b, posts: c, users: d};
-		});
-	var _user$project$Types_Store$NoOp = {ctor: 'NoOp'};
-	var _user$project$Types_Store$NewData = function (a) {
-		return {ctor: 'NewData', _0: a};
-	};
 
 	var _user$project$Decoders$userDecoder = A4(
 		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$optional,
@@ -12433,7 +14302,312 @@
 			_elm_lang$core$Json_Decode$field,
 			'categories',
 			_elm_lang$core$Json_Decode$list(_user$project$Decoders$categoryDecoder)));
-	var _user$project$Decoders$storeUpdateDecoder = A5(_elm_lang$core$Json_Decode$map4, _user$project$Types_Store$StoreUpdate, _user$project$Decoders$categoriesDecoder, _user$project$Decoders$threadsDecoder, _user$project$Decoders$usersDecoder, _user$project$Decoders$postsDecoder);
+
+	var _user$project$Types_Store$intList = function (listInts) {
+		return _elm_lang$core$Json_Encode$list(
+			A2(_elm_lang$core$List$map, _elm_lang$core$Json_Encode$int, listInts));
+	};
+	var _user$project$Types_Store$encodeReplenishRequest = function (replenishRequest) {
+		return _elm_lang$core$Json_Encode$object(
+			{
+				ctor: '::',
+				_0: {
+					ctor: '_Tuple2',
+					_0: 'categories',
+					_1: _user$project$Types_Store$intList(replenishRequest.categories)
+				},
+				_1: {
+					ctor: '::',
+					_0: {
+						ctor: '_Tuple2',
+						_0: 'threads',
+						_1: _user$project$Types_Store$intList(replenishRequest.threads)
+					},
+					_1: {
+						ctor: '::',
+						_0: {
+							ctor: '_Tuple2',
+							_0: 'posts',
+							_1: _user$project$Types_Store$intList(replenishRequest.posts)
+						},
+						_1: {
+							ctor: '::',
+							_0: {
+								ctor: '_Tuple2',
+								_0: 'users',
+								_1: _user$project$Types_Store$intList(replenishRequest.users)
+							},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			});
+	};
+	var _user$project$Types_Store$wants = F2(
+		function (replenishRequest, model) {
+			return _elm_lang$core$Native_Utils.update(
+				model,
+				{wants: replenishRequest});
+		});
+	var _user$project$Types_Store$wantsSomething = function (model) {
+		return (_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$List$length(model.wants.categories),
+			1) > 0) || ((_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$List$length(model.wants.threads),
+			1) > 0) || ((_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$List$length(model.wants.users),
+			1) > 0) || (_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$List$length(model.wants.posts),
+			1) > 0)));
+	};
+	var _user$project$Types_Store$wantsNothing = function (_p0) {
+		return !_user$project$Types_Store$wantsSomething(_p0);
+	};
+	var _user$project$Types_Store$newStoreUpdate = {categories: _elm_lang$core$Dict$empty, threads: _elm_lang$core$Dict$empty, users: _elm_lang$core$Dict$empty, posts: _elm_lang$core$Dict$empty};
+	var _user$project$Types_Store$unknownUserIds = function (model) {
+		var postUserIds = A2(
+			_elm_lang$core$List$map,
+			function (_) {
+				return _.userId;
+			},
+			A2(
+				_elm_lang$core$List$map,
+				function (_p1) {
+					var _p2 = _p1;
+					return _p2._1;
+				},
+				_elm_lang$core$Dict$toList(model.posts)));
+		var knownUserIds = _elm_lang$core$Dict$keys(model.users);
+		var known = function (userId) {
+			return A2(_elm_lang$core$List$member, userId, knownUserIds);
+		};
+		return A2(
+			_elm_lang$core$List$filter,
+			F2(
+				function (x, y) {
+					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
+				})(0),
+			A2(
+				_elm_lang$core$List$filter,
+				function (_p3) {
+					return !known(_p3);
+				},
+				postUserIds));
+	};
+	var _user$project$Types_Store$unknownPostIds = function (model) {
+		var threadPostIds = A2(
+			_elm_lang$core$List$concatMap,
+			function (_) {
+				return _.postIds;
+			},
+			A2(
+				_elm_lang$core$List$map,
+				function (_p4) {
+					var _p5 = _p4;
+					return _p5._1;
+				},
+				_elm_lang$core$Dict$toList(model.threads)));
+		var knownPostIds = _elm_lang$core$Dict$keys(model.posts);
+		var known = function (postId) {
+			return A2(_elm_lang$core$List$member, postId, knownPostIds);
+		};
+		return A2(
+			_elm_lang$core$List$filter,
+			F2(
+				function (x, y) {
+					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
+				})(0),
+			A2(
+				_elm_lang$core$List$filter,
+				function (_p6) {
+					return !known(_p6);
+				},
+				threadPostIds));
+	};
+	var _user$project$Types_Store$unknownThreadIds = function (model) {
+		var categoryThreadIds = A2(
+			_elm_lang$core$List$concatMap,
+			function (_) {
+				return _.threadIds;
+			},
+			A2(
+				_elm_lang$core$List$map,
+				function (_p7) {
+					var _p8 = _p7;
+					return _p8._1;
+				},
+				_elm_lang$core$Dict$toList(model.categories)));
+		var knownThreadIds = _elm_lang$core$Dict$keys(model.threads);
+		var known = function (threadId) {
+			return A2(_elm_lang$core$List$member, threadId, knownThreadIds);
+		};
+		return A2(
+			_elm_lang$core$List$filter,
+			F2(
+				function (x, y) {
+					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
+				})(0),
+			A2(
+				_elm_lang$core$List$filter,
+				function (_p9) {
+					return !known(_p9);
+				},
+				categoryThreadIds));
+	};
+	var _user$project$Types_Store$unknownCategoryIds = function (model) {
+		var threadCategoryIds = A2(
+			_elm_lang$core$List$map,
+			function (_) {
+				return _.categoryId;
+			},
+			A2(
+				_elm_lang$core$List$map,
+				function (_p10) {
+					var _p11 = _p10;
+					return _p11._1;
+				},
+				_elm_lang$core$Dict$toList(model.threads)));
+		var knownCategoryIds = _elm_lang$core$Dict$keys(model.categories);
+		var known = function (catId) {
+			return A2(_elm_lang$core$List$member, catId, knownCategoryIds);
+		};
+		return A2(
+			_elm_lang$core$List$filter,
+			F2(
+				function (x, y) {
+					return _elm_lang$core$Native_Utils.cmp(x, y) < 0;
+				})(0),
+			A2(
+				_elm_lang$core$List$filter,
+				function (_p12) {
+					return !known(_p12);
+				},
+				threadCategoryIds));
+	};
+	var _user$project$Types_Store$findUser = F2(
+		function (model, userId) {
+			return A2(_elm_lang$core$Dict$get, userId, model.users);
+		});
+	var _user$project$Types_Store$findThread = F2(
+		function (model, threadId) {
+			return A2(_elm_lang$core$Dict$get, threadId, model.threads);
+		});
+	var _user$project$Types_Store$findCategory = F2(
+		function (model, categoryId) {
+			return A2(_elm_lang$core$Dict$get, categoryId, model.categories);
+		});
+	var _user$project$Types_Store$newReplenishRequest = {
+		categories: {ctor: '[]'},
+		threads: {ctor: '[]'},
+		posts: {ctor: '[]'},
+		users: {ctor: '[]'}
+	};
+	var _user$project$Types_Store$new = {categories: _elm_lang$core$Dict$empty, threads: _elm_lang$core$Dict$empty, users: _elm_lang$core$Dict$empty, posts: _elm_lang$core$Dict$empty, wants: _user$project$Types_Store$newReplenishRequest};
+	var _user$project$Types_Store$Model = F5(
+		function (a, b, c, d, e) {
+			return {categories: a, threads: b, users: c, posts: d, wants: e};
+		});
+	var _user$project$Types_Store$StoreUpdate = F4(
+		function (a, b, c, d) {
+			return {categories: a, threads: b, users: c, posts: d};
+		});
+	var _user$project$Types_Store$storeUpdateDecoder = A5(_elm_lang$core$Json_Decode$map4, _user$project$Types_Store$StoreUpdate, _user$project$Decoders$categoriesDecoder, _user$project$Decoders$threadsDecoder, _user$project$Decoders$usersDecoder, _user$project$Decoders$postsDecoder);
+	var _user$project$Types_Store$fetchData = F2(
+		function (tagger, replenishRequest) {
+			var decodingTagger = function (v) {
+				return tagger(
+					A2(
+						_elm_lang$core$Result$withDefault,
+						_user$project$Types_Store$newStoreUpdate,
+						A2(_elm_lang$core$Json_Decode$decodeValue, _user$project$Types_Store$storeUpdateDecoder, v)));
+			};
+			var payload = _user$project$Types_Store$encodeReplenishRequest(replenishRequest);
+			return A2(
+				_saschatimme$elm_phoenix$Phoenix_Push$onOk,
+				decodingTagger,
+				A2(
+					_saschatimme$elm_phoenix$Phoenix_Push$withPayload,
+					payload,
+					A2(_saschatimme$elm_phoenix$Phoenix_Push$init, 'store:home', 'fetch')));
+		});
+	var _user$project$Types_Store$ReplenishRequest = F4(
+		function (a, b, c, d) {
+			return {categories: a, threads: b, posts: c, users: d};
+		});
+	var _user$project$Types_Store$NoOp = {ctor: 'NoOp'};
+	var _user$project$Types_Store$NewData = function (a) {
+		return {ctor: 'NewData', _0: a};
+	};
+	var _user$project$Types_Store$fetchWants = function (model) {
+		return _user$project$Types_Store$wantsNothing(model) ? _elm_lang$core$Platform_Cmd$none : A2(
+			_saschatimme$elm_phoenix$Phoenix$push,
+			'ws://localhost:4000/socket/websocket/',
+			A2(_user$project$Types_Store$fetchData, _user$project$Types_Store$NewData, model.wants));
+	};
+	var _user$project$Types_Store$channels = F2(
+		function (mapper, model) {
+			var valToStoreUpdate = function (val) {
+				return _user$project$Types_Store$NewData(
+					A2(
+						_elm_lang$core$Result$withDefault,
+						_user$project$Types_Store$newStoreUpdate,
+						A2(_elm_lang$core$Json_Decode$decodeValue, _user$project$Types_Store$storeUpdateDecoder, val)));
+			};
+			var entityChannel = F2(
+				function (entityType, id) {
+					return _saschatimme$elm_phoenix$Phoenix_Channel$withDebug(
+						A2(
+							_saschatimme$elm_phoenix$Phoenix_Channel$map,
+							mapper,
+							A3(
+								_saschatimme$elm_phoenix$Phoenix_Channel$on,
+								'update',
+								valToStoreUpdate,
+								_saschatimme$elm_phoenix$Phoenix_Channel$init(
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										entityType,
+										A2(
+											_elm_lang$core$Basics_ops['++'],
+											':',
+											_elm_lang$core$Basics$toString(id)))))));
+				});
+			var categoryChannel = function (id) {
+				return A2(entityChannel, 'categories', id);
+			};
+			var categoryChannels = A2(
+				_elm_lang$core$List$map,
+				categoryChannel,
+				_elm_lang$core$Dict$keys(model.categories));
+			var threadChannel = function (id) {
+				return A2(entityChannel, 'threads', id);
+			};
+			var threadChannels = A2(
+				_elm_lang$core$List$map,
+				threadChannel,
+				_elm_lang$core$Dict$keys(model.threads));
+			var postChannel = function (id) {
+				return A2(entityChannel, 'posts', id);
+			};
+			var postChannels = A2(
+				_elm_lang$core$List$map,
+				postChannel,
+				_elm_lang$core$Dict$keys(model.posts));
+			var userChannel = function (id) {
+				return A2(entityChannel, 'users', id);
+			};
+			var userChannels = A2(
+				_elm_lang$core$List$map,
+				userChannel,
+				_elm_lang$core$Dict$keys(model.users));
+			return A2(
+				_elm_lang$core$Basics_ops['++'],
+				categoryChannels,
+				A2(
+					_elm_lang$core$Basics_ops['++'],
+					threadChannels,
+					A2(_elm_lang$core$Basics_ops['++'], postChannels, userChannels)));
+		});
 
 	var _user$project$Encoders$intList = function (listInts) {
 		return _elm_lang$core$Json_Encode$list(
@@ -12492,7 +14666,7 @@
 				A2(_user$project$Api_Fetch$handleGetComplete, tagger, errorTagger),
 				A2(
 					_lukewestby$elm_http_builder$HttpBuilder$withExpect,
-					_elm_lang$http$Http$expectJson(_user$project$Decoders$storeUpdateDecoder),
+					_elm_lang$http$Http$expectJson(_user$project$Types_Store$storeUpdateDecoder),
 					A2(
 						_lukewestby$elm_http_builder$HttpBuilder$withJsonBody,
 						_elm_lang$core$Json_Encode$object(
@@ -12519,7 +14693,7 @@
 				A2(_user$project$Api_Fetch$handleGetComplete, tagger, errorTagger),
 				A2(
 					_lukewestby$elm_http_builder$HttpBuilder$withExpect,
-					_elm_lang$http$Http$expectJson(_user$project$Decoders$storeUpdateDecoder),
+					_elm_lang$http$Http$expectJson(_user$project$Types_Store$storeUpdateDecoder),
 					A2(
 						_lukewestby$elm_http_builder$HttpBuilder$withJsonBody,
 						_user$project$Encoders$encodeReplenishRequest(replenishRequest),
@@ -12542,7 +14716,7 @@
 				A2(_user$project$Api_Home$handleGetHomeComplete, tagger, errorTagger),
 				A2(
 					_lukewestby$elm_http_builder$HttpBuilder$withExpect,
-					_elm_lang$http$Http$expectJson(_user$project$Decoders$storeUpdateDecoder),
+					_elm_lang$http$Http$expectJson(_user$project$Types_Store$storeUpdateDecoder),
 					A2(_user$project$Api_Helpers$get, apiBaseUrl, 'home')));
 		});
 
@@ -12674,11 +14848,10 @@
 			A2(_elm_lang$core$String$dropLeft, 1, location.hash));
 	};
 
-	var _user$project$Model$Model = F3(
-		function (a, b, c) {
-			return {store: a, apiBaseUrl: b, route: c};
-		});
-
+	var _user$project$Msg$RequestFetch = function (a) {
+		return {ctor: 'RequestFetch', _0: a};
+	};
+	var _user$project$Msg$RequestHomeData = {ctor: 'RequestHomeData'};
 	var _user$project$Msg$StoreMsg = function (a) {
 		return {ctor: 'StoreMsg', _0: a};
 	};
@@ -12687,13 +14860,41 @@
 	};
 	var _user$project$Msg$NoOp = {ctor: 'NoOp'};
 
+	var _user$project$Model$phxSocket = 'ws://localhost:4000/socket/websocket';
+	var _user$project$Model$initialSocket = _saschatimme$elm_phoenix$Phoenix_Socket$init(_user$project$Model$phxSocket);
+	var _user$project$Model$Model = F6(
+		function (a, b, c, d, e, f) {
+			return {store: a, apiBaseUrl: b, route: c, connectionStatus: d, socket: e, channels: f};
+		});
+	var _user$project$Model$Flags = function (a) {
+		return {apiBaseUrl: a};
+	};
+	var _user$project$Model$Disconnected = {ctor: 'Disconnected'};
+	var _user$project$Model$init = F2(
+		function (flags, route) {
+			return {store: _user$project$Types_Store$new, apiBaseUrl: flags.apiBaseUrl, route: route, connectionStatus: _user$project$Model$Disconnected, socket: _user$project$Model$initialSocket, channels: _elm_lang$core$Dict$empty};
+		});
+	var _user$project$Model$Connected = {ctor: 'Connected'};
+
 	var _user$project$Update_Store$cmdFor = F2(
 		function (apiBaseUrl, model) {
 			var replenishRequest = {
-				categories: _user$project$Types_Store$unknownCategoryIds(model),
-				threads: _user$project$Types_Store$unknownThreadIds(model),
-				posts: _user$project$Types_Store$unknownPostIds(model),
-				users: _user$project$Types_Store$unknownUserIds(model)
+				categories: A2(
+					_elm_lang$core$Basics_ops['++'],
+					_user$project$Types_Store$unknownCategoryIds(model),
+					model.wants.categories),
+				threads: A2(
+					_elm_lang$core$Basics_ops['++'],
+					_user$project$Types_Store$unknownThreadIds(model),
+					model.wants.threads),
+				posts: A2(
+					_elm_lang$core$Basics_ops['++'],
+					_user$project$Types_Store$unknownPostIds(model),
+					model.wants.posts),
+				users: A2(
+					_elm_lang$core$Basics_ops['++'],
+					_user$project$Types_Store$unknownUserIds(model),
+					model.wants.users)
 			};
 			var missingCounts = {
 				ctor: '_Tuple4',
@@ -12725,7 +14926,8 @@
 						categories: A2(_elm_lang$core$Dict$union, _p2.categories, model.categories),
 						threads: A2(_elm_lang$core$Dict$union, _p2.threads, model.threads),
 						users: A2(_elm_lang$core$Dict$union, _p2.users, model.users),
-						posts: A2(_elm_lang$core$Dict$union, _p2.posts, model.posts)
+						posts: A2(_elm_lang$core$Dict$union, _p2.posts, model.posts),
+						wants: _user$project$Types_Store$newReplenishRequest
 					});
 				return {
 					ctor: '_Tuple2',
@@ -12745,18 +14947,7 @@
 			var _p0 = route;
 			switch (_p0.ctor) {
 				case 'HomeR':
-					return {
-						ctor: '_Tuple2',
-						_0: model,
-						_1: A2(
-							_elm_lang$core$Platform_Cmd$map,
-							_user$project$Msg$StoreMsg,
-							A3(
-								_user$project$Api_Home$index,
-								model.apiBaseUrl,
-								_user$project$Types_Store$NewData,
-								_elm_lang$core$Basics$always(_user$project$Types_Store$NoOp)))
-					};
+					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 				case 'CategoryR':
 					return {
 						ctor: '_Tuple2',
@@ -12772,42 +14963,61 @@
 								_elm_lang$core$Basics$always(_user$project$Types_Store$NoOp)))
 					};
 				case 'ThreadR':
-					var idResult = _elm_lang$core$String$toInt(_p0._1);
-					var _p1 = idResult;
-					if (_p1.ctor === 'Ok') {
+					var store = model.store;
+					var id = A2(
+						_elm_lang$core$Result$withDefault,
+						-1,
+						_elm_lang$core$String$toInt(_p0._1));
+					var replenishRequest = {
+						categories: {ctor: '[]'},
+						threads: {
+							ctor: '::',
+							_0: id,
+							_1: {ctor: '[]'}
+						},
+						posts: {ctor: '[]'},
+						users: {ctor: '[]'}
+					};
+					var nextStore = A2(_user$project$Types_Store$wants, replenishRequest, store);
+					var _p1 = id;
+					if (_p1 === -1) {
+						return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+					} else {
 						return {
 							ctor: '_Tuple2',
-							_0: model,
+							_0: _elm_lang$core$Native_Utils.update(
+								model,
+								{store: nextStore}),
 							_1: A2(
 								_elm_lang$core$Platform_Cmd$map,
 								_user$project$Msg$StoreMsg,
-								A4(
-									_user$project$Api_Fetch$post,
-									{
-										categories: {ctor: '[]'},
-										threads: {
-											ctor: '::',
-											_0: _p1._0,
-											_1: {ctor: '[]'}
-										},
-										posts: {ctor: '[]'},
-										users: {ctor: '[]'}
-									},
-									model.apiBaseUrl,
-									_user$project$Types_Store$NewData,
-									_elm_lang$core$Basics$always(_user$project$Types_Store$NoOp)))
+								_user$project$Types_Store$fetchWants(nextStore))
 						};
-					} else {
-						return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 					}
 				default:
 					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 			}
 		});
+	var _user$project$Update$homeChannelResult = function (model) {
+		return A2(_elm_lang$core$Dict$get, 'store:home', model.channels);
+	};
+	var _user$project$Update$decodeStore = function (value) {
+		return A2(
+			_elm_lang$core$Result$withDefault,
+			_user$project$Types_Store$newStoreUpdate,
+			A2(_elm_lang$core$Json_Decode$decodeValue, _user$project$Types_Store$storeUpdateDecoder, value));
+	};
+	var _user$project$Update$fetchHomeData = A2(
+		_saschatimme$elm_phoenix$Phoenix_Push$onOk,
+		function (_p2) {
+			return _user$project$Types_Store$NewData(
+				_user$project$Update$decodeStore(_p2));
+		},
+		A2(_saschatimme$elm_phoenix$Phoenix_Push$init, 'store:home', 'fetch_home_data'));
 	var _user$project$Update$update = F2(
 		function (msg, model) {
-			var _p2 = msg;
-			switch (_p2.ctor) {
+			var _p3 = msg;
+			switch (_p3.ctor) {
 				case 'NoOp':
 					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 				case 'RouteChanged':
@@ -12815,13 +15025,13 @@
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
-							{route: _p2._0}),
+							{route: _p3._0}),
 						_1: _elm_lang$core$Platform_Cmd$none
 					};
-				default:
-					var _p3 = A3(_user$project$Update_Store$update, model.apiBaseUrl, _p2._0, model.store);
-					var nextStore = _p3._0;
-					var storeCmd = _p3._1;
+				case 'StoreMsg':
+					var _p4 = A3(_user$project$Update_Store$update, model.apiBaseUrl, _p3._0, model.store);
+					var nextStore = _p4._0;
+					var storeCmd = _p4._1;
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -12829,32 +15039,109 @@
 							{store: nextStore}),
 						_1: A2(_elm_lang$core$Platform_Cmd$map, _user$project$Msg$StoreMsg, storeCmd)
 					};
+				case 'RequestHomeData':
+					var _p5 = _user$project$Update$homeChannelResult(model);
+					if (_p5.ctor === 'Just') {
+						return A2(
+							_elm_lang$core$Platform_Cmd_ops['!'],
+							model,
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$core$Platform_Cmd$map,
+									_user$project$Msg$StoreMsg,
+									A2(_saschatimme$elm_phoenix$Phoenix$push, _user$project$Model$phxSocket, _user$project$Update$fetchHomeData)),
+								_1: {ctor: '[]'}
+							});
+					} else {
+						return A2(
+							_elm_lang$core$Platform_Cmd_ops['!'],
+							model,
+							{ctor: '[]'});
+					}
+				default:
+					var _p6 = _user$project$Update$homeChannelResult(model);
+					if (_p6.ctor === 'Just') {
+						return A2(
+							_elm_lang$core$Platform_Cmd_ops['!'],
+							model,
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$core$Platform_Cmd$map,
+									_user$project$Msg$StoreMsg,
+									_user$project$Types_Store$fetchWants(model.store)),
+								_1: {ctor: '[]'}
+							});
+					} else {
+						return A2(
+							_elm_lang$core$Platform_Cmd_ops['!'],
+							model,
+							{ctor: '[]'});
+					}
 			}
 		});
 
-	var _user$project$App$subscriptions = function (model) {
-		return _elm_lang$core$Platform_Sub$none;
+	var _user$project$App$storeHomeChannel = function (userName) {
+		return _saschatimme$elm_phoenix$Phoenix_Channel$withDebug(
+			A2(
+				_saschatimme$elm_phoenix$Phoenix_Channel$onJoin,
+				function (_p0) {
+					return _user$project$Msg$RequestHomeData;
+				},
+				A2(
+					_saschatimme$elm_phoenix$Phoenix_Channel$withPayload,
+					_elm_lang$core$Json_Encode$object(
+						{
+							ctor: '::',
+							_0: {
+								ctor: '_Tuple2',
+								_0: 'user_name',
+								_1: _elm_lang$core$Json_Encode$string(userName)
+							},
+							_1: {ctor: '[]'}
+						}),
+					_saschatimme$elm_phoenix$Phoenix_Channel$init('store:home'))));
 	};
-	var _user$project$App$initialModel = F2(
-		function (flags, route) {
-			return {store: _user$project$Types_Store$new, apiBaseUrl: flags.apiBaseUrl, route: route};
-		});
+	var _user$project$App$subscriptions = function (model) {
+		var storeEntityChannels = A2(_user$project$Types_Store$channels, _user$project$Msg$StoreMsg, model.store);
+		var channels = A2(
+			_elm_lang$core$List$map,
+			function (_p1) {
+				var _p2 = _p1;
+				return _p2._1;
+			},
+			_elm_lang$core$Dict$toList(model.channels));
+		var channelsSub = A2(
+			_saschatimme$elm_phoenix$Phoenix$connect,
+			model.socket,
+			A2(_elm_lang$core$Basics_ops['++'], channels, storeEntityChannels));
+		var connect = _saschatimme$elm_phoenix$Phoenix$connect(model.socket);
+		return channelsSub;
+	};
 	var _user$project$App$init = F2(
 		function (flags, location) {
-			var _p0 = A2(
+			var initialModel = A2(
+				_user$project$Model$init,
+				flags,
+				_user$project$Routes$parseHash(location));
+			var modelWithHome = _elm_lang$core$Native_Utils.update(
+				initialModel,
+				{
+					channels: A3(
+						_elm_lang$core$Dict$insert,
+						'store:home',
+						_user$project$App$storeHomeChannel('knewter'),
+						initialModel.channels)
+				});
+			var _p3 = A2(
 				_user$project$Update$handleRoute,
 				_user$project$Routes$parseHash(location),
-				A2(
-					_user$project$App$initialModel,
-					flags,
-					_user$project$Routes$parseHash(location)));
-			var model = _p0._0;
-			var cmd = _p0._1;
+				modelWithHome);
+			var model = _p3._0;
+			var cmd = _p3._1;
 			return {ctor: '_Tuple2', _0: model, _1: cmd};
 		});
-	var _user$project$App$Flags = function (a) {
-		return {apiBaseUrl: a};
-	};
 
 	var _user$project$Types_NavItem$NavItem = F2(
 		function (a, b) {
