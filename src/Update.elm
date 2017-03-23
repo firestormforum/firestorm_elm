@@ -41,7 +41,7 @@ update msg model =
         RequestHomeData ->
             case homeChannelResult model of
                 Just homeChannel ->
-                    model ! [ Cmd.map StoreMsg <| Phoenix.push Model.phxSocket fetchHomeData ]
+                    model ! [ Cmd.map StoreMsg <| Phoenix.push model.wsBaseUrl fetchHomeData ]
 
                 Nothing ->
                     model ! []

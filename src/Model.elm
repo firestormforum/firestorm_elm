@@ -1,4 +1,4 @@
-module Model exposing (Model, Flags, init, phxSocket)
+module Model exposing (Model, Flags, init)
 
 import Types.Store as Store
 import Routes exposing (Sitemap)
@@ -39,23 +39,6 @@ init flags route =
     , wsBaseUrl = flags.wsBaseUrl
     , route = route
     , connectionStatus = Disconnected
-    , socket = initialSocket
+    , socket = Socket.init flags.wsBaseUrl
     , channels = Dict.empty
     }
-
-
-
--- How do I find out I connected successfully on the socket in the first
--- place?
-
-
-{-| Initialize a socket with the default heartbeat intervall of 30 seconds
--}
-initialSocket : Socket Msg
-initialSocket =
-    Socket.init phxSocket
-
-
-phxSocket : String
-phxSocket =
-    "ws://localhost:4000/socket/websocket"
