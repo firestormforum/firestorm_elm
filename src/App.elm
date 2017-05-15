@@ -5,14 +5,12 @@ import Html.Attributes exposing (src)
 
 
 type alias Model =
-    { message : String
-    , logo : String
-    }
+    ()
 
 
 init : String -> ( Model, Cmd Msg )
 init path =
-    ( { message = "Your Elm App is working!", logo = path }, Cmd.none )
+    ( (), Cmd.none )
 
 
 type Msg
@@ -27,9 +25,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ img [ src model.logo ] []
-        , div [] [ text model.message ]
-        ]
+        [ text "nothing here yet!" ]
 
 
 subscriptions : Model -> Sub Msg
