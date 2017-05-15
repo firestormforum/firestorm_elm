@@ -1,0 +1,43 @@
+// This should only have imports :)
+//
+// Inverted triangle for the import order
+//
+// Here's what Inverted Triangle CSS is:
+// - https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+
+@import "settings.colors";
+@import "settings.metrics";
+@import "settings.global";
+
+@import "tools.mixins";
+
+@import "~normalize-scss";
+
+// Pure.css - https://purecss.io/
+@import "~purecss";
+
+// pure-drawer - a pure css off-canvas sliding drawer
+@import "../vendor/pure-drawer";
+
+@import "typography";
+
+// @import "elements.headings";
+//
+// @import "objects.animations";
+//
+// @import "components.404";
+@import "components/*";
+
+@import "pages/*";
+@import "layouts/*";
+//
+// @import "vendor.prism";
+//
+// @import "trumps.clearfix";
+// @import "trumps.utilities";
+//
+// @import "healthcheck";
+
+.elm-overlay {
+  z-index: 100;
+}
