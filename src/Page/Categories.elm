@@ -9,8 +9,8 @@ import Route exposing (Route(..))
 view : Html msg
 view =
     div [ class "page-categories" ]
-        [ h2 [] [ text "Categories" ]
-        , ol [ class "categories-list" ]
+        [ h1 [] [ text "Categories" ]
+        , ol [ class "category-list" ]
             (List.map categoryView categories)
         ]
 
@@ -18,9 +18,9 @@ view =
 categoryView : Category.Category -> Html msg
 categoryView category =
     li
-        [ class "category-item" ]
+        []
         [ a [ Route.href <| Category category.slug ]
-            [ text category.title ]
+            [ h2 [] [ text category.title ] ]
         ]
 
 
