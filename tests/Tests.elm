@@ -21,6 +21,9 @@ all =
         , test "no hash -> `Home`" <|
             \() ->
                 Expect.equal (parseRoute "") (Just Home)
+        , test "`/` -> `Home`" <|
+            \() ->
+                Expect.equal (parseRoute "/") (Just Home)
         , test "`/categories` -> `Categories`" <|
             \() ->
                 Expect.equal (parseRoute "/categories") (Just Categories)
