@@ -5,8 +5,14 @@ import Html.Attributes exposing (class, href)
 import Data.Category as Category
 import Data.Thread as Thread
 import Data.Post as Post
-import Route exposing (Route(..))
 import Date
+import Page.Component
+    exposing
+        ( timeAbbr
+        , categoryLink
+        , itemMetadata
+        , categoryPills
+        )
 
 
 view : Category.Category -> Thread.Thread -> Html msg
@@ -15,21 +21,13 @@ view category thread =
         [ div [ class "thread-header" ]
             [ h2 []
                 [ text thread.title ]
-            , div [ class "item-metadata" ]
+            , itemMetadata
                 [ a [ href "#", class "username" ]
                     [ text "@someuser" ]
-                , abbr
-                    [ class "time" ]
-                    [ text <| toString <| Date.fromTime thread.updatedAt ]
+                , timeAbbr <| Date.fromTime thread.updatedAt
                 ]
-            , div [ class "item-metadata" ]
-                [ ul [ class "category-pill" ]
-                    [ li [ class "category -color-20" ]
-                        [ a [ Route.href <| Route.Category category.slug ]
-                            [ text category.title ]
-                        ]
-                    ]
-                ]
+            , itemMetadata
+                [ categoryPills [ category ] ]
             ]
         , ol
             [ class "post-list" ]

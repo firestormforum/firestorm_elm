@@ -6,6 +6,7 @@ import Data.Category as Category
 import Data.Thread as Thread
 import Route exposing (Route(..))
 import Date
+import Page.Component exposing (timeAbbr, userLink, threadLink, badgeBlock)
 
 
 view : Category.Category -> Html msg
@@ -34,31 +35,18 @@ details thread =
     in
         div [ class "details" ]
             [ div [ class "summary" ]
-                [ a
-                    [ Route.href <| Thread (category.slug) thread.slug
-                    , class "title"
-                    ]
-                    [ text thread.title ]
-                , a
-                    [ href "#"
-                    , class "user-name"
-                    ]
-                    [ text "@username" ]
+                [ threadLink category thread
+                , userLink "@username"
                 ]
             , div [ class "metadata" ]
-                [ abbr
-                    [ class "time" ]
-                    [ text <| toString <| Date.fromTime thread.updatedAt ]
-                ]
+                [ timeAbbr <| Date.fromTime thread.updatedAt ]
             ]
 
 
 supplemental : Thread.Thread -> Html msg
 supplemental thread =
     div [ class "supplemental" ]
-        [ div [ class "badge-block -highlight" ]
-            [ text "3" ]
-        ]
+        [ badgeBlock True 3 ]
 
 
 threads : List Thread.Thread
