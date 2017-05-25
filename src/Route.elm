@@ -1,7 +1,16 @@
 module Route exposing (Route(..), fromLocation, href)
 
 import Navigation exposing (Location)
-import UrlParser as Url exposing (parseHash, s, (</>), string, oneOf, Parser)
+import UrlParser as Url
+    exposing
+        ( parseHash
+        , s
+        , (</>)
+        , string
+        , oneOf
+        , Parser
+        , top
+        )
 import Html.Attributes as Attr
 import Html exposing (Attribute)
 
@@ -17,7 +26,8 @@ type Route
 router : Parser (Route -> a) a
 router =
     oneOf
-        [ Url.map Categories (s "categories")
+        [ Url.map Home top
+        , Url.map Categories (s "categories")
         , Url.map Category (s "categories" </> string)
         , Url.map Thread (s "categories" </> string </> s "threads" </> string)
         ]
