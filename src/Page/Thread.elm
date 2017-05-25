@@ -31,7 +31,7 @@ posts =
 
 postView : Post.Post -> Html msg
 postView post =
-    div
+    li
         [ class "post-item" ]
         [ Post.bodyToHtml
             post.body
