@@ -7,6 +7,8 @@ import Page.Home
 import Page.Categories
 import Page.Category
 import Page.Thread
+import Data.Category as Category
+import Data.Thread as Thread
 import Route exposing (Route(..))
 import Navigation exposing (Location)
 import Json.Decode exposing (Value)
@@ -58,10 +60,10 @@ view model =
                 Page.Categories.view
 
             Category categorySlug ->
-                Page.Category.view
+                Page.Category.view Category.mockCategory
 
             Thread categorySlug threadSlug ->
-                Page.Thread.view
+                Page.Thread.view Category.mockCategory Thread.mockThread
 
             NotFound ->
                 text "Not found"

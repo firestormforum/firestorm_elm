@@ -13,13 +13,15 @@ import UrlParser as Url
         )
 import Html.Attributes as Attr
 import Html exposing (Attribute)
+import Data.Category as Category
+import Data.Thread as Thread
 
 
 type Route
     = Home
     | Categories
-    | Category String
-    | Thread String String
+    | Category Category.Slug
+    | Thread Category.Slug Thread.Slug
     | NotFound
 
 
@@ -28,8 +30,13 @@ router =
     oneOf
         [ Url.map Home top
         , Url.map Categories (s "categories")
-        , Url.map Category (s "categories" </> string)
-        , Url.map Thread (s "categories" </> string </> s "threads" </> string)
+        , Url.map Category (s "categories" </> Category.slugParser)
+        , Url.map Thread
+            (s "categories"
+                </> Category.slugParser
+                </> s "threads"
+                </> Thread.slugParser
+            )
         ]
 
 
@@ -53,10 +60,14 @@ routeToString route =
                     [ "categories" ]
 
                 Category categorySlug ->
-                    [ "categories", categorySlug ]
+                    [ "categories", Category.slugToString categorySlug ]
 
                 Thread categorySlug threadSlug ->
-                    [ "categories", categorySlug, "threads", threadSlug ]
+                    [ "categories"
+                    , Category.slugToString categorySlug
+                    , "threads"
+                    , Thread.slugToString threadSlug
+                    ]
 
                 NotFound ->
                     [ "404" ]

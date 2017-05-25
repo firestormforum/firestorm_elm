@@ -3,6 +3,8 @@ module Page.Layout exposing (view)
 import Html exposing (..)
 import Html.Attributes exposing (class)
 import Route exposing (Route(..))
+import Data.Category as Category
+import Data.Thread as Thread
 
 
 view : Html msg -> Html msg
@@ -20,8 +22,8 @@ drawer =
         [ class "page-drawer" ]
         [ homeLink
         , categoriesLink
-        , categoryLink "foo"
-        , threadLink "foo" "bar"
+        , categoryLink Category.mockCategory
+        , threadLink Category.mockCategory Thread.mockThread
         ]
 
 
@@ -35,21 +37,24 @@ categoriesLink =
     a [ Route.href Categories ] [ text "Categories" ]
 
 
-categoryLink : String -> Html msg
-categoryLink categorySlug =
-    a [ Route.href <| Category categorySlug ]
+categoryLink : Category.Category -> Html msg
+categoryLink category =
+    a [ Route.href <| Category category.slug ]
         [ text <|
             "Category: "
-                ++ categorySlug
+                ++ category.title
         ]
 
 
-threadLink : String -> String -> Html msg
-threadLink categorySlug threadSlug =
-    a [ Route.href <| Thread categorySlug threadSlug ]
+threadLink : Category.Category -> Thread.Thread -> Html msg
+threadLink category thread =
+    a
+        [ Route.href <|
+            Thread category.slug thread.slug
+        ]
         [ text <|
             "Thread: "
-                ++ categorySlug
+                ++ category.title
                 ++ "/"
-                ++ threadSlug
+                ++ thread.title
         ]
