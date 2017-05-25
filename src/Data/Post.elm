@@ -3,10 +3,12 @@ module Data.Post
         ( Post
         , Id
         , mockPost
+        , bodyToHtml
         )
 
 import Time exposing (Time)
 import Data.Thread as Thread
+import Html exposing (Html)
 
 
 type Id
@@ -42,3 +44,10 @@ mockPost =
         , insertedAt = 0
         , updatedAt = 0
         }
+
+
+bodyToHtml : Body -> List (Html.Attribute msg) -> Html msg
+bodyToHtml (Body body) attrs =
+    -- We're going to use the markdown package soon!
+    Html.div attrs
+        [ Html.text body ]

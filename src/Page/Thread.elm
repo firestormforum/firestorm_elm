@@ -18,9 +18,22 @@ view category thread =
                 [ Route.href <| Route.Category category.slug ]
                 [ text category.title ]
             ]
+        , ol
+            [ class "posts-list" ]
+            (List.map postView posts)
         ]
 
 
 posts : List Post.Post
 posts =
     List.repeat 4 Post.mockPost
+
+
+postView : Post.Post -> Html msg
+postView post =
+    div
+        [ class "post-item" ]
+        [ Post.bodyToHtml
+            post.body
+            [ class "body" ]
+        ]
