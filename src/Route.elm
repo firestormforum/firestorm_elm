@@ -1,7 +1,9 @@
-module Route exposing (Route(..), fromLocation)
+module Route exposing (Route(..), fromLocation, href)
 
 import Navigation exposing (Location)
 import UrlParser as Url exposing (parseHash, s, (</>), string, oneOf, Parser)
+import Html.Attributes as Attr
+import Html exposing (Attribute)
 
 
 type Route
@@ -27,3 +29,31 @@ fromLocation location =
         Just Home
     else
         parseHash router location
+
+
+routeToString : Route -> String
+routeToString route =
+    let
+        pieces =
+            case route of
+                Home ->
+                    []
+
+                Categories ->
+                    [ "categories" ]
+
+                Category categorySlug ->
+                    [ "categories", categorySlug ]
+
+                Thread categorySlug threadSlug ->
+                    [ "categories", categorySlug, "threads", threadSlug ]
+
+                NotFound ->
+                    [ "404" ]
+    in
+        "#/" ++ (String.join "/" pieces)
+
+
+href : Route -> Attribute msg
+href route =
+    Attr.href (routeToString route)
