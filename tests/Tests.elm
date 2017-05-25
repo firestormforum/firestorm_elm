@@ -6,6 +6,7 @@ import String
 import App
 import Route exposing (Route(..), fromLocation)
 import Navigation exposing (Location)
+import Json.Encode exposing (string)
 
 
 all : Test
@@ -13,7 +14,10 @@ all =
     describe "A Test Suite"
         [ test "Model is initialized properly" <|
             \() ->
-                Expect.equal (Tuple.first <| App.init "") ()
+                Expect.equal (Tuple.first <| App.init (string "") (hash ""))
+                    { currentRoute =
+                        Route.Home
+                    }
         , test "no hash -> `Home`" <|
             \() ->
                 Expect.equal (parseRoute "") (Just Home)

@@ -9,6 +9,7 @@ type Route
     | Categories
     | Category String
     | Thread String String
+    | NotFound
 
 
 router : Parser (Route -> a) a
