@@ -1,0 +1,7 @@
+.page-layout {
+  display: flex;
+  flex-direction: row;
+  > .body {
+    padding: $padding-large;
+  }
+}

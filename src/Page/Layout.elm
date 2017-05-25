@@ -12,14 +12,15 @@ view body =
     div
         [ class "page-layout" ]
         [ drawer
-        , body
+        , div [ class "body" ]
+            [ body ]
         ]
 
 
 drawer : Html msg
 drawer =
     div
-        [ class "page-drawer" ]
+        [ class "side-drawer" ]
         [ homeLink
         , categoriesLink
         , categoryLink Category.mockCategory

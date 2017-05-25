@@ -1,0 +1,37 @@
+// This should only have imports :)
+//
+// Inverted triangle for the import order
+//
+// Here's what Inverted Triangle CSS is:
+// - https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+
+// == SETTINGS ==
+@import "settings.colors";
+@import "settings.metrics";
+@import "settings.global";
+
+// == TOOLS ==
+@import "tools.mixins";
+
+// == GENERIC ==
+@import "generic.normalize";
+@import "generic.purecss";
+@import "generic.typeplate";
+
+@import "typography";
+
+// @import "elements.headings";
+//
+// @import "objects.animations";
+//
+// @import "components.404";
+@import "layouts/*";
+@import "pages/*";
+@import "components/*";
+
+// @import "vendor.prism";
+//
+// @import "trumps.clearfix";
+// @import "trumps.utilities";
+//
+// @import "healthcheck";
