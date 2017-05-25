@@ -1,33 +1,64 @@
 module Page.Category exposing (view)
 
 import Html exposing (..)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, href)
 import Data.Category as Category
 import Data.Thread as Thread
 import Route exposing (Route(..))
+import Date
 
 
 view : Category.Category -> Html msg
 view category =
     div [ class "page-category" ]
         [ h2 [] [ text category.title ]
-        , ol [ class "threads-list" ]
+        , ol [ class "thread-list" ]
             (List.map threadView threads)
         ]
 
 
 threadView : Thread.Thread -> Html msg
 threadView thread =
+    li
+        []
+        [ details thread
+        , supplemental thread
+        ]
+
+
+details : Thread.Thread -> Html msg
+details thread =
     let
         category =
             Category.mockCategory
     in
-        li
-            [ class "thread-item" ]
-            [ a
-                [ Route.href <| Thread (category.slug) thread.slug ]
-                [ text thread.title ]
+        div [ class "details" ]
+            [ div [ class "summary" ]
+                [ a
+                    [ Route.href <| Thread (category.slug) thread.slug
+                    , class "title"
+                    ]
+                    [ text thread.title ]
+                , a
+                    [ href "#"
+                    , class "user-name"
+                    ]
+                    [ text "@username" ]
+                ]
+            , div [ class "metadata" ]
+                [ abbr
+                    [ class "time" ]
+                    [ text <| toString <| Date.fromTime thread.updatedAt ]
+                ]
             ]
+
+
+supplemental : Thread.Thread -> Html msg
+supplemental thread =
+    div [ class "supplemental" ]
+        [ div [ class "badge-block -highlight" ]
+            [ text "3" ]
+        ]
 
 
 threads : List Thread.Thread

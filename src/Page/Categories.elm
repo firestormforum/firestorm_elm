@@ -9,7 +9,7 @@ import Route exposing (Route(..))
 view : Html msg
 view =
     div [ class "page-categories" ]
-        [ h1 [] [ text "Categories" ]
+        [ h2 [] [ text "Categories" ]
         , ol [ class "category-list" ]
             (List.map categoryView categories)
         ]

@@ -3,5 +3,6 @@
   flex-direction: row;
   > .body {
     padding: $padding-large;
+    flex: 1;
   }
 }
