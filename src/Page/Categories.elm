@@ -6,4 +6,4 @@ import Html.Attributes exposing (class)
 
 view : Html msg
 view =
-    text "categories"
+    h2 [] [ text "Categories" ]
