@@ -1,77 +1,68 @@
-const autoprefixer = require('autoprefixer');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const paths = require('../config/paths');
-const getClientEnvironment = require('./env');
+const autoprefixer = require("autoprefixer");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const paths = require("../config/paths");
+const getClientEnvironment = require("./env");
 
 module.exports = {
-
-  devtool: 'eval',
+  devtool: "eval",
 
   entry: [
-
     // WebpackDevServer client.
-    require.resolve('react-dev-utils/webpackHotDevClient'),
+    require.resolve("react-dev-utils/webpackHotDevClient"),
 
     // Replacement runtime.
-    require.resolve('webpack/hot/dev-server'),
+    require.resolve("webpack/hot/dev-server"),
 
     paths.entry
   ],
   output: {
-
     pathinfo: true,
 
     // The build folder.
     path: paths.dist,
 
     // Generated JS files.
-    filename: 'dist/js/bundle.js',
+    filename: "dist/js/bundle.js",
 
-    publicPath: '/'
+    publicPath: "/"
   },
   resolveLoader: {
-
     // Look for loaders in own node_modules
     root: paths.ownModules,
-    moduleTemplates: [ '*-loader' ]
+    moduleTemplates: ["*-loader"]
   },
   resolve: {
-    modulesDirectories: [ 'node_modules' ],
-    extensions: [ '', '.js', '.elm' ]
+    modulesDirectories: ["node_modules"],
+    extensions: ["", ".js", ".elm"]
   },
   module: {
     noParse: /\.elm$/,
     loaders: [
       {
         test: /\.elm$/,
-        exclude: [ /elm-stuff/, /node_modules/ ],
-        loader: 'elm-hot!elm-webpack?verbose=true&warn=true&debug=true&pathToMake=' + paths.elmMake
+        exclude: [/elm-stuff/, /node_modules/],
+        loader: "elm-hot!elm-webpack?verbose=true&warn=true&debug=true&pathToMake=" +
+          paths.elmMake
       },
       {
-        test: /\.css$/,
-        loader: 'style!css!postcss'
+        test: /\.scss$/,
+        loader: "style!css!postcss!sass!import-glob"
       },
       {
-        exclude: [
-          /\.html$/,
-          /\.js$/,
-          /\.css$/,
-          /\.json$/,
-          /\.svg$/
-        ],
-        loader: 'url',
+        exclude: [/\.html$/, /\.js$/, /\.scss/, /\.css$/, /\.json$/, /\.svg$/],
+        loader: "url",
         query: {
           limit: 10000,
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: "static/media/[name].[hash:8].[ext]"
         }
       },
       // "file" loader for svg
       {
         test: /\.svg$/,
-        loader: 'file',
+        loader: "file",
         query: {
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: "static/media/[name].[hash:8].[ext]"
         }
       }
     ]
@@ -79,12 +70,7 @@ module.exports = {
   postcss: function() {
     return [
       autoprefixer({
-        browsers: [
-          '>1%',
-          'last 4 versions',
-          'Firefox ESR',
-          'not ie < 9'
-        ]
+        browsers: [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"]
       })
     ];
   },
