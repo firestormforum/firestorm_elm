@@ -4,6 +4,7 @@ import Html exposing (..)
 import Html.Attributes exposing (class)
 import Data.Category as Category
 import Data.Thread as Thread
+import Data.Post as Post
 import Route
 
 
@@ -18,3 +19,8 @@ view category thread =
                 [ text category.title ]
             ]
         ]
+
+
+posts : List Post.Post
+posts =
+    List.repeat 4 Post.mockPost

@@ -10,6 +10,7 @@ module Data.Thread
 
 import Time exposing (Time)
 import UrlParser
+import Data.Category as Category
 
 
 type Slug
@@ -24,6 +25,7 @@ type alias Thread =
     { id : Id
     , title : String
     , slug : Slug
+    , categoryId : Category.Id
     , insertedAt : Time
     , updatedAt : Time
     }
@@ -41,9 +43,14 @@ slugToString (Slug slug) =
 
 mockThread : Thread
 mockThread =
-    { id = Id 1
-    , title = "OTP is cool"
-    , slug = Slug "otp-is-cool"
-    , insertedAt = 0
-    , updatedAt = 0
-    }
+    let
+        category =
+            Category.mockCategory
+    in
+        { id = Id 1
+        , title = "OTP is cool"
+        , slug = Slug "otp-is-cool"
+        , categoryId = category.id
+        , insertedAt = 0
+        , updatedAt = 0
+        }
