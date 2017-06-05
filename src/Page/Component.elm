@@ -34,7 +34,7 @@ categoryLink category =
 threadLink : Category.Category -> Thread.Thread -> Html msg
 threadLink category thread =
     a
-        [ Route.href <| Route.Thread (category.slug) thread.slug
+        [ Route.href <| Route.Thread category.slug thread.slug
         , class "title"
         ]
         [ text thread.title ]
