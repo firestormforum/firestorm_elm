@@ -15,8 +15,8 @@ import Page.Component
         )
 
 
-view : Category.Category -> Thread.Thread -> Html msg
-view category thread =
+view : Date.Date -> Category.Category -> Thread.Thread -> Html msg
+view currentDate category thread =
     div []
         [ div [ class "thread-header" ]
             [ h2 []
@@ -24,7 +24,7 @@ view category thread =
             , itemMetadata
                 [ a [ href "#", class "username" ]
                     [ text "@someuser" ]
-                , timeAbbr <| Date.fromTime thread.updatedAt
+                , timeAbbr currentDate (Date.fromTime thread.updatedAt)
                 ]
             , itemMetadata
                 [ categoryPills [ category ] ]

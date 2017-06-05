@@ -12,10 +12,13 @@ import Data.Thread as Thread
 import Route exposing (Route(..))
 import Navigation exposing (Location)
 import Json.Decode exposing (Value)
+import Time exposing (Time)
+import Date
 
 
 type alias Model =
     { currentRoute : Route
+    , currentTime : Time
     }
 
 
@@ -31,13 +34,16 @@ init value location =
                 Nothing ->
                     Home
     in
-        ( { currentRoute = initialRoute }
+        ( { currentRoute = initialRoute
+          , currentTime = 0
+          }
         , Cmd.none
         )
 
 
 type Msg
     = SetRoute (Maybe Route)
+    | Tick Time
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -48,27 +54,37 @@ update msg model =
             , Cmd.none
             )
 
+        Tick time ->
+            ( { model | currentTime = time }
+            , Cmd.none
+            )
+
 
 view : Model -> Html Msg
 view model =
-    Page.Layout.view <|
-        case model.currentRoute of
-            Home ->
-                Page.Home.view
+    let
+        currentDate =
+            model.currentTime
+                |> Date.fromTime
+    in
+        Page.Layout.view <|
+            case model.currentRoute of
+                Home ->
+                    Page.Home.view
 
-            Categories ->
-                Page.Categories.view
+                Categories ->
+                    Page.Categories.view
 
-            Category categorySlug ->
-                Page.Category.view Category.mockCategory
+                Category categorySlug ->
+                    Page.Category.view currentDate Category.mockCategory
 
-            Thread categorySlug threadSlug ->
-                Page.Thread.view Category.mockCategory Thread.mockThread
+                Thread categorySlug threadSlug ->
+                    Page.Thread.view currentDate Category.mockCategory Thread.mockThread
 
-            NotFound ->
-                text "Not found"
+                NotFound ->
+                    text "Not found"
 
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    Sub.none
+    Time.every Time.second Tick

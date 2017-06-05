@@ -11,17 +11,37 @@ module Page.Component
 
 import Date
 import Html exposing (..)
-import Html.Attributes exposing (class, classList, href)
+import Html.Attributes exposing (class, classList, href, title)
 import Data.Category as Category
 import Data.Thread as Thread
 import Route
+import Date.Distance as Distance
+import Date.Distance.I18n.En
+import Date.Distance.Types
 
 
-timeAbbr : Date.Date -> Html msg
-timeAbbr date =
+locale : Date.Distance.Types.Locale
+locale =
+    Date.Distance.I18n.En.locale { addSuffix = True }
+
+
+dateDiffInWords : Date.Date -> Date.Date -> String
+dateDiffInWords =
+    let
+        defaultConfig =
+            Distance.defaultConfig
+    in
+        Distance.inWordsWithConfig
+            { defaultConfig | locale = locale }
+
+
+timeAbbr : Date.Date -> Date.Date -> Html msg
+timeAbbr currentDate date =
     abbr
-        [ class "time" ]
-        [ text <| toString <| date ]
+        [ class "time"
+        , title <| toString date
+        ]
+        [ text <| dateDiffInWords currentDate date ]
 
 
 categoryLink : Category.Category -> Html msg

@@ -9,26 +9,26 @@ import Date
 import Page.Component exposing (timeAbbr, userLink, threadLink, badgeBlock)
 
 
-view : Category.Category -> Html msg
-view category =
+view : Date.Date -> Category.Category -> Html msg
+view currentDate category =
     div [ class "page-category" ]
         [ h2 [] [ text category.title ]
         , ol [ class "thread-list" ]
-            (List.map threadView threads)
+            (List.map (threadView currentDate) threads)
         ]
 
 
-threadView : Thread.Thread -> Html msg
-threadView thread =
+threadView : Date.Date -> Thread.Thread -> Html msg
+threadView currentDate thread =
     li
         []
-        [ details thread
+        [ details currentDate thread
         , supplemental thread
         ]
 
 
-details : Thread.Thread -> Html msg
-details thread =
+details : Date.Date -> Thread.Thread -> Html msg
+details currentDate thread =
     let
         category =
             Category.mockCategory
@@ -39,7 +39,7 @@ details thread =
                 , userLink "@username"
                 ]
             , div [ class "metadata" ]
-                [ timeAbbr <| Date.fromTime thread.updatedAt ]
+                [ timeAbbr currentDate (Date.fromTime thread.updatedAt) ]
             ]
 
 
