@@ -1,7 +1,6 @@
 module App exposing (..)
 
 import Html exposing (Html, text, div, img)
-import Html.Attributes exposing (src)
 import Page.Layout
 import Page.Home
 import Page.Categories
@@ -14,6 +13,8 @@ import Navigation exposing (Location)
 import Json.Decode exposing (Value)
 import Time exposing (Time)
 import Date
+import Title
+import Ports
 
 
 type alias Model =
@@ -37,7 +38,7 @@ init value location =
         ( { currentRoute = initialRoute
           , currentTime = 0
           }
-        , Cmd.none
+        , Ports.setTitle (Title.forRoute initialRoute)
         )
 
 
@@ -50,9 +51,13 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         SetRoute route ->
-            ( { model | currentRoute = Maybe.withDefault NotFound route }
-            , Cmd.none
-            )
+            let
+                currentRoute =
+                    Maybe.withDefault NotFound route
+            in
+                ( { model | currentRoute = currentRoute }
+                , Ports.setTitle <| Title.forRoute currentRoute
+                )
 
         Tick time ->
             ( { model | currentTime = time }

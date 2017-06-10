@@ -1,7 +1,19 @@
 require("./css/app.scss");
-var logoPath = require("./logo.svg");
-var Elm = require("./Main.elm");
+const logoPath = require("./logo.svg");
+const Elm = require("./Main.elm");
 
-var root = document.getElementById("root");
+const root = document.getElementById("root");
 
-Elm.Main.embed(root, logoPath);
+const app = Elm.Main.embed(root, logoPath);
+
+const outboundPortHandlers = {
+  SetTitle: title => {
+    document.title = title;
+  }
+};
+
+const handleOutboundPort = evt => {
+  outboundPortHandlers[evt.type](evt.payload);
+};
+
+app.ports.outbound.subscribe(handleOutboundPort);
