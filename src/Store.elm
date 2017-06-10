@@ -8,6 +8,9 @@ module Store
         , getPost
         , getThread
         , getThreadBySlug
+        , insertCategory
+        , insertPost
+        , insertThread
         , mock
         , posts
         , threads
@@ -19,11 +22,47 @@ import Data.Thread as Thread exposing (Thread, mockThread)
 import EveryDict exposing (EveryDict)
 
 
+type alias CategoryIndices =
+    { slug : EveryDict Category.Slug Category.Id
+    }
+
+
+emptyCategoryIndices : CategoryIndices
+emptyCategoryIndices =
+    { slug = EveryDict.empty
+    }
+
+
+type alias ThreadIndices =
+    { slug : EveryDict Thread.Slug Thread.Id
+    }
+
+
+emptyThreadIndices : ThreadIndices
+emptyThreadIndices =
+    { slug = EveryDict.empty
+    }
+
+
+type alias Indices =
+    { categories : CategoryIndices
+    , threads : ThreadIndices
+    }
+
+
+emptyIndices : Indices
+emptyIndices =
+    { categories = emptyCategoryIndices
+    , threads = emptyThreadIndices
+    }
+
+
 type Store
     = Store
         { categories : EveryDict Category.Id Category
         , threads : EveryDict Thread.Id Thread
         , posts : EveryDict Post.Id Post
+        , indices : Indices
         }
 
 
@@ -33,34 +72,80 @@ empty =
         { categories = EveryDict.empty
         , threads = EveryDict.empty
         , posts = EveryDict.empty
+        , indices = emptyIndices
         }
 
 
 mock : Store
 mock =
-    Store
-        { categories = mockCategories
-        , threads = mockThreads
-        , posts = mockPosts
-        }
+    empty
+        |> insertCategory mockCategory
+        |> insertThread mockThread
+        |> insertPost mockPost
 
 
-mockCategories : EveryDict Category.Id Category
-mockCategories =
-    EveryDict.empty
-        |> EveryDict.insert mockCategory.id mockCategory
+insertCategory : Category -> Store -> Store
+insertCategory category (Store ({ categories, indices } as store)) =
+    let
+        nextCategories =
+            categories
+                |> EveryDict.insert category.id category
+
+        nextIndices =
+            indices
+                |> indexCategory category
+    in
+    Store { store | categories = nextCategories, indices = nextIndices }
 
 
-mockThreads : EveryDict Thread.Id Thread
-mockThreads =
-    EveryDict.empty
-        |> EveryDict.insert mockThread.id mockThread
+indexCategory : Category -> Indices -> Indices
+indexCategory category ({ categories } as indices) =
+    let
+        nextSlug =
+            categories.slug
+                |> EveryDict.insert category.slug category.id
+
+        nextCategoryIndices =
+            { categories | slug = nextSlug }
+    in
+    { indices | categories = nextCategoryIndices }
 
 
-mockPosts : EveryDict Post.Id Post
-mockPosts =
-    EveryDict.empty
-        |> EveryDict.insert mockPost.id mockPost
+insertThread : Thread -> Store -> Store
+insertThread thread (Store ({ threads, indices } as store)) =
+    let
+        nextThreads =
+            threads
+                |> EveryDict.insert thread.id thread
+
+        nextIndices =
+            indices
+                |> indexThread thread
+    in
+    Store { store | threads = nextThreads, indices = nextIndices }
+
+
+indexThread : Thread -> Indices -> Indices
+indexThread thread ({ threads } as indices) =
+    let
+        nextSlug =
+            threads.slug
+                |> EveryDict.insert thread.slug thread.id
+
+        nextThreadIndices =
+            { threads | slug = nextSlug }
+    in
+    { indices | threads = nextThreadIndices }
+
+
+insertPost : Post -> Store -> Store
+insertPost post (Store ({ posts, indices } as store)) =
+    let
+        nextPosts =
+            posts
+                |> EveryDict.insert post.id post
+    in
+    Store { store | posts = nextPosts }
 
 
 getCategory : Category.Id -> Store -> Maybe Category
@@ -70,8 +155,16 @@ getCategory id (Store { categories }) =
 
 
 getCategoryBySlug : Category.Slug -> Store -> Maybe Category
-getCategoryBySlug slug (Store { categories }) =
-    Just Category.mockCategory
+getCategoryBySlug slug ((Store { categories, indices }) as store) =
+    indices
+        |> getCategoryIdBySlug slug
+        |> Maybe.andThen (flip getCategory <| store)
+
+
+getCategoryIdBySlug : Category.Slug -> Indices -> Maybe Category.Id
+getCategoryIdBySlug slug { categories } =
+    categories.slug
+        |> EveryDict.get slug
 
 
 getThread : Thread.Id -> Store -> Maybe Thread
@@ -81,8 +174,16 @@ getThread id (Store { threads }) =
 
 
 getThreadBySlug : Thread.Slug -> Store -> Maybe Thread
-getThreadBySlug slug (Store { threads }) =
-    Just Thread.mockThread
+getThreadBySlug slug ((Store { threads, indices }) as store) =
+    indices
+        |> getThreadIdBySlug slug
+        |> Maybe.andThen (flip getThread <| store)
+
+
+getThreadIdBySlug : Thread.Slug -> Indices -> Maybe Thread.Id
+getThreadIdBySlug slug { threads } =
+    threads.slug
+        |> EveryDict.get slug
 
 
 getPost : Post.Id -> Store -> Maybe Post
