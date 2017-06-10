@@ -20,41 +20,13 @@ import Data.Category as Category exposing (Category, mockCategory)
 import Data.Post as Post exposing (Post, mockPost)
 import Data.Thread as Thread exposing (Thread, mockThread)
 import EveryDict exposing (EveryDict)
-
-
-type alias CategoryIndices =
-    { slug : EveryDict Category.Slug Category.Id
-    }
-
-
-emptyCategoryIndices : CategoryIndices
-emptyCategoryIndices =
-    { slug = EveryDict.empty
-    }
-
-
-type alias ThreadIndices =
-    { slug : EveryDict Thread.Slug Thread.Id
-    }
-
-
-emptyThreadIndices : ThreadIndices
-emptyThreadIndices =
-    { slug = EveryDict.empty
-    }
-
-
-type alias Indices =
-    { categories : CategoryIndices
-    , threads : ThreadIndices
-    }
-
-
-emptyIndices : Indices
-emptyIndices =
-    { categories = emptyCategoryIndices
-    , threads = emptyThreadIndices
-    }
+import Store.Indices as Indices
+    exposing
+        ( Indices
+        , emptyIndices
+        , indexCategory
+        , indexThread
+        )
 
 
 type Store
@@ -98,19 +70,6 @@ insertCategory category (Store ({ categories, indices } as store)) =
     Store { store | categories = nextCategories, indices = nextIndices }
 
 
-indexCategory : Category -> Indices -> Indices
-indexCategory category ({ categories } as indices) =
-    let
-        nextSlug =
-            categories.slug
-                |> EveryDict.insert category.slug category.id
-
-        nextCategoryIndices =
-            { categories | slug = nextSlug }
-    in
-    { indices | categories = nextCategoryIndices }
-
-
 insertThread : Thread -> Store -> Store
 insertThread thread (Store ({ threads, indices } as store)) =
     let
@@ -123,19 +82,6 @@ insertThread thread (Store ({ threads, indices } as store)) =
                 |> indexThread thread
     in
     Store { store | threads = nextThreads, indices = nextIndices }
-
-
-indexThread : Thread -> Indices -> Indices
-indexThread thread ({ threads } as indices) =
-    let
-        nextSlug =
-            threads.slug
-                |> EveryDict.insert thread.slug thread.id
-
-        nextThreadIndices =
-            { threads | slug = nextSlug }
-    in
-    { indices | threads = nextThreadIndices }
 
 
 insertPost : Post -> Store -> Store
