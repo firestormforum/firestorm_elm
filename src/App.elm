@@ -1,26 +1,22 @@
 module App exposing (..)
 
-import Html exposing (Html, text, div, img)
-import Page.Layout
-import Page.Home
-import Page.Categories
-import Page.Category
-import Page.Thread
 import Data.Category as Category
 import Data.Thread as Thread
-import Route exposing (Route(..))
-import Navigation exposing (Location)
-import Json.Decode exposing (Value)
-import Time exposing (Time)
 import Date
-import Title
+import Html exposing (Html, div, img, text)
+import Json.Decode exposing (Value)
+import Model exposing (Model)
+import Navigation exposing (Location)
+import Page.Categories
+import Page.Category
+import Page.Home
+import Page.Layout
+import Page.Thread
 import Ports
-
-
-type alias Model =
-    { currentRoute : Route
-    , currentTime : Time
-    }
+import Route exposing (Route(..))
+import Store
+import Time exposing (Time)
+import Title
 
 
 init : Value -> Location -> ( Model, Cmd Msg )
@@ -35,11 +31,9 @@ init value location =
                 Nothing ->
                     Home
     in
-        ( { currentRoute = initialRoute
-          , currentTime = 0
-          }
-        , Ports.setTitle (Title.forRoute initialRoute)
-        )
+    ( Model.init initialRoute
+    , Ports.setTitle (Title.forRoute initialRoute)
+    )
 
 
 type Msg
@@ -55,9 +49,9 @@ update msg model =
                 currentRoute =
                     Maybe.withDefault NotFound route
             in
-                ( { model | currentRoute = currentRoute }
-                , Ports.setTitle <| Title.forRoute currentRoute
-                )
+            ( { model | currentRoute = currentRoute }
+            , Ports.setTitle <| Title.forRoute currentRoute
+            )
 
         Tick time ->
             ( { model | currentTime = time }
@@ -72,22 +66,29 @@ view model =
             model.currentTime
                 |> Date.fromTime
     in
-        Page.Layout.view <|
-            case model.currentRoute of
-                Home ->
-                    Page.Home.view
+    Page.Layout.view <|
+        case model.currentRoute of
+            Home ->
+                Page.Home.view
 
-                Categories ->
-                    Page.Categories.view
+            Categories ->
+                Page.Categories.view
 
-                Category categorySlug ->
-                    Page.Category.view currentDate Category.mockCategory
+            Category categorySlug ->
+                let
+                    mockCategory =
+                        Category.mockCategory
+                in
+                model.store
+                    |> Store.getCategory mockCategory.id
+                    |> Maybe.map (Page.Category.view currentDate)
+                    |> Maybe.withDefault (text "No such category")
 
-                Thread categorySlug threadSlug ->
-                    Page.Thread.view currentDate Category.mockCategory Thread.mockThread
+            Thread categorySlug threadSlug ->
+                Page.Thread.view currentDate Category.mockCategory Thread.mockThread
 
-                NotFound ->
-                    text "Not found"
+            NotFound ->
+                text "Not found"
 
 
 subscriptions : Model -> Sub Msg

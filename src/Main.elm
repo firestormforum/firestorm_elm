@@ -1,9 +1,9 @@
 module Main exposing (..)
 
 import App exposing (..)
-import Html exposing (programWithFlags)
-import Navigation exposing (Location)
 import Json.Decode exposing (Value)
+import Model exposing (Model)
+import Navigation exposing (Location)
 import Route
 
 
