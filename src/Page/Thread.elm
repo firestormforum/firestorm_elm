@@ -1,22 +1,22 @@
 module Page.Thread exposing (view)
 
+import Data.Category as Category exposing (Category)
+import Data.Post as Post exposing (Post)
+import Data.Thread as Thread exposing (Thread)
+import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (class, href)
-import Data.Category as Category
-import Data.Thread as Thread
-import Data.Post as Post
-import Date
 import Page.Component
     exposing
-        ( timeAbbr
-        , categoryLink
-        , itemMetadata
+        ( categoryLink
         , categoryPills
+        , itemMetadata
+        , timeAbbr
         )
 
 
-view : Date.Date -> Category.Category -> Thread.Thread -> Html msg
-view currentDate category thread =
+view : Date -> List Post -> Category -> Thread -> Html msg
+view currentDate posts category thread =
     div []
         [ div [ class "thread-header" ]
             [ h2 []
@@ -31,17 +31,12 @@ view currentDate category thread =
             ]
         , ol
             [ class "post-list" ]
-            (List.map postView posts)
+            (List.map (postView currentDate) posts)
         ]
 
 
-posts : List Post.Post
-posts =
-    List.repeat 4 Post.mockPost
-
-
-postView : Post.Post -> Html msg
-postView post =
+postView : Date -> Post -> Html msg
+postView currentDate post =
     li
         [ class "post-item" ]
         [ Post.bodyToHtml

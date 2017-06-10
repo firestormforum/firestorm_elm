@@ -1,29 +1,25 @@
 module Page.Categories exposing (view)
 
+import Data.Category as Category exposing (Category)
+import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (class)
-import Data.Category as Category
-import Route exposing (Route(..))
+import Route exposing (Route)
 
 
-view : Html msg
-view =
+view : Date -> List Category -> Html msg
+view currentDate categories =
     div [ class "page-categories" ]
         [ h2 [] [ text "Categories" ]
         , ol [ class "category-list" ]
-            (List.map categoryView categories)
+            (List.map (categoryView currentDate) categories)
         ]
 
 
-categoryView : Category.Category -> Html msg
-categoryView category =
+categoryView : Date -> Category -> Html msg
+categoryView currentDate category =
     li
         []
-        [ a [ Route.href <| Category category.slug ]
+        [ a [ Route.href <| Route.Category category.slug ]
             [ h2 [] [ text category.title ] ]
         ]
-
-
-categories : List Category.Category
-categories =
-    List.repeat 4 Category.mockCategory

@@ -1,21 +1,12 @@
 module App exposing (..)
 
-import Data.Category as Category
-import Data.Thread as Thread
-import Date
-import Html exposing (Html, div, img, text)
 import Json.Decode exposing (Value)
 import Model exposing (Model)
+import Msg exposing (Msg(..))
 import Navigation exposing (Location)
-import Page.Categories
-import Page.Category
-import Page.Home
-import Page.Layout
-import Page.Thread
 import Ports
 import Route exposing (Route(..))
-import Store
-import Time exposing (Time)
+import Time
 import Title
 
 
@@ -36,11 +27,6 @@ init value location =
     )
 
 
-type Msg
-    = SetRoute (Maybe Route)
-    | Tick Time
-
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -57,38 +43,6 @@ update msg model =
             ( { model | currentTime = time }
             , Cmd.none
             )
-
-
-view : Model -> Html Msg
-view model =
-    let
-        currentDate =
-            model.currentTime
-                |> Date.fromTime
-    in
-    Page.Layout.view <|
-        case model.currentRoute of
-            Home ->
-                Page.Home.view
-
-            Categories ->
-                Page.Categories.view
-
-            Category categorySlug ->
-                let
-                    mockCategory =
-                        Category.mockCategory
-                in
-                model.store
-                    |> Store.getCategory mockCategory.id
-                    |> Maybe.map (Page.Category.view currentDate)
-                    |> Maybe.withDefault (text "No such category")
-
-            Thread categorySlug threadSlug ->
-                Page.Thread.view currentDate Category.mockCategory Thread.mockThread
-
-            NotFound ->
-                text "Not found"
 
 
 subscriptions : Model -> Sub Msg
