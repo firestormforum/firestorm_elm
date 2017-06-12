@@ -1,7 +1,7 @@
 module Store.Indices exposing (Indices, emptyIndices, indexCategory, indexThread)
 
-import Data.Category as Category exposing (Category, mockCategory)
-import Data.Thread as Thread exposing (Thread, mockThread)
+import Data.Category as Category exposing (Category)
+import Data.Thread as Thread exposing (Thread)
 import EveryDict exposing (EveryDict)
 import Store.Indices.CategoryIndices as CategoryIndices exposing (CategoryIndices, emptyCategoryIndices)
 import Store.Indices.ThreadIndices as ThreadIndices exposing (ThreadIndices, emptyThreadIndices)

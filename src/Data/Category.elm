@@ -1,19 +1,19 @@
 module Data.Category
     exposing
         ( Category
-        , Slug
         , Id
+        , Slug
+        , decoder
+        , idDecoder
         , slugParser
         , slugToString
-        , mockCategory
         )
 
-import Time exposing (Time)
+import Date exposing (Date)
+import Json.Decode as Decode exposing (Decoder)
+import Json.Decode.Extra
+import Json.Decode.Pipeline as Pipeline exposing (custom, decode, hardcoded, required)
 import UrlParser
-
-
--- We'll add types for Slug and Id so we can never have a function that takes a
--- Category.Slug and accidentally pass it a Thread.Slug, etc.
 
 
 type Slug
@@ -28,14 +28,9 @@ type alias Category =
     { id : Id
     , title : String
     , slug : Slug
-    , insertedAt : Time
-    , updatedAt : Time
+    , insertedAt : Date
+    , updatedAt : Date
     }
-
-
-
--- We could expose the type constructor to the outside world, but better if we
--- just handle conversion inside this module
 
 
 slugParser : UrlParser.Parser (Slug -> a) a
@@ -48,17 +43,16 @@ slugToString (Slug slug) =
     slug
 
 
+idDecoder : Decoder Id
+idDecoder =
+    Decode.map Id Decode.int
 
--- We'll add a mockCategory that we can show in our views, since we can't really
--- construct one on our own because we can't create an Id and don't really wish
--- to
 
-
-mockCategory : Category
-mockCategory =
-    { id = Id 1
-    , title = "Elixir"
-    , slug = Slug "elixir"
-    , insertedAt = 0
-    , updatedAt = 0
-    }
+decoder : Decoder Category
+decoder =
+    decode Category
+        |> required "id" (Decode.map Id Decode.int)
+        |> required "title" Decode.string
+        |> required "slug" (Decode.map Slug Decode.string)
+        |> required "inserted_at" Json.Decode.Extra.date
+        |> required "updated_at" Json.Decode.Extra.date

@@ -1,16 +1,20 @@
 module Data.Thread
     exposing
-        ( Thread
+        ( Id
         , Slug
-        , Id
+        , Thread
+        , decoder
+        , idDecoder
         , slugParser
         , slugToString
-        , mockThread
         )
 
-import Time exposing (Time)
-import UrlParser
 import Data.Category as Category
+import Date exposing (Date)
+import Json.Decode as Decode exposing (Decoder)
+import Json.Decode.Extra
+import Json.Decode.Pipeline as Pipeline exposing (custom, decode, hardcoded, required)
+import UrlParser
 
 
 type Slug
@@ -26,8 +30,8 @@ type alias Thread =
     , title : String
     , slug : Slug
     , categoryId : Category.Id
-    , insertedAt : Time
-    , updatedAt : Time
+    , insertedAt : Date
+    , updatedAt : Date
     }
 
 
@@ -41,16 +45,17 @@ slugToString (Slug slug) =
     slug
 
 
-mockThread : Thread
-mockThread =
-    let
-        category =
-            Category.mockCategory
-    in
-        { id = Id 1
-        , title = "OTP is cool"
-        , slug = Slug "otp-is-cool"
-        , categoryId = category.id
-        , insertedAt = 0
-        , updatedAt = 0
-        }
+idDecoder : Decoder Id
+idDecoder =
+    Decode.map Id Decode.int
+
+
+decoder : Decoder Thread
+decoder =
+    decode Thread
+        |> required "id" (Decode.map Id Decode.int)
+        |> required "title" Decode.string
+        |> required "slug" (Decode.map Slug Decode.string)
+        |> required "category_id" Category.idDecoder
+        |> required "inserted_at" Json.Decode.Extra.date
+        |> required "updated_at" Json.Decode.Extra.date

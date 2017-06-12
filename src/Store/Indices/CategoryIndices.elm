@@ -5,7 +5,7 @@ module Store.Indices.CategoryIndices
         , index
         )
 
-import Data.Category as Category exposing (Category, mockCategory)
+import Data.Category as Category exposing (Category)
 import EveryDict exposing (EveryDict)
 
 

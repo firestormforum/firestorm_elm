@@ -27,37 +27,19 @@ view model =
                 Page.Home.view
 
             Categories ->
-                model.store
-                    |> Store.categories
-                    |> Page.Categories.view currentDate
+                model
+                    |> Page.Categories.query
+                    |> Page.Categories.view
 
             Category categorySlug ->
-                model.store
-                    |> Store.getCategoryBySlug categorySlug
-                    |> Maybe.map (Page.Category.view currentDate)
-                    |> Maybe.withDefault (text "No such category")
+                model
+                    |> Page.Category.query categorySlug
+                    |> Page.Category.view
 
             Thread categorySlug threadSlug ->
-                model.store
-                    |> Store.getCategoryBySlug categorySlug
-                    |> Maybe.map (threadView currentDate threadSlug model.store)
-                    |> Maybe.withDefault (text "No such category")
+                model
+                    |> Page.Thread.query categorySlug threadSlug
+                    |> Page.Thread.view
 
             NotFound ->
                 text "Not found"
-
-
-threadView : Date -> Thread.Slug -> Store -> Category -> Html Msg
-threadView currentDate threadSlug store category =
-    let
-        doView : Store -> Thread -> Html Msg
-        doView store thread =
-            Page.Thread.view currentDate
-                (Store.posts thread.id store)
-                category
-                thread
-    in
-    store
-        |> Store.getThreadBySlug threadSlug
-        |> Maybe.map (doView store)
-        |> Maybe.withDefault (text "No such thread")

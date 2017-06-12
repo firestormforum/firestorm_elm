@@ -5,7 +5,7 @@ module Store.Indices.ThreadIndices
         , index
         )
 
-import Data.Thread as Thread exposing (Thread, mockThread)
+import Data.Thread as Thread exposing (Thread)
 import EveryDict exposing (EveryDict)
 
 

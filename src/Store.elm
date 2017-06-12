@@ -11,14 +11,13 @@ module Store
         , insertCategory
         , insertPost
         , insertThread
-        , mock
         , posts
         , threads
         )
 
-import Data.Category as Category exposing (Category, mockCategory)
-import Data.Post as Post exposing (Post, mockPost)
-import Data.Thread as Thread exposing (Thread, mockThread)
+import Data.Category as Category exposing (Category)
+import Data.Post as Post exposing (Post)
+import Data.Thread as Thread exposing (Thread)
 import EveryDict exposing (EveryDict)
 import Store.Indices as Indices
     exposing
@@ -46,14 +45,6 @@ empty =
         , posts = EveryDict.empty
         , indices = emptyIndices
         }
-
-
-mock : Store
-mock =
-    empty
-        |> insertCategory mockCategory
-        |> insertThread mockThread
-        |> insertPost mockPost
 
 
 insertCategory : Category -> Store -> Store

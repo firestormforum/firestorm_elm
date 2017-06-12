@@ -1,10 +1,10 @@
 module Page.Layout exposing (view)
 
+import Data.Category as Category
+import Data.Thread as Thread
 import Html exposing (..)
 import Html.Attributes exposing (class)
 import Route exposing (Route(..))
-import Data.Category as Category
-import Data.Thread as Thread
 
 
 view : Html msg -> Html msg
@@ -23,8 +23,6 @@ drawer =
         [ class "side-drawer" ]
         [ homeLink
         , categoriesLink
-        , categoryLink Category.mockCategory
-        , threadLink Category.mockCategory Thread.mockThread
         ]
 
 
