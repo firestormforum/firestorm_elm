@@ -1,7 +1,5 @@
 module Page.Layout exposing (view)
 
-import Data.Category as Category
-import Data.Thread as Thread
 import Html exposing (..)
 import Html.Attributes exposing (class)
 import Route exposing (Route(..))
@@ -34,26 +32,3 @@ homeLink =
 categoriesLink : Html msg
 categoriesLink =
     a [ Route.href Categories ] [ text "Categories" ]
-
-
-categoryLink : Category.Category -> Html msg
-categoryLink category =
-    a [ Route.href <| Category category.slug ]
-        [ text <|
-            "Category: "
-                ++ category.title
-        ]
-
-
-threadLink : Category.Category -> Thread.Thread -> Html msg
-threadLink category thread =
-    a
-        [ Route.href <|
-            Thread category.slug thread.slug
-        ]
-        [ text <|
-            "Thread: "
-                ++ category.title
-                ++ "/"
-                ++ thread.title
-        ]
