@@ -7,6 +7,7 @@ module Data.Post
         )
 
 import Data.Thread as Thread
+import Data.User as User
 import Date exposing (Date)
 import Html exposing (Html)
 import Json.Decode as Decode exposing (Decoder)
@@ -30,6 +31,7 @@ type alias Post =
     { id : Id
     , body : Body
     , threadId : Thread.Id
+    , userId : User.Id
     , insertedAt : Date
     , updatedAt : Date
     }
@@ -48,5 +50,6 @@ decoder =
         |> required "id" (Decode.map Id Decode.int)
         |> required "body" (Decode.map Body Decode.string)
         |> required "thread_id" Thread.idDecoder
+        |> required "user_id" User.idDecoder
         |> required "inserted_at" Json.Decode.Extra.date
         |> required "updated_at" Json.Decode.Extra.date

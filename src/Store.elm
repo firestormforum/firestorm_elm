@@ -8,9 +8,13 @@ module Store
         , getPost
         , getThread
         , getThreadBySlug
+        , getUser
+        , getUserByUsername
+        , getUserForThread
         , insertCategory
         , insertPost
         , insertThread
+        , insertUser
         , posts
         , threads
         )
@@ -18,6 +22,7 @@ module Store
 import Data.Category as Category exposing (Category)
 import Data.Post as Post exposing (Post)
 import Data.Thread as Thread exposing (Thread)
+import Data.User as User exposing (User)
 import EveryDict exposing (EveryDict)
 import Store.Indices as Indices
     exposing
@@ -25,6 +30,7 @@ import Store.Indices as Indices
         , emptyIndices
         , indexCategory
         , indexThread
+        , indexUser
         )
 
 
@@ -33,6 +39,7 @@ type Store
         { categories : EveryDict Category.Id Category
         , threads : EveryDict Thread.Id Thread
         , posts : EveryDict Post.Id Post
+        , users : EveryDict User.Id User
         , indices : Indices
         }
 
@@ -43,6 +50,7 @@ empty =
         { categories = EveryDict.empty
         , threads = EveryDict.empty
         , posts = EveryDict.empty
+        , users = EveryDict.empty
         , indices = emptyIndices
         }
 
@@ -59,6 +67,20 @@ insertCategory category (Store ({ categories, indices } as store)) =
                 |> indexCategory category
     in
     Store { store | categories = nextCategories, indices = nextIndices }
+
+
+insertUser : User -> Store -> Store
+insertUser user (Store ({ users, indices } as store)) =
+    let
+        nextUsers =
+            users
+                |> EveryDict.insert user.id user
+
+        nextIndices =
+            indices
+                |> indexUser user
+    in
+    Store { store | users = nextUsers, indices = nextIndices }
 
 
 insertThread : Thread -> Store -> Store
@@ -121,6 +143,33 @@ getThreadIdBySlug : Thread.Slug -> Indices -> Maybe Thread.Id
 getThreadIdBySlug slug { threads } =
     threads.slug
         |> EveryDict.get slug
+
+
+getUser : User.Id -> Store -> Maybe User
+getUser id (Store { users }) =
+    users
+        |> EveryDict.get id
+
+
+getUserByUsername : User.Username -> Store -> Maybe User
+getUserByUsername username ((Store { users, indices }) as store) =
+    indices
+        |> getUserIdByUsername username
+        |> Maybe.andThen (flip getUser <| store)
+
+
+getUserIdByUsername : User.Username -> Indices -> Maybe User.Id
+getUserIdByUsername username { users } =
+    users.username
+        |> EveryDict.get username
+
+
+getUserForThread : Thread.Id -> Store -> Maybe User
+getUserForThread id store =
+    store
+        |> posts id
+        |> List.head
+        |> Maybe.andThen (\p -> getUser p.userId store)
 
 
 getPost : Post.Id -> Store -> Maybe Post

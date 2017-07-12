@@ -3,6 +3,7 @@ module Page.Thread exposing (query, view)
 import Data.Category as Category exposing (Category)
 import Data.Post as Post exposing (Post)
 import Data.Thread as Thread exposing (Thread)
+import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (class, href)
@@ -21,6 +22,7 @@ type alias ViewModel =
     { category : Maybe Category
     , thread : Maybe Thread
     , posts : List Post
+    , user : Maybe User
     , currentDate : Date
     }
 
@@ -40,16 +42,26 @@ query categorySlug threadSlug model =
             thread
                 |> Maybe.map (\t -> Store.posts t.id model.store)
                 |> Maybe.withDefault []
+
+        user =
+            case posts of
+                firstPost :: _ ->
+                    model.store
+                        |> Store.getUser firstPost.userId
+
+                _ ->
+                    Nothing
     in
     { category = category
     , thread = thread
     , posts = posts
+    , user = user
     , currentDate = Date.fromTime model.currentTime
     }
 
 
 view : ViewModel -> Html msg
-view { currentDate, posts, category, thread } =
+view { currentDate, posts, category, thread, user } =
     case category of
         Nothing ->
             text "No such category"
@@ -60,18 +72,27 @@ view { currentDate, posts, category, thread } =
                     text "No such thread"
 
                 Just thread ->
-                    viewThread currentDate category thread posts
+                    case user of
+                        Just user ->
+                            viewThread currentDate
+                                category
+                                thread
+                                posts
+                                user
+
+                        Nothing ->
+                            text "No user"
 
 
-viewThread : Date -> Category -> Thread -> List Post -> Html msg
-viewThread currentDate category thread posts =
+viewThread : Date -> Category -> Thread -> List Post -> User -> Html msg
+viewThread currentDate category thread posts user =
     div []
         [ div [ class "thread-header" ]
             [ h2 []
                 [ text thread.title ]
             , itemMetadata
                 [ a [ href "#", class "username" ]
-                    [ text "@someuser" ]
+                    [ text <| "@" ++ User.usernameToString user.username ]
                 , timeAbbr currentDate thread.updatedAt
                 ]
             , itemMetadata

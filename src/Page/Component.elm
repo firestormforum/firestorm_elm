@@ -1,23 +1,24 @@
 module Page.Component
     exposing
-        ( timeAbbr
+        ( badgeBlock
         , categoryLink
+        , categoryPills
         , itemMetadata
         , threadLink
+        , timeAbbr
         , userLink
-        , badgeBlock
-        , categoryPills
         )
 
-import Date
-import Html exposing (..)
-import Html.Attributes exposing (class, classList, href, title)
 import Data.Category as Category
 import Data.Thread as Thread
-import Route
+import Data.User as User exposing (User)
+import Date
 import Date.Distance as Distance
 import Date.Distance.I18n.En
 import Date.Distance.Types
+import Html exposing (..)
+import Html.Attributes exposing (class, classList, href, title)
+import Route
 
 
 locale : Date.Distance.Types.Locale
@@ -31,8 +32,8 @@ dateDiffInWords =
         defaultConfig =
             Distance.defaultConfig
     in
-        Distance.inWordsWithConfig
-            { defaultConfig | locale = locale }
+    Distance.inWordsWithConfig
+        { defaultConfig | locale = locale }
 
 
 timeAbbr : Date.Date -> Date.Date -> Html msg
@@ -60,8 +61,14 @@ threadLink category thread =
         [ text thread.title ]
 
 
-userLink : String -> Html msg
-userLink username =
+userLink : Maybe User -> Html msg
+userLink maybeUser =
+    let
+        username =
+            maybeUser
+                |> Maybe.map (\u -> "@" ++ User.usernameToString u.username)
+                |> Maybe.withDefault "@someuser"
+    in
     a
         [ href "#"
         , class "user-name"
@@ -91,6 +98,6 @@ categoryPills categories =
                 [ class "category -color-20" ]
                 [ categoryLink category ]
     in
-        ul
-            [ class "category-pill" ]
-            (List.map categoryItem categories)
+    ul
+        [ class "category-pill" ]
+        (List.map categoryItem categories)

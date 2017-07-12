@@ -2,18 +2,18 @@ module Page.Category exposing (query, view)
 
 import Data.Category as Category exposing (Category)
 import Data.Thread as Thread exposing (Thread)
+import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (class, href)
 import Model exposing (Model)
 import Page.Component exposing (badgeBlock, threadLink, timeAbbr, userLink)
-import Route exposing (Route(..))
 import Store exposing (Store)
 
 
 type alias ViewModel =
     { category : Maybe Category
-    , threads : List Thread
+    , threads : List ( Thread, Maybe User )
     , currentDate : Date
     }
 
@@ -29,6 +29,7 @@ query categorySlug model =
             category
                 |> Maybe.map (\c -> Store.threads c.id model.store)
                 |> Maybe.withDefault []
+                |> List.map (\t -> ( t, Store.getUserForThread t.id model.store ))
     in
     { category = category
     , threads = threads
@@ -50,7 +51,7 @@ view { category, threads, currentDate } =
                 ]
 
 
-threadView : Date -> Category -> Thread -> Html msg
+threadView : Date -> Category -> ( Thread, Maybe User ) -> Html msg
 threadView currentDate category thread =
     li
         []
@@ -59,19 +60,19 @@ threadView currentDate category thread =
         ]
 
 
-details : Date -> Category -> Thread -> Html msg
-details currentDate category thread =
+details : Date -> Category -> ( Thread, Maybe User ) -> Html msg
+details currentDate category ( thread, maybeUser ) =
     div [ class "details" ]
         [ div [ class "summary" ]
             [ threadLink category thread
-            , userLink "@username"
+            , userLink maybeUser
             ]
         , div [ class "metadata" ]
             [ timeAbbr currentDate thread.updatedAt ]
         ]
 
 
-supplemental : Thread -> Html msg
-supplemental thread =
+supplemental : ( Thread, Maybe User ) -> Html msg
+supplemental ( thread, _ ) =
     div [ class "supplemental" ]
         [ badgeBlock True 3 ]
