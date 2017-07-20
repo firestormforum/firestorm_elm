@@ -6,7 +6,9 @@ import Data.Thread as Thread exposing (Thread)
 import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
-import Html.Attributes exposing (class, href)
+import Html.Attributes exposing (attribute, class, href)
+import Html.Attributes.Extra exposing (innerHtml)
+import Json.Encode
 import Model exposing (Model)
 import Page.Component
     exposing
@@ -108,7 +110,9 @@ postView : Date -> Post -> Html msg
 postView currentDate post =
     li
         [ class "post-item" ]
-        [ Post.bodyToHtml
-            post.body
-            [ class "body" ]
+        [ div
+            [ class "body"
+            , innerHtml post.bodyHtml
+            ]
+            []
         ]

@@ -30,6 +30,7 @@ type Body
 type alias Post =
     { id : Id
     , body : Body
+    , bodyHtml : String
     , threadId : Thread.Id
     , userId : User.Id
     , insertedAt : Date
@@ -49,6 +50,7 @@ decoder =
     decode Post
         |> required "id" (Decode.map Id Decode.int)
         |> required "body" (Decode.map Body Decode.string)
+        |> required "body_html" Decode.string
         |> required "thread_id" Thread.idDecoder
         |> required "user_id" User.idDecoder
         |> required "inserted_at" Json.Decode.Extra.date

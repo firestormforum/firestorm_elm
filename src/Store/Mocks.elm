@@ -96,7 +96,8 @@ otpIsFunFirstPost =
         1
         1
         1
-        "I know, right?"
+        "I know, **right**?"
+        "<p>I know, <strong>right</strong>?</p>"
         "2017-06-01T18:25:43.511Z"
         "2017-06-01T18:25:43.511Z"
 
@@ -139,14 +140,15 @@ thread id categoryId title slug insertedAt updatedAt =
         )
 
 
-post : Int -> Int -> Int -> String -> String -> String -> Result String Post
-post id threadId userId body insertedAt updatedAt =
+post : Int -> Int -> Int -> String -> String -> String -> String -> Result String Post
+post id threadId userId body bodyHtml insertedAt updatedAt =
     decodeValue Post.decoder
         (object
             [ ( "id", int id )
             , ( "thread_id", int threadId )
             , ( "user_id", int userId )
             , ( "body", string body )
+            , ( "body_html", string bodyHtml )
             , ( "inserted_at", string insertedAt )
             , ( "updated_at", string updatedAt )
             ]
