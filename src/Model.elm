@@ -17,5 +17,5 @@ init : Route -> Model
 init initialRoute =
     { currentRoute = initialRoute
     , currentTime = 0
-    , store = Store.Mocks.store
+    , store = Store.empty
     }

@@ -11,6 +11,7 @@ module Store
         , getUser
         , getUserByUsername
         , getUserForThread
+        , insertCategories
         , insertCategory
         , insertPost
         , insertThread
@@ -67,6 +68,11 @@ insertCategory category (Store ({ categories, indices } as store)) =
                 |> indexCategory category
     in
     Store { store | categories = nextCategories, indices = nextIndices }
+
+
+insertCategories : List Category -> Store -> Store
+insertCategories categories store =
+    List.foldl insertCategory store categories
 
 
 insertUser : User -> Store -> Store
