@@ -3,6 +3,7 @@ module Data.Post
         ( Id
         , Post
         , bodyToHtml
+        , bodyToString
         , decoder
         )
 
@@ -12,7 +13,14 @@ import Date exposing (Date)
 import Html exposing (Html)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Extra
-import Json.Decode.Pipeline as Pipeline exposing (custom, decode, hardcoded, required)
+import Json.Decode.Pipeline as Pipeline
+    exposing
+        ( custom
+        , decode
+        , hardcoded
+        , optional
+        , required
+        )
 
 
 type Id
@@ -27,12 +35,17 @@ type Body
     = Body Markdown
 
 
+type alias OEmbed =
+    ( String, String )
+
+
 type alias Post =
     { id : Id
     , body : Body
     , bodyHtml : String
     , threadId : Thread.Id
     , userId : User.Id
+    , oEmbeds : List OEmbed
     , insertedAt : Date
     , updatedAt : Date
     }
@@ -45,6 +58,30 @@ bodyToHtml (Body body) attrs =
         [ Html.text body ]
 
 
+bodyToString : Body -> String
+bodyToString (Body body) =
+    body
+
+
+
+-- https://stackoverflow.com/questions/42703764/decode-a-json-tuple-to-elm-tuple
+
+
+arrayAsTuple2 : Decoder a -> Decoder b -> Decoder ( a, b )
+arrayAsTuple2 a b =
+    Decode.index 0 a
+        |> Decode.andThen
+            (\aVal ->
+                Decode.index 1 b
+                    |> Decode.andThen (\bVal -> Decode.succeed ( aVal, bVal ))
+            )
+
+
+oEmbedDecoder : Decoder OEmbed
+oEmbedDecoder =
+    arrayAsTuple2 Decode.string Decode.string
+
+
 decoder : Decoder Post
 decoder =
     decode Post
@@ -53,5 +90,6 @@ decoder =
         |> required "body_html" Decode.string
         |> required "thread_id" Thread.idDecoder
         |> required "user_id" User.idDecoder
+        |> optional "oembeds" (Decode.list oEmbedDecoder) []
         |> required "inserted_at" Json.Decode.Extra.date
         |> required "updated_at" Json.Decode.Extra.date

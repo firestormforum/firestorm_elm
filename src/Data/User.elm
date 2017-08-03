@@ -28,6 +28,7 @@ type alias User =
     { id : Id
     , username : Username
     , name : String
+    , avatarUrl : String
     , insertedAt : Date
     , updatedAt : Date
     }
@@ -54,5 +55,6 @@ decoder =
         |> required "id" (Decode.map Id Decode.int)
         |> required "username" (Decode.map Username Decode.string)
         |> required "name" Decode.string
+        |> required "avatar_url" Decode.string
         |> required "inserted_at" Json.Decode.Extra.date
         |> required "updated_at" Json.Decode.Extra.date

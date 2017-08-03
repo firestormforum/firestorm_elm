@@ -1,6 +1,17 @@
 .thread-header {
-  > h2 {
+  > .split > h2, > h2 {
     margin-bottom: 0;
     margin-top: 0;
+    font-size: $font-size-large;
+    a {
+      @include transition-color($tundora, $punch);
+    }
+  }
+  > .split {
+    display: flex;
+    flex-wrap: row nowrap;
+    h2 {
+      flex-grow: 1;
+    }
   }
 }

@@ -28,6 +28,7 @@ import Data.Post as Post exposing (Post)
 import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.Thread as Thread exposing (Thread)
 import Data.User as User exposing (User)
+import Date
 import EveryDict exposing (EveryDict)
 import Store.Indices as Indices
     exposing
@@ -222,3 +223,4 @@ posts threadId (Store { posts }) =
     posts
         |> EveryDict.filter (\_ t -> t.threadId == threadId)
         |> EveryDict.values
+        |> List.sortBy (.insertedAt >> Date.toTime)

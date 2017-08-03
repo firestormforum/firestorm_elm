@@ -6,10 +6,9 @@ import Data.Thread as Thread exposing (Thread)
 import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
-import Html.Attributes exposing (attribute, class, href)
+import Html.Attributes exposing (attribute, class, href, id, src)
 import Html.Attributes.Extra exposing (innerHtml)
 import Html.Keyed as Keyed
-import Json.Encode
 import Model exposing (Model)
 import Page.Component
     exposing
@@ -24,7 +23,7 @@ import Store
 type alias ViewModel =
     { category : Maybe Category
     , thread : Maybe Thread
-    , posts : List Post
+    , postsWithUsers : List ( Maybe User, Post )
     , user : Maybe User
     , currentDate : Date
     }
@@ -46,6 +45,15 @@ query categorySlug threadSlug model =
                 |> Maybe.map (\t -> Store.posts t.id model.store)
                 |> Maybe.withDefault []
 
+        postsWithUsers =
+            posts
+                |> List.map
+                    (\post ->
+                        ( Store.getUser post.userId model.store
+                        , post
+                        )
+                    )
+
         user =
             case posts of
                 firstPost :: _ ->
@@ -57,14 +65,14 @@ query categorySlug threadSlug model =
     in
     { category = category
     , thread = thread
-    , posts = posts
+    , postsWithUsers = postsWithUsers
     , user = user
     , currentDate = Date.fromTime model.currentTime
     }
 
 
 view : ViewModel -> Html msg
-view { currentDate, posts, category, thread, user } =
+view { currentDate, postsWithUsers, category, thread, user } =
     case category of
         Nothing ->
             text "No such category"
@@ -80,40 +88,114 @@ view { currentDate, posts, category, thread, user } =
                             viewThread currentDate
                                 category
                                 thread
-                                posts
+                                postsWithUsers
                                 user
 
                         Nothing ->
                             text "No user"
 
 
-viewThread : Date -> Category -> Thread -> List Post -> User -> Html msg
-viewThread currentDate category thread posts user =
+viewThread : Date -> Category -> Thread -> List ( Maybe User, Post ) -> User -> Html msg
+viewThread currentDate category thread postsWithUsers user =
     div []
         [ div [ class "thread-header" ]
-            [ h2 []
-                [ text thread.title ]
-            , itemMetadata
-                [ a [ href "#", class "username" ]
-                    [ text <| "@" ++ User.usernameToString user.username ]
-                , timeAbbr currentDate thread.updatedAt
+            [ div [ class "split" ]
+                [ h2 []
+                    [ text thread.title ]
+                , categoryPills [ category ]
                 ]
-            , itemMetadata
-                [ categoryPills [ category ] ]
             ]
         , Keyed.ol
             [ class "post-list" ]
-            (List.map (\p -> ( "post-" ++ toString p.id, postView currentDate p )) posts)
+            (List.map
+                (\( postUser, post ) ->
+                    ( "post-" ++ toString post.id
+                    , postView currentDate ( postUser, post )
+                    )
+                )
+                postsWithUsers
+            )
         ]
 
 
-postView : Date -> Post -> Html msg
-postView currentDate post =
+postView : Date -> ( Maybe User, Post ) -> Html msg
+postView currentDate ( maybeUser, post ) =
+    let
+        ( avatarUrl, username ) =
+            case maybeUser of
+                Nothing ->
+                    ( "https://api.adorable.io/avatars/256/nobody@adorable.png"
+                    , "anon"
+                    )
+
+                Just user ->
+                    ( user.avatarUrl
+                    , User.usernameToString user.username
+                    )
+    in
     li
-        [ class "post-item" ]
-        [ div
+        [ class "post-item"
+        , id ("post-" ++ toString post.id)
+        ]
+        ([ div
+            [ class "item-metadata" ]
+            [ div
+                [ class "avatar" ]
+                [ img
+                    [ src avatarUrl
+                    , class "user-avatar -borderless"
+                    ]
+                    []
+                ]
+            , a
+                [ href "#"
+                , class "username"
+                ]
+                [ text <| "@" ++ username
+                ]
+            , timeAbbr currentDate post.updatedAt
+            ]
+         , div
             [ class "body"
             , innerHtml post.bodyHtml
             ]
             []
+         ]
+            ++ renderOEmbeds post.oEmbeds
+            ++ [ postItemActions post ]
+        )
+
+
+postItemActions : Post -> Html msg
+postItemActions post =
+    div
+        [ class "post-item-actions" ]
+        [ div [ class "spacer" ] []
+        , ul [ class "actions" ]
+            [ li
+                [ class "link" ]
+                [ a
+                    [ href "#" ]
+                    [ i [ class "fa fa-link" ] [] ]
+                ]
+            , li [ class "reply" ]
+                [ a [ href "#" ]
+                    [ i [ class "fa fa-reply" ] [] ]
+                ]
+            ]
         ]
+
+
+renderOEmbeds : List ( String, String ) -> List (Html msg)
+renderOEmbeds oEmbeds =
+    List.map renderOEmbed oEmbeds
+
+
+renderOEmbed : ( String, String ) -> Html msg
+renderOEmbed ( url, html ) =
+    div
+        [ class "oembed-for"
+        , attribute "data-oembed-url" url
+        , innerHtml html
+        ]
+        []
