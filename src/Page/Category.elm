@@ -113,7 +113,7 @@ details currentDate category ( thread, maybeUser, _ ) =
             [ ul
                 [ class "category-pill" ]
                 [ li
-                    [ class "category" ]
+                    [ class "category -color-16" ]
                     [ categoryLink category ]
                 ]
             , threadLink category thread
