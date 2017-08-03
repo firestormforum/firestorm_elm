@@ -1,23 +1,42 @@
-module Data.ReplenishResponse exposing (ReplenishResponse, decoder, new)
+module Data.ReplenishResponse exposing (ReplenishResponse, decode, decoder, new)
 
 import Data.Category as Category exposing (Category)
+import Data.Post as Post exposing (Post)
+import Data.Thread as Thread exposing (Thread)
+import Data.User as User exposing (User)
 import Dict exposing (Dict)
-import Json.Decode as Decode exposing (Decoder)
+import Json.Decode as JD exposing (Decoder, Value)
 import Json.Decode.Extra
-import Json.Decode.Pipeline as Pipeline exposing (custom, decode, hardcoded, required)
+import Json.Decode.Pipeline as Pipeline exposing (custom, hardcoded, required)
 
 
 type alias ReplenishResponse =
     { categories : List Category
+    , threads : List Thread
+    , users : List User
+    , posts : List Post
     }
 
 
 decoder : Decoder ReplenishResponse
 decoder =
-    decode ReplenishResponse
-        |> required "categories" (Decode.list Category.decoder)
+    Pipeline.decode ReplenishResponse
+        |> required "categories" (JD.list Category.decoder)
+        |> required "threads" (JD.list Thread.decoder)
+        |> required "users" (JD.list User.decoder)
+        |> required "posts" (JD.list Post.decoder)
+
+
+decode : Value -> ReplenishResponse
+decode =
+    JD.decodeValue decoder
+        >> Result.withDefault new
 
 
 new : ReplenishResponse
 new =
-    { categories = [] }
+    { categories = []
+    , threads = []
+    , users = []
+    , posts = []
+    }

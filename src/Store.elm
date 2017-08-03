@@ -14,14 +14,18 @@ module Store
         , insertCategories
         , insertCategory
         , insertPost
+        , insertPosts
         , insertThread
+        , insertThreads
         , insertUser
+        , insertUsers
         , posts
         , threads
         )
 
 import Data.Category as Category exposing (Category)
 import Data.Post as Post exposing (Post)
+import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.Thread as Thread exposing (Thread)
 import Data.User as User exposing (User)
 import EveryDict exposing (EveryDict)
@@ -42,6 +46,7 @@ type Store
         , posts : EveryDict Post.Id Post
         , users : EveryDict User.Id User
         , indices : Indices
+        , wants : ReplenishRequest
         }
 
 
@@ -53,6 +58,7 @@ empty =
         , posts = EveryDict.empty
         , users = EveryDict.empty
         , indices = emptyIndices
+        , wants = ReplenishRequest.empty
         }
 
 
@@ -89,6 +95,11 @@ insertUser user (Store ({ users, indices } as store)) =
     Store { store | users = nextUsers, indices = nextIndices }
 
 
+insertUsers : List User -> Store -> Store
+insertUsers threads store =
+    List.foldl insertUser store threads
+
+
 insertThread : Thread -> Store -> Store
 insertThread thread (Store ({ threads, indices } as store)) =
     let
@@ -103,6 +114,11 @@ insertThread thread (Store ({ threads, indices } as store)) =
     Store { store | threads = nextThreads, indices = nextIndices }
 
 
+insertThreads : List Thread -> Store -> Store
+insertThreads threads store =
+    List.foldl insertThread store threads
+
+
 insertPost : Post -> Store -> Store
 insertPost post (Store ({ posts, indices } as store)) =
     let
@@ -111,6 +127,11 @@ insertPost post (Store ({ posts, indices } as store)) =
                 |> EveryDict.insert post.id post
     in
     Store { store | posts = nextPosts }
+
+
+insertPosts : List Post -> Store -> Store
+insertPosts threads store =
+    List.foldl insertPost store threads
 
 
 getCategory : Category.Id -> Store -> Maybe Category

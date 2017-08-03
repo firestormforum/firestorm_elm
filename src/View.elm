@@ -1,7 +1,5 @@
 module View exposing (view)
 
-import Data.Category as Category exposing (Category)
-import Data.Thread as Thread exposing (Thread)
 import Date exposing (Date)
 import Html exposing (Html, div, img, text)
 import Model exposing (Model)
@@ -12,7 +10,6 @@ import Page.Home
 import Page.Layout
 import Page.Thread
 import Route exposing (Route(..))
-import Store exposing (Store)
 
 
 view : Model -> Html Msg

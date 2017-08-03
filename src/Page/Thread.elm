@@ -8,6 +8,7 @@ import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (attribute, class, href)
 import Html.Attributes.Extra exposing (innerHtml)
+import Html.Keyed as Keyed
 import Json.Encode
 import Model exposing (Model)
 import Page.Component
@@ -100,9 +101,9 @@ viewThread currentDate category thread posts user =
             , itemMetadata
                 [ categoryPills [ category ] ]
             ]
-        , ol
+        , Keyed.ol
             [ class "post-list" ]
-            (List.map (postView currentDate) posts)
+            (List.map (\p -> ( "post-" ++ toString p.id, postView currentDate p )) posts)
         ]
 
 

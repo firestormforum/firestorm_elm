@@ -1,14 +1,14 @@
 module App exposing (..)
 
+import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.ReplenishResponse as ReplenishResponse
 import Json.Decode as JD exposing (Value)
-import Json.Encode as JE
 import Model exposing (Model)
 import Msg exposing (Msg(..))
 import Navigation exposing (Location)
 import Phoenix
 import Phoenix.Channel as Channel exposing (Channel)
-import Phoenix.Push as Push
+import Phoenix.Push as Push exposing (Push)
 import Phoenix.Socket as Socket exposing (Socket)
 import Ports
 import Route exposing (Route(..))
@@ -31,38 +31,37 @@ channel : Channel Msg
 channel =
     Channel.init "store:fetch"
         |> Channel.onJoin IsOnline
-        |> Channel.on "new_msg" (always NoOp)
 
 
 loadIntoStore : Value -> Msg
-loadIntoStore value =
-    let
-        replenishResponse =
-            value
-                |> JD.decodeValue ReplenishResponse.decoder
-                |> Result.withDefault ReplenishResponse.new
-    in
-    LoadIntoStore replenishResponse
+loadIntoStore =
+    ReplenishResponse.decode >> LoadIntoStore
 
 
-giveMeFirstCategory : Cmd Msg
-giveMeFirstCategory =
+getFirstCategory : ReplenishRequest
+getFirstCategory =
+    ReplenishRequest.empty
+        |> ReplenishRequest.requestCategory 1
+
+
+fetch : ReplenishRequest -> Cmd Msg
+fetch request =
     Push.init "store:fetch" "fetch"
-        |> Push.onOk
-            loadIntoStore
-        |> Push.withPayload
-            (JE.object
-                [ ( "categories"
-                  , JE.list
-                        [ JE.int 1
-                        ]
-                  )
-                , ( "threads", JE.list [] )
-                , ( "users", JE.list [] )
-                , ( "posts", JE.list [] )
-                ]
-            )
-        |> Phoenix.push socketLocation
+        |> Push.onOk loadIntoStore
+        |> Push.withPayload (ReplenishRequest.encode request)
+        |> push
+
+
+fetchHomeData : Cmd Msg
+fetchHomeData =
+    Push.init "store:fetch" "fetch_home_data"
+        |> Push.onOk loadIntoStore
+        |> push
+
+
+push : Push Msg -> Cmd Msg
+push =
+    Phoenix.push socketLocation
 
 
 init : Value -> Location -> ( Model, Cmd Msg )
@@ -103,12 +102,16 @@ update msg model =
             ( model, Cmd.none )
 
         IsOnline _ ->
-            ( model, giveMeFirstCategory )
+            ( model, fetchHomeData )
 
         LoadIntoStore replenishResponse ->
             let
                 nextStore =
-                    Store.insertCategories replenishResponse.categories model.store
+                    model.store
+                        |> Store.insertCategories replenishResponse.categories
+                        |> Store.insertThreads replenishResponse.threads
+                        |> Store.insertUsers replenishResponse.users
+                        |> Store.insertPosts replenishResponse.posts
             in
             ( { model | store = nextStore }, Cmd.none )
 
