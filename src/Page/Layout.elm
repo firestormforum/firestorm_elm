@@ -1,7 +1,17 @@
 module Page.Layout exposing (view)
 
 import Html exposing (..)
-import Html.Attributes exposing (alt, attribute, class, for, id, src, type_)
+import Html.Attributes
+    exposing
+        ( alt
+        , attribute
+        , class
+        , for
+        , href
+        , id
+        , src
+        , type_
+        )
 import Route exposing (Route(..))
 
 
@@ -74,9 +84,22 @@ navigation =
 drawer : Html msg
 drawer =
     div
-        [ class "side-drawer" ]
-        [ homeLink
-        , categoriesLink
+        [ class "navigation-drawer" ]
+        [ ul []
+            [ li [] [ categoriesLink ]
+            ]
+        , ul []
+            [ li []
+                [ a
+                    [ href "http://www.firestormforum.org/" ]
+                    [ text "firestormforum.org" ]
+                ]
+            , li []
+                [ a
+                    [ href "http://www.firestormforum.org/#patrons" ]
+                    [ text "Patrons" ]
+                ]
+            ]
         ]
 
 
