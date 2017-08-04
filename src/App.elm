@@ -75,9 +75,12 @@ init value location =
 
                 Nothing ->
                     Home
+
+        model =
+            Model.init initialRoute
     in
-    ( Model.init initialRoute
-    , Ports.setTitle (Title.forRoute initialRoute)
+    ( model
+    , Ports.setTitle (Title.forRoute model.store initialRoute)
     )
 
 
@@ -90,7 +93,7 @@ update msg model =
                     Maybe.withDefault NotFound route
             in
             ( { model | currentRoute = currentRoute }
-            , Ports.setTitle <| Title.forRoute currentRoute
+            , Ports.setTitle <| Title.forRoute model.store currentRoute
             )
 
         Tick time ->
@@ -113,7 +116,9 @@ update msg model =
                         |> Store.insertUsers replenishResponse.users
                         |> Store.insertPosts replenishResponse.posts
             in
-            ( { model | store = nextStore }, Cmd.none )
+            ( { model | store = nextStore }
+            , Ports.setTitle (Title.forRoute nextStore model.currentRoute)
+            )
 
 
 subscriptions : Model -> Sub Msg
