@@ -1,4 +1,4 @@
-port module Ports exposing (setTitle)
+port module Ports exposing (setBodyClass, setTitle)
 
 import Json.Encode as Encode
 
@@ -7,6 +7,12 @@ setTitle : String -> Cmd msg
 setTitle =
     Encode.string
         >> outboundWithPayload "SetTitle"
+
+
+setBodyClass : String -> Cmd msg
+setBodyClass =
+    Encode.string
+        >> outboundWithPayload "SetBodyClass"
 
 
 outboundWithPayload : String -> Encode.Value -> Cmd msg

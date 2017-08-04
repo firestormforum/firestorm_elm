@@ -1,4 +1,4 @@
-module Route exposing (Route(..), fromLocation, href)
+module Route exposing (Route(..), bodyClass, fromLocation, href)
 
 import Data.Category as Category
 import Data.Thread as Thread
@@ -81,6 +81,28 @@ routeToString route =
                     [ "404" ]
     in
     "#/" ++ String.join "/" pieces
+
+
+bodyClass : Route -> String
+bodyClass route =
+    case route of
+        Home ->
+            "page-home"
+
+        Categories ->
+            "page-category-index"
+
+        Category _ ->
+            "page-category-show"
+
+        Thread _ _ ->
+            "page-thread-show"
+
+        User _ ->
+            "page-user-show"
+
+        NotFound ->
+            "page-404"
 
 
 href : Route -> Attribute msg

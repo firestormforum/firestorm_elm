@@ -80,7 +80,10 @@ init value location =
             Model.init initialRoute
     in
     ( model
-    , Ports.setTitle (Title.forRoute model.store initialRoute)
+    , Cmd.batch
+        [ Ports.setTitle <| Title.forRoute model.store initialRoute
+        , Ports.setBodyClass <| Route.bodyClass model.currentRoute
+        ]
     )
 
 
@@ -93,7 +96,10 @@ update msg model =
                     Maybe.withDefault NotFound route
             in
             ( { model | currentRoute = currentRoute }
-            , Ports.setTitle <| Title.forRoute model.store currentRoute
+            , Cmd.batch
+                [ Ports.setTitle <| Title.forRoute model.store currentRoute
+                , Ports.setBodyClass <| Route.bodyClass currentRoute
+                ]
             )
 
         Tick time ->
@@ -117,7 +123,10 @@ update msg model =
                         |> Store.insertPosts replenishResponse.posts
             in
             ( { model | store = nextStore }
-            , Ports.setTitle (Title.forRoute nextStore model.currentRoute)
+            , Cmd.batch
+                [ Ports.setTitle <| Title.forRoute nextStore model.currentRoute
+                , Ports.setBodyClass <| Route.bodyClass model.currentRoute
+                ]
             )
 
 

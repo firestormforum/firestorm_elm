@@ -9,6 +9,10 @@ const app = Elm.Main.embed(root, logoPath);
 const outboundPortHandlers = {
   SetTitle: title => {
     document.title = title;
+  },
+  SetBodyClass: klass => {
+    let body = document.getElementsByTagName("body")[0];
+    body.className = `page-layout ${klass}`;
   }
 };
 
