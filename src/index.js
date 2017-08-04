@@ -12,7 +12,7 @@ const outboundPortHandlers = {
   },
   SetBodyClass: klass => {
     let body = document.getElementsByTagName("body")[0];
-    body.className = `page-layout ${klass}`;
+    body.className = `layout-app ${klass}`;
   }
 };
 
