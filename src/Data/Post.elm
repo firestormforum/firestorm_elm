@@ -5,6 +5,7 @@ module Data.Post
         , bodyToHtml
         , bodyToString
         , decoder
+        , idToString
         )
 
 import Data.Thread as Thread
@@ -61,6 +62,11 @@ bodyToHtml (Body body) attrs =
 bodyToString : Body -> String
 bodyToString (Body body) =
     body
+
+
+idToString : Id -> String
+idToString (Id id) =
+    toString id
 
 
 

@@ -116,7 +116,9 @@ details currentDate category ( thread, maybeUser, _ ) =
                     [ class "category -color-16" ]
                     [ categoryLink category ]
                 ]
+            , text " "
             , threadLink category thread
+            , text " "
             , userLink maybeUser
             ]
         , div [ class "metadata" ]

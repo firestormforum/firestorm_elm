@@ -109,7 +109,7 @@ viewThread currentDate category thread postsWithUsers user =
             [ class "post-list" ]
             (List.map
                 (\( postUser, post ) ->
-                    ( "post-" ++ toString post.id
+                    ( "post-" ++ Post.idToString post.id
                     , postView currentDate ( postUser, post )
                     )
                 )
@@ -135,7 +135,7 @@ postView currentDate ( maybeUser, post ) =
     in
     li
         [ class "post-item"
-        , id ("post-" ++ toString post.id)
+        , id ("post-" ++ Post.idToString post.id)
         ]
         ([ div
             [ class "item-metadata" ]
