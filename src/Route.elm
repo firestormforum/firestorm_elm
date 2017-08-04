@@ -1,20 +1,21 @@
 module Route exposing (Route(..), fromLocation, href)
 
+import Data.Category as Category
+import Data.Thread as Thread
+import Data.User as User
+import Html exposing (Attribute)
+import Html.Attributes as Attr
 import Navigation exposing (Location)
 import UrlParser as Url
     exposing
-        ( parseHash
-        , s
-        , (</>)
-        , string
-        , oneOf
+        ( (</>)
         , Parser
+        , oneOf
+        , parseHash
+        , s
+        , string
         , top
         )
-import Html.Attributes as Attr
-import Html exposing (Attribute)
-import Data.Category as Category
-import Data.Thread as Thread
 
 
 type Route
@@ -22,6 +23,7 @@ type Route
     | Categories
     | Category Category.Slug
     | Thread Category.Slug Thread.Slug
+    | User User.Username
     | NotFound
 
 
@@ -37,6 +39,7 @@ router =
                 </> s "threads"
                 </> Thread.slugParser
             )
+        , Url.map User (s "users" </> User.usernameParser)
         ]
 
 
@@ -69,10 +72,15 @@ routeToString route =
                     , Thread.slugToString threadSlug
                     ]
 
+                User username ->
+                    [ "users"
+                    , User.usernameToString username
+                    ]
+
                 NotFound ->
                     [ "404" ]
     in
-        "#/" ++ (String.join "/" pieces)
+    "#/" ++ String.join "/" pieces
 
 
 href : Route -> Attribute msg

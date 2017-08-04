@@ -63,17 +63,16 @@ threadLink category thread =
 
 userLink : Maybe User -> Html msg
 userLink maybeUser =
-    let
-        username =
-            maybeUser
-                |> Maybe.map (\u -> "@" ++ User.usernameToString u.username)
-                |> Maybe.withDefault "@someuser"
-    in
-    a
-        [ href "#"
-        , class "user-name"
-        ]
-        [ text username ]
+    case maybeUser of
+        Just user ->
+            a
+                [ Route.href <| Route.User user.username
+                , class "user-name"
+                ]
+                [ text <| User.usernameToString user.username ]
+
+        Nothing ->
+            div [] []
 
 
 itemMetadata : List (Html msg) -> Html msg

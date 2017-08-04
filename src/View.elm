@@ -9,6 +9,7 @@ import Page.Category
 import Page.Home
 import Page.Layout
 import Page.Thread
+import Page.User
 import Route exposing (Route(..))
 
 
@@ -37,6 +38,11 @@ view model =
                 model
                     |> Page.Thread.query categorySlug threadSlug
                     |> Page.Thread.view
+
+            User username ->
+                model
+                    |> Page.User.query username
+                    |> Page.User.view
 
             NotFound ->
                 text "Not found"

@@ -121,16 +121,16 @@ viewThread currentDate category thread postsWithUsers user =
 postView : Date -> ( Maybe User, Post ) -> Html msg
 postView currentDate ( maybeUser, post ) =
     let
-        ( avatarUrl, username ) =
+        ( avatarUrl, userLink ) =
             case maybeUser of
                 Nothing ->
                     ( "https://api.adorable.io/avatars/256/nobody@adorable.png"
-                    , "anon"
+                    , Page.Component.userLink Nothing
                     )
 
                 Just user ->
                     ( user.avatarUrl
-                    , User.usernameToString user.username
+                    , Page.Component.userLink (Just user)
                     )
     in
     li
@@ -147,12 +147,7 @@ postView currentDate ( maybeUser, post ) =
                     ]
                     []
                 ]
-            , a
-                [ href "#"
-                , class "username"
-                ]
-                [ text <| "@" ++ username
-                ]
+            , userLink
             , timeAbbr currentDate post.updatedAt
             ]
          , div

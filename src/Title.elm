@@ -2,6 +2,7 @@ module Title exposing (forRoute)
 
 import Data.Category as Category
 import Data.Thread as Thread
+import Data.User as User
 import Route exposing (Route(..))
 import Store exposing (Store)
 
@@ -31,6 +32,10 @@ forRoute store route =
             in
             tTitle ++ " | " ++ cTitle
 
+        User username ->
+            store
+                |> userTitle username
+
         NotFound ->
             "Not Found"
 
@@ -49,3 +54,8 @@ threadTitle slug store =
         |> Store.getThreadBySlug slug
         |> Maybe.map .title
         |> Maybe.withDefault "Thread"
+
+
+userTitle : User.Username -> Store -> String
+userTitle username store =
+    User.usernameToString username

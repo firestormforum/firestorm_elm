@@ -4,9 +4,7 @@ import Data.Category as Category exposing (Category)
 import Data.Post as Post exposing (Post)
 import Data.Thread as Thread exposing (Thread)
 import Data.User as User exposing (User)
-import Dict exposing (Dict)
 import Json.Decode as JD exposing (Decoder, Value)
-import Json.Decode.Extra
 import Json.Decode.Pipeline as Pipeline exposing (custom, hardcoded, required)
 
 
