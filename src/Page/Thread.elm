@@ -7,7 +7,6 @@ import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (attribute, class, href, id, src)
-import Html.Attributes.Extra exposing (innerHtml)
 import Html.Keyed as Keyed
 import Model exposing (Model)
 import Page.Component
@@ -15,6 +14,8 @@ import Page.Component
         ( categoryLink
         , categoryPills
         , itemMetadata
+        , postView
+        , renderOEmbeds
         , timeAbbr
         )
 import Store
@@ -116,81 +117,3 @@ viewThread currentDate category thread postsWithUsers user =
                 postsWithUsers
             )
         ]
-
-
-postView : Date -> ( Maybe User, Post ) -> Html msg
-postView currentDate ( maybeUser, post ) =
-    let
-        ( avatarUrl, userLink ) =
-            case maybeUser of
-                Nothing ->
-                    ( "https://api.adorable.io/avatars/256/nobody@adorable.png"
-                    , Page.Component.userLink Nothing
-                    )
-
-                Just user ->
-                    ( user.avatarUrl
-                    , Page.Component.userLink (Just user)
-                    )
-    in
-    li
-        [ class "post-item"
-        , id ("post-" ++ Post.idToString post.id)
-        ]
-        ([ div
-            [ class "item-metadata" ]
-            [ div
-                [ class "avatar" ]
-                [ img
-                    [ src avatarUrl
-                    , class "user-avatar -borderless"
-                    ]
-                    []
-                ]
-            , userLink
-            , timeAbbr currentDate post.updatedAt
-            ]
-         , div
-            [ class "body"
-            , innerHtml post.bodyHtml
-            ]
-            []
-         ]
-            ++ renderOEmbeds post.oEmbeds
-            ++ [ postItemActions post ]
-        )
-
-
-postItemActions : Post -> Html msg
-postItemActions post =
-    div
-        [ class "post-item-actions" ]
-        [ div [ class "spacer" ] []
-        , ul [ class "actions" ]
-            [ li
-                [ class "link" ]
-                [ a
-                    [ href "#" ]
-                    [ i [ class "fa fa-link" ] [] ]
-                ]
-            , li [ class "reply" ]
-                [ a [ href "#" ]
-                    [ i [ class "fa fa-reply" ] [] ]
-                ]
-            ]
-        ]
-
-
-renderOEmbeds : List ( String, String ) -> List (Html msg)
-renderOEmbeds oEmbeds =
-    List.map renderOEmbed oEmbeds
-
-
-renderOEmbed : ( String, String ) -> Html msg
-renderOEmbed ( url, html ) =
-    div
-        [ class "oembed-for"
-        , attribute "data-oembed-url" url
-        , innerHtml html
-        ]
-        []

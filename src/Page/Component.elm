@@ -4,20 +4,34 @@ module Page.Component
         , categoryLink
         , categoryPills
         , itemMetadata
+        , postItemActions
+        , postView
+        , renderOEmbeds
         , threadLink
         , timeAbbr
         , userLink
         )
 
-import Data.Category as Category
-import Data.Thread as Thread
+import Data.Category as Category exposing (Category)
+import Data.Post as Post exposing (Post)
+import Data.Thread as Thread exposing (Thread)
 import Data.User as User exposing (User)
-import Date
+import Date exposing (Date)
 import Date.Distance as Distance
 import Date.Distance.I18n.En
 import Date.Distance.Types
 import Html exposing (..)
-import Html.Attributes exposing (class, classList, href, title)
+import Html.Attributes
+    exposing
+        ( attribute
+        , class
+        , classList
+        , href
+        , id
+        , src
+        , title
+        )
+import Html.Attributes.Extra exposing (innerHtml)
 import Route
 
 
@@ -100,3 +114,81 @@ categoryPills categories =
     ul
         [ class "category-pill" ]
         (List.map categoryItem categories)
+
+
+renderOEmbeds : List ( String, String ) -> List (Html msg)
+renderOEmbeds oEmbeds =
+    List.map renderOEmbed oEmbeds
+
+
+renderOEmbed : ( String, String ) -> Html msg
+renderOEmbed ( url, html ) =
+    div
+        [ class "oembed-for"
+        , attribute "data-oembed-url" url
+        , innerHtml html
+        ]
+        []
+
+
+postItemActions : Post -> Html msg
+postItemActions post =
+    div
+        [ class "post-item-actions" ]
+        [ div [ class "spacer" ] []
+        , ul [ class "actions" ]
+            [ li
+                [ class "link" ]
+                [ a
+                    [ href "#" ]
+                    [ i [ class "fa fa-link" ] [] ]
+                ]
+            , li [ class "reply" ]
+                [ a [ href "#" ]
+                    [ i [ class "fa fa-reply" ] [] ]
+                ]
+            ]
+        ]
+
+
+postView : Date -> ( Maybe User, Post ) -> Html msg
+postView currentDate ( maybeUser, post ) =
+    let
+        ( avatarUrl, userLink_ ) =
+            case maybeUser of
+                Nothing ->
+                    ( "https://api.adorable.io/avatars/256/nobody@adorable.png"
+                    , userLink Nothing
+                    )
+
+                Just user ->
+                    ( user.avatarUrl
+                    , userLink (Just user)
+                    )
+    in
+    li
+        [ class "post-item"
+        , id ("post-" ++ Post.idToString post.id)
+        ]
+        ([ div
+            [ class "item-metadata" ]
+            [ div
+                [ class "avatar" ]
+                [ img
+                    [ src avatarUrl
+                    , class "user-avatar -borderless"
+                    ]
+                    []
+                ]
+            , userLink_
+            , timeAbbr currentDate post.updatedAt
+            ]
+         , div
+            [ class "body"
+            , innerHtml post.bodyHtml
+            ]
+            []
+         ]
+            ++ renderOEmbeds post.oEmbeds
+            ++ [ postItemActions post ]
+        )

@@ -20,6 +20,7 @@ module Store
         , insertUser
         , insertUsers
         , posts
+        , postsForUser
         , threads
         )
 
@@ -221,6 +222,14 @@ threads categoryId (Store { threads }) =
 posts : Thread.Id -> Store -> List Post
 posts threadId (Store { posts }) =
     posts
-        |> EveryDict.filter (\_ t -> t.threadId == threadId)
+        |> EveryDict.filter (\_ p -> p.threadId == threadId)
+        |> EveryDict.values
+        |> List.sortBy (.insertedAt >> Date.toTime)
+
+
+postsForUser : User.Id -> Store -> List Post
+postsForUser userId (Store { posts }) =
+    posts
+        |> EveryDict.filter (\_ p -> p.userId == userId)
         |> EveryDict.values
         |> List.sortBy (.insertedAt >> Date.toTime)
