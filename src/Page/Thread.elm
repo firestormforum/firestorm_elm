@@ -7,15 +7,16 @@ import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (attribute, class, href, id, src)
-import Html.Keyed as Keyed
 import Model exposing (Model)
 import Page.Component
     exposing
         ( categoryLink
         , categoryPills
         , itemMetadata
+        , postList
         , postView
         , renderOEmbeds
+        , threadHeader
         , timeAbbr
         )
 import Store
@@ -99,21 +100,12 @@ view { currentDate, postsWithUsers, category, thread, user } =
 viewThread : Date -> Category -> Thread -> List ( Maybe User, Post ) -> User -> Html msg
 viewThread currentDate category thread postsWithUsers user =
     div []
-        [ div [ class "thread-header" ]
+        [ threadHeader
             [ div [ class "split" ]
                 [ h2 []
                     [ text thread.title ]
                 , itemMetadata [ categoryPills [ category ] ]
                 ]
             ]
-        , Keyed.ol
-            [ class "post-list" ]
-            (List.map
-                (\( postUser, post ) ->
-                    ( "post-" ++ Post.idToString post.id
-                    , postView currentDate ( postUser, post )
-                    )
-                )
-                postsWithUsers
-            )
+        , postList currentDate postsWithUsers
         ]

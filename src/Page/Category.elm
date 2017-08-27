@@ -8,7 +8,15 @@ import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (class, href)
 import Model exposing (Model)
-import Page.Component exposing (badgeBlock, categoryLink, threadLink, timeAbbr, userLink)
+import Page.Component
+    exposing
+        ( badgeBlock
+        , categoryHeader
+        , categoryLink
+        , threadLink
+        , timeAbbr
+        , userLink
+        )
 import Store exposing (Store)
 import String.Extra
 
@@ -62,8 +70,7 @@ view { category, threads, currentDate } =
 
         Just category ->
             div [ class "page-category" ]
-                [ div
-                    [ class "category-header" ]
+                [ categoryHeader
                     [ h2 [] [ categoryLink category ]
                     , div [ class "spacer" ] []
                     , ul [ class "actions" ]

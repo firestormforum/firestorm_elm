@@ -5,6 +5,7 @@ import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (class)
 import Model exposing (Model)
+import Page.Component exposing (pageHeader)
 import Route exposing (Route)
 import Store exposing (Store)
 
@@ -30,7 +31,7 @@ query model =
 view : ViewModel -> Html msg
 view { categories, currentDate } =
     div [ class "page-categories" ]
-        [ h2 [] [ text "Categories" ]
+        [ pageHeader [ h2 [] [ text "Categories" ] ]
         , ol [ class "category-list" ]
             (List.map (categoryView currentDate) categories)
         ]

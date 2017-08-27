@@ -1,14 +1,19 @@
 module Page.Component
     exposing
         ( badgeBlock
+        , categoryHeader
         , categoryLink
         , categoryPills
         , itemMetadata
+        , pageHeader
         , postItemActions
+        , postList
         , postView
         , renderOEmbeds
+        , threadHeader
         , threadLink
         , timeAbbr
+        , userAvatar
         , userLink
         )
 
@@ -32,6 +37,7 @@ import Html.Attributes
         , title
         )
 import Html.Attributes.Extra exposing (innerHtml)
+import Html.Keyed as Keyed
 import Route
 
 
@@ -89,10 +95,37 @@ userLink maybeUser =
             div [] []
 
 
+userAvatar : User -> Html msg
+userAvatar user =
+    img
+        [ src user.avatarUrl
+        , class "user-avatar"
+        ]
+        []
+
+
 itemMetadata : List (Html msg) -> Html msg
 itemMetadata =
     div
         [ class "item-metadata" ]
+
+
+pageHeader : List (Html msg) -> Html msg
+pageHeader =
+    div
+        [ class "page-header" ]
+
+
+categoryHeader : List (Html msg) -> Html msg
+categoryHeader =
+    div
+        [ class "category-header" ]
+
+
+threadHeader : List (Html msg) -> Html msg
+threadHeader =
+    div
+        [ class "thread-header" ]
 
 
 badgeBlock : Bool -> Int -> Html msg
@@ -154,17 +187,13 @@ postItemActions post =
 postView : Date -> ( Maybe User, Post ) -> Html msg
 postView currentDate ( maybeUser, post ) =
     let
-        ( avatarUrl, userLink_ ) =
+        avatarUrl =
             case maybeUser of
                 Nothing ->
-                    ( "https://api.adorable.io/avatars/256/nobody@adorable.png"
-                    , userLink Nothing
-                    )
+                    "https://api.adorable.io/avatars/256/nobody@adorable.png"
 
                 Just user ->
-                    ( user.avatarUrl
-                    , userLink (Just user)
-                    )
+                    user.avatarUrl
     in
     li
         [ class "post-item"
@@ -180,7 +209,7 @@ postView currentDate ( maybeUser, post ) =
                     ]
                     []
                 ]
-            , userLink_
+            , userLink maybeUser
             , timeAbbr currentDate post.updatedAt
             ]
          , div
@@ -191,4 +220,18 @@ postView currentDate ( maybeUser, post ) =
          ]
             ++ renderOEmbeds post.oEmbeds
             ++ [ postItemActions post ]
+        )
+
+
+postList : Date -> List ( Maybe User, Post ) -> Html msg
+postList currentDate postsWithUsers =
+    Keyed.ol
+        [ class "post-list" ]
+        (List.map
+            (\( postUser, post ) ->
+                ( "post-" ++ Post.idToString post.id
+                , postView currentDate ( postUser, post )
+                )
+            )
+            postsWithUsers
         )

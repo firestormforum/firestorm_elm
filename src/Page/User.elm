@@ -5,9 +5,8 @@ import Data.User as User exposing (User)
 import Date exposing (Date)
 import Html exposing (..)
 import Html.Attributes exposing (attribute, class, href, id, src)
-import Html.Keyed as Keyed
 import Model exposing (Model)
-import Page.Component exposing (postView, timeAbbr)
+import Page.Component exposing (postList, postView, timeAbbr, userAvatar)
 import Store
 
 
@@ -55,18 +54,14 @@ viewUser : Date -> User -> List Post -> Html msg
 viewUser currentDate user posts =
     div []
         [ userDetails currentDate user
-        , userPosts currentDate user posts
+        , postList currentDate (List.map (\p -> ( Just user, p )) posts)
         ]
 
 
 userDetails : Date -> User -> Html msg
 userDetails currentDate user =
     div [ class "user-details" ]
-        [ img
-            [ src user.avatarUrl
-            , class "user-avatar"
-            ]
-            []
+        [ userAvatar user
         , div
             [ class "contact" ]
             [ h1 [ class "username" ]
@@ -97,17 +92,3 @@ userDetails currentDate user =
                 ]
             ]
         ]
-
-
-userPosts : Date -> User -> List Post -> Html msg
-userPosts currentDate user posts =
-    Keyed.ol
-        [ class "user-posts post-list" ]
-    <|
-        List.map
-            (\( postUser, post ) ->
-                ( "post-" ++ Post.idToString post.id
-                , postView currentDate ( postUser, post )
-                )
-            )
-            (List.map (\p -> ( Just user, p )) posts)
