@@ -9,6 +9,11 @@ import Store exposing (Store)
 
 forRoute : Store -> Route -> String
 forRoute store route =
+    pageTitle store route ++ " - Firestorm"
+
+
+pageTitle : Store -> Route -> String
+pageTitle store route =
     case route of
         Home ->
             "Home"
@@ -30,7 +35,7 @@ forRoute store route =
                     store
                         |> threadTitle threadSlug
             in
-            tTitle ++ " | " ++ cTitle
+            tTitle ++ " - " ++ cTitle
 
         User username ->
             store
