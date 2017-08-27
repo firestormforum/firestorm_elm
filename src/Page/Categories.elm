@@ -40,6 +40,8 @@ categoryView : Date -> Category -> Html msg
 categoryView currentDate category =
     li
         []
-        [ a [ Route.href <| Route.Category category.slug ]
-            [ h2 [] [ text category.title ] ]
+        [ h2 []
+            [ a [ Route.href <| Route.Category category.slug ]
+                [ text category.title ]
+            ]
         ]
