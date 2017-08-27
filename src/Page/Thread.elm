@@ -103,7 +103,7 @@ viewThread currentDate category thread postsWithUsers user =
             [ div [ class "split" ]
                 [ h2 []
                     [ text thread.title ]
-                , categoryPills [ category ]
+                , itemMetadata [ categoryPills [ category ] ]
                 ]
             ]
         , Keyed.ol
