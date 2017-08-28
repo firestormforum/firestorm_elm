@@ -1,5 +1,6 @@
 module Api exposing (login)
 
+import Data.LoginForm exposing (LoginForm)
 import Http
 import Json.Decode as JD exposing (Value)
 import Json.Encode as JE
@@ -15,8 +16,8 @@ post path =
     Http.post (apiBaseUrl ++ path)
 
 
-login : String -> String -> Http.Request String
-login username password =
+login : LoginForm -> Http.Request String
+login { username, password } =
     post "/auth/identity"
         (Http.jsonBody
             (JE.object

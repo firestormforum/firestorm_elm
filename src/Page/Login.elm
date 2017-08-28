@@ -5,10 +5,6 @@ import Html.Attributes exposing (class, id, name, type_, value)
 import Html.Events exposing (onInput, onSubmit)
 import Model exposing (Model)
 import Msg exposing (Msg(Login, SetPassword, SetUsername))
-import Page.Component
-    exposing
-        ( pageHeader
-        )
 
 
 type alias ViewModel =
@@ -18,10 +14,8 @@ type alias ViewModel =
 
 
 query : Model -> ViewModel
-query { username, password } =
-    { username = username
-    , password = password
-    }
+query { loginForm } =
+    loginForm
 
 
 view : ViewModel -> Html Msg

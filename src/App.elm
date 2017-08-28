@@ -1,11 +1,11 @@
 module App exposing (..)
 
 import Api
+import Data.LoginForm as LoginForm exposing (LoginForm)
 import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.ReplenishResponse as ReplenishResponse
 import Http
 import Json.Decode as JD exposing (Value)
-import Json.Encode as JE
 import Model exposing (Model)
 import Msg exposing (Msg(..))
 import Navigation exposing (Location)
@@ -117,27 +117,15 @@ update msg model =
             ( model, fetchHomeData )
 
         SetUsername username ->
-            ( { model | username = username }, Cmd.none )
+            updateLoginForm (LoginForm.setUsername username) model
 
         SetPassword password ->
-            ( { model | password = password }, Cmd.none )
+            updateLoginForm (LoginForm.setPassword password) model
 
         Msg.Login ->
-            let
-                handleLogin : Result Http.Error String -> Msg
-                handleLogin result =
-                    case result of
-                        Ok apiToken ->
-                            LoginSuccess apiToken
-
-                        Err _ ->
-                            NoOp
-            in
             ( model
             , Http.send handleLogin
-                (Api.login model.username
-                    model.password
-                )
+                (Api.login model.loginForm)
             )
 
         LoginSuccess apiToken ->
@@ -166,3 +154,23 @@ subscriptions model =
         [ Time.every Time.second Tick
         , Phoenix.connect socket [ channel ]
         ]
+
+
+updateLoginForm : (LoginForm -> LoginForm) -> Model -> ( Model, Cmd msg )
+updateLoginForm fn model =
+    ( { model
+        | loginForm =
+            fn model.loginForm
+      }
+    , Cmd.none
+    )
+
+
+handleLogin : Result Http.Error String -> Msg
+handleLogin result =
+    case result of
+        Ok apiToken ->
+            LoginSuccess apiToken
+
+        Err _ ->
+            NoOp

@@ -1,5 +1,6 @@
 module Model exposing (Model, init, isLoggedIn)
 
+import Data.LoginForm as LoginForm exposing (LoginForm)
 import Maybe.Extra as Maybe
 import Route exposing (Route)
 import Store exposing (Store)
@@ -11,9 +12,8 @@ type alias Model =
     { currentRoute : Route
     , currentTime : Time
     , store : Store
+    , loginForm : LoginForm
     , apiToken : Maybe String
-    , username : String
-    , password : String
     }
 
 
@@ -23,8 +23,7 @@ init initialRoute =
     , currentTime = 0
     , store = Store.empty
     , apiToken = Nothing
-    , username = ""
-    , password = ""
+    , loginForm = LoginForm.new
     }
 
 
