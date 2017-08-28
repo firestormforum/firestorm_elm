@@ -25,6 +25,7 @@ type Route
     | Thread Category.Slug Thread.Slug
     | NewPost Category.Slug Thread.Slug
     | User User.Username
+    | Login
     | NotFound
 
 
@@ -48,6 +49,7 @@ router =
                 </> s "posts"
                 </> s "new"
             )
+        , Url.map Login (s "login")
         , Url.map User (s "users" </> User.usernameParser)
         ]
 
@@ -95,6 +97,9 @@ routeToString route =
                     , User.usernameToString username
                     ]
 
+                Login ->
+                    [ "login" ]
+
                 NotFound ->
                     [ "404" ]
     in
@@ -121,6 +126,9 @@ bodyClass route =
 
         User _ ->
             "page-user-show"
+
+        Login ->
+            "page-auth-request"
 
         NotFound ->
             "page-404"

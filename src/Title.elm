@@ -57,6 +57,9 @@ pageTitle store route =
             store
                 |> userTitle username
 
+        Login ->
+            "Login"
+
         NotFound ->
             "Not Found"
 

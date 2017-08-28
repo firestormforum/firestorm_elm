@@ -8,6 +8,7 @@ import Page.Categories
 import Page.Category
 import Page.Home
 import Page.Layout
+import Page.Login
 import Page.NewPost
 import Page.Thread
 import Page.User
@@ -49,6 +50,9 @@ view model =
                 model
                     |> Page.User.query username
                     |> Page.User.view
+
+            Login ->
+                Page.Login.view
 
             NotFound ->
                 text "Not found"

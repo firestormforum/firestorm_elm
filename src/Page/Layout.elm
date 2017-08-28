@@ -87,6 +87,7 @@ drawer =
         [ class "navigation-drawer" ]
         [ ul []
             [ li [] [ categoriesLink ]
+            , li [] [ loginLink ]
             ]
         , ul []
             [ li []
@@ -111,3 +112,8 @@ homeLink =
 categoriesLink : Html msg
 categoriesLink =
     a [ Route.href Categories ] [ text "Categories" ]
+
+
+loginLink : Html msg
+loginLink =
+    a [ Route.href Login ] [ text "Login" ]
