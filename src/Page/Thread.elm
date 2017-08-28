@@ -87,17 +87,33 @@ view { currentDate, postsWithUsers, category, thread, user } =
                 Just thread ->
                     case user of
                         Just user ->
+                            let
+                                postsWithUsersCategoriesThreads =
+                                    List.map
+                                        (\( maybeUser, post ) ->
+                                            ( maybeUser
+                                            , ( category, thread, post )
+                                            )
+                                        )
+                                        postsWithUsers
+                            in
                             viewThread currentDate
                                 category
                                 thread
-                                postsWithUsers
+                                postsWithUsersCategoriesThreads
                                 user
 
                         Nothing ->
                             text "No user"
 
 
-viewThread : Date -> Category -> Thread -> List ( Maybe User, Post ) -> User -> Html msg
+viewThread :
+    Date
+    -> Category
+    -> Thread
+    -> List ( Maybe User, ( Category, Thread, Post ) )
+    -> User
+    -> Html msg
 viewThread currentDate category thread postsWithUsers user =
     div []
         [ threadHeader

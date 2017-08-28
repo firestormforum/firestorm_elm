@@ -8,6 +8,7 @@ import Page.Categories
 import Page.Category
 import Page.Home
 import Page.Layout
+import Page.NewPost
 import Page.Thread
 import Page.User
 import Route exposing (Route(..))
@@ -38,6 +39,11 @@ view model =
                 model
                     |> Page.Thread.query categorySlug threadSlug
                     |> Page.Thread.view
+
+            NewPost categorySlug threadSlug ->
+                model
+                    |> Page.NewPost.query categorySlug threadSlug
+                    |> Page.NewPost.view
 
             User username ->
                 model

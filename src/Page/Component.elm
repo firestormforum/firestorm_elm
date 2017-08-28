@@ -164,8 +164,8 @@ renderOEmbed ( url, html ) =
         []
 
 
-postItemActions : Post -> Html msg
-postItemActions post =
+postItemActions : Category -> Thread -> Post -> Html msg
+postItemActions category thread post =
     div
         [ class "post-item-actions" ]
         [ div [ class "spacer" ] []
@@ -177,15 +177,16 @@ postItemActions post =
                     [ i [ class "fa fa-link" ] [] ]
                 ]
             , li [ class "reply" ]
-                [ a [ href "#" ]
+                [ a
+                    [ Route.href <| Route.NewPost category.slug thread.slug ]
                     [ i [ class "fa fa-reply" ] [] ]
                 ]
             ]
         ]
 
 
-postView : Date -> ( Maybe User, Post ) -> Html msg
-postView currentDate ( maybeUser, post ) =
+postView : Date -> Category -> Thread -> ( Maybe User, Post ) -> Html msg
+postView currentDate category thread ( maybeUser, post ) =
     let
         avatarUrl =
             case maybeUser of
@@ -219,18 +220,18 @@ postView currentDate ( maybeUser, post ) =
             []
          ]
             ++ renderOEmbeds post.oEmbeds
-            ++ [ postItemActions post ]
+            ++ [ postItemActions category thread post ]
         )
 
 
-postList : Date -> List ( Maybe User, Post ) -> Html msg
+postList : Date -> List ( Maybe User, ( Category, Thread, Post ) ) -> Html msg
 postList currentDate postsWithUsers =
     Keyed.ol
         [ class "post-list" ]
         (List.map
-            (\( postUser, post ) ->
+            (\( postUser, ( category, thread, post ) ) ->
                 ( "post-" ++ Post.idToString post.id
-                , postView currentDate ( postUser, post )
+                , postView currentDate category thread ( postUser, post )
                 )
             )
             postsWithUsers

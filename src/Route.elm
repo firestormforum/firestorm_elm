@@ -23,6 +23,7 @@ type Route
     | Categories
     | Category Category.Slug
     | Thread Category.Slug Thread.Slug
+    | NewPost Category.Slug Thread.Slug
     | User User.Username
     | NotFound
 
@@ -38,6 +39,14 @@ router =
                 </> Category.slugParser
                 </> s "threads"
                 </> Thread.slugParser
+            )
+        , Url.map NewPost
+            (s "categories"
+                </> Category.slugParser
+                </> s "threads"
+                </> Thread.slugParser
+                </> s "posts"
+                </> s "new"
             )
         , Url.map User (s "users" </> User.usernameParser)
         ]
@@ -72,6 +81,15 @@ routeToString route =
                     , Thread.slugToString threadSlug
                     ]
 
+                NewPost categorySlug threadSlug ->
+                    [ "categories"
+                    , Category.slugToString categorySlug
+                    , "threads"
+                    , Thread.slugToString threadSlug
+                    , "posts"
+                    , "new"
+                    ]
+
                 User username ->
                     [ "users"
                     , User.usernameToString username
@@ -97,6 +115,9 @@ bodyClass route =
 
         Thread _ _ ->
             "page-thread-show"
+
+        NewPost _ _ ->
+            "page-post-new"
 
         User _ ->
             "page-user-show"

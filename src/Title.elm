@@ -37,6 +37,22 @@ pageTitle store route =
             in
             tTitle ++ " - " ++ cTitle
 
+        NewPost categorySlug threadSlug ->
+            let
+                cTitle =
+                    store
+                        |> categoryTitle categorySlug
+
+                tTitle =
+                    store
+                        |> threadTitle threadSlug
+            in
+            "New Post"
+                ++ " - "
+                ++ tTitle
+                ++ " - "
+                ++ cTitle
+
         User username ->
             store
                 |> userTitle username
