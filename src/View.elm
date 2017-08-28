@@ -21,7 +21,7 @@ view model =
         currentDate =
             Date.fromTime model.currentTime
     in
-    Page.Layout.view <|
+    Page.Layout.view model <|
         case model.currentRoute of
             Home ->
                 Page.Home.view
@@ -52,7 +52,9 @@ view model =
                     |> Page.User.view
 
             Login ->
-                Page.Login.view
+                model
+                    |> Page.Login.query
+                    |> Page.Login.view
 
             NotFound ->
                 text "Not found"

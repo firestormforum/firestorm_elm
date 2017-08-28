@@ -12,11 +12,12 @@ import Html.Attributes
         , src
         , type_
         )
+import Model exposing (Model)
 import Route exposing (Route(..))
 
 
-view : Html msg -> Html msg
-view body =
+view : Model -> Html msg -> Html msg
+view model body =
     div
         [ class "pure-container"
         , attribute "data-effect" "pure-effect-slide"
@@ -41,7 +42,7 @@ view body =
             [ class "pure-drawer"
             , attribute "data-position" "right"
             ]
-            [ drawer ]
+            [ drawer model ]
         , div
             [ class "pure-pusher-container" ]
             [ div
@@ -50,7 +51,7 @@ view body =
                 , div [ class "layout-content" ]
                     [ div
                         [ class "layout-drawer-tablet" ]
-                        [ drawer ]
+                        [ drawer model ]
                     , div [ class "layout-content-main" ]
                         [ div [ class "body" ]
                             [ body ]
@@ -81,14 +82,24 @@ navigation =
         ]
 
 
-drawer : Html msg
-drawer =
+drawer : Model -> Html msg
+drawer model =
+    let
+        maybeLoginLink =
+            case Model.isLoggedIn model of
+                False ->
+                    [ li [] [ loginLink ] ]
+
+                True ->
+                    []
+    in
     div
         [ class "navigation-drawer" ]
         [ ul []
-            [ li [] [ categoriesLink ]
-            , li [] [ loginLink ]
-            ]
+            ([ li [] [ categoriesLink ]
+             ]
+                ++ maybeLoginLink
+            )
         , ul []
             [ li []
                 [ a

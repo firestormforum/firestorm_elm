@@ -12,3 +12,7 @@ type Msg
     | NoOp
     | IsOnline Value
     | LoadIntoStore ReplenishResponse
+    | SetUsername String
+    | SetPassword String
+    | Login
+    | LoginSuccess String

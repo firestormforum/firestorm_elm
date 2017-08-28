@@ -2,7 +2,9 @@ module App exposing (..)
 
 import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.ReplenishResponse as ReplenishResponse
+import Http
 import Json.Decode as JD exposing (Value)
+import Json.Encode as JE
 import Model exposing (Model)
 import Msg exposing (Msg(..))
 import Navigation exposing (Location)
@@ -112,6 +114,50 @@ update msg model =
 
         IsOnline _ ->
             ( model, fetchHomeData )
+
+        SetUsername username ->
+            ( { model | username = username }, Cmd.none )
+
+        SetPassword password ->
+            ( { model | password = password }, Cmd.none )
+
+        Msg.Login ->
+            let
+                handleLogin : Result Http.Error String -> Msg
+                handleLogin result =
+                    case result of
+                        Ok apiToken ->
+                            LoginSuccess apiToken
+
+                        Err _ ->
+                            NoOp
+
+                loginRequest : Http.Request String
+                loginRequest =
+                    Http.post "http://localhost:4000/api/v1/auth/identity"
+                        (Http.jsonBody
+                            (JE.object
+                                [ ( "user"
+                                  , JE.object
+                                        [ ( "username", JE.string model.username )
+                                        , ( "password", JE.string model.password )
+                                        ]
+                                  )
+                                ]
+                            )
+                        )
+                        (JD.at [ "data", "api_token" ] JD.string)
+
+                login : Cmd Msg
+                login =
+                    Http.send
+                        handleLogin
+                        loginRequest
+            in
+            ( model, login )
+
+        LoginSuccess apiToken ->
+            ( { model | apiToken = Just apiToken }, Route.newUrl Categories )
 
         LoadIntoStore replenishResponse ->
             let

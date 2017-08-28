@@ -1,4 +1,4 @@
-module Route exposing (Route(..), bodyClass, fromLocation, href)
+module Route exposing (Route(..), bodyClass, fromLocation, href, newUrl)
 
 import Data.Category as Category
 import Data.Thread as Thread
@@ -137,3 +137,8 @@ bodyClass route =
 href : Route -> Attribute msg
 href route =
     Attr.href (routeToString route)
+
+
+newUrl : Route -> Cmd msg
+newUrl route =
+    Navigation.newUrl (routeToString route)
