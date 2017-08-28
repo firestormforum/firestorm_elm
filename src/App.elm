@@ -1,5 +1,6 @@
 module App exposing (..)
 
+import Api
 import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.ReplenishResponse as ReplenishResponse
 import Http
@@ -131,30 +132,13 @@ update msg model =
 
                         Err _ ->
                             NoOp
-
-                loginRequest : Http.Request String
-                loginRequest =
-                    Http.post "http://localhost:4000/api/v1/auth/identity"
-                        (Http.jsonBody
-                            (JE.object
-                                [ ( "user"
-                                  , JE.object
-                                        [ ( "username", JE.string model.username )
-                                        , ( "password", JE.string model.password )
-                                        ]
-                                  )
-                                ]
-                            )
-                        )
-                        (JD.at [ "data", "api_token" ] JD.string)
-
-                login : Cmd Msg
-                login =
-                    Http.send
-                        handleLogin
-                        loginRequest
             in
-            ( model, login )
+            ( model
+            , Http.send handleLogin
+                (Api.login model.username
+                    model.password
+                )
+            )
 
         LoginSuccess apiToken ->
             ( { model | apiToken = Just apiToken }, Route.newUrl Categories )
