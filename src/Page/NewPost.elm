@@ -17,7 +17,9 @@ import Html.Attributes
         , src
         , type_
         )
+import Html.Events exposing (onClick, onInput, onSubmit)
 import Model exposing (Model)
+import Msg exposing (Msg(SetNewPostBody, SubmitNewPost))
 import Route
 import Store
 
@@ -62,7 +64,7 @@ query categorySlug threadSlug model =
     }
 
 
-view : ViewModel -> Html msg
+view : ViewModel -> Html Msg
 view { currentDate, category, thread, user } =
     case category of
         Nothing ->
@@ -85,11 +87,14 @@ view { currentDate, category, thread, user } =
                             text "No user"
 
 
-viewNewPost : Date -> Category -> Thread -> User -> Html msg
+viewNewPost : Date -> Category -> Thread -> User -> Html Msg
 viewNewPost currentDate category thread user =
     div []
         [ h2 [] [ text "New Post" ]
-        , form [ class "post-editor" ]
+        , form
+            [ class "post-editor"
+            , onSubmit <| SubmitNewPost thread.id
+            ]
             [ textarea
                 [ id "post-body"
                 , name "post[body]"
@@ -97,6 +102,7 @@ viewNewPost currentDate category thread user =
                 , rows 4
                 , class "autoexpand"
                 , attribute "data-min-rows" "4"
+                , onInput SetNewPostBody
                 ]
                 []
             , div
@@ -122,7 +128,9 @@ viewNewPost currentDate category thread user =
                     , button
                         [ class "pure-button button-primary reply" ]
                         [ i
-                            [ class "fa fa-mail-reply" ]
+                            [ class "fa fa-mail-reply"
+                            , onClick <| SubmitNewPost thread.id
+                            ]
                             []
                         , text " Reply"
                         ]

@@ -2,6 +2,8 @@ module App exposing (..)
 
 import Api
 import Data.LoginForm as LoginForm exposing (LoginForm)
+import Data.NewPostForm as NewPostForm exposing (NewPostForm)
+import Data.Post as Post exposing (Post)
 import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.ReplenishResponse as ReplenishResponse
 import Http
@@ -117,10 +119,12 @@ update msg model =
             ( model, fetchHomeData )
 
         SetUsername username ->
-            updateLoginForm (LoginForm.setUsername username) model
+            model
+                |> updateLoginForm (LoginForm.setUsername username)
 
         SetPassword password ->
-            updateLoginForm (LoginForm.setPassword password) model
+            model
+                |> updateLoginForm (LoginForm.setPassword password)
 
         Msg.Login ->
             ( model
@@ -129,7 +133,50 @@ update msg model =
             )
 
         LoginSuccess apiToken ->
-            ( { model | apiToken = Just apiToken }, Route.newUrl Categories )
+            ( { model
+                | apiToken = Just apiToken
+                , loginForm = LoginForm.new
+              }
+            , Route.newUrl Categories
+            )
+
+        SetNewPostBody body ->
+            model
+                |> updateNewPostForm (NewPostForm.setBody body)
+
+        SubmitNewPost threadId ->
+            case model.apiToken of
+                Nothing ->
+                    ( model
+                    , Cmd.none
+                    )
+
+                Just apiToken ->
+                    ( model
+                    , Http.send handleSubmitNewPost
+                        (Api.createPost apiToken model.newPostForm threadId)
+                    )
+
+        SubmitNewPostSuccess threadId ->
+            let
+                nextRoute =
+                    case Store.getThread threadId model.store of
+                        Nothing ->
+                            Categories
+
+                        Just thread ->
+                            case Store.getCategory thread.categoryId model.store of
+                                Nothing ->
+                                    Categories
+
+                                Just category ->
+                                    Thread category.slug thread.slug
+            in
+            ( { model
+                | newPostForm = NewPostForm.new
+              }
+            , Route.newUrl nextRoute
+            )
 
         LoadIntoStore replenishResponse ->
             let
@@ -166,11 +213,31 @@ updateLoginForm fn model =
     )
 
 
+updateNewPostForm : (NewPostForm -> NewPostForm) -> Model -> ( Model, Cmd msg )
+updateNewPostForm fn model =
+    ( { model
+        | newPostForm =
+            fn model.newPostForm
+      }
+    , Cmd.none
+    )
+
+
 handleLogin : Result Http.Error String -> Msg
 handleLogin result =
     case result of
         Ok apiToken ->
             LoginSuccess apiToken
+
+        Err _ ->
+            NoOp
+
+
+handleSubmitNewPost : Result Http.Error Post -> Msg
+handleSubmitNewPost result =
+    case Debug.log "new post" result of
+        Ok post ->
+            SubmitNewPostSuccess post.threadId
 
         Err _ ->
             NoOp
