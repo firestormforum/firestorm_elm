@@ -1,5 +1,6 @@
-port module Ports exposing (setBodyClass, setTitle)
+port module Ports exposing (scrollToPost, setBodyClass, setTitle)
 
+import Data.Post as Post
 import Json.Encode as Encode
 
 
@@ -13,6 +14,13 @@ setBodyClass : String -> Cmd msg
 setBodyClass =
     Encode.string
         >> outboundWithPayload "SetBodyClass"
+
+
+scrollToPost : Post.Id -> Cmd msg
+scrollToPost =
+    Post.idToString
+        >> Encode.string
+        >> outboundWithPayload "ScrollToPost"
 
 
 outboundWithPayload : String -> Encode.Value -> Cmd msg

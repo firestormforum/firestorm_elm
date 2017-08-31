@@ -1,6 +1,7 @@
 module Msg exposing (Msg(..))
 
 import Data.Category as Category
+import Data.Post as Post
 import Data.ReplenishResponse exposing (ReplenishResponse)
 import Data.Thread as Thread
 import Json.Encode exposing (Value)
@@ -20,4 +21,4 @@ type Msg
     | LoginSuccess String
     | SetNewPostBody String
     | SubmitNewPost Thread.Id
-    | SubmitNewPostSuccess Thread.Id
+    | SubmitNewPostSuccess Thread.Id Post.Id

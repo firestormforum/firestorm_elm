@@ -173,7 +173,8 @@ postItemActions category thread post =
             [ li
                 [ class "link" ]
                 [ a
-                    [ href "#" ]
+                    [ Route.href <| Route.Post category.slug thread.slug post.id
+                    ]
                     [ i [ class "fa fa-link" ] [] ]
                 ]
             , li [ class "reply" ]

@@ -1,6 +1,7 @@
 module Route exposing (Route(..), bodyClass, fromLocation, href, newUrl)
 
 import Data.Category as Category
+import Data.Post as Post
 import Data.Thread as Thread
 import Data.User as User
 import Html exposing (Attribute)
@@ -23,6 +24,7 @@ type Route
     | Categories
     | Category Category.Slug
     | Thread Category.Slug Thread.Slug
+    | Post Category.Slug Thread.Slug Post.Id
     | NewPost Category.Slug Thread.Slug
     | User User.Username
     | Login
@@ -40,6 +42,14 @@ router =
                 </> Category.slugParser
                 </> s "threads"
                 </> Thread.slugParser
+            )
+        , Url.map Post
+            (s "categories"
+                </> Category.slugParser
+                </> s "threads"
+                </> Thread.slugParser
+                </> s "posts"
+                </> Post.idParser
             )
         , Url.map NewPost
             (s "categories"
@@ -83,6 +93,15 @@ routeToString route =
                     , Thread.slugToString threadSlug
                     ]
 
+                Post categorySlug threadSlug postId ->
+                    [ "categories"
+                    , Category.slugToString categorySlug
+                    , "threads"
+                    , Thread.slugToString threadSlug
+                    , "posts"
+                    , Post.idToString postId
+                    ]
+
                 NewPost categorySlug threadSlug ->
                     [ "categories"
                     , Category.slugToString categorySlug
@@ -119,6 +138,9 @@ bodyClass route =
             "page-category-show"
 
         Thread _ _ ->
+            "page-thread-show"
+
+        Post _ _ _ ->
             "page-thread-show"
 
         NewPost _ _ ->

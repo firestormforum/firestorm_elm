@@ -5,6 +5,7 @@ module Data.Post
         , bodyToHtml
         , bodyToString
         , decoder
+        , idParser
         , idToString
         )
 
@@ -22,6 +23,7 @@ import Json.Decode.Pipeline as Pipeline
         , optional
         , required
         )
+import UrlParser
 
 
 type Id
@@ -99,3 +101,8 @@ decoder =
         |> optional "oembeds" (Decode.list oEmbedDecoder) []
         |> required "inserted_at" Json.Decode.Extra.date
         |> required "updated_at" Json.Decode.Extra.date
+
+
+idParser : UrlParser.Parser (Id -> a) a
+idParser =
+    UrlParser.map Id UrlParser.int

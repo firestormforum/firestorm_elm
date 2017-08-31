@@ -1,5 +1,7 @@
 module View exposing (view)
 
+import Data.Category as Category
+import Data.Thread as Thread
 import Date exposing (Date)
 import Html exposing (Html, div, img, text)
 import Model exposing (Model)
@@ -37,9 +39,10 @@ view model =
                     |> Page.Category.view
 
             Thread categorySlug threadSlug ->
-                model
-                    |> Page.Thread.query categorySlug threadSlug
-                    |> Page.Thread.view
+                viewThread categorySlug threadSlug model
+
+            Post categorySlug threadSlug _ ->
+                viewThread categorySlug threadSlug model
 
             NewPost categorySlug threadSlug ->
                 model
@@ -58,3 +61,10 @@ view model =
 
             NotFound ->
                 text "Not found"
+
+
+viewThread : Category.Slug -> Thread.Slug -> Model -> Html msg
+viewThread categorySlug threadSlug model =
+    model
+        |> Page.Thread.query categorySlug threadSlug
+        |> Page.Thread.view

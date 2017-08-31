@@ -6,6 +6,7 @@ module Data.Thread
         , decoder
         , idDecoder
         , idEncoder
+        , idToString
         , slugParser
         , slugToString
         )
@@ -45,6 +46,11 @@ slugParser =
 slugToString : Slug -> String
 slugToString (Slug slug) =
     slug
+
+
+idToString : Id -> String
+idToString (Id id) =
+    toString id
 
 
 idDecoder : Decoder Id

@@ -1,7 +1,9 @@
 module Store
     exposing
         ( Store
+        , StoreUpdate
         , categories
+        , categoryIds
         , empty
         , getCategory
         , getCategoryBySlug
@@ -19,9 +21,12 @@ module Store
         , insertThreads
         , insertUser
         , insertUsers
+        , postIds
         , posts
         , postsForUser
+        , threadIds
         , threads
+        , userIds
         )
 
 import Data.Category as Category exposing (Category)
@@ -50,6 +55,14 @@ type Store
         , indices : Indices
         , wants : ReplenishRequest
         }
+
+
+type alias StoreUpdate =
+    { categories : List Category
+    , threads : List Thread
+    , posts : List Post
+    , users : List Post
+    }
 
 
 empty : Store
@@ -205,6 +218,26 @@ getPost : Post.Id -> Store -> Maybe Post
 getPost id (Store { posts }) =
     posts
         |> EveryDict.get id
+
+
+categoryIds : Store -> List Category.Id
+categoryIds (Store { categories }) =
+    EveryDict.keys categories
+
+
+threadIds : Store -> List Thread.Id
+threadIds (Store { threads }) =
+    EveryDict.keys threads
+
+
+userIds : Store -> List User.Id
+userIds (Store { users }) =
+    EveryDict.keys users
+
+
+postIds : Store -> List Post.Id
+postIds (Store { posts }) =
+    EveryDict.keys posts
 
 
 categories : Store -> List Category

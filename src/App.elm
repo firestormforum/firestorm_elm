@@ -1,11 +1,14 @@
 module App exposing (..)
 
 import Api
+import Data.Category as Category
 import Data.LoginForm as LoginForm exposing (LoginForm)
 import Data.NewPostForm as NewPostForm exposing (NewPostForm)
 import Data.Post as Post exposing (Post)
 import Data.ReplenishRequest as ReplenishRequest exposing (ReplenishRequest)
 import Data.ReplenishResponse as ReplenishResponse
+import Data.Thread as Thread
+import Data.User as User
 import Http
 import Json.Decode as JD exposing (Value)
 import Model exposing (Model)
@@ -32,8 +35,8 @@ socket =
     Socket.init socketLocation
 
 
-channel : Channel Msg
-channel =
+storeFetchChannel : Channel Msg
+storeFetchChannel =
     Channel.init "store:fetch"
         |> Channel.onJoin IsOnline
 
@@ -85,10 +88,7 @@ init value location =
             Model.init initialRoute
     in
     ( model
-    , Cmd.batch
-        [ Ports.setTitle <| Title.forRoute model.store initialRoute
-        , Ports.setBodyClass <| Route.bodyClass model.currentRoute
-        ]
+    , cmdForRoute initialRoute model
     )
 
 
@@ -99,12 +99,13 @@ update msg model =
             let
                 currentRoute =
                     Maybe.withDefault NotFound route
+
+                cmd =
+                    model
+                        |> cmdForRoute currentRoute
             in
             ( { model | currentRoute = currentRoute }
-            , Cmd.batch
-                [ Ports.setTitle <| Title.forRoute model.store currentRoute
-                , Ports.setBodyClass <| Route.bodyClass currentRoute
-                ]
+            , cmd
             )
 
         Tick time ->
@@ -157,7 +158,7 @@ update msg model =
                         (Api.createPost apiToken model.newPostForm threadId)
                     )
 
-        SubmitNewPostSuccess threadId ->
+        SubmitNewPostSuccess threadId postId ->
             let
                 nextRoute =
                     case Store.getThread threadId model.store of
@@ -170,7 +171,7 @@ update msg model =
                                     Categories
 
                                 Just category ->
-                                    Thread category.slug thread.slug
+                                    Route.Post category.slug thread.slug postId
             in
             ( { model
                 | newPostForm = NewPostForm.new
@@ -199,7 +200,7 @@ subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.batch
         [ Time.every Time.second Tick
-        , Phoenix.connect socket [ channel ]
+        , Phoenix.connect socket (channels model)
         ]
 
 
@@ -235,9 +236,80 @@ handleLogin result =
 
 handleSubmitNewPost : Result Http.Error Post -> Msg
 handleSubmitNewPost result =
-    case Debug.log "new post" result of
+    case result of
         Ok post ->
-            SubmitNewPostSuccess post.threadId
+            SubmitNewPostSuccess post.threadId post.id
 
         Err _ ->
             NoOp
+
+
+{-| returns a list of channels for every entity in the store
+-}
+channels : Model -> List (Channel Msg)
+channels { store } =
+    let
+        entityChannel entityType idAsString =
+            Channel.init (entityType ++ ":" ++ idAsString)
+                |> Channel.on "update" loadIntoStore
+                |> Channel.withDebug
+
+        categoryChannel id =
+            entityChannel "categories" (Category.idToString id)
+
+        threadChannel id =
+            entityChannel "threads" (Thread.idToString id)
+
+        postChannel id =
+            entityChannel "posts" (Post.idToString id)
+
+        userChannel id =
+            entityChannel "users" (User.idToString id)
+
+        categoryChannels =
+            store
+                |> Store.categoryIds
+                |> List.map categoryChannel
+
+        threadChannels =
+            store
+                |> Store.threadIds
+                |> List.map threadChannel
+
+        postChannels =
+            store
+                |> Store.postIds
+                |> List.map postChannel
+
+        userChannels =
+            store
+                |> Store.userIds
+                |> List.map userChannel
+    in
+    categoryChannels
+        ++ threadChannels
+        ++ postChannels
+        ++ userChannels
+        ++ [ storeFetchChannel ]
+
+
+cmdForRoute : Route -> Model -> Cmd Msg
+cmdForRoute route model =
+    let
+        globalCmds =
+            [ Ports.setTitle <| Title.forRoute model.store route
+            , Ports.setBodyClass <| Route.bodyClass route
+            ]
+
+        routeCmds =
+            case route of
+                Post _ _ postId ->
+                    [ Ports.scrollToPost postId ]
+
+                _ ->
+                    []
+    in
+    Cmd.batch
+        (globalCmds
+            ++ routeCmds
+        )

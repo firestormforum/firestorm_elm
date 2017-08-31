@@ -5,6 +5,7 @@ module Data.User
         , Username
         , decoder
         , idDecoder
+        , idToString
         , usernameParser
         , usernameToString
         )
@@ -42,6 +43,11 @@ usernameParser =
 usernameToString : Username -> String
 usernameToString (Username username) =
     username
+
+
+idToString : Id -> String
+idToString (Id id) =
+    toString id
 
 
 idDecoder : Decoder Id

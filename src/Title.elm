@@ -26,16 +26,10 @@ pageTitle store route =
                 |> categoryTitle categorySlug
 
         Thread categorySlug threadSlug ->
-            let
-                cTitle =
-                    store
-                        |> categoryTitle categorySlug
+            threadRouteTitle categorySlug threadSlug store
 
-                tTitle =
-                    store
-                        |> threadTitle threadSlug
-            in
-            tTitle ++ " - " ++ cTitle
+        Post categorySlug threadSlug _ ->
+            threadRouteTitle categorySlug threadSlug store
 
         NewPost categorySlug threadSlug ->
             let
@@ -83,3 +77,17 @@ threadTitle slug store =
 userTitle : User.Username -> Store -> String
 userTitle username store =
     User.usernameToString username
+
+
+threadRouteTitle : Category.Slug -> Thread.Slug -> Store -> String
+threadRouteTitle categorySlug threadSlug store =
+    let
+        cTitle =
+            store
+                |> categoryTitle categorySlug
+
+        tTitle =
+            store
+                |> threadTitle threadSlug
+    in
+    tTitle ++ " - " ++ cTitle
