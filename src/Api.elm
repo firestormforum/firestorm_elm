@@ -9,18 +9,13 @@ import Json.Decode as JD exposing (Value)
 import Json.Encode as JE
 
 
-apiBaseUrl : String
-apiBaseUrl =
-    "http://localhost:4000/api/v1"
-
-
-post : String -> Http.Body -> JD.Decoder a -> Http.Request a
-post path =
+post : String -> String -> Http.Body -> JD.Decoder a -> Http.Request a
+post apiBaseUrl path =
     Http.post (apiBaseUrl ++ path)
 
 
-authenticatedPost : String -> String -> Http.Body -> JD.Decoder a -> Http.Request a
-authenticatedPost apiToken path body decoder =
+authenticatedPost : String -> String -> String -> Http.Body -> JD.Decoder a -> Http.Request a
+authenticatedPost apiToken apiBaseUrl path body decoder =
     let
         url =
             apiBaseUrl ++ path
@@ -36,9 +31,10 @@ authenticatedPost apiToken path body decoder =
         }
 
 
-login : LoginForm -> Http.Request String
-login { username, password } =
-    post "/auth/identity"
+login : String -> LoginForm -> Http.Request String
+login apiBaseUrl { username, password } =
+    post apiBaseUrl
+        "/auth/identity"
         (Http.jsonBody
             (JE.object
                 [ ( "user"
@@ -53,10 +49,11 @@ login { username, password } =
         (JD.at [ "data", "api_token" ] JD.string)
 
 
-createPost : String -> NewPostForm -> Thread.Id -> Http.Request Post
-createPost apiToken { body } threadId =
+createPost : String -> String -> NewPostForm -> Thread.Id -> Http.Request Post
+createPost apiToken apiBaseUrl { body } threadId =
     authenticatedPost
         apiToken
+        apiBaseUrl
         "/posts"
         (Http.jsonBody
             (JE.object

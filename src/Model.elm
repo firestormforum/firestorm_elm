@@ -1,4 +1,4 @@
-module Model exposing (Model, init, isLoggedIn)
+module Model exposing (Flags, Model, init, isLoggedIn)
 
 import Data.LoginForm as LoginForm exposing (LoginForm)
 import Data.NewPostForm as NewPostForm exposing (NewPostForm)
@@ -15,17 +15,27 @@ type alias Model =
     , loginForm : LoginForm
     , newPostForm : NewPostForm
     , apiToken : Maybe String
+    , apiBaseUrl : String
+    , wsBaseUrl : String
     }
 
 
-init : Route -> Model
-init initialRoute =
+type alias Flags =
+    { apiBaseUrl : String
+    , wsBaseUrl : String
+    }
+
+
+init : Flags -> Route -> Model
+init flags initialRoute =
     { currentRoute = initialRoute
     , currentTime = 0
     , store = Store.empty
     , apiToken = Nothing
     , loginForm = LoginForm.new
     , newPostForm = NewPostForm.new
+    , apiBaseUrl = flags.apiBaseUrl
+    , wsBaseUrl = flags.wsBaseUrl
     }
 
 

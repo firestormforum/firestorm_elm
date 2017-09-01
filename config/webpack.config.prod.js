@@ -50,6 +50,14 @@ module.exports = {
         }
       },
       {
+        test: /\.js/,
+        exclude: /node_modules/,
+        loader: "babel",
+        query: {
+          presets: ["es2015"]
+        }
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style", "css?-autoprefixer!postcss")
       },
@@ -115,7 +123,8 @@ module.exports = {
         removeStyleLinkTypeAttributes: true,
         keepClosingSlash: true,
         minifyCSS: true,
-        minifyURLs: true
+        minifyURLs: true,
+        minifyJS: false
       }
     }),
 

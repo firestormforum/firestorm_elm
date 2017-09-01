@@ -25,13 +25,8 @@ import Time
 import Title
 
 
-socketLocation : String
-socketLocation =
-    "ws://localhost:4000/socket/websocket"
-
-
-socket : Socket Msg
-socket =
+socket : String -> Socket Msg
+socket socketLocation =
     Socket.init socketLocation
 
 
@@ -52,28 +47,28 @@ getFirstCategory =
         |> ReplenishRequest.requestCategory 1
 
 
-fetch : ReplenishRequest -> Cmd Msg
-fetch request =
+fetch : String -> ReplenishRequest -> Cmd Msg
+fetch socketLocation request =
     Push.init "store:fetch" "fetch"
         |> Push.onOk loadIntoStore
         |> Push.withPayload (ReplenishRequest.encode request)
-        |> push
+        |> push socketLocation
 
 
-fetchHomeData : Cmd Msg
-fetchHomeData =
+fetchHomeData : String -> Cmd Msg
+fetchHomeData socketLocation =
     Push.init "store:fetch" "fetch_home_data"
         |> Push.onOk loadIntoStore
-        |> push
+        |> push socketLocation
 
 
-push : Push Msg -> Cmd Msg
-push =
+push : String -> Push Msg -> Cmd Msg
+push socketLocation =
     Phoenix.push socketLocation
 
 
-init : Value -> Location -> ( Model, Cmd Msg )
-init value location =
+init : Model.Flags -> Location -> ( Model, Cmd Msg )
+init flags location =
     -- NOTE: value is not yet used but we can pass flags in with it...
     let
         initialRoute =
@@ -85,7 +80,7 @@ init value location =
                     Home
 
         model =
-            Model.init initialRoute
+            Model.init flags initialRoute
     in
     ( model
     , cmdForRoute initialRoute model
@@ -117,7 +112,7 @@ update msg model =
             ( model, Cmd.none )
 
         IsOnline _ ->
-            ( model, fetchHomeData )
+            ( model, fetchHomeData model.wsBaseUrl )
 
         SetUsername username ->
             model
@@ -130,7 +125,7 @@ update msg model =
         Msg.Login ->
             ( model
             , Http.send handleLogin
-                (Api.login model.loginForm)
+                (Api.login model.apiBaseUrl model.loginForm)
             )
 
         LoginSuccess apiToken ->
@@ -155,7 +150,7 @@ update msg model =
                 Just apiToken ->
                     ( model
                     , Http.send handleSubmitNewPost
-                        (Api.createPost apiToken model.newPostForm threadId)
+                        (Api.createPost apiToken model.apiBaseUrl model.newPostForm threadId)
                     )
 
         SubmitNewPostSuccess threadId postId ->
@@ -200,7 +195,7 @@ subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.batch
         [ Time.every Time.second Tick
-        , Phoenix.connect socket (channels model)
+        , Phoenix.connect (socket model.wsBaseUrl) (channels model)
         ]
 
 

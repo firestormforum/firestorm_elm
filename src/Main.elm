@@ -9,7 +9,7 @@ import Route
 import View exposing (view)
 
 
-main : Program Value Model Msg
+main : Program Model.Flags Model Msg
 main =
     Navigation.programWithFlags
         (Route.fromLocation >> SetRoute)

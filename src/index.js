@@ -1,10 +1,15 @@
 require("./css/app.scss");
-const logoPath = require("./logo.svg");
+let config = require("config");
 const Elm = require("./Main.elm");
 
 const root = document.getElementById("root");
 
-const app = Elm.Main.embed(root, logoPath);
+let flags = {
+  apiBaseUrl: config.apiBaseUrl,
+  wsBaseUrl: config.wsBaseUrl
+};
+
+const app = Elm.Main.embed(root, flags);
 
 const setPostTarget = el => {
   let posts = document.querySelectorAll(".post-item");
