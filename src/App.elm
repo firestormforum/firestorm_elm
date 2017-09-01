@@ -11,7 +11,7 @@ import Data.Thread as Thread
 import Data.User as User
 import Http
 import Json.Decode as JD exposing (Value)
-import Model exposing (Model)
+import Model exposing (Flags, Model)
 import Msg exposing (Msg(..))
 import Navigation exposing (Location)
 import Phoenix
@@ -67,7 +67,7 @@ push socketLocation =
     Phoenix.push socketLocation
 
 
-init : Model.Flags -> Location -> ( Model, Cmd Msg )
+init : Flags -> Location -> ( Model, Cmd Msg )
 init flags location =
     -- NOTE: value is not yet used but we can pass flags in with it...
     let
