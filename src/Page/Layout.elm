@@ -73,7 +73,7 @@ navigation =
             [ div [ class "navigation-logo" ]
                 [ img
                     [ alt "Firestorm logo"
-                    , src "./images/firestorm-logo.png"
+                    , src "https://forum.firestormforum.org/images/firestorm-logo.png"
                     ]
                     []
                 , span [] [ text "Firestorm" ]
