@@ -33,6 +33,12 @@ You can use [asdf](https://github.com/asdf-vm/asdf) to help you manage you elm v
 npm install create-elm-app -g
 ```
 
+### Running
+
+```sh
+yarn start
+```
+
 ### Build
 
 Once you have installed the dependencies, you will be able to build the app. To build the app, use [build.sh].
