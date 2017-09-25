@@ -9,7 +9,14 @@ import Html exposing (..)
 import Html.Attributes exposing (attribute, class, href, id, src)
 import Maybe.Extra as Maybe
 import Model exposing (Model)
-import Page.Component exposing (postList, postView, timeAbbr, userAvatar)
+import Page.Component
+    exposing
+        ( postList
+        , userPostView
+        , timeAbbr
+        , userAvatar
+        , userPostList
+        )
 import Store exposing (Store)
 
 
@@ -40,10 +47,10 @@ query username model =
                 |> List.map (getPostWithCategoryAndThread model.store)
                 |> Maybe.values
     in
-    { user = user
-    , currentDate = Date.fromTime model.currentTime
-    , posts = postsWithCategoriesAndThreads
-    }
+        { user = user
+        , currentDate = Date.fromTime model.currentTime
+        , posts = postsWithCategoriesAndThreads
+        }
 
 
 getPostWithCategoryAndThread : Store -> Post -> Maybe ( Category, Thread, Post )
@@ -60,12 +67,12 @@ getPostWithCategoryAndThread store post =
                 Nothing ->
                     Nothing
     in
-    case ( maybeThread, maybeCategory ) of
-        ( Just thread, Just category ) ->
-            Just ( category, thread, post )
+        case ( maybeThread, maybeCategory ) of
+            ( Just thread, Just category ) ->
+                Just ( category, thread, post )
 
-        _ ->
-            Nothing
+            _ ->
+                Nothing
 
 
 view : ViewModel -> Html msg
@@ -84,7 +91,7 @@ viewUser : Date -> User -> List ( Category, Thread, Post ) -> Html msg
 viewUser currentDate user posts =
     div []
         [ userDetails currentDate user
-        , postList currentDate (List.map (\p -> ( Just user, p )) posts)
+        , userPostList currentDate (List.map (\p -> ( Just user, p )) posts)
         ]
 
 

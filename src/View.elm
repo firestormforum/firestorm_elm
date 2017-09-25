@@ -2,7 +2,6 @@ module View exposing (view)
 
 import Data.Category as Category
 import Data.Thread as Thread
-import Date exposing (Date)
 import Html exposing (Html, div, img, text)
 import Model exposing (Model)
 import Msg exposing (Msg)
@@ -19,10 +18,6 @@ import Route exposing (Route(..))
 
 view : Model -> Html Msg
 view model =
-    let
-        currentDate =
-            Date.fromTime model.currentTime
-    in
     Page.Layout.view model <|
         case model.currentRoute of
             Home ->

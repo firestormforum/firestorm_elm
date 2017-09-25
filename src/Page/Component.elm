@@ -4,6 +4,8 @@ module Page.Component
         , categoryHeader
         , categoryLink
         , categoryPills
+        , userPostView
+        , userPostList
         , itemMetadata
         , pageHeader
         , postItemActions
@@ -52,8 +54,8 @@ dateDiffInWords =
         defaultConfig =
             Distance.defaultConfig
     in
-    Distance.inWordsWithConfig
-        { defaultConfig | locale = locale }
+        Distance.inWordsWithConfig
+            { defaultConfig | locale = locale }
 
 
 timeAbbr : Date.Date -> Date.Date -> Html msg
@@ -144,9 +146,9 @@ categoryPills categories =
                 [ class "category -color-20" ]
                 [ categoryLink category ]
     in
-    ul
-        [ class "category-pill" ]
-        (List.map categoryItem categories)
+        ul
+            [ class "category-pill" ]
+            (List.map categoryItem categories)
 
 
 renderOEmbeds : List ( String, String ) -> List (Html msg)
@@ -196,43 +198,116 @@ postView currentDate category thread ( maybeUser, post ) =
 
                 Just user ->
                     user.avatarUrl
-    in
-    li
-        [ class "post-item"
-        , id ("post-" ++ Post.idToString post.id)
-        ]
-        ([ div
-            [ class "item-metadata" ]
-            [ div
-                [ class "avatar" ]
-                [ img
-                    [ src avatarUrl
-                    , class "user-avatar -borderless"
+
+        title =
+            div
+                [ class "item-metadata" ]
+                [ div
+                    [ class "avatar" ]
+                    [ img
+                        [ src avatarUrl
+                        , class "user-avatar -borderless"
+                        ]
+                        []
                     ]
-                    []
+                , userLink maybeUser
+                , timeAbbr currentDate post.updatedAt
                 ]
-            , userLink maybeUser
-            , timeAbbr currentDate post.updatedAt
+    in
+        abstractPostView title currentDate category thread ( maybeUser, post )
+
+
+userPostView : Date -> Category -> Thread -> ( Maybe User, Post ) -> Html msg
+userPostView currentDate category thread ( maybeUser, post ) =
+    let
+        avatarUrl =
+            case maybeUser of
+                Nothing ->
+                    "https://api.adorable.io/avatars/256/nobody@adorable.png"
+
+                Just user ->
+                    user.avatarUrl
+
+        title =
+            div
+                [ class "item-metadata" ]
+                [ div
+                    [ class "avatar" ]
+                    [ img
+                        [ src avatarUrl
+                        , class "user-avatar -borderless"
+                        ]
+                        []
+                    ]
+                , a
+                    [ class "headline"
+                    , Route.href <|
+                        Route.Thread category.slug
+                            thread.slug
+                    ]
+                    [ text thread.title ]
+                , timeAbbr currentDate post.updatedAt
+                ]
+    in
+        abstractPostView title currentDate category thread ( maybeUser, post )
+
+
+abstractPostView : Html msg -> Date -> Category -> Thread -> ( Maybe User, Post ) -> Html msg
+abstractPostView title currentDate category thread ( maybeUser, post ) =
+    let
+        avatarUrl =
+            case maybeUser of
+                Nothing ->
+                    "https://api.adorable.io/avatars/256/nobody@adorable.png"
+
+                Just user ->
+                    user.avatarUrl
+    in
+        li
+            [ class "post-item"
+            , id ("post-" ++ Post.idToString post.id)
             ]
-         , div
-            [ class "body"
-            , innerHtml post.bodyHtml
-            ]
-            []
-         ]
-            ++ renderOEmbeds post.oEmbeds
-            ++ [ postItemActions category thread post ]
-        )
+            ([ title
+             , div
+                [ class "body"
+                , innerHtml post.bodyHtml
+                ]
+                []
+             ]
+                ++ renderOEmbeds post.oEmbeds
+                ++ [ postItemActions category thread post ]
+            )
 
 
 postList : Date -> List ( Maybe User, ( Category, Thread, Post ) ) -> Html msg
 postList currentDate postsWithUsers =
+    abstractPostList postView currentDate postsWithUsers
+
+
+userPostList : Date -> List ( Maybe User, ( Category, Thread, Post ) ) -> Html msg
+userPostList currentDate postsWithUsers =
+    abstractPostList userPostView
+        currentDate
+        postsWithUsers
+
+
+abstractPostList :
+    (Date
+     -> Category
+     -> Thread
+     -> ( Maybe User, Post )
+     -> Html msg
+    )
+    -> Date
+    -> List ( Maybe User, ( Category, Thread, Post ) )
+    -> Html msg
+abstractPostList viewFun currentDate postsWithUsers =
     Keyed.ol
         [ class "post-list" ]
         (List.map
             (\( postUser, ( category, thread, post ) ) ->
                 ( "post-" ++ Post.idToString post.id
-                , postView currentDate category thread ( postUser, post )
+                , viewFun currentDate category thread ( postUser, post )
                 )
             )
             postsWithUsers
