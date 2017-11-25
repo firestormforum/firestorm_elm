@@ -13,29 +13,36 @@ programming language.
 
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
-Below you will find some information on how to perform basic tasks.
-You can find the most recent version of this guide [here](https://github.com/halfzebra/create-elm-app/blob/master/template/README.md).
+## Using
 
-## Table of Contents
-- [Sending feedback](#sending-feedback)
-- [Folder structure](#folder-structure)
-- [Installing Elm packages](#installing-elm-packages)
-- [Installing JavaScript packages](#installing-js-packages)
-- [Available scripts](#available-scripts)
-  - [elm-app build](#elm-app-build)
-  - [elm-app start](#elm-app-start)
-  - [elm-app test](#elm-app-test)
-  - [elm-app eject](#elm-app-eject)
-  - [elm-app <elm-platform-comand>](#elm-app-elm-platform-comand)
-    - [package](#package)
-    - [repl](#repl)
-    - [make](#make)
-    - [reactor](#reactor)
-- [Adding Images and Fonts](#adding-images-and-fonts)
-- [IDE setup for Hot Module Replacement](#ide-setup-for-hot-module-replacement)
+### Dependencies
 
-## Sending feedback
-You are very welcome with any [feedback](https://github.com/halfzebra/create-elm-app/issues)
+- Elm version at least 0.18.0.
+
+You can use [asdf](https://github.com/asdf-vm/asdf) to help you manage you elm version.
+
+- [elm-github-install](https://github.com/gdotdesign/elm-github-install)
+
+```sh
+ npm nstall elm-github-install -g
+```
+
+- [create-elm-app](https://github.com/halfzebra/create-elm-app)
+
+```sh
+npm install create-elm-app -g
+```
+
+### Running
+
+```sh
+yarn start
+```
+
+### Build
+
+Once you have installed the dependencies, you will be able to build the app. To build the app, use [build.sh].
+
 
 ## Installing Elm packages
 
@@ -57,33 +64,6 @@ npm install --save-dev pouchdb-browser # Install library from npm
 var PouchDB = require('pouchdb-browser');
 var db = new PouchDB('mydb');
 ```
-
-## Folder structure
-```
-my-app/
-  .gitignore
-  README.md
-  elm-package.json
-  src/
-    favicon.ico
-    index.html
-    index.js
-    main.css
-    Main.elm
-  tests/
-    elm-package.json
-    Main.elm
-    Tests.elm
-```
-For the project to build, these files must exist with exact filenames:
-
-- `src/index.html` is the page template;
-- `src/favicon.ico` is the icon you see in the browser tab;
-- `src/index.js` is the JavaScript entry point.
-
-You can delete or rename the other files.
-
-You may create subdirectories inside src.
 
 ## Available scripts
 In the project directory you can run:
@@ -107,18 +87,6 @@ You can make test runner watch project files by running:
 ```sh
 elm-app test --watch
 ```
-
-### `elm-app eject`
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Elm Platform, etc.) right into your project, so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you’re on your own.
-
-You don’t have to use 'eject' The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### `elm-app <elm-platform-comand>`
-Create Elm App does not rely on the global installation of Elm Platform, but you still can use it's local Elm Platform to access default command line tools:
 
 #### `package`
 Alias for [elm-package](http://guide.elm-lang.org/get_started.html#elm-package)
