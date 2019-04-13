@@ -1,68 +1,62 @@
-module Api exposing (createPost, login)
+module Api exposing
+    ( authenticate
+    , createPost
+    , createThread
+    , getCategories
+    , getCategory
+    , getThread
+    )
 
-import Data.LoginForm exposing (LoginForm)
-import Data.NewPostForm exposing (NewPostForm)
-import Data.Post as Post exposing (Post)
-import Data.Thread as Thread exposing (Thread)
-import Http
-import Json.Decode as JD exposing (Value)
-import Json.Encode as JE
-
-
-post : String -> String -> Http.Body -> JD.Decoder a -> Http.Request a
-post apiBaseUrl path =
-    Http.post (apiBaseUrl ++ path)
-
-
-authenticatedPost : String -> String -> String -> Http.Body -> JD.Decoder a -> Http.Request a
-authenticatedPost apiToken apiBaseUrl path body decoder =
-    let
-        url =
-            apiBaseUrl ++ path
-    in
-    Http.request
-        { method = "POST"
-        , headers = [ Http.header "authorization" ("Bearer " ++ apiToken) ]
-        , url = url
-        , body = body
-        , expect = Http.expectJson decoder
-        , timeout = Nothing
-        , withCredentials = False
-        }
+import Firestorm.Scalar
+import Graphql.Http
+import Msg exposing (Msg(..))
+import Queries
 
 
-login : String -> LoginForm -> Http.Request String
-login apiBaseUrl { username, password } =
-    post apiBaseUrl
-        "/auth/identity"
-        (Http.jsonBody
-            (JE.object
-                [ ( "user"
-                  , JE.object
-                        [ ( "username", JE.string username )
-                        , ( "password", JE.string password )
-                        ]
-                  )
-                ]
-            )
-        )
-        (JD.at [ "data", "api_token" ] JD.string)
+getCategories : String -> Int -> Cmd Msg
+getCategories endpoint page =
+    Queries.getCategoriesQuery page
+        |> Graphql.Http.queryRequest endpoint
+        |> Graphql.Http.send GotCategories
 
 
-createPost : String -> String -> NewPostForm -> Thread.Id -> Http.Request Post
-createPost apiToken apiBaseUrl { body } threadId =
-    authenticatedPost
-        apiToken
-        apiBaseUrl
-        "/posts"
-        (Http.jsonBody
-            (JE.object
-                [ ( "post"
-                  , JE.object
-                        [ ( "body", JE.string body ) ]
-                  )
-                , ( "thread_id", Thread.idEncoder threadId )
-                ]
-            )
-        )
-        Post.decoder
+getCategory : String -> Firestorm.Scalar.Id -> Cmd Msg
+getCategory endpoint categoryId =
+    Queries.getCategoryQuery categoryId
+        |> Graphql.Http.queryRequest endpoint
+        |> Graphql.Http.send GotCategory
+
+
+getThread : String -> Firestorm.Scalar.Id -> Cmd Msg
+getThread endpoint threadId =
+    Queries.getThreadQuery threadId
+        |> Graphql.Http.queryRequest endpoint
+        |> Graphql.Http.send GotThread
+
+
+authenticate : String -> String -> String -> Cmd Msg
+authenticate endpoint email password =
+    Queries.authenticateMutation email password
+        |> Graphql.Http.mutationRequest endpoint
+        |> Graphql.Http.send AuthenticateResponse
+
+
+createThread : String -> String -> Firestorm.Scalar.Id -> String -> String -> Cmd Msg
+createThread endpoint token categoryId title body =
+    Queries.createThreadMutation categoryId title body
+        |> Graphql.Http.mutationRequest endpoint
+        |> withAuthorization token
+        |> Graphql.Http.send (CreateThreadResponse categoryId)
+
+
+createPost : String -> String -> Firestorm.Scalar.Id -> Firestorm.Scalar.Id -> String -> Cmd Msg
+createPost endpoint token categoryId threadId body =
+    Queries.createPostMutation threadId body
+        |> Graphql.Http.mutationRequest endpoint
+        |> withAuthorization token
+        |> Graphql.Http.send (CreatePostResponse categoryId threadId)
+
+
+withAuthorization token request =
+    request
+        |> Graphql.Http.withHeader "authorization" ("Bearer " ++ token)

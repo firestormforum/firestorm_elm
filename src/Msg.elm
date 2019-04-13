@@ -1,24 +1,31 @@
 module Msg exposing (Msg(..))
 
-import Data.Category as Category
-import Data.Post as Post
-import Data.ReplenishResponse exposing (ReplenishResponse)
-import Data.Thread as Thread
-import Json.Encode exposing (Value)
+import Firestorm.Scalar
+import Graphql.Http
+import Json.Decode
 import Route exposing (Route)
-import Time exposing (Time)
+import Types exposing (..)
+import Url
 
 
 type Msg
-    = SetRoute (Maybe Route)
-    | Tick Time
-    | NoOp
-    | IsOnline Value
-    | LoadIntoStore ReplenishResponse
-    | SetUsername String
+    = NoOp
+    | RoutePushed Route
+    | UrlChanged Url.Url
+    | GotCategories (Result (Graphql.Http.Error (PaginatedResult Category)) (PaginatedResult Category))
+    | GotCategory (Result (Graphql.Http.Error Category) Category)
+    | GotThread (Result (Graphql.Http.Error Thread) Thread)
+    | SetEmail String
     | SetPassword String
-    | Login
-    | LoginSuccess String
-    | SetNewPostBody String
-    | SubmitNewPost Thread.Id
-    | SubmitNewPostSuccess Thread.Id Post.Id
+    | Authenticate
+    | AuthenticateResponse (Result (Graphql.Http.Error String) String)
+    | SetThreadTitle String
+    | SetThreadBody String
+    | CreateThread Firestorm.Scalar.Id
+    | CreateThreadResponse Firestorm.Scalar.Id (Result (Graphql.Http.Error Thread) Thread)
+    | SetPostBody String
+    | SetNewPostTab NewPostTab
+    | CreatePost Firestorm.Scalar.Id Firestorm.Scalar.Id
+    | CreatePostResponse Firestorm.Scalar.Id Firestorm.Scalar.Id (Result (Graphql.Http.Error Post) Post)
+    | GotSubscriptionData Json.Decode.Value
+    | SetNewThreadTab NewPostTab

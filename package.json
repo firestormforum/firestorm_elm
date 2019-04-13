@@ -1,49 +1,20 @@
 {
   "name": "firestorm_elm",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "description": "An Elm client for a GraphQL forum",
+  "main": "index.js",
   "scripts": {
-    "build": "node scripts/build.js",
-    "start": "node scripts/start.js",
-    "package": "elm-package",
-    "make": "elm-make",
-    "repl": "elm-repl",
-    "reactor": "elm-reactor",
-    "test": "elm-test",
-    "deploy": "gh-pages -d dist"
+    "api": "elm-graphql http://localhost:4000/graphql --base Firestorm --output src/",
+    "dev": "parcel src/index.html"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "6.5.4",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "7.1.1",
-    "babel-preset-es2015": "^6.24.1",
-    "chalk": "1.1.3",
-    "clean-webpack-plugin": "0.1.14",
-    "connect-history-api-fallback": "^1.3.0",
-    "css-loader": "0.26.1",
-    "dotenv": "^2.0.0",
-    "elm": "^0.18.0",
-    "elm-hot-loader": "0.4.2",
-    "elm-test": "0.18.0",
-    "elm-webpack-loader": "3.1.0",
-    "extract-text-webpack-plugin": "1.0.1",
-    "file-loader": "0.9.0",
-    "gh-pages": "^0.12.0",
-    "html-webpack-plugin": "2.24.1",
-    "http-proxy-middleware": "^0.17.3",
-    "import-glob-loader": "^1.1.0",
-    "minimist": "1.2.0",
-    "node-sass": "^4.5.0",
-    "normalize-scss": "^7.0.0",
-    "postcss-loader": "1.2.1",
-    "purecss": "^0.6.2",
-    "react-dev-utils": "0.4.2",
-    "sass-loader": "^6.0.2",
-    "style-loader": "0.13.1",
-    "typeplate-starter-kit": "^3.0.2",
-    "url-loader": "^0.5.7",
-    "webpack": "1.14.0",
-    "webpack-dev-server": "1.16.2"
+    "@dillonkearns/elm-graphql": "^3.0.0",
+    "node-elm-compiler": "^5.0.1",
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "@absinthe/socket": "^0.1.10"
   }
 }

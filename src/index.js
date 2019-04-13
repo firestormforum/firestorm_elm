@@ -1,51 +1,79 @@
-require("./css/app.scss");
-let config = require("config");
-const Elm = require("./Main.elm");
+import * as AbsintheSocket from "@absinthe/socket";
+import notifierFind from "@absinthe/socket/dist/notifier/find";
+import { Socket as PhoenixSocket } from "phoenix";
 
-const root = document.getElementById("root");
 
-let flags = {
-  apiBaseUrl: config.apiBaseUrl,
-  wsBaseUrl: config.wsBaseUrl
-};
+let absintheSocket = AbsintheSocket.create(
+    new PhoenixSocket("ws://localhost:4000/socket")
+)
 
-const app = Elm.Main.embed(root, flags);
+let notifiers = []
 
-const setPostTarget = el => {
-  let posts = document.querySelectorAll(".post-item");
-  posts.forEach(post => post.classList.remove("-target"));
-  el.classList.add("-target");
-};
 
-const scrollToPost = postId => {
-  let elementId = `post-${postId}`;
-  let el = document.getElementById(elementId);
-  if (el) {
-    setPostTarget(el);
-    let alignWithTop = true;
-    el.scrollIntoView(alignWithTop);
-  }
-};
+function onStart(data) {
+    console.log(">>> Start", JSON.stringify(data))
+}
 
-const outboundPortHandlers = {
-  SetTitle: title => {
-    document.title = title;
-  },
-  SetBodyClass: klass => {
-    let body = document.getElementsByTagName("body")[0];
-    body.className = `layout-app ${klass}`;
-  },
-  ScrollToPost: postId => {
-    // We'll scroll to it immediately, and then we'll try to do it in a second
-    scrollToPost(postId);
-    // We have to wait for the view to render...this is non-deterministic,
-    // sorry!
-    setTimeout(() => scrollToPost(postId), 1000);
-  }
-};
+function onAbort(data) {
+    console.log(">>> Abort", JSON.stringify(data))
+}
 
-const handleOutboundPort = evt => {
-  outboundPortHandlers[evt.type](evt.payload);
-};
+function onCancel(data) {
+    console.log(">>> Cancel", JSON.stringify(data))
+}
 
-app.ports.outbound.subscribe(handleOutboundPort);
+function onError(data) {
+    console.log(">>> Error", JSON.stringify(data))
+}
+
+function onResult(app) {
+    return res => {
+        console.log(">>> Result", JSON.stringify(res))
+        app.ports.gotSubscriptionData.send(res)
+    }
+}
+
+import('./Main.elm')
+    .then(({ Elm }) => {
+        let node = document.querySelector('main');
+        const app = Elm.Main.init({ node: node });
+
+        app.ports.createSubscriptions.subscribe(function (operations) {
+            console.log("createSubscriptions called with", operations)
+            absintheSocket = notifiers.reduce(
+                (socket, notifier) => {
+                    const disposableNotifier =
+                        notifierFind(
+                            socket.notifiers,
+                            "request",
+                            notifier.request
+                        )
+                    if (disposableNotifier) {
+                        return AbsintheSocket.cancel(
+                            socket,
+                            disposableNotifier
+                        )
+                    } else {
+                        return socket
+                    }
+                },
+                absintheSocket
+            )
+
+            notifiers = operations.map(operation => AbsintheSocket.send(absintheSocket, {
+                operation,
+                variables: {}
+            }))
+
+            absintheSocket = notifiers.reduce((socket, notifier) =>
+                AbsintheSocket.observe(socket, notifier, {
+                    onAbort,
+                    onError,
+                    onCancel,
+                    onStart,
+                    onResult: onResult(app)
+                }), absintheSocket)
+        });
+
+
+    });
