@@ -6,7 +6,7 @@ let baseDomain = 'frayed-capital-gourami.gigalixirapp.com'
 let endpoint = `https://${baseDomain}/graphql`
 
 let absintheSocket = AbsintheSocket.create(
-    new PhoenixSocket(`ws://${baseDomain}/socket`)
+    new PhoenixSocket(`wss://${baseDomain}/socket`)
 )
 
 let notifiers = []
