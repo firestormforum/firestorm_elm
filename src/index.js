@@ -3,7 +3,7 @@ import notifierFind from "@absinthe/socket/dist/notifier/find";
 import { Socket as PhoenixSocket } from "phoenix";
 
 let baseDomain = 'frayed-capital-gourami.gigalixirapp.com'
-let endpoint = `http://${baseDomain}/graphql`
+let endpoint = `https://${baseDomain}/graphql`
 
 let absintheSocket = AbsintheSocket.create(
     new PhoenixSocket(`ws://${baseDomain}/socket`)
