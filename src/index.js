@@ -2,9 +2,11 @@ import * as AbsintheSocket from "@absinthe/socket";
 import notifierFind from "@absinthe/socket/dist/notifier/find";
 import { Socket as PhoenixSocket } from "phoenix";
 
+let baseDomain = 'frayed-capital-gourami.gigalixirapp.com'
+let endpoint = `http://${baseDomain}/graphql`
 
 let absintheSocket = AbsintheSocket.create(
-    new PhoenixSocket("ws://localhost:4000/socket")
+    new PhoenixSocket(`ws://${baseDomain}/socket`)
 )
 
 let notifiers = []
@@ -36,7 +38,7 @@ function onResult(app) {
 import('./Main.elm')
     .then(({ Elm }) => {
         let node = document.querySelector('main');
-        const app = Elm.Main.init({ node: node });
+        const app = Elm.Main.init({ node: node, flags: { endpoint } });
 
         app.ports.createSubscriptions.subscribe(function (operations) {
             console.log("createSubscriptions called with", operations)

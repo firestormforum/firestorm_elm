@@ -24,7 +24,7 @@ import Graphql.Document
 import Graphql.SelectionSet exposing (with)
 import Helpers exposing (idToString, stringToId)
 import Html as H
-import Json.Decode
+import Json.Decode exposing (Decoder, field, string)
 import Json.Encode
 import Layout
 import Model exposing (Model)
@@ -257,11 +257,25 @@ update msg model =
                     ( model, Cmd.none )
 
 
+type alias Flags = 
+    { endpoint : String
+    }
+
+flagsDecoder : Decoder Flags
+flagsDecoder =
+    Json.Decode.map Flags (field "endpoint" string)
+
 init : Json.Decode.Value -> Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url key =
     let
+        decodedFlags = 
+            flags
+            |> Json.Decode.decodeValue flagsDecoder
+            |> Result.withDefault { endpoint = "localhost:4000" }
+
         model =
-            Model.init key url
+            Model.init key url decodedFlags.endpoint
+
     in
     ( model
     , Cmd.batch

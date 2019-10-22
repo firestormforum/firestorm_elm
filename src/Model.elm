@@ -23,6 +23,7 @@ module Model exposing
 import Browser.Navigation as Nav
 import Route exposing (Route)
 import Types exposing (..)
+import Url
 
 
 type alias Model =
@@ -43,7 +44,8 @@ type alias Model =
     }
 
 
-init key url =
+init : Nav.Key -> Url.Url -> String -> Model 
+init key url endpoint =
     let
         route =
             Route.fromUrl url
@@ -51,7 +53,7 @@ init key url =
     in
     { key = key
     , route = route
-    , endpoint = "http://localhost:4000/graphql"
+    , endpoint = endpoint
     , categories = []
     , category = Nothing
     , thread = Nothing
