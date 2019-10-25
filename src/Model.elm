@@ -149,7 +149,7 @@ threadAdded thread model =
 
 postAdded : Post -> Model -> Model
 postAdded post model =
-    { model | thread = model.thread |> Maybe.map (\t -> { t | posts = t.posts ++ [ post ] }) }
+    { model | thread = model.thread |> Maybe.map (\t -> { t | posts = [ post ] ++ t.posts }) }
 
 
 setNewThreadTab : NewPostTab -> Model -> Model

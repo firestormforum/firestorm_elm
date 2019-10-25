@@ -41,21 +41,8 @@ layoutConfig model categoryId =
                 , actions = Nothing
                 }
         , floatingActionButton =
-            case model.thread of
-                Nothing ->
-                    Nothing
-
-                Just thread ->
-                    Just
-                        (Input.button
-                            [ Brand.defaultPadding
-                            , Background.color Brand.primaryColor
-                            , Font.color Brand.primaryTextColor
-                            ]
-                            { onPress = Just (RoutePushed (Route.NewPost categoryId (idToString thread.id)))
-                            , label = text "New Post"
-                            }
-                        )
+        model.thread
+            |> Maybe.map (newPostButton categoryId)
         , body =
             ( Padded
             , model.thread
@@ -65,13 +52,23 @@ layoutConfig model categoryId =
         }
     }
 
+newPostButton categoryId thread =
+    Input.button
+        [ Brand.defaultPadding
+        , Background.color Brand.primaryColor
+        , Font.color Brand.primaryTextColor
+        ]
+        { onPress = Just (RoutePushed (Route.NewPost categoryId (idToString thread.id)))
+        , label = text "New Post"
+        }
+
 
 threadShow thread =
     column
         [ width fill
         ]
     <|
-        List.map postListItem thread.posts
+        List.map postListItem (List.reverse thread.posts)
 
 
 postListItem : Post -> Element Msg
