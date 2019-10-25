@@ -15,6 +15,7 @@ import Element.Events as Events
 import Element.Font as Font
 import Element.Input
 import Html.Events
+import Json.Decode as Decode
 import Model exposing (Model)
 import Msg exposing (Msg(..))
 import Types exposing (BodyLayout(..))
@@ -39,6 +40,23 @@ layoutConfig model =
     }
 
 
+onEnter : msg -> Element.Attribute msg
+onEnter msg =
+    Element.htmlAttribute
+        (Html.Events.on "keyup"
+            (Decode.field "key" Decode.string
+                |> Decode.andThen
+                    (\key ->
+                        if key == "Enter" then
+                            Decode.succeed msg
+
+                        else
+                            Decode.fail "Not the enter key"
+                    )
+            )
+        )
+
+
 loginView : Model -> Element Msg
 loginView model =
     Element.column
@@ -46,13 +64,17 @@ loginView model =
         , spacing <| 2 * Brand.defaultPaddingAmount
         , Brand.defaultBodyPadding
         ]
-        [ Element.Input.text []
+        [ Element.Input.text
+            [ onEnter Authenticate
+            ]
             { text = model.email
             , onChange = SetEmail
             , placeholder = Nothing
             , label = Element.Input.labelAbove [] <| Element.text "Email"
             }
-        , Element.Input.currentPassword []
+        , Element.Input.currentPassword
+            [ onEnter Authenticate
+            ]
             { text = model.password
             , onChange = SetPassword
             , placeholder = Nothing
